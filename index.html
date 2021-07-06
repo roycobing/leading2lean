@@ -13,6 +13,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Modal -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -91,7 +94,7 @@
         <div class="container-fluid">
 
           <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-home"></i>
             <span class="sr-only">Toggle Menu</span>
           </button>
           <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,16 +103,162 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
-              <form class="d-md-inline-block form-inline ms-auto me-0 my-2">
+              <form class="d-flex me-0 my-2">
                 <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                  <button class="btn btn-secondary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                  <input class="form-control me-2" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                  <button class="btn btn-secondary " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
               </form>
+              <div class="settingButton">
+                <button class="setButton" href="#!" data-bs-toggle="modal" data-bs-target="#settingModal"><i class="fa fa-cog fa-2x"></i></button>
+              </div>
+              <li>
             </ul>
           </div>
         </div>
       </nav>
+      <!-- Modal -->
+      <div class="modal fade" id="settingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="settingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="settingModalLabel">Home Settings</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      SINGLE PAGE
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      TABULAR PAGE
+                    </label>
+                  </div>
+                </div>
+                <div class="row container">
+                  <div class="well well-lg">
+                    <div class="PageGroups">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="PageGroup">
+                            <h3>PAGE GROUPS</h3>
+                          </div>
+                        </div>
+                        <div class="PageGroup col-md-4 ms-auto">
+                          <button type="button" class="CreateNewGroup"><i class="fas fa-plus"></i> Create New Group </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="CardGroups">
+                      <div class="row">
+                        <div class="dispatch col-lg-4">
+                          <div class="cardheader">
+                            <h5 small class="card-header-text">Dispatches<button type="button" class="editIcon"><i class="far fa-edit"></i></button></h5>
+                          </div>
+                          <div class="sortable" id="sortable">
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                My Dispatches
+                              </div>
+                            </div>
+                            <div class="sortable-moves" draggable="false" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Dispatch Screens
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Currently Open Display
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Dispatch Reported
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="performance col-lg-4">
+                          <div class="cardheader">
+                            <h5 small class="card-header-text">Performance/Stats<button type="button" class="editIcon"><i class="far fa-edit"></i></button></h5>
+                          </div>
+                          <div class="sortable" id="sortable2">
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Lines Running
+                              </div>
+                            </div>
+                            <div class="sortable-moves" draggable="false" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                On Time PM Completion
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Top Spares
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Downtime by Line
+                              </div>
+                            </div>
+                            <div class="sortable-moves" draggable="false" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Down Occurence by Line
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Production Machine Display
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="inactiveWidgets col-lg-4">
+                          <div class="cardheader">
+                            <h5 small class="card-header-text">Inactive Widgets<button type="button" class="editIcon"><i class="far fa-edit"></i></button></h5>
+                          </div>
+                          <div class="sortable" id="sortable3">
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Skills (Needing Attention)
+                              </div>
+                            </div>
+                            <div class="sortable-moves" draggable="false" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                Organization
+                              </div>
+                            </div>
+                            <div class="sortable-moves" style="">
+                              <div class="sortable-text"><i class="fas fa-cog"></i>
+                                OEE
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="bodyContent">
         <h2 class="mb-4">Main Component</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis

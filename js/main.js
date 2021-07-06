@@ -17,3 +17,42 @@
   });
 
 })(jQuery);
+
+/** Modal **/
+$( function() {
+  $( "#sortable" ).sortable({
+    revert: true
+  });
+  $( "#draggable" ).draggable({
+    connectToSortable: "#sortable",
+    helper: "clone",
+    revert: "invalid"
+  });
+  $( "ul, li" ).disableSelection();
+} );
+
+$( function() {
+  $( "#sortable2" ).sortable({
+    revert: true
+  });
+  $( "#draggable" ).draggable({
+    connectToSortable: "#sortable2",
+    helper: "clone",
+    revert: "invalid"
+  });
+  $( "ul, li" ).disableSelection();
+} );
+
+$( function() {
+  $( "#sortable3" ).sortable({
+    revert: true
+  });
+  $( "#draggable" ).draggable({
+    connectToSortable: "#sortable2",
+    helper: "clone",
+    revert: "invalid"
+  });
+  $( "ul, li" ).disableSelection();
+} );
+
+// end of Modal
