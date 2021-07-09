@@ -3832,6 +3832,7 @@ input[type="button"].btn-block {
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 0.3rem;
         outline: 0;
+        font-family: 'Source Sans Pro', sans-serif;
       }
 
       .modal-backdrop {
@@ -8583,9 +8584,63 @@ h1, h2, h3, h4, h5,
   height: 1px;
   border-bottom: 1px dashed #ddd;
   margin: 40px 0; }
+  .dismiss {
+      width: 35px;
+      height: 35px;
+      top: 10px;
+      right: 10px;
+      transition: all .3s;
+      background: #444;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 35px;
+      cursor: pointer;
+  }
 
+  .dismiss:hover,
+  .dismiss:focus {
+      background: #555;
+      color: #fff;
+  }
 .wrapper {
   width: 100%; }
+/** (active) New Dispatch Button **/
+#sidebar.active ul.components li .button{
+  border-radius: 18px;
+  background: var(--unnamed-color-0c93bc) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-0c93bc);
+  background: #44B4CD 0% 0% no-repeat padding-box;
+  border: 1px solid #0C93BC;
+  margin: 0;
+  width: 40px;
+  max-height: 40px;
+  background-image: url("../images/plus-icon.png");
+  background-size: cover;
+
+}
+/** (active) New Dispatch Button **/
+#sidebar.active ul.components li a.newDispatch{
+  color: transparent;
+  border-bottom: 0;
+
+}
+/** (Not Active)New Dispatch Button **/
+#sidebar ul.components li .button{
+  border-radius: 18px;
+  background: var(--unnamed-color-0c93bc) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-0c93bc);
+  background: #44B4CD 0% 0% no-repeat padding-box;
+  border: 1px solid #0C93BC;
+  margin-left: 20px;
+  padding: 0;
+  max-height: 40px;
+}
+#sidebar ul.components li a.newDispatch{
+  text-align: center;
+  margin-top: -4.5px;
+  border-bottom: 0;
+}
+
 
 #sidebar {
   min-width: 270px;
@@ -8600,7 +8655,9 @@ h1, h2, h3, h4, h5,
     max-width: 80px;
     text-align: center; }
     #sidebar.active ul.components li {
-      font-size: 13px;}
+      font-size: 13px;
+      padding-left: 8px;
+      padding-right: 5px;}
       #sidebar.active ul.components li span.CloudDISPATCH {
         font-size: .7rem;}
       #sidebar.active ul.components li a {
@@ -8636,7 +8693,7 @@ h1, h2, h3, h4, h5,
         -webkit-transition: none;
         -o-transition: none;
         transition: none; } }
-  #sidebar ul li {
+          #sidebar ul li {
     font-size: 16px; }
     #sidebar ul li > ul {
       margin-left: 10px; }
