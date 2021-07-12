@@ -8607,21 +8607,21 @@ h1, h2, h3, h4, h5,
 /** (active) New Dispatch Button **/
 #sidebar.active ul.components li .button{
   border-radius: 18px;
-  background: var(--unnamed-color-0c93bc) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--unnamed-color-0c93bc);
   background: #44B4CD 0% 0% no-repeat padding-box;
-  border: 1px solid #0C93BC;
   margin: 0;
   width: 40px;
   max-height: 40px;
   background-image: url("../images/plus-icon.png");
   background-size: cover;
+  margin-left: 10px;
+  background-color: 0;
 
 }
 /** (active) New Dispatch Button **/
 #sidebar.active ul.components li a.newDispatch{
   color: transparent;
   border-bottom: 0;
+
 
 }
 /** (Not Active)New Dispatch Button **/
@@ -8634,13 +8634,19 @@ h1, h2, h3, h4, h5,
   margin-left: 20px;
   padding: 0;
   max-height: 40px;
+  width: 60%;
 }
 #sidebar ul.components li a.newDispatch{
   text-align: center;
   margin-top: -4.5px;
   border-bottom: 0;
+  max-height: 40px;
 }
 
+#sidebar ul.components li .button .new-Dispatch a.newDispatch{
+  font-size: 13px;
+  margin-top: 0;
+}
 
 #sidebar {
   min-width: 270px;
