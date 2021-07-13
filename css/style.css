@@ -8605,21 +8605,6 @@ h1, h2, h3, h4, h5,
 .wrapper {
   width: 100%; }
 /** (active) New Dispatch Button **/
-/** #sidebar.active ul.components li .button button.newDispatch{
-  border-radius: 18px;
-  background: #44B4CD 0% 0% no-repeat padding-box;
-  margin: 0;
-  width: 40px;
-  max-height: 40px;
-  background-image: url("../images/plus-icon.png");
-  background-size: cover;
-  margin-left: 10px;
-  background-color: 0;
-
-} **/
-
-
-/** (active) New Dispatch Button **/
 #sidebar.active ul.components li .button button.newDispatch{
   border-radius: 12px;
   background: #44B4CD 0% 0% no-repeat padding-box;
@@ -8631,19 +8616,10 @@ h1, h2, h3, h4, h5,
   margin-left: 10px;
   color: transparent;
 }
+#sidebar.active ul.components li .button button.caretDown{
+  display: none;
+}
 /** (Not Active)New Dispatch Button **/
-/**#sidebar ul.components li .button{
-  border-radius: 18px;
-  background: var(--unnamed-color-0c93bc) 0% 0% no-repeat padding-box;
-  border: 1px solid var(--unnamed-color-0c93bc);
-  background: #44B4CD 0% 0% no-repeat padding-box;
-  border: 1px solid #0C93BC;
-  margin-left: 20px;
-  padding: 0;
-  max-height: 40px;
-  width: 60%;
-} **/
-
 #sidebar ul.components li .button button.newDispatch{
   background-color: #0C93BC;
   border: 0;
@@ -8655,7 +8631,16 @@ h1, h2, h3, h4, h5,
   color: #fff;
   height: 40px !important;
 }
-
+#sidebar ul.components li .button button.caretDown{
+  height: 41px;
+  border: 1px solid var(--unnamed-color-0c93bc);
+  border: 1px solid #0C93BC;
+  border-radius: 20px;
+  opacity: 1;
+  background-color: transparent;
+  color: #fff;
+  width: 15%;
+}
 #sidebar {
   min-width: 270px;
   max-width: 270px;
