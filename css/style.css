@@ -2621,7 +2621,8 @@ input[type="button"].btn-block {
   right: auto;
   left: 100%;
   margin-top: 0;
-  margin-left: 0.125rem; }
+  margin-left: 2rem;
+  background-color: #44B4CD;}
 
 .dropright .dropdown-toggle::after {
   display: inline-block;
@@ -8606,7 +8607,7 @@ h1, h2, h3, h4, h5,
   width: 100%; }
 /** (active) New Dispatch Button **/
 #sidebar.active ul.components li .button button.newDispatch{
-  border-radius: 12px;
+  border-radius: 20px;
   background: #44B4CD 0% 0% no-repeat padding-box;
   margin-left: -5px !important;
   width: 40px;
@@ -8624,6 +8625,21 @@ h1, h2, h3, h4, h5,
   margin-top: 15px;
   background-color: #78B142;
 }
+#sidebar.active ul.components li .button .dropdown-menu a.newDispatch-dropright{
+  color: #fff;
+  border: 0;
+  margin-left: 5px;
+  margin-top: -7px;
+  padding: 5px;
+}
+#sidebar.active ul.components li .button .dropdown-menu a:hover{
+  background-color: #fff;
+  color: black;
+  border-radius: 4px;
+  opacity: .5;
+}
+
+
 /** (Not Active)New Dispatch Button **/
 #sidebar ul.components li .button button.newDispatch{
   background-color: #0C93BC;
