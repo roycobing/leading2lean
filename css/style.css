@@ -8608,7 +8608,7 @@ h1, h2, h3, h4, h5,
 #sidebar.active ul.components li .button button.newDispatch{
   border-radius: 12px;
   background: #44B4CD 0% 0% no-repeat padding-box;
-  margin: 0;
+  margin-left: -5px !important;
   width: 40px;
   max-height: 40px;
   background-image: url("../images/plus-icon.png");
@@ -8618,6 +8618,11 @@ h1, h2, h3, h4, h5,
 }
 #sidebar.active ul.components li .button button.caretDown{
   display: none;
+}
+
+#sidebar.active ul.components li.active{
+  margin-top: 15px;
+  background-color: #78B142;
 }
 /** (Not Active)New Dispatch Button **/
 #sidebar ul.components li .button button.newDispatch{
@@ -8640,6 +8645,10 @@ h1, h2, h3, h4, h5,
   background-color: transparent;
   color: #fff;
   width: 15%;
+}
+#sidebar ul.components li.active{
+  margin-top: 15px;
+  background-color: #78B142;
 }
 #sidebar {
   min-width: 270px;
