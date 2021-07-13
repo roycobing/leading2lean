@@ -8605,7 +8605,7 @@ h1, h2, h3, h4, h5,
 .wrapper {
   width: 100%; }
 /** (active) New Dispatch Button **/
-#sidebar.active ul.components li .button{
+/** #sidebar.active ul.components li .button button.newDispatch{
   border-radius: 18px;
   background: #44B4CD 0% 0% no-repeat padding-box;
   margin: 0;
@@ -8616,16 +8616,23 @@ h1, h2, h3, h4, h5,
   margin-left: 10px;
   background-color: 0;
 
-}
+} **/
+
+
 /** (active) New Dispatch Button **/
-#sidebar.active ul.components li a.newDispatch{
+#sidebar.active ul.components li .button button.newDispatch{
+  border-radius: 12px;
+  background: #44B4CD 0% 0% no-repeat padding-box;
+  margin: 0;
+  width: 40px;
+  max-height: 40px;
+  background-image: url("../images/plus-icon.png");
+  background-size: cover;
+  margin-left: 10px;
   color: transparent;
-  border-bottom: 0;
-
-
 }
 /** (Not Active)New Dispatch Button **/
-#sidebar ul.components li .button{
+/**#sidebar ul.components li .button{
   border-radius: 18px;
   background: var(--unnamed-color-0c93bc) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-0c93bc);
@@ -8635,17 +8642,18 @@ h1, h2, h3, h4, h5,
   padding: 0;
   max-height: 40px;
   width: 60%;
-}
-#sidebar ul.components li a.newDispatch{
-  text-align: center;
-  margin-top: -4.5px;
-  border-bottom: 0;
-  max-height: 40px;
-}
+} **/
 
-#sidebar ul.components li .button .new-Dispatch a.newDispatch{
-  font-size: 13px;
-  margin-top: -2px;
+#sidebar ul.components li .button button.newDispatch{
+  background-color: #0C93BC;
+  border: 0;
+  border-radius: 20px;
+  width: 60%;
+  font-size: 1rem;
+  margin-top: -20px;
+  margin-left: 20px;
+  color: #fff;
+  height: 40px !important;
 }
 
 #sidebar {
