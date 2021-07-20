@@ -54,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     font-size: 1rem;
     line-height: 1.8;
     font-weight: normal;
-    background: #fafafa;
+    background-color: #FFFFFF;
     color: gray; }
 
 [tabindex="-1"]:focus {
@@ -8654,7 +8654,7 @@ h1, h2, h3, h4, h5,
   border: 0;
   border-radius: 20px;
   width: 60%;
-  font-size: 1rem;
+  font-size: .85rem;
   margin-top: -20px;
   margin-left: 20px;
   color: #fff;
@@ -8786,17 +8786,45 @@ a[data-toggle="collapse"] {
 
 /** Body Content**/
 .bodyContent{
-  padding: 20px;
   background-color: #F5F5F5;
+  padding-bottom: 20px;
+}
+.dispatches-head, .dispatch-screens{
+  margin-left: 15px;
+  color: #0D324D;
 }
 .dispatch-column{
-  max-height: 480px;
-}
+  border-right: 1px solid;
+  border-color: #C4CBCA;
 
+}
 /** Dispatch Collapse**/
 a.dispatch-toggler{
   background-color: transparent;
   border: 0;
+}
+/** Dispatch Collapse Media Query**/
+@media only screen and (max-width: 993.5px) {
+  .dispatch-screens {
+    background-color: #F5F5F5;
+    color: #0D324D;
+    height: 50px;
+    padding-top: 10px;
+    margin-left: 0px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #C4CBCA;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .bodyContent {
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .dispatch-toggler {
+    margin-left: 15px;
+  }
 }
 @media only screen and (min-width: 993.5px)
 {
