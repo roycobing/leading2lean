@@ -8798,6 +8798,11 @@ button.dispatch-toggler {
 display: none;
 }
 }
+@media only screen and (min-width: 993.5px) {
+	.collapse:not(.show) {
+    		display: block !important;
+	}
+}
 .area{
   color: #0D324D;
   padding-left: 25px;
