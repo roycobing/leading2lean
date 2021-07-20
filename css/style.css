@@ -8793,14 +8793,14 @@ a[data-toggle="collapse"] {
   max-height: 480px;
 }
 
-/** Dispatch Toggler**/
-button.dispatch-toggler{
+/** Dispatch Collapse**/
+a.dispatch-toggler{
   background-color: transparent;
   border: 0;
 }
 @media only screen and (min-width: 993.5px)
 {
-button.dispatch-toggler {
+a.dispatch-toggler {
 display: none;
 }
 }
