@@ -12394,6 +12394,8 @@ display: inline-block;
   font-size: 1rem;
   margin-left: 15px;
 }
+
+/** Dispatches List **/
 .code-Red{
   background-color: #A40F4C;
   color: #fff;
@@ -12407,6 +12409,49 @@ display: inline-block;
   text-align: center;
   font-size: .9rem;
 }
+.leader-std-work{
+  background-color: #44B4CD;
+  color: #0D324D;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .7rem;
+  opacity: 70%;
+}
+.packaging{
+  background-color: #AAD6A0;
+  color: #0D324D;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+  opacity: 70%;
+}
+.work-order{
+  background-color: #0D324D;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+  opacity: 70%;
+}
+
 .work-in-progress{
   background-color: #82b89f;
   color: #fff;
@@ -12440,6 +12485,7 @@ display: inline-block;
 a.text-decoration-underline{
   color: #0C93BC !important;
 }
+
 .weeklyprocess-list {
   min-height: 200px;
   max-height: 200px;
@@ -12458,7 +12504,49 @@ a.text-decoration-underline{
   border-radius: 2px;
   opacity: 1;
   border-left: 10px solid;
-  border-color: #A40F4C;
+  border-color: #A40F4C; #0C93BC
+  height: 60px;
+}
+.weekly-leader{
+  color: #0D324D;
+  padding-left: 25px;
+  margin: 10px;
+  min-width: 90%;
+  max-width: 90%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #0C93BC;
+  height: 60px;
+}
+.weekly-packaging{
+  color: #0D324D;
+  padding-left: 25px;
+  margin: 10px;
+  min-width: 90%;
+  max-width: 90%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #AAD6A0;
+  height: 60px;
+}
+.weekly-workorder{
+  color: #0D324D;
+  padding-left: 25px;
+  margin: 10px;
+  min-width: 90%;
+  max-width: 90%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #0D324D;
   height: 60px;
 }
 
