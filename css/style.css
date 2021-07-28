@@ -12412,16 +12412,14 @@ display: inline-block;
 .leader-std-work{
   background-color: #44B4CD;
   color: #0D324D;
-  padding: 5px;
+  padding: 3px;
   border-radius: 50px;
   margin-left: 10px;
   width: 100px !important;
   height: 23px;
-  line-height: .9rem;
   display: inline-block;
   text-align: center;
-  font-size: .7rem;
-  opacity: 70%;
+  font-size: .75rem;
 }
 .packaging{
   background-color: #AAD6A0;
@@ -12435,7 +12433,6 @@ display: inline-block;
   display: inline-block;
   text-align: center;
   font-size: .9rem;
-  opacity: 70%;
 }
 .work-order{
   background-color: #0D324D;
@@ -12449,7 +12446,6 @@ display: inline-block;
   display: inline-block;
   text-align: center;
   font-size: .9rem;
-  opacity: 70%;
 }
 
 .work-in-progress{
