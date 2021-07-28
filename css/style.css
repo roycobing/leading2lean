@@ -11966,6 +11966,27 @@ h1, h2, h3, h4, h5,
 }
 
 /** (active) New Dispatch Button **/
+#sidebar.active ul.components li .image-wrap {
+  padding: 0;
+}
+#sidebar.active ul.components li .username {
+  border-radius: 20px;
+  background: #fff 0% 0% no-repeat padding-box;
+  margin-left: -5px !important;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/username-icon.png");
+  background-size: cover;
+  margin-left: 10px !important;
+  color: transparent;
+  margin-bottom: 10px;
+}
+#sidebar.active ul.components li .username-email{
+  display: none;
+}
+#sidebar.active ul.components li .logo{
+  display: none;
+}
 #sidebar.active ul.components li .button button.newDispatch {
   border-radius: 20px;
   background: #44B4CD 0% 0% no-repeat padding-box;
@@ -12002,6 +12023,40 @@ h1, h2, h3, h4, h5,
 }
 
 /** (Not Active)New Dispatch Button **/
+#sidebar ul.components li .image-wrap {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#sidebar ul.components li .logo {
+  border-radius: 40px;
+  background: #fff 0% 0% no-repeat padding-box;
+  height: 55px;
+  background-image: url("../images/username-icon.png");
+  background-size: cover;
+  margin-left: 15px;
+  position: absolute;
+}
+#sidebar ul.components li .username {
+  margin-left: 82px;
+}
+#sidebar ul.components li .username-email{
+  margin-left: 82px;
+  font-size: 12px;
+}
+#sidebar ul.components li .username .username-email{
+  font-size: 12px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+#sidebar ul.components li .username .username-Sam {
+  border: 0;
+  width: 60%;
+  font-size: .85rem;
+  margin-top: -20px;
+  margin-left: 20px;
+  color: #fff;
+  height: 40px !important;
+}
 #sidebar ul.components li .button button.newDispatch {
   background-color: #0C93BC;
   border: 0;
@@ -12288,6 +12343,7 @@ display: inline-block;
   }
 [aria-controls="areaList"].collapsed:after {
   transform: rotate(0deg) ;
+
 }
 
 [aria-controls="dispatches"]:after {
