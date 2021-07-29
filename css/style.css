@@ -12317,7 +12317,12 @@ a.dispatch-toggler {
 }
 
 @media only screen and (min-width: 993.5px) {
-  .collapse:not(.show) {
+  .area-list.collapse:not(.show) {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  #dispatches.collapse:not(.show) {
     display: block !important;
   }
 }
@@ -12482,6 +12487,7 @@ button.dispatch-me{
 }
 .area {
   color: #0D324D;
+  height: 29px;
   padding-left: 25px;
   margin: 10px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -12502,7 +12508,7 @@ button.dispatch-me{
   color: #fff;
   float: right;
   width: 30px !important;
-  height: 28.7px;
+  height: 29px;
   background: #0C93BC;
   padding: 8px;
 }
