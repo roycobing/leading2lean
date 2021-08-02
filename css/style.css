@@ -12733,6 +12733,8 @@ span.trainer{
 }
 .progress-bar-indicators{
   text-align: center;
+  border-bottom: 1px solid #C4CBCA;
+  padding: 20px;
 }
 .down{
   display: inline-block;
@@ -12766,8 +12768,7 @@ span.trainer{
   margin-left: 10px;
 }
 #progress-list{
-  border-bottom: 1px solid #C4CBCA;
-  padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 /** End of Skills Column **/
 ::-webkit-scrollbar {
