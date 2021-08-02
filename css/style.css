@@ -4674,13 +4674,6 @@ input[type="button"].btn-block {
   position: static;
   float: none;
 }
-
-@media only screen and (min-width: 993.5px) {
-  .navbar-nav {
-    float: right !important;
-  }
-}
-
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
@@ -6287,7 +6280,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 2.5rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -12261,7 +12254,7 @@ a[data-toggle="collapse"] {
 }
 
 .dispatches-head, .dispatch-screens {
-  margin-left: 15px;
+  padding-left: 10px;
   color: #0D324D;
 }
 
@@ -12279,7 +12272,7 @@ a.dispatch-toggler {
 
 /** Dispatch Collapse Media Query**/
 @media only screen and (max-width: 993.5px) {
-  .dispatch-screens {
+  .dispatch-screens{
     background-color: #F5F5F5;
     color: #0D324D;
     height: 50px;
@@ -12288,6 +12281,27 @@ a.dispatch-toggler {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #C4CBCA;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .skills-column{
+    padding-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .skills-list{
+    width: 97% !important;
+    overflow-y: auto !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .progress:collapse{
+    display: flex !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  span.retrain{
+    display: none !important;
   }
 }
 @media only screen and (max-width: 993.5px) {
@@ -12326,6 +12340,20 @@ a.dispatch-toggler {
     display: block !important;
   }
 }
+
+/** skills-list media query **/
+@media only screen and (min-width: 993.5px) { /**skills-list **/
+  #skills.collapse:not(.show) {
+    display: block !important;
+  }
+}
+@media only screen and (min-width: 993.5px) { /**skills-list **/
+  #progress-list .progress.collapse:not(.show) {
+    display: flex !important;
+  }
+}
+/** end of skills-list media query **/
+
 /** dispatches-list media query **/
 @media only screen and (max-width: 993.5px) {
   .dispatches-list {
@@ -12369,6 +12397,23 @@ a.dispatch-toggler {
   transform: rotate(0deg) ;
 }
 
+[aria-controls="skills"]:after {
+    display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f054";
+    transform: rotate(90deg) ;
+    transition: all linear 0.25s;
+    float: right;
+  }
+[aria-controls="skills"].collapsed:after {
+  transform: rotate(0deg) ;
+}
+/** End of Dispatch Collapse Media Query **/
 
 /** dispatches-list **/
 .dispatches-list{
@@ -12503,6 +12548,7 @@ button.dispatch-me{
   overflow-y: auto;
   transition:  0.15s ease-in-out;
 }
+
 /** Area Star Icon **/
 .fa-star{
   color: #fff;
@@ -12586,7 +12632,144 @@ a.text-decoration-underline{
   height: 60px;
   display: inline-block;
 }
-
+/** Skills Column **/
+.skills-column{
+  padding-right: 25px;
+}
+.skills-list {
+  min-height: 100px;
+  max-height: 100px;
+  width: 100%;
+  overflow-y: auto;
+  transition:  0.15s ease-in-out;
+}
+.skills-title {
+  -webkit-transition:  0.15s ease-in-out;
+}
+.skills-screen{
+  padding-left: 10px;
+  padding-right: 50px;
+  color: #0D324D;
+  width: 100%;
+}
+span.retrain{
+  display: inline-block;
+  padding-right: 35px;
+  float: right;
+}
+.skills-problemsolving{
+  font-weight: bold;
+  color: #0D324D;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 95%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #A40F4C;
+  height: 60px;
+}
+.skills-name{
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 95%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-color: transparent !important;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  height: 60px;
+}
+span.action-needed{
+  font-weight: normal;
+  font-size: .9rem;
+  width: 135px;
+  color: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  float: right;
+  background-color: #A40F4C;
+  text-align: center;
+}
+a.acknowledge{
+  text-decoration: underline;
+  font-weight: normal;
+}
+span.date{
+  float: right;
+  font-weight: normal;
+}
+span.trainer{
+  font-weight: normal;
+}
+.currently-open-dispatches{
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.progress-bar-down{
+  background: #A40F4C 0% 0% no-repeat padding-box;
+  width: 15%;
+}
+.progress-bar-impacting{
+  background: #F9DB6C 0% 0% no-repeat padding-box;
+  width: 30%;
+}
+.progress-bar-plannedwork{
+  background: #0C93BC 0% 0% no-repeat padding-box;
+  width: 20%;
+}
+.progress-bar-noimpact{
+  background: #D5D5D5 0% 0% no-repeat padding-box;
+  width: auto;
+}
+.progress-bar-indicators{
+  text-align: center;
+}
+.down{
+  display: inline-block;
+  margin-left: 10px;
+}
+#down{
+  color: #A40F4C !important;
+}
+.impacting{
+  display: inline-block;
+  margin-left: 10px;
+}
+#impacting{
+  color: #F9DB6C;
+  margin-left: 10px;
+}
+.plannedwork{
+  display: inline-block;
+  margin-left: 10px;
+}
+#plannedwork{
+  color: #0C93BC;
+  margin-left: 10px;
+}
+.noimpact{
+  display: inline-block;
+  margin-left: 10px;
+}
+#noimpact{
+  color: #D5D5D5;
+  margin-left: 10px;
+}
+#progress-list{
+  border-bottom: 1px solid #C4CBCA;
+  padding-bottom: 20px;
+}
+/** End of Skills Column **/
 ::-webkit-scrollbar {
   width: 10px;
 }
