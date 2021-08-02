@@ -12295,6 +12295,12 @@ a.dispatch-toggler {
   }
 }
 @media only screen and (max-width: 993.5px) {
+ .progress.collapse{
+    margin-left: 20px !important;
+    width: 90% !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
   span.retrain{
     display: none !important;
   }
@@ -12318,6 +12324,7 @@ a.dispatch-toggler {
     margin-left: 15px;
   }
 }
+
 
 @media only screen and (min-width: 993.5px) {
   a.dispatch-toggler {
