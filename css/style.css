@@ -12295,11 +12295,6 @@ a.dispatch-toggler {
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .progress:collapse{
-    display: flex !important;
-  }
-}
-@media only screen and (max-width: 993.5px) {
   span.retrain{
     display: none !important;
   }
@@ -12766,9 +12761,6 @@ span.trainer{
 #noimpact{
   color: #D5D5D5;
   margin-left: 10px;
-}
-#progress-list{
-    padding-bottom: 20px;
 }
 /** End of Skills Column **/
 ::-webkit-scrollbar {
