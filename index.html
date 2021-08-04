@@ -1,15 +1,15 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
-  <title>Leading2Lean</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
   <!-- Modal -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -17,12 +17,18 @@
 
   <!-- Font Awesome Icon -->
   <script src="https://kit.fontawesome.com/de25256445.js" crossorigin="anonymous"></script>
+
+  <title>leading2lean</title>
 </head>
 
 <body>
   <div class="wrapper d-flex align-items-stretch">
+    <!-- SideNavbar -->
     <nav id="sidebar" class="active">
-      <h1><a href="index.html" class="logo">L2L</a></h1>
+      <h1><a href="index.html" class="logo"><button type="button" id="sidebarCollapse" class="btn btn-primary">
+        <i class="fa fa-home"></i>
+        <span class="sr-only">Toggle Menu</span>
+      </button></a></h1>
       <ul class="list-unstyled components mb-5">
         <li>
           <div class="image-wrap">
@@ -30,11 +36,15 @@
             <div class="username">Sam Carlson</div>
             <div class="username-email">sam@email.com</div>
           </div>
-
         </li>
         <li>
           <div class="button dropright">
-            <button type="button" class="newDispatch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus"></i> New Dispatch</button>
+            <button type="button" class="newDispatch" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa-plus"></i>New Dispatch
+            </button>
+            <a class="newDispatch-dropright text-truncate" href="#">
+              New Dispatch
+            </a>
             <div class="dropdown-menu">
               <!-- Dropdown menu links -->
               <a class="newDispatch-dropright" href="#">
@@ -47,16 +57,18 @@
                 New Kaizen
               </a>
             </div>
-            <button type="button" class="caretDown" href="#"><i class="fas fa-caret-down"></i></button>
+
           </div>
         </li>
         <li class="active">
-          <a class="home" href="#"><i class="fa fa-home"></i>
-            Home</a>
+          <a class="home" href="#">
+            <i class="fa fa-home"></i>
+            Home
+          </a>
         </li>
         <li>
           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-            <span class="material-icon fas fa-cloud"></span>
+            <span class="fas fa-cloud"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
             <i class="fas fa-angle-down"></i>
           </a>
@@ -85,7 +97,7 @@
           <a href="#" class="text-truncate"><span class="fas fa-tachometer-alt"></span> Dashboard</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-graduation-cap"></i>Skills</a>
+          <a href="#" class="text-truncate"><i class="fa fa-graduation-cap"></i>Skills</a>
         </li>
         <li>
           <a href="#" class="text-truncate"><i class="fas fa-chart-bar"></i>
@@ -96,15 +108,14 @@
             Reports</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-question-circle"></i></i>
+          <a href="#" class="text-truncate"><i class="far fa-question-circle"></i></i>
             Support</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-cog"></i>
+          <a href="#" class="text-truncate"><span class="fas fa-cog" id="fa-cog"></span>
             Setup</a>
         </li>
       </ul>
-
       <div class="footer">
         <p>
           Copyright &copy;<script>
@@ -113,30 +124,29 @@
         </p>
       </div>
     </nav>
+    <!-- End of SideNavbar -->
 
     <!-- Page Content  -->
     <div id="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-home"></i>
-            <span class="sr-only">Toggle Menu</span>
-          </button>
-          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-              <form class="d-flex me-0 my-2">
-                <div class="input-group">
-                  <input class="form-control me-2" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                  <button class="btn btn-secondary " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-              </form>
-              <div class="settingButton">
-                <button type="button" class="setButton" href="#!" data-bs-toggle="modal" data-bs-target="#settingModal"><i class="fa fa-cog fa-2x"></i></button>
-              </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
             </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="settingButton">
+              <button type="button" class="setButton" href="#!" data-bs-toggle="modal" data-bs-target="#settingModal"><span class="fa fa-cog fa-2x"></spam></button>
+            </div>
           </div>
         </div>
       </nav>
@@ -172,7 +182,7 @@
                       <div class="row">
                         <div class="col-md-4">
                           <div class="PageGroup">
-                            <h3>PAGE GROUPS</h3>
+                            <h3>Page Groups</h3>
                           </div>
                         </div>
                         <div class="PageGroup col-md-4 ms-auto">
@@ -281,190 +291,13 @@
           </div>
         </div>
       </div>
-      <!-- Body Content -->
-      <div class="bodyContent">
-        <!-- Dispatches Row -->
-        <h2 class="dispatches-head mb-4">Dispatches</h2>
-        <div class="row">
-          <div class="dispatch-column col-lg-2">
-            <!-- Dispatches Screens -->
-            <div class=" dispatch-screens">
-              <a class="dispatch-toggler" type="button" data-toggle="collapse" data-target="#areaList" aria-controls="areaList" aria-expanded="false" aria-label="Toggle navigation">
-              </a><span class="dispatch-screens-title">Dispatch Screens</span>
-            </div>
-            <div class="area-list collapse" id="areaList">
-              <div class="area">Area 51<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">All<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 1<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 2<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 3<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 4<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 5<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 6<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">Area 51<span class="fas fa-star" id="star-icon"></span></div>
-              <div class="area">All<span class="fas fa-star" id="star-icon"></span></div>
-            </div>
-          </div>
-          <!-- Dispatches -->
-          <div class="dispatch-column col-lg-5">
-            <div class="dispatch-screens">
-              <a class="dispatch-toggler" type="button" data-toggle="collapse" data-target="#dispatches" aria-controls="dispatches" aria-expanded="false" aria-label="Toggle navigation">
-              </a><span class="dispatches-title">Dispatches</span>
-            </div>
-            <div class="dispatches-list collapse" id="dispatches">
-              <button type="button" class="previousPrevious  position-relative">
-                Previous
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  4,216
-                </span>
-              </button>
-              <button type="button" class="previousCurrent  position-relative">
-                Current
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  18
-                </span>
-              </button>
-              <button type="button" class="previousAssigned  position-relative">
-                Assigned
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                  8
-                </span>
-              </button>
-              <button class="due">DUE</button>
-            </div>
-            <div class="weeklyprocess-list collapse" id="dispatches">
-              <div class="weekly-codered">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="code-Red">Code Red</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-leader">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="leader-std-work">Leader Std Work</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-packaging">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="packaging">Packaging</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-workorder">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="work-order">Work Order</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-codered">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="code-Red">Code Red</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-leader">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="leader-std-work">Leader Std Work</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-packaging">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="packaging">Packaging</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-              <div class="weekly-workorder">Weekly Process Layered Audit...<br />
-                <a href="#" class="text-decoration-underline">3030</a>
-                <div class="work-order">Work Order</div>
-                <div class="work-in-progress">Work In Progress</div>
-              </div>
-              <button class="dispatch-me">Dispatch Me</button>
-            </div>
-          </div>
-          <!-- Skills Column-->
-          <div class="skills-column col-lg-5">
-            <div class=" dispatch-screens">
-              <a class="dispatch-toggler" type="button" data-toggle="collapse" data-target="#skills" aria-controls="skills" aria-expanded="false" aria-label="Toggle navigation">
-              </a><span class="dispatch-screens-title">Skills</span>
-              <span class="retrain">Retrain</span>
-            </div>
-            <div class="skills-list collapse" id="skills">
-              <div class="skills-problemsolving">8d Problem Solving
-                <span class="action-needed">Action Needed</span>
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: Amy Mele</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-              <div class="skills-name">Skill Name Here
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: May Elme</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-              <div class="skills-problemsolving">8d Problem Solving
-                <span class="action-needed">Action Needed</span>
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: Amy Mele</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-              <div class="skills-name">Skill Name Here
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: May Elme</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-              <div class="skills-problemsolving">8d Problem Solving
-                <span class="action-needed">Action Needed</span>
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: Amy Mele</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-              <div class="skills-name">Skill Name Here
-                <div class="acknowledge-title">
-                  <a class="acknowledge" href="#">Acknowledge</a>
-                  <span class="trainer">Trainer: May Elme</span>
-                  <span class="date">19 May, 2021 10:00</span>
-                </div>
-              </div>
-            </div>
-            <div class="currently-open-dispatches collapse" id="skills">
-              Currently Open Dispatches
-            </div>
-            <div id="progress-list">
-              <div class="progress collapse" id="skills">
-                <div class="progress-bar-down" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar-impacting" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar-plannedwork" role="progressbar"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar-noimpact" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress-bar-indicators collapse" id="skills">
-                <span class="fas fa-square" id="down"></span><div class="down">Down</div>
-                <span class="fas fa-square" id="impacting"></span><div class="impacting">Impacting</div>
-                <span class="fas fa-square" id="plannedwork"></span><div class="plannedwork">Planned Work</div>
-                <span class="fas fa-square" id="noimpact"></span><div class="noimpact">No Impact</div>
-              </div>
-            </div>
-            </div><!-- End of Skills Column -->
-          </div>
-          </div>
-        </div>
-      </div>
+      <!-- End of Modal -->
     </div>
   </div>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
   <script src="js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
