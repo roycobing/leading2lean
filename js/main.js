@@ -17,7 +17,6 @@
   });
 
 })(jQuery);
-
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({

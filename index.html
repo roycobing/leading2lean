@@ -16,7 +16,6 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- Font Awesome Icon -->
-  <script src="https://kit.fontawesome.com/de25256445.js" crossorigin="anonymous"></script>
 
   <title>leading2lean</title>
 </head>
@@ -25,10 +24,13 @@
   <div class="wrapper d-flex align-items-stretch">
     <!-- SideNavbar -->
     <nav id="sidebar" class="active">
-      <h1><a href="index.html" class="logo"><button type="button" id="sidebarCollapse" class="btn btn-primary">
-        <i class="fa fa-home"></i>
-        <span class="sr-only">Toggle Menu</span>
-      </button></a></h1>
+      <h1><a href="index.html" class="logo"></a>
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-home"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </h1>
+
       <ul class="list-unstyled components mb-5">
         <li>
           <div class="image-wrap">
@@ -61,58 +63,57 @@
           </div>
         </li>
         <li class="active">
-          <a class="home" href="#">
-            <i class="fa fa-home"></i>
+          <a class="home" href="#"><i class="fa fa-home" id="side-icon"></i>
             Home
           </a>
         </li>
         <li>
           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-            <span class="fas fa-cloud"></span>
+            <span class="fas fa-cloud"  id="side-icon"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
             <i class="fas fa-angle-down"></i>
           </a>
           <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidebar">
             <nav class="sb-sidenav-menu-nested nav">
               <a class="nav-link" href="#">
-                <i class="fas fa-sticky-note"></i> Standard Work/Docs
+                <i class="fas fa-sticky-note" id="side-icon"></i> Standard Work/Docs
               </a>
               <a class="nav-link" href="#">
-                <i class="far fa-calendar"></i> Scheduler
+                <i class="far fa-calendar" id="side-icon"></i> Scheduler
               </a>
               <a class="nav-link" href="#">
-                <i class="fas fa-paste"></i> Work Orders
+                <i class="fas fa-paste" id="side-icon"></i> Work Orders
               </a>
               <a class="nav-link" href="#">
-                <i class="fa fa-wrench"></i> Spares
+                <i class="fa fa-wrench" id="side-icon"></i> Spares
               </a>
             </nav>
           </div>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-book-open"></i>
+          <a href="#" class="home"><i class="fas fa-book-open" id="side-icon"></i>
             Production</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><span class="fas fa-tachometer-alt"></span> Dashboard</a>
+          <a href="#" class="text-truncate"><span class="fas fa-tachometer-alt" id="side-icon"></span> Dashboard</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fa fa-graduation-cap"></i>Skills</a>
+          <a href="#" class="text-truncate"><i class="fa fa-graduation-cap" id="side-icon"></i>Skills</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-chart-bar"></i>
+          <a href="#" class="text-truncate"><i class="fas fa-chart-bar" id="side-icon"></i>
             Lean Tools</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="fas fa-chart-line"></i>
+          <a href="#" class="text-truncate"><i class="fas fa-chart-line" id="side-icon"></i>
             Reports</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><i class="far fa-question-circle"></i></i>
+          <a href="#" class="text-truncate"><i class="far fa-question-circle" id="side-icon"></i>
             Support</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><span class="fas fa-cog" id="fa-cog"></span>
+          <a href="#" class="text-truncate"><span class="fas fa-cog"  id="side-icon"></span>
             Setup</a>
         </li>
       </ul>

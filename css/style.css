@@ -138,11 +138,12 @@ a {
   font-size: .7rem;
 }
 
-#sidebar.active ul.components li .fa-home, .fa-cloud, .fa-book-open, .fa-tachometer-alt,
-.fa-graduation-cap, .fa-chart-bar, .fa-chart-line, .fa-question-circle, #fa-cog {
+
+#sidebar.active ul.components li #side-icon{
   display: block;
   font-size: 30px;
-  margin-left: 15px;
+  text-align: center;
+  margin-left: 18px;
   color: #44B4CD;
 }
 
@@ -165,6 +166,21 @@ a {
   background-size: cover;
   margin-left: 10px;
   color: transparent;
+}
+#sidebar.active ul.components li .username {
+  border-radius: 20px;
+  background: #fff 0% 0% no-repeat padding-box;
+  margin-left: -5px !important;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/username-icon.png");
+  background-size: cover;
+  margin-left: 10px !important;
+  color: transparent;
+  margin-bottom: 10px;
+}
+#sidebar.active ul.components li .username-email{
+  display: none;
 }
 /** end of sidebar Active **/
 
@@ -197,6 +213,39 @@ a {
   color: #B9B7BD;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   letter-spacing: 0px;
+}
+#sidebar ul.components li .button button.newDispatch {
+  background-color: #0C93BC;
+  border: 0;
+  border-radius: 20px;
+  width: 60%;
+  font-size: .85rem;
+  margin-top: -20px;
+  margin-left: 20px;
+  color: #fff;
+  height: 40px !important;
+}
+
+#sidebar ul.components li .username {
+  margin-left: 82px;
+}
+#sidebar ul.components li .username-email{
+  margin-left: 82px;
+  font-size: 12px;
+}
+#sidebar ul.components li .username .username-email{
+  font-size: 12px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+#sidebar ul.components li .username .username-Sam {
+  border: 0;
+  width: 60%;
+  font-size: .85rem;
+  margin-top: -20px;
+  margin-left: 20px;
+  color: #fff;
+  height: 40px !important;
 }
 .footer{
   color: #B9B7BD;
