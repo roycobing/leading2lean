@@ -138,12 +138,11 @@ a {
   font-size: .7rem;
 }
 
-
-#sidebar.active ul.components li #side-icon{
+#sidebar.active ul.components li #side-icon {
   display: block;
   font-size: 30px;
   text-align: center;
-  margin-left: 18px;
+  margin-left: 17px;
   color: #44B4CD;
 }
 
@@ -167,6 +166,7 @@ a {
   margin-left: 10px;
   color: transparent;
 }
+
 #sidebar.active ul.components li .username {
   border-radius: 20px;
   background: #fff 0% 0% no-repeat padding-box;
@@ -179,11 +179,21 @@ a {
   color: transparent;
   margin-bottom: 10px;
 }
-#sidebar.active ul.components li .username-email{
+
+#sidebar.active ul.components li .username-email {
   display: none;
 }
-/** end of sidebar Active **/
 
+#sidebar.active #sidebarCollapse {
+  display: block;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  opacity: 0.4;
+  width: 80px;
+}
+
+/** end of sidebar Active **/
 /** sidebar NOT Active **/
 #sidebar {
   min-width: 270px;
@@ -214,6 +224,7 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   letter-spacing: 0px;
 }
+
 #sidebar ul.components li .button button.newDispatch {
   background-color: #0C93BC;
   border: 0;
@@ -229,15 +240,18 @@ a {
 #sidebar ul.components li .username {
   margin-left: 82px;
 }
-#sidebar ul.components li .username-email{
+
+#sidebar ul.components li .username-email {
   margin-left: 82px;
   font-size: 12px;
 }
-#sidebar ul.components li .username .username-email{
+
+#sidebar ul.components li .username .username-email {
   font-size: 12px;
   margin-top: -20px;
   margin-left: 20px;
 }
+
 #sidebar ul.components li .username .username-Sam {
   border: 0;
   width: 60%;
@@ -247,7 +261,41 @@ a {
   color: #fff;
   height: 40px !important;
 }
-.footer{
+
+#sidebar #sidebarCollapse {
+  display: block;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+  opacity: 0.4;
+  width: 270px;
+}
+
+#sidebar.active button.sidebarCollapse .logo_l2l{
+  background-image: url('../images/logo_l2l.png') !important;
+  padding-left: 20px;
+}
+
+.footer {
   color: #B9B7BD;
 }
 /** end of sidebar NOT Active **/
+.rotate {
+  color: #CFD0D2;
+  -moz-transition: all .25s linear;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+  float: right;
+  padding-left: 10px;
+  font-size: 40px;
+}
+.rotate.right {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.logo-l2l{
+  background-image: url('../images/logo_l2l.png')!important;
+  background-repeat: no-repeat;
+}

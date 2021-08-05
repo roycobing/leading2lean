@@ -17,6 +17,12 @@
   });
 
 })(jQuery);
+
+$(document).ready(function() {
+	$( ".sidebarCollapse" ).click( function() {
+        $(".rotate").toggleClass('right');
+    });
+});
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({

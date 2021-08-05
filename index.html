@@ -16,6 +16,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <!-- Font Awesome Icon -->
+  <script src="https://kit.fontawesome.com/de25256445.js" crossorigin="anonymous"></script>
 
   <title>leading2lean</title>
 </head>
@@ -25,12 +26,10 @@
     <!-- SideNavbar -->
     <nav id="sidebar" class="active">
       <h1><a href="index.html" class="logo"></a>
-        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-          <i class="fa fa-home"></i>
-          <span class="sr-only">Toggle Menu</span>
+        <button type="button" id="sidebarCollapse" aria-controls="sidebarCollapse" class="btn sidebarCollapse">
+        <div class="logo-l2l"></div><a href="#"><div class="fa fa-chevron-right rotate"></div></a>
         </button>
       </h1>
-
       <ul class="list-unstyled components mb-5">
         <li>
           <div class="image-wrap">
