@@ -270,12 +270,6 @@ a {
   opacity: 0.4;
   width: 270px;
 }
-
-#sidebar.active button.sidebarCollapse .logo_l2l{
-  background-image: url('../images/logo_l2l.png') !important;
-  padding-left: 20px;
-}
-
 .footer {
   color: #B9B7BD;
 }
@@ -293,9 +287,4 @@ a {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-
-.logo-l2l{
-  background-image: url('../images/logo_l2l.png')!important;
-  background-repeat: no-repeat;
 }
