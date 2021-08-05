@@ -288,3 +288,9 @@ a {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+@media only screen and (min-width: 993.5px) { /**skills-list **/
+  #sidebar.collapse:not(.show) {
+    display: block !important;
+  }
+}
