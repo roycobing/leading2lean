@@ -294,3 +294,9 @@ a {
     display: block !important;
   }
 }
+#sidebar.collapsing {
+    height: unset;
+    width: 0;
+    min-width: 0;
+    max-width: 0;
+}
