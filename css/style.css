@@ -361,3 +361,9 @@ img.logo-l2l{
   margin-left: 0px;
   display: inline-block;
 }
+.navbar-collapse{
+  display: flex;
+}
+.search-box{
+padding-left: 20px;
+}
