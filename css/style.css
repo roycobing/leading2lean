@@ -193,11 +193,34 @@ a {
   width: 80px;
 }
 
+#sidebar.active .dropend .dropdown-menu {
+  margin-top: 0;
+  margin-left: 19px !important;
+  background-color: #44B4CD;
+}
+#sidebar.active ul.components li .button .dropdown-menu a.newDispatch-dropright {
+  color: #fff;
+  border: 0;
+  padding: 7px;
+}
+#sidebar.active ul.components li .button .dropdown-menu a:hover {
+  background-color: #fff;
+  color: black;
+  border-radius: 4px;
+  opacity: .5;
+}
+#sidebar.active ul.components li .username-wrap{
+  margin: 0 !important;
+  padding-left: 2px;
+}
+#sidebar.active ul.components li .username-icon{
+  display: none;
+}
 /** end of sidebar Active **/
 /** sidebar NOT Active **/
 #sidebar {
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 220px;
+  max-width: 220px;
   background: #0D324D;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -236,13 +259,26 @@ a {
   color: #fff;
   height: 40px !important;
 }
-
+#sidebar ul.components li .username-wrap {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#sidebar ul.components li .username-icon {
+  border-radius: 40px;
+  background: #fff 0% 0% no-repeat padding-box;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/username-icon.png");
+  background-size: cover;
+  margin-left: 15px;
+  position: absolute;
+}
 #sidebar ul.components li .username {
-  margin-left: 82px;
+  margin-left: 58px;
 }
 
 #sidebar ul.components li .username-email {
-  margin-left: 82px;
+  margin-left: 58px;
   font-size: 12px;
 }
 
@@ -268,7 +304,24 @@ a {
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
   opacity: 0.4;
-  width: 270px;
+  width: 220px;
+}
+#sidebar .dropend .dropdown-menu {
+  margin-top: 0;
+  margin-left: 66px !important;
+  background-color: #44B4CD;
+}
+#sidebar ul.components li .button .dropdown-menu a.newDispatch-dropright {
+  color: #fff;
+  border: 0;
+  margin-top: 0px;
+  padding: 7px;
+}
+#sidebar ul.components li .button .dropdown-menu a:hover {
+  background-color: #fff;
+  color: black;
+  border-radius: 4px;
+  opacity: .5;
 }
 .footer {
   color: #B9B7BD;
