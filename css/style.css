@@ -289,7 +289,7 @@ a {
   transform: rotate(180deg);
 }
 
-@media only screen and (min-width: 993.5px) { /**skills-list **/
+@media only screen and (min-width: 993.5px) { /**Sidebar **/
   #sidebar.collapse:not(.show) {
     display: block !important;
   }
