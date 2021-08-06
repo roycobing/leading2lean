@@ -333,13 +333,16 @@ a {
   -webkit-transition: all .25s linear;
   transition: all .25s linear;
   float: right;
-  padding-left: 10px;
-  font-size: 40px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 30px;
 }
 .rotate.right {
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  padding-bottom: 5px;
+  padding-left: 5px;
 }
 
 @media only screen and (min-width: 993.5px) { /**Sidebar **/
@@ -352,4 +355,8 @@ a {
     width: 0;
     min-width: 0;
     max-width: 0;
+}
+img.logo-l2l{
+  margin-left: 0px;
+  display: inline-block;
 }
