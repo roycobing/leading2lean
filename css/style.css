@@ -97,12 +97,13 @@ a {
   max-width: 355px;
   margin-left: 5px;
 }
-
 .setButton {
   display: block;
   background-color: transparent !important;
   border: 0;
   color: #CFD0D2;
+  border-right: 1px solid;
+  padding-right: 10px;
 }
 .setButton_bell {
   display: block;
@@ -110,6 +111,7 @@ a {
   border: 0;
   color: #CFD0D2;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
 /**End of Modal **/
@@ -428,6 +430,7 @@ padding-left: 20px;
   .navbar-main{
     background-color: #0D324D;
     width: 100%;
+    padding-right: 10px;
   }
 }
 @media only screen and (min-width: 993.5px){
