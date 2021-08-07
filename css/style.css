@@ -104,6 +104,13 @@ a {
   border: 0;
   color: #CFD0D2;
 }
+.setButton_bell {
+  display: block;
+  background-color: transparent !important;
+  border: 0;
+  color: #CFD0D2;
+  padding-right: 15px;
+}
 
 /**End of Modal **/
 /** sidebar Active **/
