@@ -195,10 +195,10 @@ a {
 
 #sidebar.active #sidebarCollapse {
   display: block;
+  margin-top: 3.5px;
   background: #000000 0% 0% no-repeat padding-box;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
-  opacity: 0.7 !important;
   width: 80px;
 }
 
@@ -309,10 +309,10 @@ a {
 
 #sidebar #sidebarCollapse {
   display: block;
+  margin-top: 3.5px;
   background: #000000 0% 0% no-repeat padding-box;
   border-top-right-radius: 23px;
   border-bottom-right-radius: 23px;
-  opacity: 0.7;
   width: 220px;
 }
 #sidebar .dropend .dropdown-menu {
@@ -404,7 +404,7 @@ padding-left: 20px;
 @media only screen and (max-width: 993.5px) { /**Navbar Small Screen **/
   button.navbar-toggler{
     padding-top: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
     background-color: transparent;
     border: 0 !important;
   }
@@ -418,7 +418,7 @@ padding-left: 20px;
     background-size: cover;
     background-color: #000;
     width: 100%;
-    border-radius: 0 20px 20px 0;
+    /** border-radius: 0 20px 20px 0; **/
   }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Icon **/
@@ -430,7 +430,7 @@ padding-left: 20px;
   .navbar-main{
     background-color: #0D324D;
     width: 100%;
-    padding-right: 10px;
+    /** padding-right: 10px; */
   }
 }
 @media only screen and (min-width: 993.5px){
