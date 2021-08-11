@@ -227,7 +227,7 @@ a {
 /** sidebar NOT Active **/
 #sidebar {
   min-width: 220px;
-  max-width: 2200px;
+  max-width: 220px;
   background: #0D324D;
   color: #fff;
   -webkit-transition: all 0.3s;
@@ -434,11 +434,6 @@ padding-left: 20px;
 @media only screen and (min-width: 993.5px){
   .navbar-expand-lg .navbar-nav .nav-link{
     padding-left: 0 !important;
-  }
-}
-@media only screen and (max-width: 993.5px) { /**Navbar Bar Active **/
-  #sidebar.active{
-    min-width: 80px !important;
   }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
