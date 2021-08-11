@@ -196,8 +196,7 @@ a {
   display: block;
   margin-top: 3.5px;
   background: #000000 0% 0% no-repeat padding-box;
-  border-top-right-radius: 23px;
-  border-bottom-right-radius: 23px;
+  border-radius: 0 23px 23px 0;
   width: 80px;
 }
 
@@ -309,8 +308,7 @@ a {
   display: block;
   margin-top: 3.5px;
   background: #000000 0% 0% no-repeat padding-box;
-  border-top-right-radius: 23px;
-  border-bottom-right-radius: 23px;
+  border-radius: 0 23px 23px 0;
   width: 217px;
 }
 #sidebar .dropend .dropdown-menu {
@@ -478,14 +476,15 @@ padding-left: 20px;
     margin-left: 30px;
   }
 }
-@media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Active **/
   #sidebar.active .nav a{
-    margin-left: 0;
+    margin-left: 5px;
   }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
   #sidebar #sidebarCollapse{
     width: 100%;
+    height: 47px;
   }
 }
 @media only screen and (max-width: 993.5px) { /**container-fluid **/
