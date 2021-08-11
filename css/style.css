@@ -183,7 +183,7 @@ a {
   height: 40px;
   background-image: url("../images/username-icon.png");
   background-size: cover;
-  margin-left: 10px !important;
+  margin-left: 9px !important;
   color: transparent;
   margin-bottom: 10px;
 }
@@ -354,11 +354,6 @@ a {
   font-size: 30px;
 }
 
-@media only screen and (min-width: 993.5px) { /**Sidebar **/
-  #sidebar.collapse:not(.show) {
-    display: block !important;
-  }
-}
 #sidebar.collapsing {
     height: unset;
     width: 0;
@@ -377,6 +372,12 @@ padding-left: 20px;
 }
 .navbar-nav .nav-link{
   padding-left: 15px !important;
+}
+
+@media only screen and (min-width: 993.5px) { /**Sidebar **/
+  #sidebar.collapse:not(.show) {
+    display: block !important;
+  }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Small Screen **/
   nav.navbar{
@@ -439,6 +440,39 @@ padding-left: 20px;
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
   #sidebar{
     min-width: 100%;
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Active **/
+  #sidebar.active ul li{
+    margin-left: 0px !important;
+    padding-left: 8px !important;
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
+  #sidebar ul li{
+    padding-left: 50px !important;
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Active **/
+  #sidebar.active ul li a{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
+  #sidebar ul li a{
+    border-bottom: 0;
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
+  #sidebar .dropend .dropdown-menu{
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
+  .nav{
+    text-align: left !important;
+    padding-left: 30px !important;
   }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
