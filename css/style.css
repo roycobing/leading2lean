@@ -385,7 +385,59 @@ padding-left: 20px;
 .navbar-nav .nav-link{
   padding-left: 15px !important;
 }
-
+/** Dispatches Column**/
+.dispatch-column {
+  border-right: 1px solid;
+  border-color: #C4CBCA;
+  min-height: 275px;
+  max-height: 275px;
+  -webkit-transition:  0.15s ease-in-out;
+}
+.area-list {
+  min-height: 200px;
+  max-height: 200px;
+  width: auto;
+  overflow-y: auto;
+  transition:  0.15s ease-in-out;
+}
+@media only screen and (min-width: 993.5px) {
+  .area-list.collapse:not(.show) {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .dispatch-screens{
+    background-color: #F5F5F5;
+    color: #0D324D;
+    height: 50px;
+    padding-top: 10px;
+    margin-left: 0px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #C4CBCA;
+  }
+}
+.area {
+  color: #0D324D;
+  min-height: 30px;
+  min-height: 30px;
+  padding-left: 25px;
+  margin: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+}
+.fa-star{
+  color: #fff;
+  float: right;
+  width: 30px !important;
+  min-height: 30px;
+  min-height: 30px;
+  background: #0C93BC;
+  padding: 8px;
+}
+/**End of Dispatches Column**/
 @media only screen and (min-width: 993.5px) { /**Sidebar **/
   #sidebar.collapse:not(.show) {
     display: block !important;
