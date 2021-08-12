@@ -27,9 +27,11 @@
     <nav id="sidebar" class="collapse active">
       <h1><a href="index.html" class="logo"></a>
         <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
-        <img class ="logo-l2l" img src="images/logo_l2l.png"/>
-        <a href="#"><div class="fa fa-chevron-right rotate"></div></a>
-        <span class="sr-only">Toggle Menu</span>
+          <img class="logo-l2l" img src="images/logo_l2l.png" />
+          <a href="#">
+            <div class="fa fa-chevron-right rotate"></div>
+          </a>
+          <span class="sr-only">Toggle Menu</span>
         </button>
       </h1>
       <ul class="list-unstyled components mb-5">
@@ -67,7 +69,7 @@
         </li>
         <li>
           <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-            <span class="fas fa-cloud"  id="side-icon"></span>
+            <span class="fas fa-cloud" id="side-icon"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
             <i class="fas fa-angle-down"></i>
           </a>
@@ -111,7 +113,7 @@
             Support</a>
         </li>
         <li>
-          <a href="#" class="text-truncate"><span class="fas fa-cog"  id="side-icon"></span>
+          <a href="#" class="text-truncate"><span class="fas fa-cog" id="side-icon"></span>
             Setup</a>
         </li>
       </ul>
@@ -131,7 +133,7 @@
         <div class="container-fluid">
           <div class="navbar-main">
             <div class="navbar-menu">
-              <span class="logo_l2l"><img class ="logo_l2l" img src="images/logo_l2l.png"/></span>
+              <span class="logo_l2l"><img class="logo_l2l" img src="images/logo_l2l.png" /></span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
               </button>
@@ -140,7 +142,7 @@
           <div class="navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><img class ="home-logo" img src="images/icon_home_header.png"/><span class="home">Home</span></a>
+                <a class="nav-link" aria-current="page" href="#"><img class="home-logo" img src="images/icon_home_header.png" /><span class="home">Home</span></a>
               </li>
             </ul>
             <form class="search-box d-flex">
@@ -306,8 +308,10 @@
           <div class="dispatch-column col-lg-2">
             <!-- Dispatches Screens -->
             <div class=" dispatch-screens">
-              <a class="dispatch-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#areaList" aria-expanded="false" aria-controls="areaList">
-              </a><span class="dispatch-screens-title">Dispatch Screens</span>
+              <button class="dispatch-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#areaList" aria-expanded="false" aria-controls="areaList">
+                <div class="fa fa-chevron-right rotate"></div>
+              </button>
+              <span class="dispatch-screens-title">Dispatch Screens</span>
             </div>
             <div class="area-list collapse" id="areaList">
               <div class="area">All<span class="fas fa-star"></span></div>

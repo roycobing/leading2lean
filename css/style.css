@@ -405,6 +405,11 @@ padding-left: 20px;
     display: block !important;
   }
 }
+@media only screen and (min-width: 993.5px) {
+  button.dispatch-toggler {
+    display: none;
+  }
+}
 @media only screen and (max-width: 993.5px) {
   .dispatch-screens{
     background-color: #F5F5F5;
