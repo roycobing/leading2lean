@@ -17,10 +17,16 @@
   });
 
 })(jQuery);
-
+/** SideNavbar Arrow **/
 $(document).ready(function() {
 	$( ".sidebarCollapse" ).click( function() {
         $(".rotate").toggleClass('right');
+    });
+});
+/** Dispatch Arrow **/
+$(document).ready(function() {
+	$( ".dispatch-toggler" ).click( function() {
+        $(".dispatch-rotate").toggleClass('down');
     });
 });
 /** Modal **/
