@@ -470,6 +470,9 @@ padding-left: 20px;
     padding: 0;
   }
 }
+img.image-dispatch{
+  width: 100%;
+}
 @media only screen and (max-width: 993.5px) { /**Sidebar **/
   img.image-dispatch {
     display: none !important;
