@@ -390,6 +390,8 @@ padding-left: 20px;
 /** Dispatches Column**/
 #dispatches_main{
   padding-left: 15px;
+  background-color: #F5F5F5;
+  padding-bottom: 25px;
 }
 @media only screen and (max-width: 993.5px) { /**Sidebar **/
   #dispatches_main {
