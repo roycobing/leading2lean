@@ -29,6 +29,11 @@ $(document).ready(function() {
         $(".dispatch-rotate").toggleClass('down');
     });
 });
+$(document).ready(function() {
+	$( ".dispatch-toggler-dispatches" ).click( function() {
+        $(".dispatch-rotate-dispatches").toggleClass('down');
+    });
+});
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({
