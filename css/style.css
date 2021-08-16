@@ -555,6 +555,219 @@ img.image-dispatch{
     padding: .175rem .45rem !important;
   }
 }
+button.due{
+  float: right;
+  padding: 2px 10px;
+  border-radius: 15px;
+  border-color: #25232B;
+  border: 1px solid;
+  color: #0D324D;
+  font-size: .8rem;
+}
+.dispatches-notif{
+  width: 80%;
+}
+@media only screen and (max-width: 993.5px) {
+  h2.dispatches-head {
+    padding-left: 25px !important;
+    background-color: 0 !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  #dispatches_main {
+    background-color: 0 !important;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  .dispatches-notif{
+    width: 80%;
+  }
+}
+.weeklyprocess-list {
+  margin-top: 20px;
+  min-height: 420px;
+  max-height: 420px;
+  overflow-y: auto;
+  transition:  0.15s ease-in-out;
+}
+@media only screen and (max-width: 993.5px) {
+  .weeklyprocess-list{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  .weeklyprocess-list{
+    display: block !important;
+    width: 100%;
+  }
+}
+.weekly-codered{
+  color: #0D324D;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  min-width: 80%;
+  max-width: 80%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #A40F4C;
+  height: 60px;
+  display: inline-block;
+}
+.weekly-leader{
+  color: #0D324D;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  min-width: 80%;
+  max-width: 80%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #0C93BC;
+  height: 60px;
+  display: inline-block;
+}
+.weekly-packaging{
+  color: #0D324D;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  min-width: 80%;
+  max-width: 80%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #AAD6A0;
+  height: 60px;
+  display: inline-block;
+}
+.weekly-workorder{
+  color: #0D324D;
+  padding-left: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  min-width: 80%;
+  max-width: 80%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+  border-left: 10px solid;
+  border-color: #0D324D;
+  height: 60px;
+  display: inline-block;
+}
+
+a.text-decoration-underline{
+  color: #0C93BC !important;
+}
+/** Dispatches List **/
+.code-Red{
+  background-color: #A40F4C;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+}
+.leader-std-work{
+  background-color: #44B4CD;
+  color: #0D324D;
+  padding-top: 3px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  display: inline-block;
+  text-align: center;
+  font-size: .75rem;
+}
+.packaging{
+  background-color: #AAD6A0;
+  color: #0D324D;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+}
+.work-order{
+  background-color: #0D324D;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.work-in-progress{
+  background-color: #82b89f;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  margin-left: 10px;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+}
+button.due{
+  padding: 2px 10px;
+  margin-left: 10%;
+  border-radius: 15px;
+  border-color: #25232B;
+  border: 1px solid;
+  color: #0D324D;
+  font-size: .8rem;
+}
+button.dispatch-me{
+  margin-left: 5px;
+  border: 0;
+  border-radius: 5px;
+  color: #A40F4C;
+  background-color: #ddd;
+}
+.area {
+  color: #0D324D;
+  height: 29px;
+  padding-left: 25px;
+  margin: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border-radius: 2px;
+  opacity: 1;
+}
+
+.area-list {
+  min-height: 290px;
+  max-height: 290px;
+  width: auto;
+  overflow-y: auto;
+  transition:  0.15s ease-in-out;
+}
 /**End of Dispatches Column**/
 @media only screen and (min-width: 993.5px) { /**Sidebar **/
   #sidebar.collapse:not(.show) {
