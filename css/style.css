@@ -519,17 +519,23 @@ img.image-dispatch{
   background-color: #ddebef !important;
   color: #0f94bd !important;
   border-color: #0f94bd !important;
+  height: 30px;
+  padding-top: 2px !important;
 }
 .btn-current{
   background-color: #0c93bc !important;
   margin-left: 15px;
   color: #fff !important;
+  height: 30px;
+  padding-top: 2px !important;
 }
 .btn-assigned{
   background-color: #ddebef !important;
   color: #0f94bd !important;
   border-color: #0f94bd !important;
   margin-left: 15px;
+  height: 30px;
+  padding-top: 2px !important;
 }
 @media only screen and (min-width: 993.5px) {
   .dispatches-list {
