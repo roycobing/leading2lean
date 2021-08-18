@@ -401,14 +401,15 @@ padding-left: 20px;
 }
 /** Dispatches Column**/
 #dispatches_main{
+  padding-top: 25px;
   padding-left: 15px;
   background-color: #F5F5F5;
   padding-bottom: 25px;
-  margin-top: 40px;
 }
 @media only screen and (max-width: 993.5px) { /**Sidebar **/
   #dispatches_main {
     padding: 0;
+    margin-top: 0;
   }
 }
 h2.dispatches-head{
@@ -416,13 +417,36 @@ h2.dispatches-head{
   color: #0C93BC;
   font-weight: bolder;
 }
+@media only screen and (max-width: 993.5px) {
+  h2.dispatches-head {
+    padding-left: 15px !important;
+    margin-top: 25px;
+  }
+}
 .dispatches-header{
+  min-height: 60px;
+  max-height: 60px;
+  padding-left: 15px;
   display: flex;
+  background-color: #fff;
+}
+@media only screen and (max-width: 993.5px) {
+  .dispatches-header {
+    padding: 0 !important;
+    height: 65px;
+    background-color: #fff;
+  }
 }
 span.dispatches-date{
   margin-top: 26px;
   margin-left: 10px;
   color: #0D324D;
+}
+@media only screen and (max-width: 993.5px) {
+  span.dispatches-date{
+    font-size: .75rem;
+    padding-top: 8px;
+  }
 }
 .dispatch-column {
   border-right: 1px solid;
@@ -442,18 +466,6 @@ span.dispatches-date{
 @media only screen and (min-width: 993.5px) {
   button.dispatch-toggler, button.dispatch-toggler-dispatches {
     display: none;
-  }
-}
-@media only screen and (max-width: 993.5px) {
-  .dispatch-screens{
-    background-color: #F5F5F5;
-    color: #0D324D;
-    height: 55px;
-    padding-top: 10px;
-    margin: 0 !important;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #C4CBCA;
   }
 }
 @media only screen and (max-width: 993.5px) {
@@ -538,6 +550,18 @@ img.image-dispatch{
   margin-top: 15px;
   margin-bottom: 10px;
 }
+@media only screen and (max-width: 993.5px) {
+  .dispatch-screens{
+    background-color: #F5F5F5;
+    color: #0D324D;
+    height: 55px;
+    padding-top: 10px;
+    margin: 0 !important;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #C4CBCA;
+  }
+}
 .btn-previous{
   background-color: #ddebef !important;
   color: #0f94bd !important;
@@ -588,17 +612,6 @@ button.due{
 .dispatches-notif{
   width: 80%;
 }
-@media only screen and (max-width: 993.5px) {
-  h2.dispatches-head {
-    padding-left: 25px !important;
-    background-color: 0 !important;
-  }
-}
-@media only screen and (max-width: 993.5px) {
-  #dispatches_main {
-    background-color: 0 !important;
-  }
-}
 @media only screen and (min-width: 993.5px) {
   .dispatches-notif{
     width: 80%;
@@ -622,8 +635,18 @@ button.due{
     width: 100%;
   }
 }
+span.weekly-date{
+  margin-top: 0;
+  float: right;
+  padding-right: 15px;
+}
+span.dispatches-time{
+  float: right;
+  padding-right: 15px;
+}
 .weekly-codered{
   color: #0D324D;
+  padding-top: 5px;
   padding-left: 25px;
   margin-top: 5px;
   margin-left: 10px;
@@ -640,6 +663,7 @@ button.due{
 }
 .weekly-leader{
   color: #0D324D;
+  padding-top: 5px;
   padding-left: 25px;
   margin-top: 5px;
   margin-left: 10px;
@@ -656,6 +680,7 @@ button.due{
 }
 .weekly-packaging{
   color: #0D324D;
+  padding-top: 5px;
   padding-left: 25px;
   margin-top: 5px;
   margin-left: 10px;
@@ -672,6 +697,7 @@ button.due{
 }
 .weekly-workorder{
   color: #0D324D;
+  padding-top: 5px;
   padding-left: 25px;
   margin-top: 5px;
   margin-left: 10px;
