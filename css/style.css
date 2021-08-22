@@ -931,7 +931,6 @@ button.dispatch-me2{
   max-height: 290px;
   width: auto;
   overflow-y: auto;
-  transition:  0.15s ease-in-out;
 }
 /**End of Dispatches Column**/
 @media only screen and (min-width: 993.5px) { /**Sidebar **/
