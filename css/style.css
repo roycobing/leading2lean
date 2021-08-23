@@ -413,13 +413,13 @@ padding-left: 20px;
     margin-top: 0;
   }
 }
-h2.dispatches-head{
+h2.dispatches-head, h2.performance-head {
   margin-top: 15px;
   color: #0C93BC;
   font-weight: bolder;
 }
 @media only screen and (max-width: 993.5px) {
-  h2.dispatches-head {
+  h2.dispatches-head, h2.performance-head {
     padding-left: 15px !important;
     margin-top: 25px;
   }
@@ -432,19 +432,19 @@ h2.dispatches-head{
   background-color: #fff;
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatches-header {
+  .dispatches-header, .performance-header {
     padding: 0 !important;
     height: 65px;
     background-color: #fff;
   }
 }
-span.dispatches-date{
+span.dispatches-date, span.performance-date{
   margin-top: 26px;
   margin-left: 10px;
   color: #0D324D;
 }
 @media only screen and (max-width: 993.5px) {
-  span.dispatches-date{
+  span.dispatches-date, span.performance-date{
     font-size: .75rem;
     padding-top: 8px;
   }
@@ -465,12 +465,14 @@ span.dispatches-date{
   }
 }
 @media only screen and (min-width: 993.5px) {
-  button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills {
+  button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills,
+  button.dispatch-toggler-currentlyopendispatches {
     display: none;
   }
 }
 @media only screen and (max-width: 993.5px) {
-  button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills {
+  button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills ,
+  button.dispatch-toggler-currentlyopendispatches{
     border: 0;
     background: 0;
   }
@@ -1050,6 +1052,11 @@ span.trainer{
   margin-top: 10px;
   padding-left: 10px;
 }
+@media only screen and (min-width: 993.5px) { /**skills-list **/
+  .currently-open-dispatches {
+    display: block !important;
+  }
+}
 .progress{
   height: 45px !important;
 }
@@ -1132,14 +1139,46 @@ span.trainer{
       padding-left: 5px;
       font-size: 24px;
     }
+.dispatch-rotate-currentlyopendispatches{
+        margin-left: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 24px;
+        border: 0 !important;
+        }
+.dispatch-rotate-currentlyopendispatches.down{
+          -moz-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+          padding-top: 5px;
+          padding-left: 5px;
+          font-size: 24px;
+        }
 @media only screen and (min-width: 993.5px) { /**skills-list **/
   #progress-list .progress.collapse:not(.show) {
     display: flex !important;
   }
 }
 /** End of Skills Column **/
-@media only screen and (min-width: 993.5px) { /**Sidebar, Skills **/
-  #sidebar.collapse:not(.show), #skills.collapse:not(.show)  {
+/** Start of Performance/Stats Column **/
+#performance_main{
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #F5F5F5;
+  padding-bottom: 25px;
+}
+.performance-header{
+  margin-top: 20px;
+  min-height: 60px;
+  max-height: 60px;
+  padding-left: 15px;
+  display: flex;
+  background-color: #fff;
+}
+/** End of Performance/Stats Column **/
+@media only screen and (min-width: 993.5px) {
+  #sidebar.collapse:not(.show), #skills.collapse:not(.show), .progress-bar-indicators  {
     display: block !important;
   }
 }

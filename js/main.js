@@ -41,6 +41,11 @@ $(document).ready(function() {
         $(".dispatch-rotate-skills").toggleClass('down');
     });
 });
+$(document).ready(function() {
+	$( ".dispatch-toggler-currentlyopendispatches" ).click( function() {
+        $(".dispatch-rotate-currentlyopendispatches").toggleClass('down');
+    });
+});
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({
