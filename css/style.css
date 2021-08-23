@@ -1087,10 +1087,11 @@ span.trainer{
   border-bottom: 1px solid #C4CBCA;
   padding: 20px;
 }
-@media only screen and (max-width: 993.5px) { /**skills-list **/
+@media only screen and (max-width: 993.5px) {
   .progress-bar-indicators {
     font-size: .75rem;
     padding: 15px;
+    border-bottom: 0;
   }
 }
 .down{
