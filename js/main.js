@@ -60,7 +60,7 @@ $(document).ready(function(){
 						click: function(){
 							$(this).css("background-color", "#44B4CD");
               $(this).css("font-size", "12px");
-              $(this).css("color", "#fff");
+              $(this).css("color", "#0D324D");
 						}
 					});
 				});
