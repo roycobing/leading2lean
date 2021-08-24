@@ -373,7 +373,7 @@
                 <button class="due">DUE</button>
               </div>
             </div>
-            <div class="weeklyprocess-list collapse" id="dispatches">
+            <div class="weeklyprocess-list collapse" id="dispatches" style="transition: 0s;">
               <div class="weeklyprocess">
                 <div class="weekly-codered">
                   <a href="#" class="text-decoration-underline">3030</a>
@@ -584,18 +584,24 @@
               </a><span class="dispatch-screens-title">Currently Open Dispatches</span>
             </div>
             <div class="currently-open-dispatches collapse" id="progress-list" style="transition: 0s;">
-              <div class="progress " id="progress-list">
+              <div class="progress" >
                 <div class="progress-bar-down" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                 <div class="progress-bar-impacting" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                 <div class="progress-bar-plannedwork" role="progressbar"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                 <div class="progress-bar-noimpact" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              <div class="progress-bar-indicators " id="progress-list">
+              <div class="progress-bar-indicators" >
                 <span class="fas fa-square" id="down"></span><div class="down">Down</div>
                 <span class="fas fa-square" id="impacting"></span><div class="impacting">Impacting</div>
                 <span class="fas fa-square" id="plannedwork"></span><div class="plannedwork">Planned Work</div>
                 <span class="fas fa-square" id="noimpact"></span><div class="noimpact">No Impact</div>
               </div>
+            </div>
+            <div class=" dispatch-screens">
+              <button class="dispatch-toggler-dispatchesreported" type="button" data-bs-toggle="collapse" data-bs-target="#progress-list" aria-expanded="false" aria-controls="progress-list">
+                <div class="fa fa-chevron-right dispatch-rotate-dispatchesreported"></div>
+              </button>
+            </a><span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
             </div>
             </div>
           <!-- End of Skills-->

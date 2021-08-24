@@ -466,13 +466,13 @@ span.dispatches-date, span.performance-date{
 }
 @media only screen and (min-width: 993.5px) {
   button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills,
-  button.dispatch-toggler-currentlyopendispatches {
+  button.dispatch-toggler-currentlyopendispatches, button.dispatch-toggler-dispatchesreported {
     display: none;
   }
 }
 @media only screen and (max-width: 993.5px) {
   button.dispatch-toggler, button.dispatch-toggler-dispatches, button.dispatch-toggler-skills ,
-  button.dispatch-toggler-currentlyopendispatches{
+  button.dispatch-toggler-currentlyopendispatches, button.dispatch-toggler-dispatchesreported{
     border: 0;
     background: 0;
   }
@@ -889,9 +889,10 @@ button.due{
   font-size: .8rem;
 }
 button.dispatch-me{
+  font-size: .87rem;
   margin-left: 5px;
   border: 0;
-  border-radius: 5px;
+  border-radius: 2px;
   color: #A40F4C;
   background-color: #ddd;
 }
@@ -1126,35 +1127,50 @@ span.trainer{
   margin-left: 10px;
 }
 .dispatch-rotate-skills{
-    margin-left: 10px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 24px;
-    border: 0 !important;
-    }
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+  border: 0 !important;
+}
 .dispatch-rotate-skills.down{
-      -moz-transform: rotate(90deg);
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-      padding-top: 5px;
-      padding-left: 5px;
-      font-size: 24px;
-    }
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+}
 .dispatch-rotate-currentlyopendispatches{
-        margin-left: 10px;
-        padding-top: 5px;
-        padding-left: 5px;
-        font-size: 24px;
-        border: 0 !important;
-        }
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+  border: 0 !important;
+}
 .dispatch-rotate-currentlyopendispatches.down{
-          -moz-transform: rotate(90deg);
-          -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-          padding-top: 5px;
-          padding-left: 5px;
-          font-size: 24px;
-        }
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+}
+.dispatch-rotate-dispatchesreported{
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+  border: 0 !important;
+}
+.dispatch-rotate-dispatchesreported.down{
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding-top: 5px;
+  padding-left: 5px;
+  font-size: 24px;
+}
 @media only screen and (min-width: 993.5px) { /**skills-list **/
   #progress-list .progress.collapse:not(.show) {
     display: flex !important;
