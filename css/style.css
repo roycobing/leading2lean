@@ -1,6 +1,5 @@
 body {
   font-family: 'Source Sans Pro', sans-serif !important;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -889,7 +888,6 @@ button.due{
   font-size: .8rem;
 }
 button.dispatch-me{
-  font-size: .87rem;
   margin-left: 5px;
   border: 0;
   border-radius: 2px;
