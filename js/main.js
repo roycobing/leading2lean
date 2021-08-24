@@ -53,6 +53,17 @@ $(document).ready(function() {
         $(".dispatch-rotate-dispatchesreported").toggleClass('down');
     });
 });
+
+$(document).ready(function(){
+					$(".dispatch-screens").on({
+
+						click: function(){
+							$(this).css("background-color", "#44B4CD");
+              $(this).css("font-size", "12px");
+              $(this).css("color", "#fff");
+						}
+					});
+				});
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({
