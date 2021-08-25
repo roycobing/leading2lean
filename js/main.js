@@ -54,6 +54,7 @@ $(document).ready(function() {
     });
 });
 
+/** Dispatch Dropdown
 $(document).ready(function(){
 					$(".dispatch-screens").on({
 
@@ -64,6 +65,8 @@ $(document).ready(function(){
 						}
 					});
 				});
+**/
+
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({

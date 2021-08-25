@@ -59,7 +59,17 @@
                 New Kaizen
               </a>
             </div>
-
+            <button type="button" class="caretDown collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#new_dispatch" aria-expanded="false" aria-controls="new_dispatch"><i class="fas fa-caret-down"></i></button>
+            <div class="new_dispatch collapse" id="new_dispatch" aria-labelledby="headingOne" data-bs-parent="#sidebar">
+              <div class="new_dispatch-dropdown">
+                <a class="new_dispatch-link" href="#">
+                  <i class="fa fa-plus"></i> New Work Order
+                </a>
+                <a class="new_dispatch-link" href="#">
+                  <i class="fa fa-plus"></i> New Kaizen
+                </a>
+              </div>
+            </div>
           </div>
         </li>
         <li class="active">
@@ -308,7 +318,7 @@
       </div>
       <section id="dispatches_main">
         <div class="row">
-        <!-- Start of Dispatches Screen-->
+          <!-- Start of Dispatches Screen-->
           <div class="dispatch-column col-lg-2">
             <img class="image-dispatch" img src="images/image.png" />
             <div class="dispatch-screens">
@@ -584,27 +594,31 @@
               </a><span class="dispatch-screens-title">Currently Open Dispatches</span>
             </div>
             <div class="currently-open-dispatches collapse" id="progress-list" style="transition: 0s;">
-              <div class="progress" >
+              <div class="progress">
                 <div class="progress-bar-down" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
                 <div class="progress-bar-impacting" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar-plannedwork" role="progressbar"  aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar-plannedwork" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                 <div class="progress-bar-noimpact" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-              <div class="progress-bar-indicators" >
-                <span class="fas fa-square" id="down"></span><div class="down">Down</div>
-                <span class="fas fa-square" id="impacting"></span><div class="impacting">Impacting</div>
-                <span class="fas fa-square" id="plannedwork"></span><div class="plannedwork">Planned Work</div>
-                <span class="fas fa-square" id="noimpact"></span><div class="noimpact">No Impact</div>
+              <div class="progress-bar-indicators">
+                <span class="fas fa-square" id="down"></span>
+                <div class="down">Down</div>
+                <span class="fas fa-square" id="impacting"></span>
+                <div class="impacting">Impacting</div>
+                <span class="fas fa-square" id="plannedwork"></span>
+                <div class="plannedwork">Planned Work</div>
+                <span class="fas fa-square" id="noimpact"></span>
+                <div class="noimpact">No Impact</div>
               </div>
             </div>
             <div class=" dispatch-screens">
               <button class="dispatch-toggler-dispatchesreported" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">
                 <div class="fa fa-chevron-right dispatch-rotate-dispatchesreported"></div>
               </button>
-            </a><span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
+              </a><span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
             </div>
 
-            </div>
+          </div>
           <!-- End of Skills-->
         </div>
       </section>
