@@ -1338,7 +1338,7 @@ span.trainer{
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Active **/
   #sidebar.active .nav a{
-    margin-left: 5px;
+    margin-left: 2.5px;
   }
 }
 @media only screen and (max-width: 993.5px) { /**Navbar Bar Not Active **/
