@@ -588,7 +588,9 @@ img.image-dispatch{
     display: none !important;
   }
 }
-.dispatch-screens{
+button.dispatch-screens{
+  width: 100%;
+  border: 0;
   color: #0D324D;
   font-size: 12px;
   text-transform: uppercase;
@@ -596,13 +598,23 @@ img.image-dispatch{
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatch-screens{
-    height: 55px;
-    padding-top: 10px;
-    margin: 0 !important;
+  button.dispatch-screens{
+    padding-top: 0 !important;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #C4CBCA;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  button.dispatch-screens{
+    background-color: inherit;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  button.dispatch-screens{
+    height: 55px;
+    padding-top: 10px;
+    margin: 0 !important;
   }
 }
 .btn-previous{
@@ -1185,6 +1197,27 @@ span.trainer{
   font-size: 14px;
 }
 @media only screen and (min-width: 993.5px) { /**skills-list **/
+  .dispatch-rotate, .dispatch-rotate-dispatches,
+  .dispatch-rotate-skills ,.dispatch-rotate-currentlyopendispatches, .dispatch-rotate-dispatchesreported{
+    display: none !important;
+  }
+}
+.dispatch-rotate-dispatchesreported.down{
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 14px;
+}
+.currentlyopendispatches_title, .dispatches_title, .dispatchscreens_title, .skill_title , .dispatchesreported_title{
+  float: left !important;
+}
+@media only screen and (max-width: 993.5px) { /**skills-list **/
+  .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 993.5px) { /**skills-list **/
   #progress-list .progress.collapse:not(.show) {
     display: flex !important;
   }
@@ -1343,7 +1376,7 @@ span.trainer{
 @media only screen and (max-width: 993.5px) {
     .selected-nav {
         background-color: #44B4CD;
-        color: #0D324D;
+        color: #fff !important;
         font-size: 12px;
     }
 }

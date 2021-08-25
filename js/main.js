@@ -25,31 +25,31 @@ $(document).ready(function() {
 });
 /** Dispatch Arrow **/
 $(document).ready(function() {
-	$( ".dispatch-toggler" ).click( function() {
+	$( ".dispatchscreens_title" ).click( function() {
         $(".dispatch-rotate").toggleClass('down');
     });
 });
 
 $(document).ready(function() {
-	$( ".dispatch-toggler-dispatches" ).click( function() {
+	$( ".dispatches_title" ).click( function() {
         $(".dispatch-rotate-dispatches").toggleClass('down');
     });
 });
 
 $(document).ready(function() {
-	$( ".dispatch-toggler-skills" ).click( function() {
+	$( ".skill_title" ).click( function() {
         $(".dispatch-rotate-skills").toggleClass('down');
     });
 });
 
 $(document).ready(function() {
-	$( ".dispatch-toggler-currentlyopendispatches" ).click( function() {
+	$( ".currentlyopendispatches_title" ).click( function() {
         $(".dispatch-rotate-currentlyopendispatches").toggleClass('down');
     });
 });
 
 $(document).ready(function() {
-	$( ".dispatch-toggler-dispatchesreported" ).click( function() {
+	$( ".dispatchesreported_title" ).click( function() {
         $(".dispatch-rotate-dispatchesreported").toggleClass('down');
     });
 });

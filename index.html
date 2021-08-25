@@ -321,12 +321,12 @@
           <!-- Start of Dispatches Screen-->
           <div class="dispatch-column col-lg-2">
             <img class="image-dispatch" img src="images/image.png" />
-            <div class="dispatch-screens">
-              <button class="dispatch-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#areaList" aria-expanded="false" aria-controls="areaList">
+            <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#areaList" aria-expanded="false" aria-controls="areaList">
+              <div class="dispatchscreens_title">
                 <div class="fa fa-chevron-right dispatch-rotate"></div>
-              </button>
-              <span class="dispatch-screens-title">Dispatch Screens</span>
-            </div>
+                <span class="dispatch-screens-title">Dispatch Screens</span>
+              </div>
+            </button>
             <div class="area-list collapse" id="areaList" style="transition: 0s;">
               <div class="area"><a class="area-widget-link">All</a><span class="fas fa-star"></span></div>
               <div class="area"><a class="area-widget-link">Area 1</a><span class="fas fa-star"></span></div>
@@ -351,12 +351,12 @@
           <!-- End of Dispatches Screen-->
           <!-- Start  of Dispatches-->
           <div class="dispatch-column col-lg-5">
-            <div class="dispatch-screens">
-              <button class="dispatch-toggler-dispatches" type="button" data-bs-toggle="collapse" data-bs-target="#dispatches" aria-expanded="false" aria-controls="dispatches">
+            <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#dispatches" aria-expanded="false" aria-controls="dispatches">
+              <div class="dispatches_title">
                 <div class="fa fa-chevron-right dispatch-rotate-dispatches"></div>
-              </button>
-              <span class="dispatch-screens-title">Dispatches</span>
-            </div>
+                <span class="dispatch-screens-title">Dispatches</span>
+              </div>
+            </button>
             <div class="dispatches-notif">
               <div class="dispatches-list collapse" id="dispatches" style="transition: 0s;">
                 <button type="button" class="btn btn-previous position-relative">
@@ -380,7 +380,7 @@
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </button>
-                <button class="due">DUE<img class="due-icon" img src="images/icon_due_arrows.png"/></button>
+                <button class="due">DUE<img class="due-icon" img src="images/icon_due_arrows.png" /></button>
               </div>
             </div>
             <div class="weeklyprocess-list collapse" id="dispatches" style="transition: 0s;">
@@ -533,13 +533,12 @@
           <!-- End of Dispatches-->
           <!-- Start of Skills-->
           <div class="skills-column col-lg-5">
-            <div class=" dispatch-screens">
-              <button class="dispatch-toggler-skills" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false" aria-controls="skills">
+            <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false" aria-controls="skills">
+              <div class="skill_title">
                 <div class="fa fa-chevron-right dispatch-rotate-skills"></div>
-              </button>
-              <span class="dispatch-screens-title">Skills</span>
-              <span class="retrain">Retrain</span>
-            </div>
+                <span class="dispatch-screens-title">Skills</span>
+              </div>
+            </button>
             <div class="skills-list collapse" id="skills" style="transition: 0s;">
               <div class="skills-problemsolving">8d Problem Solving
                 <span class="action-needed">Action Needed</span>
@@ -587,12 +586,13 @@
                 </div>
               </div>
             </div>
-            <div class=" dispatch-screens">
-              <button class="dispatch-toggler-currentlyopendispatches" type="button" data-bs-toggle="collapse" data-bs-target="#progress-list" aria-expanded="false" aria-controls="progress-list">
+
+            <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#progress-list" aria-expanded="false" aria-controls="progress-list">
+              <div class="currentlyopendispatches_title">
                 <div class="fa fa-chevron-right dispatch-rotate-currentlyopendispatches"></div>
-              </button>
-              </a><span class="dispatch-screens-title">Currently Open Dispatches</span>
-            </div>
+                <span class="dispatch-screens-title">Currently Open Dispatches</span>
+              </div>
+            </button>
             <div class="currently-open-dispatches collapse" id="progress-list" style="transition: 0s;">
               <div class="progress">
                 <div class="progress-bar-down" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
@@ -611,13 +611,16 @@
                 <div class="noimpact">No Impact</div>
               </div>
             </div>
-            <div class=" dispatch-screens">
-              <button class="dispatch-toggler-dispatchesreported" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">
-                <div class="fa fa-chevron-right dispatch-rotate-dispatchesreported"></div>
-              </button>
-              </a><span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
-            </div>
 
+            <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#dispatchesreported" aria-expanded="false" aria-controls="dispatchesreported">
+              <div class="dispatchesreported_title">
+                <div class="fa fa-chevron-right dispatch-rotate-dispatchesreported"></div>
+                <span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
+              </div>
+            </button>
+            <div class="dispatches-reported collapse" id="dispatchesreported" style="transition: 0s;">
+
+            </div>
           </div>
           <!-- End of Skills-->
         </div>
