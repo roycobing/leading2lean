@@ -1340,6 +1340,13 @@ span.trainer{
     padding-top: 15px;
   }
 }
+@media only screen and (max-width: 993.5px) {
+    .selected-nav {
+        background-color: #44B4CD;
+        color: #0D324D;
+        font-size: 12px;
+    }
+}
 ::-webkit-scrollbar {
   width: 10px;
 }

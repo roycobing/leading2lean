@@ -54,17 +54,15 @@ $(document).ready(function() {
     });
 });
 
-
+/** Dispatch Mobile View Toggle **/
 $(document).ready(function(){
-					$(".dispatch-screens").on({
+	$(".dispatch-screens").on({
 
-						click: function(){
-							$(this).css("background-color", "#44B4CD");
-              $(this).css("font-size", "12px");
-              $(this).css("color", "#0D324D");
-						}
-					});
-				});
+	click: function(){
+        $(this).toggleClass("selected-nav");
+	}
+    });
+});
 
 
 /** Modal **/
