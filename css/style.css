@@ -158,7 +158,7 @@ a {
   display: none;
 }
 #sidebar.active ul.components li span.CloudDISPATCH {
-  font-size: .7rem;
+  font-size: 12px;
 }
 
 #sidebar.active ul.components li #side-icon {
