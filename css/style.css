@@ -500,9 +500,15 @@ span.dispatches-date, span.performance-date{
   border-right: 1px solid;
   border-color: #C4CBCA;
 }
+@media only screen and (max-width: 993.5px) {
+  .dispatch-column , .skills-column{
+    font-size: .75rem;
+    margin: 0 !important;
+  }
+}
 .area-list {
-  min-height: 200px;
-  max-height: 200px;
+  min-height: 290px;
+  max-height: 290px;
   width: auto;
   overflow-y: auto;
 }
@@ -531,13 +537,18 @@ span.dispatches-date, span.performance-date{
   display: flex;
   color: #0D324D;
   min-height: 30px;
-  min-height: 30px;
+  max-height: 30px;
   padding-left: 25px;
-  margin: 6px;
+  margin: 5px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 1px 1px 3px #00000029;
   border-radius: 2px;
   opacity: 1;
+}
+@media only screen and (max-width: 993.5px) {
+  .area{
+    font-size: .9rem;
+  }
 }
 a.area-widget-link{
   padding-top: 5px;
@@ -612,8 +623,8 @@ button.dispatch-screens{
 }
 @media only screen and (max-width: 993.5px) {
   button.dispatch-screens{
-    height: 55px;
-    padding-top: 10px;
+    min-height: 65px;
+    max-height: 65px;
     margin: 0 !important;
   }
 }
@@ -953,23 +964,7 @@ button.dispatch-me2{
     margin-right: 15px !important;
   }
 }
-.area {
-  color: #0D324D;
-  height: 29px;
-  padding-left: 25px;
-  margin: 10px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 1px 1px 3px #00000029;
-  border-radius: 2px;
-  opacity: 1;
-}
 
-.area-list {
-  min-height: 290px;
-  max-height: 290px;
-  width: auto;
-  overflow-y: auto;
-}
 /**End of Dispatches Column**/
 
 /** Start of Skills Column**/
@@ -1215,6 +1210,9 @@ span.trainer{
   .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title {
     width: 100%;
     text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 10px;
   }
 }
 @media only screen and (min-width: 993.5px) { /**skills-list **/
