@@ -66,7 +66,7 @@ $(document).ready(function(){
 
 $("#sidebarCollapse").on("click", function () {
     if ($("#sidebar").hasClass("active")) {
-        return $("#sidebar").removeClass("show");
+        return $("#sidebar").removeClass("active show");
     }
 
     $("#sidebar").toggleClass("show");
