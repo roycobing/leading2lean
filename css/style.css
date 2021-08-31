@@ -655,7 +655,7 @@ button.dispatch-screens{
 }
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatches_title_header span.dispatch-screens-title{
+  .dispatches_title_header{
     display: none !important;
   }
 }

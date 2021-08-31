@@ -17,16 +17,6 @@
   });
 
 })(jQuery);
-
-/** Mobile View Function **/
-$("#sidebarCollapse").on("click", function () {
-				    if ($("#sidebar").hasClass("active")) {
-				        return $("#sidebar").removeClass("active show");
-				    }
-
-				    $("#sidebar").toggleClass("show");
-				  });
-
 /** SideNavbar Arrow **/
 $(document).ready(function() {
 	$( ".sidebarCollapse" ).click( function() {
@@ -74,8 +64,13 @@ $(document).ready(function(){
     });
 });
 
+$("#sidebarCollapse").on("click", function () {
+    if ($("#sidebar").hasClass("active")) {
+        return $("#sidebar").removeClass("show");
+    }
 
-
+    $("#sidebar").toggleClass("show");
+  });
 /** Modal **/
 $( function() {
   $( "#sortable" ).sortable({
