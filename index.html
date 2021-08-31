@@ -77,8 +77,8 @@
             Home
           </a>
         </li>
-        <li>
-          <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+        <li class="sidebar-menu">
+          <a class="nav-link-menu collapse" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
             <span class="fas fa-cloud" id="side-icon"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
             <i class="fas fa-angle-down"></i>
@@ -100,29 +100,29 @@
             </nav>
           </div>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><i class="fas fa-book-open" id="side-icon"></i>
             Production</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><span class="fas fa-tachometer-alt" id="side-icon"></span> Dashboard</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><i class="fa fa-graduation-cap" id="side-icon"></i>Skills</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><i class="fas fa-chart-bar" id="side-icon"></i>
             Lean Tools</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><i class="fas fa-chart-line" id="side-icon"></i>
             Reports</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><i class="far fa-question-circle" id="side-icon"></i>
             Support</a>
         </li>
-        <li>
+        <li class="sidebar-menu">
           <a href="#" class="text-truncate"><span class="fas fa-cog" id="side-icon"></span>
             Setup</a>
         </li>
@@ -321,6 +321,9 @@
           <!-- Start of Dispatches Screen-->
           <div class="dispatch-column col-lg-2">
             <img class="image-dispatch" img src="images/image.png" />
+            <div class="dispatches_title_header">
+              <span class="dispatch-screens-title">Dispatches Screens</span>
+            </div>
             <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#areaList" aria-expanded="false" aria-controls="areaList">
               <div class="dispatchscreens_title">
                 <div class="fa fa-chevron-right dispatch-rotate"></div>
@@ -351,6 +354,9 @@
           <!-- End of Dispatches Screen-->
           <!-- Start  of Dispatches-->
           <div class="dispatch-column col-lg-5">
+            <div class="dispatches_title_header">
+              <span class="dispatch-screens-title">Dispatches</span>
+            </div>
             <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#dispatches" aria-expanded="false" aria-controls="dispatches">
               <div class="dispatches_title">
                 <div class="fa fa-chevron-right dispatch-rotate-dispatches"></div>
@@ -380,6 +386,7 @@
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </button>
+                <button class="expand">Expand</button>
                 <button class="due">DUE<img class="due-icon" img src="images/icon_due_arrows.png" /></button>
               </div>
             </div>
@@ -533,6 +540,9 @@
           <!-- End of Dispatches-->
           <!-- Start of Skills-->
           <div class="skills-column col-lg-5">
+            <div class="dispatches_title_header">
+              <span class="dispatch-screens-title">Skills</span>
+            </div>
             <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#skills" aria-expanded="false" aria-controls="skills">
               <div class="skill_title">
                 <div class="fa fa-chevron-right dispatch-rotate-skills"></div>
@@ -586,7 +596,9 @@
                 </div>
               </div>
             </div>
-
+            <div class="dispatches_title_header">
+              <span class="dispatch-screens-title">Currently Open Dispatches</span>
+            </div>
             <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#progress-list" aria-expanded="false" aria-controls="progress-list">
               <div class="currentlyopendispatches_title">
                 <div class="fa fa-chevron-right dispatch-rotate-currentlyopendispatches"></div>
@@ -612,6 +624,9 @@
               </div>
             </div>
 
+            <div class="dispatches_title_header">
+              <span class="dispatch-screens-title">Dispatches Reported (48 Hrs)</span>
+            </div>
             <button class="dispatch-screens" type="button" data-bs-toggle="collapse" data-bs-target="#dispatchesreported" aria-expanded="false" aria-controls="dispatchesreported">
               <div class="dispatchesreported_title">
                 <div class="fa fa-chevron-right dispatch-rotate-dispatchesreported"></div>
