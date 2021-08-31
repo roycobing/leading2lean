@@ -542,6 +542,9 @@ span.dispatches-date, span.performance-date{
     background: 0;
   }
 }
+.area:hover{
+  background-color: #ddd;
+}
 .area {
   cursor: pointer;
   justify-content: space-between;
