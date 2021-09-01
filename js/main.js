@@ -76,10 +76,18 @@ $("#sidebarCollapse").on("click", function() {
 $(document).ready(function() {
   $(document).on('click', '.sidebar-menu', function() {
     $('.sidebar-menu').removeClass("active");
+    $('.nav-link').removeClass("active");
     $(this).addClass("active");
   });
 });
 
+$(document).ready(function() {
+  $(document).on('click', '.nav-link', function() {
+    $('.nav-link').removeClass("active");
+    $('.sidebar-menu').removeClass("active");
+    $(this).addClass("active");
+  });
+});
 /** Modal **/
 $(function() {
   $("#sortable").sortable({
@@ -116,8 +124,9 @@ $(function() {
   });
   $("ul, li").disableSelection();
 });
-// end of Modal
 
+
+// end of Modal
 /** Dispatches Screens - Favorite Icon **/
 $(document).ready(function() {
   $(document).on('click', '.fa-star', function() {
