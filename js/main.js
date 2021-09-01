@@ -1,112 +1,120 @@
 (function($) {
 
-	"use strict";
+  "use strict";
 
-	var fullHeight = function() {
+  var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
-		});
+    $('.js-fullheight').css('height', $(window).height());
+    $(window).resize(function() {
+      $('.js-fullheight').css('height', $(window).height());
+    });
 
-	};
-	fullHeight();
+  };
+  fullHeight();
 
-	$('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
+  $('#sidebarCollapse').on('click', function() {
+    $('#sidebar').toggleClass('active');
   });
 
 })(jQuery);
 /** SideNavbar Arrow **/
 $(document).ready(function() {
-	$( ".sidebarCollapse" ).click( function() {
-        $(".rotate").toggleClass('right');
-    });
+  $(".sidebarCollapse").click(function() {
+    $(".rotate").toggleClass('right');
+  });
 });
 /** Dispatch Arrow **/
 $(document).ready(function() {
-	$( ".dispatchscreens_title" ).click( function() {
-        $(".dispatch-rotate").toggleClass('down');
-    });
+  $(".dispatchscreens_title").click(function() {
+    $(".dispatch-rotate").toggleClass('down');
+  });
 });
 
 $(document).ready(function() {
-	$( ".dispatches_title" ).click( function() {
-        $(".dispatch-rotate-dispatches").toggleClass('down');
-    });
+  $(".dispatches_title").click(function() {
+    $(".dispatch-rotate-dispatches").toggleClass('down');
+  });
 });
 
 $(document).ready(function() {
-	$( ".skill_title" ).click( function() {
-        $(".dispatch-rotate-skills").toggleClass('down');
-    });
+  $(".skill_title").click(function() {
+    $(".dispatch-rotate-skills").toggleClass('down');
+  });
 });
 
 $(document).ready(function() {
-	$( ".currentlyopendispatches_title" ).click( function() {
-        $(".dispatch-rotate-currentlyopendispatches").toggleClass('down');
-    });
+  $(".currentlyopendispatches_title").click(function() {
+    $(".dispatch-rotate-currentlyopendispatches").toggleClass('down');
+  });
 });
 
 $(document).ready(function() {
-	$( ".dispatchesreported_title" ).click( function() {
-        $(".dispatch-rotate-dispatchesreported").toggleClass('down');
-    });
+  $(".dispatchesreported_title").click(function() {
+    $(".dispatch-rotate-dispatchesreported").toggleClass('down');
+  });
 });
 
 /** Dispatch Mobile View Toggle **/
-$(document).ready(function(){
-	$(".dispatch-screens").on({
+$(document).ready(function() {
+  $(".dispatch-screens").on({
 
-	click: function(){
-        $(this).toggleClass("selected-nav");
-	}
-    });
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
+  });
 });
 
-$("#sidebarCollapse").on("click", function () {
-    if ($("#sidebar").hasClass("active")) {
-        return $("#sidebar").removeClass("active show");
-    }
+$("#sidebarCollapse").on("click", function() {
+  if ($("#sidebar").hasClass("active")) {
+    return $("#sidebar").removeClass("active show");
+  }
 
-    $("#sidebar").toggleClass("show");
+  $("#sidebar").toggleClass("show");
+});
+
+/** Sidebar Active Menu **/
+$(document).ready(function() {
+  $(document).on('click', '.sidebar-menu', function() {
+    $('.sidebar-menu').removeClass("active");
+    $(this).addClass("active");
   });
+});
 /** Modal **/
-$( function() {
-  $( "#sortable" ).sortable({
+$(function() {
+  $("#sortable").sortable({
     revert: true
   });
-  $( "#draggable" ).draggable({
+  $("#draggable").draggable({
     connectToSortable: "#sortable",
     helper: "clone",
     revert: "invalid"
   });
-  $( "ul, li" ).disableSelection();
-} );
+  $("ul, li").disableSelection();
+});
 
-$( function() {
-  $( "#sortable2" ).sortable({
+$(function() {
+  $("#sortable2").sortable({
     revert: true
   });
-  $( "#draggable" ).draggable({
+  $("#draggable").draggable({
     connectToSortable: "#sortable2",
     helper: "clone",
     revert: "invalid"
   });
-  $( "ul, li" ).disableSelection();
-} );
+  $("ul, li").disableSelection();
+});
 
-$( function() {
-  $( "#sortable3" ).sortable({
+$(function() {
+  $("#sortable3").sortable({
     revert: true
   });
-  $( "#draggable" ).draggable({
+  $("#draggable").draggable({
     connectToSortable: "#sortable2",
     helper: "clone",
     revert: "invalid"
   });
-  $( "ul, li" ).disableSelection();
-} );
+  $("ul, li").disableSelection();
+});
 
 
 // end of Modal

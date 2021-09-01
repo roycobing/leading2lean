@@ -14,6 +14,10 @@ body {
   padding-left: var(--bs-gutter-x, 0) !important;
   opacity: 1;
 }
+.active {
+  margin: 0 !important;
+  background-color: #78B142;
+}
 a.home{
   margin-top: 5px;
 }
@@ -38,6 +42,9 @@ li.sidebar-menu a.nav-link-menu:hover{
 .navbar-collapse{
   box-shadow: 0px 3px 8px #00000029;
   width: 100% !important;
+}
+.area-list .area .fa-star:hover{
+  color: #F9DB6C;
 }
 /** Modal **/
 #settingModal {
