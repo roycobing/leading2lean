@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 $("#sidebarCollapse").on("click", function() {
   if ($("#sidebar").hasClass("active")) {
-    return $("#sidebar").removeClass("active show");
+    return $("#sidebar").removeClass("show");
   }
 
   $("#sidebar").toggleClass("show");
@@ -79,6 +79,7 @@ $(document).ready(function() {
     $(this).addClass("active");
   });
 });
+
 /** Modal **/
 $(function() {
   $("#sortable").sortable({
@@ -115,6 +116,11 @@ $(function() {
   });
   $("ul, li").disableSelection();
 });
-
-
 // end of Modal
+
+/** Dispatches Screens - Favorite Icon **/
+$(document).ready(function() {
+  $(document).on('click', '.fa-star', function() {
+    $(this).toggleClass("favorite-icon");
+  });
+});
