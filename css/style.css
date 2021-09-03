@@ -54,6 +54,31 @@ li.sidebar-menu a.nav-link-menu:hover{
 .nav-link-home:hover{
   color: inherit;
 }
+button.mobile-screen{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+@media only screen and (min-width: 993.5px) {
+  button.mobile-screen{
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  button.mobile-screen{
+    min-height: 65px;
+    max-height: 65px;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #C4CBCA;
+  }
+}
 /** Modal **/
 #settingModal {
   font-family: 'Source Sans Pro', sans-serif;
@@ -570,7 +595,8 @@ span.dispatches-date, span.performance-date{
 }
 @media only screen and (min-width: 993.5px) {
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
-  .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators{
+  .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
+  .linesrunning.collapse:not(.show){
     display: block !important;
   }
 }
@@ -626,13 +652,13 @@ a:hover{
   padding: 8px;
 }
 
-.dispatch-rotate{
+.dispatch-rotate , .linesrunning-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -658,36 +684,7 @@ img.image-dispatch{
     display: none !important;
   }
 }
-button.dispatch-screens{
-  width: 100%;
-  border: 0;
-  color: #0D324D;
-  font-size: 12px;
-  text-transform: uppercase;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-@media only screen and (max-width: 993.5px) {
-  button.dispatch-screens{
-    padding-top: 0 !important;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #C4CBCA;
-  }
-}
-@media only screen and (min-width: 993.5px) {
-  button.dispatch-screens{
-    background-color: inherit;
-    display: none;
-  }
-}
-@media only screen and (max-width: 993.5px) {
-  button.dispatch-screens{
-    min-height: 65px;
-    max-height: 65px;
-    margin: 0 !important;
-  }
-}
+
 @media only screen and (min-width: 993.5px) {
 .dispatches_title_header{
   width: 100%;
@@ -700,7 +697,7 @@ button.dispatch-screens{
 }
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatches_title_header{
+  .dispatches_title_header , .lines-running-header{
     display: none !important;
   }
 }
@@ -1302,11 +1299,9 @@ span.trainer{
   transform: rotate(90deg);
   font-size: 14px;
 }
-.currentlyopendispatches_title, .dispatches_title, .dispatchscreens_title, .skill_title , .dispatchesreported_title{
-  float: left !important;
-}
 @media only screen and (max-width: 993.5px) { /**skills-list **/
-  .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title {
+  .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title
+  ,.linesrunning_title {
     width: 100%;
     text-align: left;
     min-height: 55px;
@@ -1477,6 +1472,12 @@ span.trainer{
   max-height: 200px;
   padding-left: 15px;
 }
+@media only screen and (max-width: 993.5px) {
+    .lines-running {
+        min-height: 0;
+        max-height: 0;
+    }
+}
 .lines-running-header{
 
 }
@@ -1497,6 +1498,17 @@ span.trainer{
   font-size: 12px;
   margin-top: 20px;
   text-align: center;
+}
+@media only screen and (min-width: 993.5px) {
+ .lines-running-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
 }
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {

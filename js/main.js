@@ -54,9 +54,9 @@ $(document).ready(function() {
   });
 });
 
-/** Dispatch Mobile View Toggle **/
+/** Dispatch / Performance Mobile View Toggle **/
 $(document).ready(function() {
-  $(".dispatch-screens").on({
+  $(".mobile-screen").on({
 
     click: function() {
       $(this).toggleClass("selected-nav");
@@ -131,5 +131,21 @@ $(function() {
 $(document).ready(function() {
   $(document).on('click', '.fa-star', function() {
     $(this).toggleClass("favorite-icon");
+  });
+});
+
+/** Performance Arrow **/
+$(document).ready(function() {
+  $(".linesrunning_title").click(function() {
+    $(".linesrunning-rotate").toggleClass('down');
+  });
+});
+
+$(document).ready(function() {
+  $(".linesrunning_title").on({
+
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
   });
 });
