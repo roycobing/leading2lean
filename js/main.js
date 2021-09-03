@@ -142,10 +142,25 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".linesrunning_title").on({
+  $(".lines-running-header").on({
 
     click: function() {
       $(this).toggleClass("selected-nav");
     }
+  });
+});
+
+$(document).ready(function() {
+  $(".on-time-pm-completion-header").on({
+
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
+  });
+});
+
+$(document).ready(function() {
+  $(".ontime_title").click(function() {
+    $(".ontime-rotate").toggleClass('down');
   });
 });

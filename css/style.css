@@ -596,7 +596,7 @@ span.dispatches-date, span.performance-date{
 @media only screen and (min-width: 993.5px) {
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
-  .linesrunning.collapse:not(.show){
+  .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show){
     display: block !important;
   }
 }
@@ -652,13 +652,13 @@ a:hover{
   padding: 8px;
 }
 
-.dispatch-rotate , .linesrunning-rotate{
+.dispatch-rotate , .linesrunning-rotate , .ontime-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down , .linesrunning-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -697,7 +697,7 @@ img.image-dispatch{
 }
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatches_title_header , .lines-running-header{
+  .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header{
     display: none !important;
   }
 }
@@ -1300,8 +1300,7 @@ span.trainer{
   font-size: 14px;
 }
 @media only screen and (max-width: 993.5px) { /**skills-list **/
-  .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title
-  ,.linesrunning_title {
+  .dispatchscreens_title, .dispatches_title,  .skill_title , .currentlyopendispatches_title, .dispatchesreported_title{
     width: 100%;
     text-align: left;
     min-height: 55px;
@@ -1470,31 +1469,56 @@ span.trainer{
   background-color: inherit;
   min-height: 200px;
   max-height: 200px;
-  padding-left: 15px;
 }
+
+@media only screen and (max-width: 993.5px) {
+    .linesrunning-list {
+      margin: 0 40px;
+      height: 100px;
+    }
+}
+
 @media only screen and (max-width: 993.5px) {
     .lines-running {
         min-height: 0;
-        max-height: 0;
     }
-}
-.lines-running-header{
-
 }
 .lines-running-percentage{
   color: #0C93BC;
-  font-weight: 6px;
+  font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-top: 25px;
 }
-.linesrunning.progress{
+@media only screen and (max-width: 993.5px) {
+ .lines-running-percentage{
+  margin-top: 12px;
+  font-size: 1.75rem;
+}
+}
+.ontime-percentage{
+  color: #419650;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 993.5px) {
+ .ontime-percentage{
+  margin-top: 12px;
+  font-size: 1.75rem;
+}
+}
+.linesrunning.progress , .ontime.progress{
   height: 7px;
 }
 .linesrunning.progress-bar{
   background-color: #0C93BC;
 }
-.lines-running-active{
+.ontime.progress-bar{
+  background-color: #419650;
+}
+.lines-running-active , .ontime-running-active{
   font-size: 12px;
   margin-top: 20px;
   text-align: center;
@@ -1510,6 +1534,64 @@ span.trainer{
   margin-bottom: 10px;
 }
 }
+@media only screen and (max-width: 993.5px) {
+  .linesrunning_title {
+    width: 100%;
+    text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 13px;
+  }
+}
+
+.on-time-pm-completion{
+  margin-left: 10px;
+  min-height: 200px;
+  max-height: 200px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+}
+@media only screen and (max-width: 993.5px) {
+ .on-time-pm-completion{
+  margin-left: 0;
+  background-color: inherit;
+  min-height: 0;
+  box-shadow: none;
+}
+}
+@media only screen and (min-width: 993.5px) {
+ .on-time-pm-completion-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+}
+@media only screen and (max-width: 993.5px) {
+  .ontime_title {
+    width: 100%;
+    text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 13px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .ontime-list {
+    margin: 0 40px 10px;
+    height: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+  }
+}
+
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
   width: 10px;
