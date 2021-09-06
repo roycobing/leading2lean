@@ -164,3 +164,18 @@ $(document).ready(function() {
     $(".ontime-rotate").toggleClass('down');
   });
 });
+
+/** Oee */
+$(document).ready(function() {
+  $(".oee_title").click(function() {
+    $(".oee-rotate").toggleClass('down');
+  });
+});
+$(document).ready(function() {
+  $(".oee-header").on({
+
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
+  });
+});

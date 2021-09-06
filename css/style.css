@@ -32,6 +32,14 @@ li.sidebar-menu .collapse nav.sb-sidenav-menu-nested a.nav-link:hover{
   background-color: #ddd !important;
   color: #000 !important;
 }
+li.sidebar-menu-cloud a.nav-link-menu:hover{
+  background-color: #ddd !important;
+  color: #000 !important;
+}
+li.sidebar-menu-cloud .collapse nav.sb-sidenav-menu-nested a.nav-link:hover{
+  background-color: #ddd !important;
+  color: #000 !important;
+}
 li.sidebar-menu a.nav-link-menu:hover{
   background-color: #ddd !important;
 }
@@ -596,7 +604,7 @@ span.dispatches-date, span.performance-date{
 @media only screen and (min-width: 993.5px) {
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
-  .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show){
+  .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show) , .oee-list.collapse:not(.show){
     display: block !important;
   }
 }
@@ -652,13 +660,13 @@ a:hover{
   padding: 8px;
 }
 
-.dispatch-rotate , .linesrunning-rotate , .ontime-rotate{
+.dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .oee-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -697,7 +705,8 @@ img.image-dispatch{
 }
 }
 @media only screen and (max-width: 993.5px) {
-  .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header{
+  .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header,
+  .oee-header{
     display: none !important;
   }
 }
@@ -1592,6 +1601,95 @@ span.trainer{
   }
 }
 
+.oee{
+  margin-left: 10px;
+  min-height: 200px;
+  max-height: 200px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+}
+@media only screen and (max-width: 993.5px) {
+ .oee{
+  margin-left: 0;
+  background-color: inherit;
+  min-height: 0;
+  box-shadow: none;
+}
+}
+@media only screen and (min-width: 993.5px) {
+ .oee-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+}
+@media only screen and (max-width: 993.5px) {
+  .oee_title {
+    width: 100%;
+    text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 13px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .oee-list {
+    margin: 0 40px 10px;
+    height: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #00000029;
+    border-radius: 10px;
+    opacity: 1;
+  }
+}
+.oee-today-percentage{
+  color: #A40F4C;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.oee-bar.progress{
+  height: 7px;
+  width: 100%;
+}
+.oee-bar.progress-bar{
+  background-color: #A40F4C;
+}
+.oee-today{
+  display: inline-block;
+}
+.oee-currentshifts{
+  display: inline-block;
+}
+.oee-currentshifts-percentage{
+  color: #419650;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.oee-bar-currentshifts.progress{
+  height: 7px;
+}
+.oee-bar-currentshifts.progress-bar{
+  background-color: #419650
+}
+.oee-today{
+  font-size: 12px;
+  margin: 20px 0 0 40px;
+}
+.oee-currentshifts{
+  font-size: 12px;
+  margin: 20px 0 0 40px;
+}
+.oee-today-text , .oee-currentshifts-text{
+  margin-top: 20px;
+}
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
   width: 10px;
