@@ -179,3 +179,18 @@ $(document).ready(function() {
     }
   });
 });
+/** Top Spares */
+$(document).ready(function() {
+  $(".topspares_title").click(function() {
+    $(".topspares-rotate").toggleClass('down');
+  });
+});
+
+$(document).ready(function() {
+  $(".topspares-header").on({
+
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
+  });
+});
