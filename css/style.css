@@ -604,7 +604,8 @@ span.dispatches-date, span.performance-date{
 @media only screen and (min-width: 993.5px) {
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
-  .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show) , .oee-list.collapse:not(.show){
+  .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show) , .oee-list.collapse:not(.show),
+  .topspares-body.collapse:not(.show){
     display: block !important;
   }
 }
@@ -666,7 +667,7 @@ a:hover{
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -1494,7 +1495,6 @@ span.trainer{
 }
 .lines-running-percentage{
   color: #0C93BC;
-  font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-top: 25px;
@@ -1507,7 +1507,6 @@ span.trainer{
 }
 .ontime-percentage{
   color: #419650;
-  font-weight: bold;
   font-size: 40px;
   text-align: center;
   margin-top: 25px;
@@ -1640,7 +1639,7 @@ span.trainer{
 }
 @media only screen and (max-width: 993.5px) {
   .oee-list {
-    margin: 0 40px 10px;
+    margin: 15px 40px 15px 45px;
     height: 100px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 8px #00000029;
@@ -1650,13 +1649,17 @@ span.trainer{
 }
 .oee-today-percentage{
   color: #A40F4C;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
 .oee-bar.progress{
   height: 7px;
   width: 100%;
+}
+@media only screen and (max-width: 993.5px) {
+  .oee-bar.progress , .oee-bar-currentshifts.progress {
+    margin: 0;
+  }
 }
 .oee-bar.progress-bar{
   background-color: #A40F4C;
@@ -1669,7 +1672,6 @@ span.trainer{
 }
 .oee-currentshifts-percentage{
   color: #419650;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
@@ -1728,6 +1730,54 @@ span.trainer{
   min-height: 0;
   box-shadow: none;
 }
+}
+.topspares-names{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #4D4D4F;
+  opacity: 1;
+  margin-top: -6px;
+  margin-right: 8px;
+  padding-top: 0 !important;
+}
+.topspares.progress{
+  height: 7px;
+  display: flex;
+  width: 86%;
+}
+@media only screen and (max-width: 993.5px) {
+ .topspares.progress{
+  min-width: 210px;
+  max-width: 210px;
+}
+}
+@media only screen and (max-width: 993.5px) {
+ .topspares-body{
+  margin: 15px 10px 15px 13px;
+  padding: 20px;
+  height: 80px;
+  min-width: 350px;
+  max-width: 350px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+}
+}
+.topspares-bar.progress-bar{
+  background-color: #0C93BC;
+}
+span.topspares-number{
+  float: right;
+  margin-top: -13px;
+  font-size: 12px;
+}
+.topspares-records{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
