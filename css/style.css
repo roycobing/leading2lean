@@ -1665,10 +1665,14 @@ span.trainer{
   background-color: #A40F4C;
 }
 .oee-today{
+  font-size: 12px;
+  margin: 20px 0 0 40px;
   display: inline-block;
 }
 .oee-currentshifts{
   display: inline-block;
+  font-size: 12px;
+  margin: 20px 0 0 40px;
 }
 .oee-currentshifts-percentage{
   color: #419650;
@@ -1681,14 +1685,7 @@ span.trainer{
 .oee-bar-currentshifts.progress-bar{
   background-color: #419650
 }
-.oee-today{
-  font-size: 12px;
-  margin: 20px 0 0 40px;
-}
-.oee-currentshifts{
-  font-size: 12px;
-  margin: 20px 0 0 40px;
-}
+
 .oee-today-text , .oee-currentshifts-text{
   margin-top: 20px;
 }
@@ -1725,6 +1722,7 @@ span.trainer{
 }
 @media only screen and (max-width: 993.5px) {
  .top-spares{
+  min-width: 100% !important;
   margin-left: 0;
   background-color: inherit;
   min-height: 0;
@@ -1749,8 +1747,7 @@ span.trainer{
 }
 @media only screen and (max-width: 993.5px) {
  .topspares.progress{
-  min-width: 210px;
-  max-width: 210px;
+  width: auto;
 }
 }
 .topspares-body{
@@ -1758,11 +1755,9 @@ span.trainer{
 }
 @media only screen and (max-width: 993.5px) {
  .topspares-body{
-  margin: 15px 10px 15px 13px;
+  margin: 15px 15px 15px 15px;
   padding: 20px;
   height: 80px;
-  min-width: 350px;
-  max-width: 350px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 10px;
@@ -1776,6 +1771,11 @@ span.topspares-number{
   float: right;
   margin-top: -13px;
   font-size: 12px;
+}
+@media only screen and (max-width: 993.5px) {
+ span.topspares-number{
+  margin-right: -8px;
+}
 }
 .topspares-records{
   text-align: center;
@@ -1830,6 +1830,7 @@ span.downtime-status{
   margin: 0 !important;
   background-color: inherit;
   min-height: 0;
+  min-width: 100% !important;
   box-shadow: none;
 }
 }
@@ -1840,6 +1841,11 @@ span.downtime-status{
   min-height: 55px;
   max-height: 55px;
   padding-top: 13px;
+}
+}
+@media only screen and (max-width: 993.5px) {
+ .oee-status{
+  padding: 0px 0px 0 35px;
 }
 }
 /** End of Performance/Stats Column **/
