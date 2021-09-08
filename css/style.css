@@ -1553,7 +1553,6 @@ span.trainer{
 }
 
 .on-time-pm-completion{
-  margin-left: 10px;
   min-height: 200px;
   max-height: 200px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -1710,8 +1709,8 @@ span.trainer{
 }
 }
 .top-spares{
-  min-width: 750px !important;
-  max-width: 750px !important;
+  min-width: 690px !important;
+  max-width: 690px !important;
   margin-left: 10px;
   min-height: 200px;
   max-height: 200px;
@@ -1743,7 +1742,7 @@ span.trainer{
 .topspares.progress{
   height: 7px;
   display: flex;
-  width: 86%;
+  width: 84%;
 }
 @media only screen and (max-width: 993.5px) {
  .topspares.progress{
@@ -1816,8 +1815,6 @@ span.downtime-status{
   margin-top: 2px;
 }
 .downtime{
-  min-width: 523px !important;
-  max-width: 523px !important;
   min-height: 200px;
   max-height: 200px;
   margin-top: 10px !important;
@@ -1848,6 +1845,11 @@ span.downtime-status{
   padding: 0px 0px 0 35px;
 }
 }
+  #button {text-decoration: none; }
+  .newClass {
+    width: 1200px !important;
+    display: block;
+  }
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
   width: 10px;

@@ -210,3 +210,10 @@ $(document).ready(function() {
     }
   });
 });
+
+$( function() {
+    $( "#button" ).on( "click", function() {
+      $( "#ex" ).toggleClass( "newClass");
+      $('.skills-column').hide();
+    });
+  } );
