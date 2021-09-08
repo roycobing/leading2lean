@@ -1753,6 +1753,9 @@ span.trainer{
   max-width: 210px;
 }
 }
+.topspares-body{
+  margin-top: 30px;
+}
 @media only screen and (max-width: 993.5px) {
  .topspares-body{
   margin: 15px 10px 15px 13px;
