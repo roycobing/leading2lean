@@ -661,13 +661,13 @@ a:hover{
   padding: 8px;
 }
 
-.dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate , .topspares-rotate{
+.dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate , .topspares-rotate , .downtime-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down , .downtime-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -707,7 +707,7 @@ img.image-dispatch{
 }
 @media only screen and (max-width: 993.5px) {
   .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header,
-  .oee-header , .topspares-header{
+  .oee-header , .topspares-header , .downtime-header{
     display: none !important;
   }
 }
@@ -1781,6 +1781,66 @@ span.topspares-number{
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
+}
+@media only screen and (min-width: 993.5px) {
+ .downtime-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+}
+@media only screen and (max-width: 993.5px) {
+  .downtime_title {
+    width: 100%;
+    text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 13px;
+  }
+}
+span.time-name{
+  font-weight: bold;
+  color: #0C93BC;
+  font-size: .9rem;
+  opacity: 1;
+}
+span.downtime-status{
+  color: #A40F4C;
+  text-transform: none;
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+}
+.downtime{
+  min-width: 523px !important;
+  max-width: 523px !important;
+  min-height: 200px;
+  max-height: 200px;
+  margin-top: 10px !important;
+  background-color: #fff;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 993.5px) {
+ .downtime{
+  margin: 0 !important;
+  background-color: inherit;
+  min-height: 0;
+  box-shadow: none;
+}
+}
+@media only screen and (max-width: 993.5px) {
+ .downtime_title{
+  width: 100%;
+  text-align: left;
+  min-height: 55px;
+  max-height: 55px;
+  padding-top: 13px;
+}
 }
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {

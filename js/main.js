@@ -194,3 +194,19 @@ $(document).ready(function() {
     }
   });
 });
+
+/** Top Spares */
+$(document).ready(function() {
+  $(".downtime_title").click(function() {
+    $(".downtime-rotate").toggleClass('down');
+  });
+});
+
+$(document).ready(function() {
+  $(".topspares-header").on({
+
+    click: function() {
+      $(this).toggleClass("selected-nav");
+    }
+  });
+});
