@@ -1847,8 +1847,7 @@ span.downtime-status{
 }
   #button {text-decoration: none; }
   .newClass {
-    width: 1200px !important;
-    display: block;
+    width: 1380px !important;
   }
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
