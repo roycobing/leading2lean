@@ -212,8 +212,18 @@ $(document).ready(function() {
 });
 
 $( function() {
-    $( "#button" ).on( "click", function() {
-      $( "#ex" ).toggleClass( "newClass");
-      $('.skills-column').hide();
+    $( "#expand" ).on( "click", function() {
+      $( "#dispatch-expand" ).toggleClass( "newClass");
+      $('.skills-column').toggleClass("hide");
+      $(".weekly-codered").toggleClass("hide");
+      $(".weekly-leader").toggleClass("hide");
+      $(".weekly-packaging").toggleClass("hide");
+      $(".weekly-workorder").toggleClass("hide");
+      $(".dispatch-me").toggleClass("hide");
+      $(".due").toggleClass("hide");
+
+
+      $(".divB").toggleClass("hide");
+
     });
   } );

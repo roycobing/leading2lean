@@ -79,12 +79,11 @@
           </a>
         </li>
         <li class="sidebar-menu-cloud">
-          <a class="nav-link-menu collapse" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+          <a class="nav-link" href="#">
             <span class="fas fa-cloud" id="side-icon"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
-            <i class="fas fa-angle-down"></i>
           </a>
-          <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidebar">
+          <div id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidebar">
             <nav class="sb-sidenav-menu-nested nav">
               <a class="nav-link" href="#">
                 <i class="fas fa-sticky-note" id="side-icon"></i> Standard Work/Docs
@@ -354,7 +353,7 @@
           </div>
           <!-- End of Dispatches Screen-->
           <!-- Start  of Dispatches-->
-          <div class="dispatch-column col-lg-5" id="ex">
+          <div class="dispatch-column col-lg-5" id="dispatch-expand">
             <div class="dispatches_title_header">
               <span class="dispatch-screens-title">Dispatches</span>
             </div>
@@ -387,8 +386,8 @@
                     <span class="visually-hidden">unread messages</span>
                   </span>
                 </button>
-                <button class="expand" id="button">Expand</button>
-                <button class="due">DUE<img class="due-icon" img src="images/icon_due_arrows.png" /></button>
+                <button type="button" class="expand" id="expand">Expand</button>
+                <button type="button" class="due">DUE<img class="due-icon" img src="images/icon_due_arrows.png" /></button>
               </div>
             </div>
             <div class="weeklyprocess-list collapse" id="dispatches" style="transition: 0s;">
@@ -408,7 +407,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-leader">
@@ -426,7 +425,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-packaging">
@@ -444,7 +443,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-workorder">
@@ -462,7 +461,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-codered">
@@ -480,7 +479,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-leader">
@@ -498,7 +497,7 @@
                     <li class="breadcrumb-item" aria-current="page"><a class="conveyor" href="#">C10 - Conveyor</a></li>
                   </ol>
                 </div>
-                <button class="dispatch-me">Dispatch Me</button>
+                <button type="button" class="dispatch-me">Dispatch Me</button>
               </div>
               <div class="weeklyprocess">
                 <div class="weekly-packaging">
@@ -535,6 +534,59 @@
                   </ol>
                 </div>
                 <button class="dispatch-me">Dispatch Me</button>
+              </div>
+              <div class="divB hide">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr class="sample">
+                      <th scope="col">Dispatch Type</th>
+                      <th scope="col">Status/Description</th>
+                      <th scope="col">User Status</th>
+                      <th scope="col">Line</th>
+                      <th scope="col">Machine</th>
+                      <th scope="col"><button class="td-due">DUE<img class="due-icon" img src="images/icon_due_arrows.png" /></button></th>
+                      <th scope="col"> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" class="td-leader-std-work"><a href="#" class="3030">3030</a><br />
+                      <div class="divB-leader-std-work">Leader Std Work</div></th>
+                      <td><div class="divB-work-in-progress">Work In Progress</div><br />
+                      <span class="weekly-process-layared">Weekly Process Layered Audit...</span></td>
+                      <td>Working On</td>
+                      <td><a href="#">Press Line 2 - Press Line 2</a></td>
+                      <td><a href="#">C10 - Conveyor</a></td>
+                      <td><span class="td-weekly-date">19 May 2021 </span><br />
+                      <span class="td-dispatches-time">00:00 </span></td>
+                      <td class="td-dispatchme"><button type="button" class="td-dispatch-me">Dispatch Me</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="td-leader-std-work"><a href="#" class="3030">3030</a><br />
+                      <div class="divB-leader-std-work">Leader Std Work</div></th>
+                      <td><div class="divB-work-in-progress">Work In Progress</div><br />
+                      <span class="weekly-process-layared">Weekly Process Layered Audit...</span></td>
+                      <td>Working On</td>
+                      <td><a href="#">Press Line 2 - Press Line 2</a></td>
+                      <td><a href="#">C10 - Conveyor</a></td>
+                      <td><span class="td-weekly-date">19 May 2021 </span><br />
+                      <span class="td-dispatches-time">00:00 </span></td>
+                      <td class="td-dispatchme"><button type="button" class="td-dispatch-me">Dispatch Me</button></td>
+                    </tr>
+                    <tr>
+                      <th scope="row" class="td-leader-std-work"><a href="#" class="3030">3030</a><br />
+                      <div class="divB-leader-std-work">Leader Std Work</div></th>
+                      <td><div class="divB-work-in-progress">Work In Progress</div><br />
+                      <span class="weekly-process-layared">Weekly Process Layered Audit...</span></td>
+                      <td>Working On</td>
+                      <td><a href="#">Press Line 2 - Press Line 2</a></td>
+                      <td><a href="#">C10 - Conveyor</a></td>
+                      <td><span class="td-weekly-date">19 May 2021 </span><br />
+                      <span class="td-dispatches-time">00:00 </span></td>
+                      <td class="td-dispatchme"><button type="button" class="td-dispatch-me">Dispatch Me</button></td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>

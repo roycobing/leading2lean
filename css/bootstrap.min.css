@@ -282,7 +282,7 @@ th {
 tbody, td, tfoot, th, thead, tr {
   border-color: inherit;
   border-style: solid;
-  border-width: 0
+  border-width: 0;
 }
 
 label {
