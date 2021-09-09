@@ -195,7 +195,7 @@ $(document).ready(function() {
   });
 });
 
-/** Top Spares */
+/** Downtime */
 $(document).ready(function() {
   $(".downtime_title").click(function() {
     $(".downtime-rotate").toggleClass('down');
@@ -227,3 +227,10 @@ $( function() {
 
     });
   } );
+
+/** downoccurence */
+  $(document).ready(function() {
+    $(".downoccurence_title").click(function() {
+      $(".downoccurence-rotate").toggleClass('down');
+    });
+  });

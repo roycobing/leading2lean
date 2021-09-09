@@ -87,6 +87,18 @@ button.mobile-screen{
     border-color: #C4CBCA;
   }
 }
+th.td-leader-std-work{
+  font-size: 1rem;
+  border-left: #44B4CD 10px solid;
+  background-color: #fff !important;
+}
+td{
+  background-color: #fff !important;
+}
+td.td-dispatchme{
+  background-color: inherit !important;
+}
+
 /** Modal **/
 #settingModal {
   font-family: 'Source Sans Pro', sans-serif;
@@ -608,7 +620,7 @@ span.dispatches-date, span.performance-date{
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
   .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show) , .oee-list.collapse:not(.show),
-  .topspares-body.collapse:not(.show){
+  .topspares-body.collapse:not(.show) , .downtime-body.collapse:not(.show) , .downtime-list.collapse:not(.show){
     display: block !important;
   }
 }
@@ -664,13 +676,15 @@ a:hover{
   padding: 8px;
 }
 
-.dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate , .topspares-rotate , .downtime-rotate{
+.dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate , .topspares-rotate , .downtime-rotate
+, .downoccurence-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
-.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down , .downtime-rotate.down{
+.dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down , .downtime-rotate.down
+,.downoccurence-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -710,7 +724,7 @@ img.image-dispatch{
 }
 @media only screen and (max-width: 993.5px) {
   .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header,
-  .oee-header , .topspares-header , .downtime-header{
+  .oee-header , .topspares-header , .downtime-header , .downoccurence-header{
     display: none !important;
   }
 }
@@ -1274,7 +1288,7 @@ span.trainer{
   display: inline-block;
   margin-left: 10px;
 }
-#down{
+.fa-square{
   color: #A40F4C !important;
 }
 .impacting{
@@ -1516,9 +1530,8 @@ span.trainer{
   background-color: #fff;
 }
 .lines-running{
+  margin-left: 20px;
   background-color: inherit;
-  min-height: 200px;
-  max-height: 200px;
 }
 
 @media only screen and (max-width: 993.5px) {
@@ -1531,13 +1544,13 @@ span.trainer{
 @media only screen and (max-width: 993.5px) {
     .lines-running {
         min-height: 0;
+        margin-left: 0;
     }
 }
 .lines-running-percentage{
   color: #0C93BC;
   font-size: 40px;
   text-align: center;
-  margin-top: 25px;
 }
 @media only screen and (max-width: 993.5px) {
  .lines-running-percentage{
@@ -1549,7 +1562,6 @@ span.trainer{
   color: #419650;
   font-size: 40px;
   text-align: center;
-  margin-top: 25px;
 }
 @media only screen and (max-width: 993.5px) {
  .ontime-percentage{
@@ -1570,6 +1582,7 @@ span.trainer{
   font-size: 12px;
   margin-top: 20px;
   text-align: center;
+  padding-bottom: 20px;
 }
 @media only screen and (min-width: 993.5px) {
  .lines-running-header{
@@ -1593,8 +1606,7 @@ span.trainer{
 }
 
 .on-time-pm-completion{
-  min-height: 200px;
-  max-height: 200px;
+  margin-left: 25px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 10px;
@@ -1640,20 +1652,19 @@ span.trainer{
 }
 
 .oee{
-  margin-left: 10px;
-  min-height: 200px;
-  max-height: 200px;
+  margin-left: 25px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 10px;
   opacity: 1;
+  padding-bottom: 20px;
 }
 @media only screen and (max-width: 993.5px) {
  .oee{
   margin-left: 0;
   background-color: inherit;
-  min-height: 0;
   box-shadow: none;
+  padding: 0;
 }
 }
 @media only screen and (min-width: 993.5px) {
@@ -1749,11 +1760,7 @@ span.trainer{
 }
 }
 .top-spares{
-  min-width: 810px !important;
-  max-width: 810px !important;
-  margin-left: 10px;
-  min-height: 200px;
-  max-height: 200px;
+  margin-left: 25px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 10px;
@@ -1855,8 +1862,6 @@ span.downtime-status{
   margin-top: 2px;
 }
 .downtime{
-  min-height: 200px;
-  max-height: 200px;
   margin-top: 10px !important;
   background-color: #fff;
   margin-left: 15px;
@@ -1866,7 +1871,6 @@ span.downtime-status{
  .downtime{
   margin: 0 !important;
   background-color: inherit;
-  min-height: 0;
   min-width: 100% !important;
   box-shadow: none;
 }
@@ -1897,22 +1901,138 @@ span.downtime-status{
     display: block;
   }
   }
-  th.td-leader-std-work{
-    font-size: 1rem;
-    border-left: #44B4CD 10px solid;
-    background-color: #fff !important;
+  .assembly-names{
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #4D4D4F;
+    opacity: 1;
+    margin-top: -6px;
+    margin-right: 8px;
+    padding-top: 0 !important;
   }
-  td{
-    background-color: #fff !important;
+  td.assembly-line-name{
+    font-size: 12px;
+    font-weight: normal;
+    width: 130px;
   }
-  td.td-dispatchme{
-    background-color: inherit !important;
+  td.downtimebar{
+    width: 380px;
   }
+  td.downtime-time{
+    font-size: 12px;
+    float: right;
+  }
+.downtime-status.progress{
+    margin-top: 7px;
+    height: 7px;
+  }
+.downtime-status-bar.progress-bar {
+  background-color: #A40F4C;
+}
+table{
+  border-collapse: separate !important;
+  border-spacing: 0 10px;
+  overflow-y: auto;
+  min-height: 150px;
+  max-height: 150px;
+}
+@media only screen and (max-width: 993.5px) {
   table{
-    border-collapse: separate !important;
-    border-spacing: 0 10px;
+    border-collapse: collapse !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .downtime-list{
+    margin: 20px 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+.downtime-tablelist{
+  overflow-y: auto;
+  min-height: 150px;
+  max-height: 150px;
+}
+@media only screen and (max-width: 993.5px) {
+  .downtime-tablelist{
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
 
   }
+}
+@media only screen and (max-width: 993.5px) {
+  .downtime-currentlydown{
+    text-align: right;
+    padding-top: 10px;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  .downtime-currentlydown{
+    display: none;
+  }
+}
+
+.downoccurence{
+  margin-top: 10px !important;
+  background-color: #fff;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 993.5px) {
+ .downoccurence{
+  margin: 0 !important;
+  background-color: inherit;
+  box-shadow: none;
+}
+}
+span.occurence-name{
+  font-weight: bold;
+  color: #0C93BC;
+  font-size: .9rem;
+  opacity: 1;
+}
+span.downoccurence{
+  color: #A40F4C;
+  text-transform: none;
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+}
+span.downoccurence-status{
+  color: #A40F4C;
+  text-transform: none;
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+}
+@media only screen and (max-width: 993.5px) {
+  .downoccurence_title {
+    width: 100%;
+    text-align: left;
+    min-height: 55px;
+    max-height: 55px;
+    padding-top: 13px;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+ .downoccurence-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+}
 /** End of Performance/Stats Column **/
 ::-webkit-scrollbar {
   width: 10px;
