@@ -203,6 +203,9 @@ td.td-dispatchme{
 }
 
 /**End of Modal **/
+
+
+
 /** sidebar Active **/
 #sidebar.active {
   min-width: 80px;
@@ -1886,7 +1889,7 @@ span.downtime-status{
 }
 @media only screen and (max-width: 993.5px) {
  .oee-status{
-  padding: 0px 0px 0 35px;
+  padding: 0px 40px 0 40px;
 }
 }
   #expand {text-decoration: none; }
@@ -2034,6 +2037,32 @@ span.downoccurence-status{
 }
 }
 /** End of Performance/Stats Column **/
+
+/** CloudDISPATCH **/
+.setButton-clouddispatch {
+  display: block;
+  background-color: transparent !important;
+  border: 0;
+  color: #CFD0D2;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+.setButton-clouddispatch_bell {
+  display: block;
+  background-color: transparent !important;
+  border: 0;
+  color: #CFD0D2;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+ul.pagination{
+  margin-top: 20px;
+}
+a.page-link{
+  background-color: #0D324D;
+  color: #fff;
+}
+/** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
   width: 10px;
 }
