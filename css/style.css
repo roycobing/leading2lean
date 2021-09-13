@@ -2039,13 +2039,16 @@ span.downoccurence-status{
 /** End of Performance/Stats Column **/
 
 /** CloudDISPATCH **/
+.settingButton{
+  border-right: 1px solid  #CFD0D2;
+}
 .setButton-clouddispatch {
   display: block;
   background-color: transparent !important;
   border: 0;
   color: #CFD0D2;
-  border-right: 1px solid;
-  padding-right: 10px;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
 }
 .setButton-clouddispatch_bell {
   display: block;
@@ -2087,6 +2090,23 @@ a.page-link:hover{
 }
 span.area-numbers{
   color: #0C93BC;
+}
+.collapse-expand-menu{
+  float: right;
+}
+button.expand-all{
+  margin-right: 15px;
+  border: 1px solid #0D324D;
+  border-radius: 2px;
+  color: #0D324D;
+  background-color: #fff;
+}
+button.collapse-all{
+  margin-right: 15px;
+  border: 1px solid #0D324D;
+  border-radius: 2px;
+  color: #0D324D;
+  background-color: #fff;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
