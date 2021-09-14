@@ -234,3 +234,10 @@ $( function() {
       $(".downoccurence-rotate").toggleClass('down');
     });
   });
+
+  /** Production Machine Downtime */
+    $(document).ready(function() {
+      $(".production-machine_title").click(function() {
+        $(".production-machine-rotate").toggleClass('down');
+      });
+    });

@@ -87,7 +87,7 @@ button.mobile-screen{
     border-color: #C4CBCA;
   }
 }
-th.td-leader-std-work{
+td.td-leader-std-work{
   font-size: 1rem;
   border-left: #44B4CD 10px solid;
   background-color: #fff !important;
@@ -623,7 +623,8 @@ span.dispatches-date, span.performance-date{
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
   .linesrunning-list.collapse:not(.show) , .ontime-list.collapse:not(.show) , .oee-list.collapse:not(.show),
-  .topspares-body.collapse:not(.show) , .downtime-body.collapse:not(.show) , .downtime-list.collapse:not(.show){
+  .topspares-body.collapse:not(.show) , .downtime-body.collapse:not(.show) , .downtime-list.collapse:not(.show),
+  .downoccurence-list.collapse:not(.show) , .production-machine-downtime-body.collapse:not(.show){
     display: block !important;
   }
 }
@@ -680,14 +681,14 @@ a:hover{
 }
 
 .dispatch-rotate , .linesrunning-rotate , .ontime-rotate, .oee-rotate , .topspares-rotate , .downtime-rotate
-, .downoccurence-rotate{
+, .downoccurence-rotate , .production-machine-rotate{
   margin-top: 8px;
   margin-left: 10px;
   font-size: 14px;
   border: 0 !important;
   }
 .dispatch-rotate.down , .linesrunning-rotate.down , .ontime-rotate.down , .topspares-rotate.down , .oee-rotate.down , .downtime-rotate.down
-,.downoccurence-rotate.down{
+,.downoccurence-rotate.down , .production-machine-rotate.down{
     -moz-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -727,7 +728,7 @@ img.image-dispatch{
 }
 @media only screen and (max-width: 993.5px) {
   .dispatches_title_header , .lines-running-header , .on-time-pm-completion-header,
-  .oee-header , .topspares-header , .downtime-header , .downoccurence-header{
+  .oee-header , .topspares-header , .downtime-header , .downoccurence-header , .production-machine-header{
     display: none !important;
   }
 }
@@ -1085,6 +1086,15 @@ a.text-decoration-underline2{
   font-size: .9rem;
 }
 @media only screen and (max-width: 993.5px) {
+  .divB.hide{
+    display: none;
+  }
+}
+a.link3030, a.pressline2 , a.conveyor{
+  color: #0C93BC !important;
+  text-decoration: underline !important;
+}
+@media only screen and (max-width: 993.5px) {
   .work-in-progress{
     font-size: .7rem !important;
   }
@@ -1291,8 +1301,8 @@ span.trainer{
   display: inline-block;
   margin-left: 10px;
 }
-.fa-square{
-  color: #A40F4C !important;
+#down{
+  color: #A40F4C;
 }
 .impacting{
   display: inline-block;
@@ -1587,8 +1597,7 @@ span.trainer{
   text-align: center;
   padding-bottom: 20px;
 }
-@media only screen and (min-width: 993.5px) {
- .lines-running-header{
+.lines-running-header{
   width: 100%;
   border: 0;
   color: #0D324D;
@@ -1597,7 +1606,7 @@ span.trainer{
   margin-top: 15px;
   margin-bottom: 10px;
 }
-}
+
 @media only screen and (max-width: 993.5px) {
   .linesrunning_title {
     width: 100%;
@@ -1623,8 +1632,7 @@ span.trainer{
   box-shadow: none;
 }
 }
-@media only screen and (min-width: 993.5px) {
- .on-time-pm-completion-header{
+.on-time-pm-completion-header{
   width: 100%;
   border: 0;
   color: #0D324D;
@@ -1632,7 +1640,6 @@ span.trainer{
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 10px;
-}
 }
 @media only screen and (max-width: 993.5px) {
   .ontime_title {
@@ -1670,8 +1677,8 @@ span.trainer{
   padding: 0;
 }
 }
-@media only screen and (min-width: 993.5px) {
- .oee-header{
+
+.oee-header{
   width: 100%;
   border: 0;
   color: #0D324D;
@@ -1679,7 +1686,6 @@ span.trainer{
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 10px;
-}
 }
 @media only screen and (max-width: 993.5px) {
   .oee_title {
@@ -1751,7 +1757,6 @@ span.trainer{
     padding-top: 13px;
   }
 }
-@media only screen and (min-width: 993.5px) {
  .topspares-header{
   width: 100%;
   border: 0;
@@ -1760,7 +1765,6 @@ span.trainer{
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 10px;
-}
 }
 .top-spares{
   margin-left: 25px;
@@ -1789,6 +1793,7 @@ span.trainer{
   margin-right: 8px;
   padding-top: 0 !important;
 }
+
 .topspares.progress{
   height: 7px;
   display: flex;
@@ -1831,8 +1836,14 @@ span.topspares-number{
   margin-top: 20px;
   font-size: 14px;
 }
-@media only screen and (min-width: 993.5px) {
- .downtime-header{
+.downtime{
+  margin-top: 10px !important;
+  margin-left: 15px;
+  border-radius: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+}
+.downtime-header{
   width: 100%;
   border: 0;
   color: #0D324D;
@@ -1840,7 +1851,6 @@ span.topspares-number{
   text-transform: uppercase;
   margin-top: 15px;
   margin-bottom: 10px;
-}
 }
 @media only screen and (max-width: 993.5px) {
   .downtime_title {
@@ -1864,11 +1874,8 @@ span.downtime-status{
   float: right;
   margin-top: 2px;
 }
-.downtime{
-  margin-top: 10px !important;
-  background-color: #fff;
-  margin-left: 15px;
-  border-radius: 10px;
+#downtime-square{
+  color: #A40F4C;
 }
 @media only screen and (max-width: 993.5px) {
  .downtime{
@@ -1879,17 +1886,8 @@ span.downtime-status{
 }
 }
 @media only screen and (max-width: 993.5px) {
- .downtime_title{
-  width: 100%;
-  text-align: left;
-  min-height: 55px;
-  max-height: 55px;
-  padding-top: 13px;
-}
-}
-@media only screen and (max-width: 993.5px) {
  .oee-status{
-  padding: 0px 40px 0 40px;
+  margin: 0px 40px 0 40px;
 }
 }
   #expand {text-decoration: none; }
@@ -1915,17 +1913,21 @@ span.downtime-status{
     margin-right: 8px;
     padding-top: 0 !important;
   }
+
   td.assembly-line-name{
     font-size: 12px;
     font-weight: normal;
     width: 130px;
+    border-bottom-width: 0 !important;
   }
   td.downtimebar{
     width: 380px;
+    border-bottom-width: 0 !important;
   }
   td.downtime-time{
     font-size: 12px;
     float: right;
+    border-bottom-width: 0 !important;
   }
 .downtime-status.progress{
     margin-top: 7px;
@@ -1938,8 +1940,6 @@ table{
   border-collapse: separate !important;
   border-spacing: 0 10px;
   overflow-y: auto;
-  min-height: 150px;
-  max-height: 150px;
 }
 @media only screen and (max-width: 993.5px) {
   table{
@@ -1949,7 +1949,8 @@ table{
 @media only screen and (max-width: 993.5px) {
   .downtime-list{
     margin: 20px 20px 10px;
-    background-color: #fff;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #00000029;
     border-radius: 10px;
   }
 }
@@ -1957,6 +1958,7 @@ table{
   overflow-y: auto;
   min-height: 150px;
   max-height: 150px;
+  margin-bottom: 15px;
 }
 @media only screen and (max-width: 993.5px) {
   .downtime-tablelist{
@@ -1982,18 +1984,75 @@ table{
     display: none;
   }
 }
-
+#downoccurence-square{
+  color: #A40F4C;
+  margin-right: 8px;
+}
+@media only screen and (max-width: 993.5px) {
+  #downoccurence-square{
+    margin-right: 0;
+  }
+}
 .downoccurence{
   margin-top: 10px !important;
-  background-color: #fff;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
   margin-left: 15px;
   border-radius: 10px;
 }
+
 @media only screen and (max-width: 993.5px) {
  .downoccurence{
   margin: 0 !important;
   background-color: inherit;
   box-shadow: none;
+}
+}
+@media only screen and (max-width: 375px) {
+  .downoccurence-status-list{
+    display: inline-block;
+    padding:  0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .downoccurence-status-list{
+    display: inline-block;
+    padding:  0 200px 0 200px;
+  }
+}
+.downoccurence-status-listname{
+  width: 68px;
+  display: inline-block;
+  margin-left: 60px;
+}
+@media only screen and (max-width: 993.5px) {
+ .downoccurence-status-listname{
+ margin-left: 10px;
+}
+}
+.downoccurence-status-number{
+  text-align: center;
+  font-size: 4rem;
+  color: #0C93BC;
+}
+@media only screen and (max-width: 993.5px) {
+ .downoccurence-status-number{
+ font-size: 3rem;
+}
+}
+.downoccurence-status-name{
+  font-size: .8rem;
+}
+.downoccurence-list-items{
+  margin-left: 5px;
+}
+@media only screen and (max-width: 993.5px) {
+ .downoccurence-list-items{
+  margin: 15px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 10px;
+  padding: 5px;
 }
 }
 span.occurence-name{
@@ -2025,8 +2084,7 @@ span.downoccurence-status{
     padding-top: 13px;
   }
 }
-@media only screen and (min-width: 993.5px) {
- .downoccurence-header{
+.downoccurence-header{
   width: 100%;
   border: 0;
   color: #0D324D;
@@ -2035,12 +2093,95 @@ span.downoccurence-status{
   margin-top: 15px;
   margin-bottom: 10px;
 }
+.production-machine-downtime{
+  margin-top: 10px !important;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #00000029;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 993.5px) {
+ .production-machine-downtime{
+  margin: 0 !important;
+  background-color: inherit;
+  box-shadow: none;
+}
+}
+.production-machine-header{
+  width: 100%;
+  border: 0;
+  color: #0D324D;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 993.5px) {
+ .production-machine_title{
+  width: 100%;
+  text-align: left;
+  min-height: 55px;
+  max-height: 55px;
+  padding-top: 13px;
+}
+}
+.production-machine-downtime{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #4D4D4F;
+  opacity: 1;
+  margin-top: -6px;
+  margin-right: 8px;
+  padding-top: 0 !important;
+}
+td.production-machine-name{
+  font-size: 12px;
+  font-weight: normal;
+  width: 130px;
+  border-bottom-width: 0 !important;
+}
+td.productmachinebar{
+  width: 380px;
+  border-bottom-width: 0 !important;
+}
+.production-machine-status.progress{
+    margin-top: 7px;
+    height: 7px;
+}
+.production-machine-bar.progress-bar{
+    background-color: #0C93BC;
+}
+@media only screen and (max-width: 993.5px) {
+   .production-machine-downtime-body{
+     margin: 20px 20px 10px;
+     background: #FFFFFF 0% 0% no-repeat padding-box;
+     box-shadow: 0px 3px 8px #00000029;
+     border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+   .productmachine-tablelist{
+     padding-top: 5px;
+     margin: 20px;
+     min-height: 150px;
+     max-height: 150px;
+  }
+}
+table.table.productmachine-table{
+  border-spacing: 0 .5px;
 }
 /** End of Performance/Stats Column **/
 
-/** CloudDISPATCH **/
+/** Start of CloudDISPATCH **/
 .settingButton{
   border-right: 1px solid  #CFD0D2;
+}
+@media only screen and (max-width: 993.5px) {
+  .settingButton{
+    border: 0;
+  }
 }
 .setButton-clouddispatch {
   display: block;
@@ -2108,6 +2249,27 @@ button.collapse-all{
   color: #0D324D;
   background-color: #fff;
 }
+@media only screen and (max-width: 993.5px) {
+  .pagination-clouddispatch::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .clouddispatch-navbar{
+  background-color: #0D324D;
+  position: fixed;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+  padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  li.nav-item-clouddispatch , form.search-box-clouddispatch , .setButton-clouddispatch_bell{
+  display: none !important;
+  }
+}
+
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
   width: 10px;
