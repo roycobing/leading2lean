@@ -619,6 +619,11 @@ span.dispatches-date, span.performance-date{
   width: auto;
   overflow-y: auto;
 }
+@media only screen and (max-width: 993.5px) {
+  .area-list{
+    margin: 10px 0 10px 0;
+  }
+}
 @media only screen and (min-width: 993.5px) {
   .area-list.collapse:not(.show), .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show) , .skills-list.collapse:not(.show), .progress-bar-indicators,
@@ -2012,12 +2017,6 @@ table{
   .downoccurence-status-list{
     display: inline-block;
     padding:  0 !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .downoccurence-status-list{
-    display: inline-block;
-    padding:  0 200px 0 200px;
   }
 }
 .downoccurence-status-listname{
