@@ -995,7 +995,7 @@ a.text-decoration-underline2{
       }
   }
 @media only screen and (min-width: 993.5px) {
-    .breadcrumb{
+    li.breadcrumb-item.dispatches{
       display: none !important;
       }
   }
@@ -2341,6 +2341,9 @@ span.fender-name{
 button.view-comment{
   margin-top: 10px;
   border: 0;
+}
+.tr-document-header{
+  font-weight: bold;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
