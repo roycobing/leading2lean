@@ -2268,7 +2268,77 @@ button.collapse-all{
   display: none !important;
   }
 }
-
+.fender-stratocaster{
+  font-weight: bold;
+}
+.dispatch-me-clouddispatch{
+  border: 0;
+  border-radius: 2px;
+  color: #A40F4C;
+  background-color: #ddd;
+}
+.total-time{
+  color: #A40F4C;
+}
+.totaltime-td-header{
+  font-weight: bold;
+  color: #A40F4C;
+}
+.timedown{
+  font-weight: bold;
+}
+.timedown-datetime{
+  font-weight: normal;
+}
+@media only screen and (max-width: 993.5px) {
+  td.value-stream, td.time-down-reported{
+  display: none !important;
+  }
+}
+.keys-valuestream{
+  text-align: center;
+  color: #fff;
+  background-color: #ffaf4d;
+  width: 80px;
+  border-radius: 15px;
+}
+a.fender-3030{
+  text-decoration: underline !important;
+}
+span.fender-name{
+  margin-left: 5px;
+}
+.code-Red-clouddispatch{
+  background-color: #A40F4C;
+  color: #fff;
+  padding: 5px;
+  border-radius: 50px;
+  width: 100px !important;
+  height: 23px;
+  line-height: .9rem;
+  display: inline-block;
+  text-align: center;
+  font-size: .9rem;
+}
+.idle{
+  display: inline-block;
+  text-align: center;
+  color: #0D324D;
+  background-color: #ffed4f;
+  width: 80px;
+  border-radius: 15px;
+}
+.comment-section-clouddispatch{
+  width: 350px;
+  padding: 0;
+}
+#td-width-fender{
+  width: 350px;
+}
+button.view-comment{
+  margin-top: 10px;
+  border: 0;
+}
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
   width: 10px;

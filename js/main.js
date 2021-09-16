@@ -241,3 +241,12 @@ $( function() {
         $(".production-machine-rotate").toggleClass('down');
       });
     });
+
+    $(function() {
+      $('tr.parent td.td-body')
+        .on("click", function(){
+        var idOfParent = $(this).parents('tr').attr('id');
+        $('tr.child-'+idOfParent).toggle('fast'); /** THIS IS PER ROW */
+      });
+      $('tr[class^=child-]').hide().children('td');
+    });
