@@ -2290,6 +2290,9 @@ button.collapse-all{
 .timedown-datetime{
   font-weight: normal;
 }
+.time-in-status-header{
+  font-weight: bold;
+}
 @media only screen and (max-width: 993.5px) {
   td.value-stream, td.time-down-reported{
   display: none !important;
