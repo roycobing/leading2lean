@@ -1941,7 +1941,7 @@ span.downtime-status{
 .downtime-status-bar.progress-bar {
   background-color: #A40F4C;
 }
-table{
+table.dispatches{
   border-collapse: separate !important;
   border-spacing: 0 10px;
   overflow-y: auto;
@@ -2337,12 +2337,26 @@ span.fender-name{
 }
 #td-width-fender{
   width: 350px;
+  border-left: 10px solid #A40F4C;
 }
 button.view-comment{
   margin-top: 10px;
   border: 0;
 }
 .tr-document-header{
+  font-weight: bold;
+}
+.clouddispatch-codered{
+  padding: 0 20px 0 20px;
+}
+td.td-body{
+  border-bottom-width: 0px !important;
+}
+td.td-body-first{
+  border-bottom-width: 0px !important;
+  border-left: 10px solid #A40F4C;
+}
+.mechanic-testing{
   font-weight: bold;
 }
 /** End of CloudDISPATCH **/
