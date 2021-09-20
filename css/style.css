@@ -2343,9 +2343,6 @@ button.view-comment{
   margin-top: 10px;
   border: 0;
 }
-.tr-document-header{
-  font-weight: bold;
-}
 .clouddispatch-codered{
   padding: 0 20px 0 20px;
 }
@@ -2358,6 +2355,17 @@ td.td-body-first{
 }
 .mechanic-testing{
   font-weight: bold;
+}
+.document-header, .cost-header , .response-time-header{
+  font-weight: bold;
+}
+.timeup-header{
+  font-size: .9rem;
+  font-weight: bold;
+}
+.td-body-timeup{
+  width: 200px;
+  border-bottom-width: 0px !important;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
