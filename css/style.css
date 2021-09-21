@@ -759,6 +759,9 @@ img.image-dispatch{
   height: 30px;
   padding-top: 2px !important;
 }
+.dispatches-list{
+  width: 100%;
+}
 @media only screen and (max-width: 993.5px) {
   .dispatches-list {
     padding-top: 15px;
@@ -830,6 +833,7 @@ img.due-icon{
   max-height: 420px;
   overflow-y: auto;
   transition:  0.15s ease-in-out;
+  width: 100%;
 }
 @media only screen and (max-width: 993.5px) {
   .weeklyprocess-list{
@@ -1891,6 +1895,7 @@ span.downtime-status{
 }
 }
 @media only screen and (max-width: 993.5px) {
+
  .oee-status{
   margin: 0px 40px 0 40px;
 }
