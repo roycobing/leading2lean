@@ -2238,6 +2238,8 @@ span.area-numbers{
 }
 .collapse-expand-menu{
   float: right;
+  margin-right: 5px;
+  margin-bottom: 20px;
 }
 button.expand-all{
   margin-right: 15px;
@@ -2249,8 +2251,6 @@ button.expand-all{
 button.collapse-all{
   margin-right: 15px;
   border: 1px solid #0D324D;
-  border-radius: 2px;
-  color: #0D324D;
   background-color: #fff;
 }
 @media only screen and (max-width: 993.5px) {
@@ -2455,6 +2455,17 @@ td.td-body-rca{
 td.td-body-mod{
   border-bottom-width: 0px !important;
   border-left: 10px solid #0c6cb4;
+}
+.resources-name-image{
+  display: inline-block;
+  text-align: center;
+}
+img.img-person-resources , img.mechanictesting-img-person{
+  height: 40px;
+  width: 60px;
+}
+span.mechanic-title{
+  color: #f2b480;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {

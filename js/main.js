@@ -211,42 +211,55 @@ $(document).ready(function() {
   });
 });
 
-$( function() {
-    $( "#expand" ).on( "click", function() {
-      $( "#dispatch-expand" ).toggleClass( "newClass");
-      $('.skills-column').toggleClass("hide");
-      $(".weekly-codered").toggleClass("hide");
-      $(".weekly-leader").toggleClass("hide");
-      $(".weekly-packaging").toggleClass("hide");
-      $(".weekly-workorder").toggleClass("hide");
-      $(".dispatch-me").toggleClass("hide");
-      $(".due").toggleClass("hide");
+$(function() {
+  $("#expand").on("click", function() {
+    $("#dispatch-expand").toggleClass("newClass");
+    $('.skills-column').toggleClass("hide");
+    $(".weekly-codered").toggleClass("hide");
+    $(".weekly-leader").toggleClass("hide");
+    $(".weekly-packaging").toggleClass("hide");
+    $(".weekly-workorder").toggleClass("hide");
+    $(".dispatch-me").toggleClass("hide");
+    $(".due").toggleClass("hide");
 
 
-      $(".divB").toggleClass("hide");
+    $(".divB").toggleClass("hide");
 
-    });
-  } );
+  });
+});
 
 /** downoccurence */
-  $(document).ready(function() {
-    $(".downoccurence_title").click(function() {
-      $(".downoccurence-rotate").toggleClass('down');
-    });
+$(document).ready(function() {
+  $(".downoccurence_title").click(function() {
+    $(".downoccurence-rotate").toggleClass('down');
   });
+});
 
-  /** Production Machine Downtime */
-    $(document).ready(function() {
-      $(".production-machine_title").click(function() {
-        $(".production-machine-rotate").toggleClass('down');
-      });
+/** Production Machine Downtime */
+$(document).ready(function() {
+  $(".production-machine_title").click(function() {
+    $(".production-machine-rotate").toggleClass('down');
+  });
+});
+/** Table Data */
+$(function() {
+  $('tr.parent td.td-body')
+    .on("click", function() {
+      var idOfParent = $(this).parents('tr').attr('id');
+      $('tr.child-' + idOfParent).toggle('fast');
     });
+  $('tr[class^=child-]').hide().children('td');
+});
 
-    $(function() {
-      $('tr.parent td.td-body')
-        .on("click", function(){
-        var idOfParent = $(this).parents('tr').attr('id');
-        $('tr.child-'+idOfParent).toggle('fast');
-      });
-      $('tr[class^=child-]').hide().children('td');
-    });
+$(function() {
+  $('#btnClick').click(function() {
+    $(this).attr("disabled", true);
+    $('tr[class^=child-]').hide().children('td');
+
+  })
+  $('#btnReset').click(function() {
+    $('#btnClick').attr("disabled", false);
+    $('#btnClick').val('Click');
+    $('tr').show();
+  })
+})
