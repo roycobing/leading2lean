@@ -2339,7 +2339,7 @@ tr.parent{
   width: 80px;
   border-radius: 15px;
 }
-.comment-section-clouddispatch, .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca{
+.comment-section-clouddispatch, .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca ,.comment-section-clouddispatch-mod{
   width: 350px;
   padding: 0;
 }

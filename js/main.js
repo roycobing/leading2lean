@@ -263,3 +263,11 @@ $(function() {
     $('tr').show();
   })
 })
+
+$(document).ready(function(){
+    $('.comment-section-clouddispatch').click(function () {
+            var commentSection = $(this).attr("id");
+
+            $("#" + commentSection ).toggleClass('hide');
+    });
+});
