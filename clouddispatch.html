@@ -165,7 +165,7 @@
             <div class="settingButton">
               <button type="button" class="setButton-clouddispatch" href="#!"><span class="fas fa-sort fa-2x"></span></button>
             </div>
-            <div class="settingButton">
+            <div class="settingButton" id="view">
               <button type="button" class="setButton-clouddispatch" href="#!"><span class="fas fa-eye fa-2x"></span></button>
             </div>
             <div class="settingButton">
@@ -180,7 +180,69 @@
           </div>
         </div>
       </nav>
-
+      <div class="viewButton hide">
+        <div class="row">
+          <div class="apply_cancel-button">
+            <button type="button" class="cancel-button">Cancel</button>
+            <button type="button" class="apply-button">Apply</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="fields col-lg-4">
+            <div class="fields-title">
+              <i class="fa fa-question-circle" aria-hidden="true"></i>Fields
+            </div>
+            <div class="fields-dropdown">
+              <select class="fieldSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="text-size">
+              <div class="textsize-title">
+                Text Size
+              </div>
+              <div class="form-check small-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Small
+                </label>
+              </div>
+              <div class="form-check normal-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Normal
+                </label>
+              </div>
+              <div class="form-check large-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="largeName">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Large
+                </label>
+              </div>
+            </div>
+            <div class="area-filter">
+              <div class="areafilter-title">
+                Area Filter
+              </div>
+              <div class="form-check show-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show
+                </label>
+              </div>
+              <div class="form-check hide-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Hide
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="pagination-clouddispatch">
         <ul class="pagination">
           <li class="page-item"><a class="page-link" href="#">All<br /><span class="area-numbers">656</span></a></li>

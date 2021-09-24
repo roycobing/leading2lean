@@ -264,10 +264,20 @@ $(function() {
   })
 })
 
-$(document).ready(function(){
-    $('.comment-section-clouddispatch').click(function () {
-            var commentSection = $(this).attr("id");
+$(document).ready(function() {
+  $('.comment-section-clouddispatch').click(function() {
+    var commentSection = $(this).attr("id");
 
-            $("#" + commentSection ).toggleClass('hide');
-    });
+    $("#" + commentSection).toggleClass('hide');
+  });
+});
+
+$(function() {
+  $("#view").on("click", function() {
+    $("#dispatch-expand").toggleClass("newClass");
+
+
+    $(".viewButton").toggleClass("hide");
+
+  });
 });
