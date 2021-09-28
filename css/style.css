@@ -2890,7 +2890,7 @@ span.mechanic-title {
   color: #f2b480;
 }
 
-.viewButton{
+.viewButton , .filterButton{
   background-color: #d8d4dc;
   padding: 20px 0 20px 0;
 }
@@ -2950,6 +2950,12 @@ button.apply-button {
 .fieldSelect.form-select {
   width: 100%;
 }
+
+.expanded .comment-section-clouddispatch , .expanded .comment-section-clouddispatch-ps1 , .expanded .comment-section-clouddispatch-rca
+, .expanded .comment-section-clouddispatch-mod{
+    display: none;
+}
+
 
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {

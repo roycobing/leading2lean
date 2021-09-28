@@ -247,48 +247,45 @@ $(function() {
     .on("click", function() {
       var idOfParent = $(this).parents('tr').attr('id');
       $('tr.child-' + idOfParent).toggle('fast');
+      $(this).toggleClass("expanded");
     });
   $('tr[class^=child-]').hide().children('td');
 });
 
 $(function() {
-  $('#btnClick').click(function() {
-    $(this).attr("disabled", true);
-    $('tr[class^=child-]').hide().children('td');
-    $(".comment-section-clouddispatch").show();
-    $(".comment-section-clouddispatch-ps1").show();
-    $(".comment-section-clouddispatch-rca").show();
-    $(".comment-section-clouddispatch-mod").show();
-
-  })
-  $('#btnReset').click(function() {
-    $('#btnClick').attr("disabled", false);
-    $('#btnClick').val('Click');
+  $('#btnExpand').on("click", function() {
+    $('#btnCollapse').attr("disabled", false);
+    $('#btnCollapse').val('Click');
     $('tr').show();
     $(".comment-section-clouddispatch").hide();
     $(".comment-section-clouddispatch-ps1").hide();
     $(".comment-section-clouddispatch-rca").hide();
     $(".comment-section-clouddispatch-mod").hide();
   })
+
+  $('#btnCollapse').on("click", function() {
+    $(this).attr("disabled", true);
+    $('tr[class^=child-]').hide().children('td');
+    $(".comment-section-clouddispatch").show();
+    $(".comment-section-clouddispatch-ps1").show();
+    $(".comment-section-clouddispatch-rca").show();
+    $(".comment-section-clouddispatch-mod").show();
+  })
 })
 
-/** Table Data
-$(document).ready(function() {
-  $('.comment-section-clouddispatch , .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca , .comment-section-clouddispatch-mod').on('click', function () {
-    var commentSection = $(this).attr("id");
-
-    $("#" + commentSection).toggleClass('hide');
-    $('.comment-section-clouddispatch').toggleClass('show');
-  });
-});
-*/
 
 $(function() {
-  $("#view").on("click", function() {
-    $("#dispatch-expand").toggleClass("newClass");
+  $('#view')
+    .on("click", function() {
 
+      $(".viewButton").toggleClass("hide");
+    });
+});
 
-    $(".viewButton").toggleClass("hide");
+$(function() {
+  $('#filter')
+    .on("click", function() {
 
-  });
+      $(".filterButton").toggleClass("hide");
+    });
 });
