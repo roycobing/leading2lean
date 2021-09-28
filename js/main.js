@@ -255,22 +255,33 @@ $(function() {
   $('#btnClick').click(function() {
     $(this).attr("disabled", true);
     $('tr[class^=child-]').hide().children('td');
+    $(".comment-section-clouddispatch").show();
+    $(".comment-section-clouddispatch-ps1").show();
+    $(".comment-section-clouddispatch-rca").show();
+    $(".comment-section-clouddispatch-mod").show();
 
   })
   $('#btnReset').click(function() {
     $('#btnClick').attr("disabled", false);
     $('#btnClick').val('Click');
     $('tr').show();
+    $(".comment-section-clouddispatch").hide();
+    $(".comment-section-clouddispatch-ps1").hide();
+    $(".comment-section-clouddispatch-rca").hide();
+    $(".comment-section-clouddispatch-mod").hide();
   })
 })
 
+/** Table Data
 $(document).ready(function() {
-  $('.comment-section-clouddispatch').click(function() {
+  $('.comment-section-clouddispatch , .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca , .comment-section-clouddispatch-mod').on('click', function () {
     var commentSection = $(this).attr("id");
 
     $("#" + commentSection).toggleClass('hide');
+    $('.comment-section-clouddispatch').toggleClass('show');
   });
 });
+*/
 
 $(function() {
   $("#view").on("click", function() {

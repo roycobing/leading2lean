@@ -2921,14 +2921,12 @@ button.apply-button {
   margin-right: 5px;
 }
 
-.text-size {
+.text-size , .refresh-size , .area-filter , .user-avatar , .useravatars-showDisable , .fields-title ,
+.refresh-title , .useravatars-title , .dispatches-per-page-title ,.dispatches-per-page-numbers , .resource-username-title
+,.resource-username-showDisable {
   text-transform: uppercase;
   margin-left: 15px;
-}
-
-.fields-title {
-  text-transform: uppercase;
-  margin-left: 15px;
+  font-weight: bold;
 }
 
 .fields-dropdown {
@@ -2936,22 +2934,21 @@ button.apply-button {
 }
 
 .form-check.small-title, .form-check.normal-title, .form-check.large-title,
-.form-check.show-title, .form-check.hide-title {
+.form-check.show-title, .form-check.hide-title , .form-check.showAvatar-title , .form-check.hideAvatar-title,
+.form-check.showResource-title , .form-check.hideResource-title {
   display: inline-block;
   margin-right: 50px;
   text-transform: none;
+  font-weight: normal;
 }
-
+.form-check.automatic-title , .form-check.disable-title {
+  display: inline-block;
+  margin-right: 17px;
+  text-transform: none;
+  font-weight: normal;
+}
 .fieldSelect.form-select {
   width: 100%;
-}
-
-.area-filter {
-  margin-left: 15px;
-}
-
-.areafilter-title {
-  text-transform: uppercase;
 }
 
 /** End of CloudDISPATCH **/
