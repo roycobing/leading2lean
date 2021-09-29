@@ -274,18 +274,20 @@ $(function() {
 })
 
 
-$(function() {
-  $('#view')
-    .on("click", function() {
+$(document).ready(function(){
+   $('.filterButton').hide();
 
-      $(".viewButton").toggleClass("hide");
-    });
+   $('#view').click(function() {
+      $('.viewButton').toggle();
+      $('.filterButton').hide();
+   });
 });
 
-$(function() {
-  $('#filter')
-    .on("click", function() {
+$(document).ready(function(){
+   $('.viewButton').hide();
 
-      $(".filterButton").toggleClass("hide");
-    });
+   $('#filter').click(function() {
+      $('.filterButton').toggle();
+      $('.viewButton').hide();
+   });
 });

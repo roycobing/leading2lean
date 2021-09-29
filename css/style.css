@@ -2956,7 +2956,9 @@ button.apply-button {
     display: none;
 }
 
-
+.sample{
+  display: none;
+}
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
   width: 10px;
