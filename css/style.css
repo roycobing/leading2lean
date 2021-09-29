@@ -2565,7 +2565,18 @@ table.table.productmachine-table {
   padding: 0 10px 0 10px;
   margin: 0 10px 0 10px;
 }
+.setButton-clouddispatch-sort{
+  display: block;
+  background-color: transparent !important;
+  border: 0;
+  color: #CFD0D2;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+}
 
+a.setButton-clouddispatch-sort:hover{
+  color: #CFD0D2;
+}
 .setButton-clouddispatch_bell {
   display: block;
   background-color: transparent !important;
@@ -2926,18 +2937,20 @@ button.apply-button {
 ,.resource-username-showDisable {
   text-transform: uppercase;
   margin-left: 15px;
+  margin-right: 15px;
   font-weight: bold;
 }
 
 .fields-dropdown {
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .form-check.small-title, .form-check.normal-title, .form-check.large-title,
 .form-check.show-title, .form-check.hide-title , .form-check.showAvatar-title , .form-check.hideAvatar-title,
 .form-check.showResource-title , .form-check.hideResource-title {
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 25px;
   text-transform: none;
   font-weight: normal;
 }
@@ -2948,7 +2961,7 @@ button.apply-button {
   font-weight: normal;
 }
 .fieldSelect.form-select {
-  width: 100%;
+  margin-right: 15px;
 }
 
 .expanded .comment-section-clouddispatch , .expanded .comment-section-clouddispatch-ps1 , .expanded .comment-section-clouddispatch-rca
@@ -2959,6 +2972,39 @@ button.apply-button {
 .filter-variable-title , .filtervariable-dropdown{
   margin-left: 15px;
   margin-right: 15px;
+}
+@media only screen and (max-width: 993.5px) {
+  .sort.dropdown {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  .sort.dropup {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  ul.sortItem.dropdown-menu.show {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  ul.sortItem.dropdown-menu.show {
+    margin-top: 15px;
+    background-color: #44B4CD;
+  }
+}
+ul.sortItem.dropdown-menu.show a.dropdown-item {
+  color: #fff;
+}
+@media only screen and (max-width: 993.5px) {
+  ul.sortItem.dropdown-menu.show {
+    margin-top: 15px;
+    background-color: #44B4CD;
+  }
+}
+ul.sortItem.dropdown-menu.show a.dropdown-item:hover{
+  background-color: #69c3d7;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
