@@ -270,22 +270,20 @@ $(function() {
     $(".comment-section-clouddispatch-ps1").show();
     $(".comment-section-clouddispatch-rca").show();
     $(".comment-section-clouddispatch-mod").show();
+
   })
 })
 
-
+/** View Icon Navbar Button */
 $(document).ready(function(){
    $('.filterButton').hide();
+   $('.viewButton').hide();
 
    $('#view').click(function() {
       $('.viewButton').toggle();
       $('.filterButton').hide();
    });
-});
-
-$(document).ready(function(){
-   $('.viewButton').hide();
-
+/** Filter Icon Navbar Button */
    $('#filter').click(function() {
       $('.filterButton').toggle();
       $('.viewButton').hide();

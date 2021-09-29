@@ -2956,8 +2956,9 @@ button.apply-button {
     display: none;
 }
 
-.sample{
-  display: none;
+.filter-variable-title , .filtervariable-dropdown{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
