@@ -252,6 +252,7 @@ $(function() {
   $('tr[class^=child-]').hide().children('td');
 });
 
+/** View Icon Navbar Button
 $(function() {
   $('#btnExpand').on("click", function() {
     $('#btnCollapse').attr("disabled", false);
@@ -272,7 +273,18 @@ $(function() {
     $(".comment-section-clouddispatch-mod").show();
 
   })
-})
+})  */
+
+$(document).ready(function(){
+
+   $('#btnExpand').on("click", function() {
+      $('tr').show();
+   });
+
+   $('#btnCollapse').on("click", function() {
+     $('tr[class^=child-]').hide().children('td');
+   });
+});
 
 /** View Icon Navbar Button */
 $(document).ready(function(){
