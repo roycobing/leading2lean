@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" />
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/top-navbar.css">
+  <link rel="stylesheet" href="css/side-navbar.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- fontawesome -->
@@ -25,50 +27,56 @@
 <body>
   <div class="wrapper d-flex align-items-stretch">
     <!-- SideNavbar -->
-    <nav id="sidebar" class="collapse active">
+    <nav id="base-sidebar" class="collapse active">
       <h1><a href="index.html" class="logo"></a>
-        <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
-          <img class="logo-l2l" img src="images/logo_l2l.png" />
-          <a href="#">
-            <div class="fa fa-chevron-right rotate"></div>
-          </a>
-          <span class="sr-only">Toggle Menu</span>
-        </button>
+        <div id="base-sidebar-header">
+          <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
+            <img class="logo-l2l" img src="images/logo_l2l.png" />
+            <a href="#">
+              <div class="fa fa-chevron-right rotate"></div>
+            </a>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
       </h1>
       <ul class="list-unstyled components mb-5">
         <li>
-          <div class="username-wrap">
-            <div class="username-icon"></div>
-            <div class="username">Sam Carlson</div>
-            <div class="username-email">sam@email.com</div>
+          <div id="base-sidebar-user">
+            <div class="username-wrap">
+              <div class="username-icon"></div>
+              <div class="username">Sam Carlson</div>
+              <div class="username-email">sam@email.com</div>
+            </div>
           </div>
         </li>
         <li>
-          <div class="button dropend">
-            <button type="button" class="newDispatch dropdownt-toggle" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-              <i class="fa fa-plus"></i><span class="new-dispatch">New Dispatch</span>
-            </button>
-            <div class="dropdown-menu">
-              <!-- Dropdown menu links -->
-              <a class="newDispatch-dropright" href="#">
-                New Dispatch
-              </a>
-              <a class="newDispatch-dropright" href="#">
-                New Work Order
-              </a>
-              <a class="newDispatch-dropright" href="#">
-                New Kaizen
-              </a>
-            </div>
-            <button type="button" class="caretDown collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#new_dispatch" aria-expanded="false" aria-controls="new_dispatch"><i class="fas fa-caret-down"></i></button>
-            <div class="new_dispatch collapse" id="new_dispatch" aria-labelledby="headingOne" data-bs-parent="#sidebar">
-              <div class="new_dispatch-dropdown">
-                <a class="new_dispatch-link" href="#">
-                  <i class="fa fa-plus"></i> New Work Order
+          <div id="base-sidebar-launcher">
+            <div class="button dropend">
+              <button type="button" class="newDispatch dropdownt-toggle" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <i class="fa fa-plus"></i><span class="new-dispatch">New Dispatch</span>
+              </button>
+              <div class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                <a class="newDispatch-dropright" href="#">
+                  New Dispatch
                 </a>
-                <a class="new_dispatch-link" href="#">
-                  <i class="fa fa-plus"></i> New Kaizen
+                <a class="newDispatch-dropright" href="#">
+                  New Work Order
                 </a>
+                <a class="newDispatch-dropright" href="#">
+                  New Kaizen
+                </a>
+              </div>
+              <button type="button" class="caretDown collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#new_dispatch" aria-expanded="false" aria-controls="new_dispatch"><i class="fas fa-caret-down"></i></button>
+              <div class="new_dispatch collapse" id="new_dispatch" aria-labelledby="headingOne" data-bs-parent="#base-sidebar">
+                <div class="new_dispatch-dropdown">
+                  <a class="new_dispatch-link" href="#">
+                    <i class="fa fa-plus"></i> New Work Order
+                  </a>
+                  <a class="new_dispatch-link" href="#">
+                    <i class="fa fa-plus"></i> New Kaizen
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -83,7 +91,7 @@
             <span class="fas fa-cloud" id="side-icon"></span>
             <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
           </a>
-          <div id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidebar">
+          <div id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#base-sidebar">
             <nav class="sb-sidenav-menu-nested nav">
               <a class="nav-link" href="#">
                 <i class="fas fa-sticky-note" id="side-icon"></i> Standard Work/Docs
@@ -138,13 +146,13 @@
     <!-- End of SideNavbar -->
 
     <!-- Page Content  -->
-    <div id="content">
-      <nav class="navbar navbar-expand-lg navbar-light">
+    <div id="base-main">
+      <nav id="base-header" class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <div class="navbar-main">
             <div class="navbar-menu">
               <span class="logo_l2l"><img class="logo_l2l" img src="images/logo_l2l.png" /></span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#base-sidebar" aria-controls="base-sidebar" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
               </button>
             </div>

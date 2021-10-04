@@ -13,7 +13,7 @@
   fullHeight();
 
   $('#sidebarCollapse').on('click', function() {
-    $('#sidebar').toggleClass('active');
+    $('#base-sidebar').toggleClass('active');
   });
 
 })(jQuery);
@@ -65,11 +65,11 @@ $(document).ready(function() {
 });
 
 $("#sidebarCollapse").on("click", function() {
-  if ($("#sidebar").hasClass("active")) {
-    return $("#sidebar").removeClass("show");
+  if ($("#base-sidebar").hasClass("active")) {
+    return $("#base-sidebar").removeClass("show");
   }
 
-  $("#sidebar").toggleClass("show");
+  $("#base-sidebar").toggleClass("show");
 });
 
 /** Sidebar Active Menu **/
