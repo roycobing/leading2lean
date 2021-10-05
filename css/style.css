@@ -2312,47 +2312,6 @@ button.apply-button {
   margin-left: 15px;
   margin-right: 15px;
 }
-@media only screen and (max-width: 993.5px) {
-  .sort.dropdown , .more.dropdown {
-    display: none !important;
-  }
-}
-@media only screen and (min-width: 993.5px) {
-  .sort.dropup , .more.dropup {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 993.5px) {
-  ul.sortItem.dropdown-menu.show ,ul.moreItem.dropdown-menu.show {
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 993.5px) {
-  ul.sortItem.dropdown-menu.show {
-    margin-top: 15px;
-    background-color: #44B4CD;
-  }
-}
-ul.sortItem.dropdown-menu.show a.dropdown-item , ul.moreItem.dropdown-menu.show a.dropdown-item {
-  color: #fff;
-}
-@media only screen and (max-width: 993.5px) {
-  ul.sortItem.dropdown-menu.show , ul.moreItem.dropdown-menu.show {
-    margin-top: 15px;
-    background-color: #44B4CD;
-  }
-}
-ul.sortItem.dropdown-menu.show a.dropdown-item:hover ,
-ul.moreItem.dropdown-menu.show a.dropdown-item:hover{
-  background-color: #69c3d7;
-}
-
-@media only screen and (min-width: 993.5px) {
-  ul.moreItem.dropdown-menu.show {
-    margin: 15px auto;
-    background-color: #44B4CD;
-  }
-}
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
   width: 10px;

@@ -132,10 +132,7 @@
   margin: 0 10px 0 10px;
 }
 
-a.setButton-clouddispatch-sort:hover{
-  color: #CFD0D2;
-}
-a.setButton-clouddispatch-more:hover{
+a.setButton-clouddispatch:hover{
   color: #CFD0D2;
 }
 .setButton-clouddispatch_bell {
@@ -145,5 +142,53 @@ a.setButton-clouddispatch-more:hover{
   color: #CFD0D2;
   padding-right: 15px;
   padding-left: 15px;
+}
+span.editIcon{
+  color: #fff;
+  float: right;
+}
+ul.sortItem , ul.moreItem{
+  font-size: .94rem;
+}
+@media only screen and (max-width: 993.5px) {
+  .sort.dropdown , .more.dropdown {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  .sort.dropup , .more.dropup {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  ul.sortItem.dropdown-menu.show {
+    margin-top: 15px;
+    background-color: #44B4CD;
+  }
+}
+ul.sortItem.dropdown-menu.show a.dropdown-item , ul.moreItem.dropdown-menu.show a.dropdown-item {
+  color: #fff;
+}
+@media only screen and (max-width: 993.5px) {
+  ul.sortItem.dropdown-menu.show , ul.moreItem.dropdown-menu.show {
+    margin-bottom: 20px;
+    background-color: #44B4CD;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  ul.moreItem.dropdown-menu.show {
+    margin-left: -100px;
+  }
+}
+ul.sortItem.dropdown-menu.show a.dropdown-item:hover ,
+ul.moreItem.dropdown-menu.show a.dropdown-item:hover{
+  background-color: #69c3d7;
+}
+
+@media only screen and (min-width: 993.5px) {
+  ul.moreItem.dropdown-menu.show {
+    margin: 15px auto;
+    background-color: #44B4CD;
+  }
 }
 /** End of CloudDISPATCH **/
