@@ -1921,48 +1921,6 @@ table.table.productmachine-table {
 
 /** End of Performance/Stats Column **/
 /** Start of CloudDISPATCH **/
-.settingButton {
-  border-right: 1px solid #CFD0D2;
-}
-
-@media only screen and (max-width: 993.5px) {
-  .settingButton {
-    border: 0;
-  }
-}
-
-.setButton-clouddispatch {
-  display: block;
-  background-color: transparent !important;
-  border: 0;
-  color: #CFD0D2;
-  padding: 0 10px 0 10px;
-  margin: 0 10px 0 10px;
-}
-.setButton-clouddispatch-sort , .setButton-clouddispatch-more{
-  display: block;
-  background-color: transparent !important;
-  border: 0;
-  color: #CFD0D2;
-  padding: 0 10px 0 10px;
-  margin: 0 10px 0 10px;
-}
-
-a.setButton-clouddispatch-sort:hover{
-  color: #CFD0D2;
-}
-a.setButton-clouddispatch-more:hover{
-  color: #CFD0D2;
-}
-.setButton-clouddispatch_bell {
-  display: block;
-  background-color: transparent !important;
-  border: 0;
-  color: #CFD0D2;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 ul.pagination {
   margin-top: 20px;
 }
