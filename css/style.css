@@ -2113,7 +2113,7 @@ td.td-body-first {
   border-left: 10px solid #f71e1e;
 }
 
-td.td-body-dispatch {
+td.td-body-resources , td.td-body-dispatch {
   border-bottom-width: 0px !important;
 }
 
@@ -2298,7 +2298,6 @@ button.apply-button {
 .fieldSelect.form-select {
   margin-right: 15px;
 }
-
 .expanded .comment-section-clouddispatch , .expanded .comment-section-clouddispatch-ps1 , .expanded .comment-section-clouddispatch-rca
 , .expanded .comment-section-clouddispatch-mod{
     display: none;
@@ -2311,6 +2310,27 @@ button.apply-button {
 .filter-variable-title , .filtervariable-dropdown{
   margin-left: 15px;
   margin-right: 15px;
+}
+@media only screen and (max-width: 993.5px) {
+  td.td-body-resources , td.td-body-valuestream , td.td-body-timedown {
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  tr td.td-body{
+    min-width: 50px;
+    max-width: 50px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  #td-width-fender , #td-c10-conveyor, #td-rca ,#td-mod{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .comment-section-clouddispatch , .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca , .comment-section-clouddispatch-mod{
+    width: 100%;
+  }
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {
