@@ -493,7 +493,9 @@ img.due-icon {
     padding: 0 12px;
   }
 }
-
+.weeklyprocess{
+  width: 100%;
+}
 .weeklyprocess-list {
   margin-top: 20px;
   min-height: 420px;
@@ -1995,6 +1997,7 @@ button.collapse-all {
     bottom: 0;
     width: 100%;
     padding-right: 10px;
+    z-index: 1;
   }
 }
 
@@ -2093,7 +2096,6 @@ tr.parent {
   width: 350px;
   border-left: 10px solid #f71e1e;
 }
-
 button.view-comment {
   margin-top: 10px;
   border: 0;
@@ -2302,11 +2304,6 @@ button.apply-button {
 , .expanded .comment-section-clouddispatch-mod{
     display: none;
 }
-.expands .comment-section-clouddispatch , .expands .comment-section-clouddispatch-ps1 , .expands .comment-section-clouddispatch-rca
-, .expands .comment-section-clouddispatch-mod{
-    display: block;
-}
-
 .filter-variable-title , .filtervariable-dropdown{
   margin-left: 15px;
   margin-right: 15px;
@@ -2329,8 +2326,27 @@ button.apply-button {
 }
 @media only screen and (max-width: 993.5px) {
   .comment-section-clouddispatch , .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca , .comment-section-clouddispatch-mod{
-    width: 100%;
+    width: auto;
   }
+}
+.myDispatches.form-check{
+  width: auto;
+  display: inline-block !important;
+}
+.save-filter-body{
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+button.savefilter-button {
+  margin-left: 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #44B4CD;
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  text-transform: uppercase;
 }
 /** End of CloudDISPATCH **/
 ::-webkit-scrollbar {

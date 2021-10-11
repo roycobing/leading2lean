@@ -66,10 +66,10 @@ $(document).ready(function() {
 
 $("#sidebarCollapse").on("click", function() {
   if ($("#base-sidebar").hasClass("active")) {
-    return $("#base-sidebar").removeClass("show");
+    return $("#base-sidebar").toggleClass("show");
   }
-
-  $("#base-sidebar").toggleClass("show");
+  /** Sidebar Active Menu
+  $("#base-sidebar").toggleClass("show");**/
 });
 
 /** Sidebar Active Menu **/
