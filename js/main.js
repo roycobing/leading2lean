@@ -72,6 +72,10 @@ $("#sidebarCollapse").on("click", function() {
   $("#base-sidebar").toggleClass("show");**/
 });
 
+$("#burger-menu-button").on("click", function() {
+	$('#base-sidebar').removeClass('active');
+});
+
 /** Sidebar Active Menu **/
 $(document).ready(function() {
   $(document).on('click', '.sidebar-menu', function() {
