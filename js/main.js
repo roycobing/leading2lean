@@ -74,6 +74,7 @@ $("#sidebarCollapse").on("click", function() {
 
 $("#burger-menu-button").on("click", function() {
 	$('#base-sidebar').removeClass('active');
+  $(".rotate").toggleClass('right');
 });
 
 /** Sidebar Active Menu **/

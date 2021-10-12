@@ -416,7 +416,7 @@ button.caretDown {
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .fa-chevron-right{
+  .rotate{
     display: none;
   }
 }
@@ -445,31 +445,7 @@ button.caretDown {
   }
 }
 
-@media only screen and (max-width: 993.5px) {
-  .rotate {
-    color: #CFD0D2;
-    -moz-transition: all .25s linear;
-    -webkit-transition: all .25s linear;
-    transition: all .25s linear;
-    float: right;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 30px;
-  }
-}
-
 @media only screen and (min-width: 993.5px) {
-  .rotate.right {
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    margin-top: 5px;
-    padding-left: 5px;
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 993.5px) {
   .rotate.right {
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
