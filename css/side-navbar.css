@@ -398,7 +398,28 @@ button.caretDown {
   }
 }
 /** end of sidebar NOT Active **/
-
+@media only screen and (min-width: 993.5px) {
+  .fa-chevron-left{
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .fa-chevron-left{
+    color: #CFD0D2;
+    -moz-transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    float: right;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .fa-chevron-right{
+    display: none;
+  }
+}
 
 .nav a {
   width: 100% !important;
