@@ -2030,7 +2030,17 @@ button.collapse-all {
 .resources-header, .duedate, .value-stream, .timedown {
   font-weight: bold;
 }
-
+@media only screen and (max-width: 993.5px) {
+  .resources-header , .value-stream , .due-date , .timedown , .time-in-status-header {
+    font-weight: bold;
+    font-size: .67rem;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+   .due-date-datetime , .keys-valuestream  , .resources-name , .timedown-datetime , .time-in-status{
+    font-size: .67rem;
+  }
+}
 .timedown-datetime {
   font-weight: normal;
 }
@@ -2092,9 +2102,11 @@ tr.parent {
   padding: 0;
 }
 
-#td-width-fender {
+td.td-body-fender {
   width: 350px;
   border-left: 10px solid #f71e1e;
+  cursor: pointer;
+  border-bottom-width: 0 !important;
 }
 button.view-comment {
   margin-top: 10px;
@@ -2104,18 +2116,25 @@ button.view-comment {
 .clouddispatch-table {
   padding: 0 20px 0 20px;
 }
-
-td.td-body {
-  border-bottom-width: 0px !important;
-  cursor: pointer;
+@media only screen and (max-width: 993.5px) {
+  .clouddispatch-table {
+    padding: 0 5px 0 5px;
+  }
 }
 
 td.td-body-first {
   border-bottom-width: 0px !important;
   border-left: 10px solid #f71e1e;
 }
+@media only screen and (max-width: 993.5px) {
+  td.td-body-first {
+    font-size: .8rem;
+    min-width: 50px;
+    max-width: 50px;
+  }
+}
 
-td.td-body-resources , td.td-body-dispatch {
+td.td-body-resources , td.td-body-dispatch , td.td-body-valuestream , td.td-body-timedown {
   border-bottom-width: 0px !important;
 }
 
@@ -2137,9 +2156,11 @@ td.td-body-resources , td.td-body-dispatch {
   border-bottom-width: 0px !important;
 }
 
-#td-c10-conveyor {
+td.td-body-ps1 {
   width: 350px;
   border-left: 10px solid #c67ff0;
+  cursor: pointer;
+  border-bottom-width: 0 !important;
 }
 
 .ps1-clouddispatch {
@@ -2169,9 +2190,11 @@ td.td-body-ps1 {
   border-radius: 15px;
 }
 
-#td-rca {
+td.td-body-rca {
   width: 350px;
   border-left: 10px solid #a4066f;
+  cursor: pointer;
+  border-bottom-width: 0 !important;
 }
 
 .rca-clouddispatch {
@@ -2192,9 +2215,11 @@ td.td-body-rca {
   border-left: 10px solid #a4066f;
 }
 
-#td-mod {
+td.td-body-mod {
   width: 350px;
   border-left: 10px solid #0c6cb4;
+  cursor: pointer;
+  border-bottom-width: 0 !important;
 }
 
 .mod-clouddispatch {
@@ -2309,18 +2334,52 @@ button.apply-button {
   margin-right: 15px;
 }
 @media only screen and (max-width: 993.5px) {
-  td.td-body-resources , td.td-body-valuestream , td.td-body-timedown {
+  td.td-body-resources , td.td-body-valuestream , td.td-body-timedown , td.td-body-timedown
+  ,.time-in-status-header-mobile , .time-in-status-mobile{
     display: none;
   }
 }
 @media only screen and (max-width: 993.5px) {
-  tr td.td-body{
+  li.breadcrumb-item.tooling {
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  td.td-body-resources-mobile{
+    border-bottom-width: 0px !important;
+    border-left: 10px solid #f71e1e;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  td.td-body-duedate-mobile{
+    border-bottom-width: 0px !important;
+    border-left: 10px solid #f71e1e;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  td.td-body-timedown-mobile , td.td-body-valuestream-mobile{
+    border-bottom-width: 0px !important;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  td.td-body-resources-mobile , td.td-body-timedown-mobile , td.td-body-duedate-mobile , td.td-body-valuestream-mobile{
+    display: none;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .due-date{
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  td.td-body-fender , td.td-body-ps1 , td.td-body-rca , td.td-body-mod{
     min-width: 50px;
     max-width: 50px;
   }
 }
 @media only screen and (max-width: 993.5px) {
-  #td-width-fender , #td-c10-conveyor, #td-rca ,#td-mod{
+  td.td-body-fender , td.td-body-ps1, td.td-body-rca ,td.td-body-mod{
     width: 100%;
   }
 }

@@ -68,8 +68,6 @@ $("#sidebarCollapse").on("click", function() {
   if ($("#base-sidebar").hasClass("active")) {
     return $("#base-sidebar").toggleClass("show");
   }
-  /** Sidebar Active Menu
-  $("#base-sidebar").toggleClass("show");**/
 });
 
 $("#burger-menu-button").on("click", function() {
@@ -248,7 +246,7 @@ $(document).ready(function() {
 });
 /** Table Data */
 $(function() {
-  $('tr.parent td.td-body')
+  $('td.td-body-fender , td.td-body-ps1 , td.td-body-rca , td.td-body-mod')
     .on("click", function() {
       var idOfParent = $(this).parents('tr').attr('id');
       $('tr.child-' + idOfParent).toggle('fast');
