@@ -2017,7 +2017,17 @@ button.collapse-all {
   color: #A40F4C;
   background-color: #ddd;
 }
-
+@media only screen and (max-width: 993.5px) {
+  .dispatch-me-clouddispatch {
+    font-size: .76rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .td-body-first-comment{
+    width: auto;
+  }
+}
 .total-time {
   color: #A40F4C;
 }
@@ -2031,14 +2041,22 @@ button.collapse-all {
   font-weight: bold;
 }
 @media only screen and (max-width: 993.5px) {
-  .resources-header , .value-stream , .due-date , .timedown , .time-in-status-header {
+  .resources-header , .value-stream , .due-date , .timedown , .time-in-status-header ,
+  .responsetime-header , .completed-header , .document-header , .cost-header {
     font-weight: bold;
-    font-size: .67rem;
+    font-size: .78rem;
   }
 }
 @media only screen and (max-width: 993.5px) {
-   .due-date-datetime , .keys-valuestream  , .resources-name , .timedown-datetime , .time-in-status{
-    font-size: .67rem;
+   .due-date-datetime , .keys-valuestream  , .resources-name , .timedown-datetime , .time-in-status ,
+   .responsetime-status , .completed-status{
+    font-size: .8rem;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+   .sample .expanded{
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
 }
 .timedown-datetime {
@@ -2101,7 +2119,11 @@ tr.parent {
   width: 350px;
   padding: 0;
 }
-
+@media only screen and (max-width: 993.5px) {
+  .comment-section-clouddispatch, .comment-section-clouddispatch-ps1, .comment-section-clouddispatch-rca, .comment-section-clouddispatch-mod {
+    font-size: .9rem;
+  }
+}
 td.td-body-fender {
   width: 350px;
   border-left: 10px solid #f71e1e;
@@ -2122,7 +2144,7 @@ button.view-comment {
   }
 }
 
-td.td-body-first {
+td.td-body-first , td.td-body-mechanic-testing{
   border-bottom-width: 0px !important;
   border-left: 10px solid #f71e1e;
 }
@@ -2134,10 +2156,17 @@ td.td-body-first {
   }
 }
 
-td.td-body-resources , td.td-body-dispatch , td.td-body-valuestream , td.td-body-timedown {
+td.td-body-resources , td.td-body-dispatch , td.td-body-valuestream , td.td-body-timedown ,
+td.td-body-notification , td.td-body-document , td.td-body-cost , td.td-body-responsetime {
   border-bottom-width: 0px !important;
 }
 
+@media only screen and (max-width: 993.5px) {
+  td.td-body-dispatch {
+    min-width: 90px;
+    max-width: 90px;
+  }
+}
 .mechanic-testing {
   font-weight: bold;
 }
@@ -2334,8 +2363,9 @@ button.apply-button {
   margin-right: 15px;
 }
 @media only screen and (max-width: 993.5px) {
-  td.td-body-resources , td.td-body-valuestream , td.td-body-timedown , td.td-body-timedown
-  ,.time-in-status-header-mobile , .time-in-status-mobile{
+  td.td-body-resources , td.td-body-valuestream , td.td-body-timedown , td.td-body-timedown ,
+  td.td-body-cost , td.td-body-notification ,  td.td-body-responsetime , td.td-body-timeup ,
+  td.td-body-mechanic-testing , td.td-body-document{
     display: none;
   }
 }
@@ -2357,13 +2387,17 @@ button.apply-button {
   }
 }
 @media only screen and (max-width: 993.5px) {
-  td.td-body-timedown-mobile , td.td-body-valuestream-mobile{
+  td.td-body-timedown-mobile , td.td-body-valuestream-mobile , td.td-body-responsetime-mobile ,
+  td.td-body-completed-mobile , td.td-body-document-mobile , td.td-body-notification-mobile{
     border-bottom-width: 0px !important;
     width: 100%;
   }
 }
 @media only screen and (min-width: 993.5px) {
-  td.td-body-resources-mobile , td.td-body-timedown-mobile , td.td-body-duedate-mobile , td.td-body-valuestream-mobile{
+  td.td-body-resources-mobile , td.td-body-timedown-mobile , td.td-body-duedate-mobile ,
+  td.td-body-valuestream-mobile , td.td-body-tooling-mobile, td.td-body-mechanic-testing-mobile ,
+  td.td-body-responsetime-mobile , td.td-body-completed-mobile , td.td-body-document-mobile ,
+  td.td-body-notification-mobile , td.td-body-cost-mobile{
     display: none;
   }
 }
@@ -2386,6 +2420,13 @@ button.apply-button {
 @media only screen and (max-width: 993.5px) {
   .comment-section-clouddispatch , .comment-section-clouddispatch-ps1 , .comment-section-clouddispatch-rca , .comment-section-clouddispatch-mod{
     width: auto;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .td-body-tooling-mobile , td.td-body-mechanic-testing-mobile , td.td-body-notification-mobile , td.td-body-cost-mobile{
+    font-size: .8rem;
+    border-bottom-width: 0 !important;
+    border-left: 10px solid #f71e1e;
   }
 }
 .myDispatches.form-check{
