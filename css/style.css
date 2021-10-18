@@ -2002,11 +2002,22 @@ button.collapse-all {
 }
 
 @media only screen and (max-width: 993.5px) {
-  li.nav-item-clouddispatch, form.search-box-clouddispatch, .setButton-clouddispatch_bell {
+  li.nav-item-clouddispatch, form.search-box-clouddispatch , .setButton-clouddispatch_bell {
     display: none !important;
   }
 }
-
+@media only screen and (max-width: 993.5px) {
+  form.search-box-clouddispatch-mobile {
+    background-color: #ddd;
+    margin-top: 10px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 993.5px) {
+  form.search-box-clouddispatch-mobile {
+    display: none !important;
+  }
+}
 .fender-stratocaster {
   font-weight: bold;
 }
