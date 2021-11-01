@@ -246,7 +246,7 @@ $(document).ready(function() {
 });
 /** Table Data */
 $(function() {
-  $('td.td-body-fender , td.td-body-ps1 , td.td-body-rca , td.td-body-mod')
+  $('td.td-body-codered , td.td-body-ps1 , td.td-body-rca , td.td-body-mod')
     .on("click", function() {
       var idOfParent = $(this).parents('tr').attr('id');
       $('tr.child-' + idOfParent).toggle('fast');
