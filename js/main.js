@@ -266,28 +266,29 @@ $(document).ready(function() {
       $('.comment-section-clouddispatch-rca').hide();
       $('.comment-section-clouddispatch-mod').hide();
 
+      $('td.td-body-codered')
+        .on("click", function() {
+          $('.comment-section-clouddispatch').show();
+        });
+      $('td.td-body-ps1')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-ps1').show();
+        });
+      $('td.td-body-rca')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-rca').show();
+        });
+      $('td.td-body-mod')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-mod').show();
+        });
+
       $('#btnCollapse')
         .on("click", function() {
           $('.comment-section-clouddispatch').show();
           $('.comment-section-clouddispatch-ps1').show();
           $('.comment-section-clouddispatch-rca').show();
           $('.comment-section-clouddispatch-mod').show();
-        });
-      $('td.td-body-codered')
-        .on("click", function() {
-          $('.comment-section-clouddispatch').toggle();
-        });
-      $('td.td-body-ps1')
-        .on("click", function() {
-          $('.comment-section-clouddispatch-ps1').toggle();
-        });
-      $('td.td-body-rca')
-        .on("click", function() {
-          $('.comment-section-clouddispatch-rca').toggle();
-        });
-      $('td.td-body-mod')
-        .on("click", function() {
-          $('.comment-section-clouddispatch-mod').toggle();
         });
     });
 
