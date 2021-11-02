@@ -266,6 +266,13 @@ $(document).ready(function() {
       $('.comment-section-clouddispatch-rca').hide();
       $('.comment-section-clouddispatch-mod').hide();
 
+      $('#btnCollapse')
+        .on("click", function() {
+          $('.comment-section-clouddispatch').show();
+          $('.comment-section-clouddispatch-ps1').show();
+          $('.comment-section-clouddispatch-rca').show();
+          $('.comment-section-clouddispatch-mod').show();
+        });
       $('td.td-body-codered')
         .on("click", function() {
           $('.comment-section-clouddispatch').toggle();
@@ -285,21 +292,12 @@ $(document).ready(function() {
     });
 
   $('#btnCollapse').on("click", function() {
-    $(this).attr("disabled", true);
+    $(this).attr("disabled", false);
     $('tr[class^=child-]').hide().children('td');
     $('.comment-section-clouddispatch').show();
     $('.comment-section-clouddispatch-ps1').show();
     $('.comment-section-clouddispatch-rca').show();
     $('.comment-section-clouddispatch-mod').show();
-
-    $('#btnExpand')
-      .on("click", function() {
-        $('.comment-section-clouddispatch').hide();
-      });
-    $('#btnCollapse')
-      .on("click", function() {
-        $('.comment-section-clouddispatch').hide();
-      });
   });
 });
 /** View Icon Navbar Button */
