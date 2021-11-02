@@ -292,6 +292,14 @@ $(document).ready(function() {
     $('.comment-section-clouddispatch-rca').show();
     $('.comment-section-clouddispatch-mod').show();
 
+    $('#btnExpand')
+      .on("click", function() {
+        $('.comment-section-clouddispatch').hide();
+      });
+    $('#btnCollapse')
+      .on("click", function() {
+        $('.comment-section-clouddispatch').hide();
+      });
   });
 });
 /** View Icon Navbar Button */

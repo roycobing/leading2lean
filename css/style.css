@@ -2146,7 +2146,8 @@ button.view-comment {
   }
 }
 
-td.td-body-first , td.td-body-mechanic-testing{
+td.td-body-first , td.td-body-mechanic-testing-codered{
+  width: 350px;
   border-bottom-width: 0px !important;
   border-left: 10px solid #f71e1e;
 }
