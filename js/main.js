@@ -252,7 +252,10 @@ $(function() {
       $('tr.child-' + idOfParent).toggle('fast');
       $(this).toggleClass("expanded");
     });
+  $('tr[class^=child-]').hide().children('td');
+});
 
+$(document).ready(function() {
   $('#btnExpand')
     .on("click", function() {
       $('#btnCollapse').attr("disabled", false);
@@ -262,6 +265,23 @@ $(function() {
       $('.comment-section-clouddispatch-ps1').hide();
       $('.comment-section-clouddispatch-rca').hide();
       $('.comment-section-clouddispatch-mod').hide();
+
+      $('td.td-body-codered')
+        .on("click", function() {
+          $('.comment-section-clouddispatch').toggle();
+        });
+      $('td.td-body-ps1')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-ps1').toggle();
+        });
+      $('td.td-body-rca')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-rca').toggle();
+        });
+      $('td.td-body-mod')
+        .on("click", function() {
+          $('.comment-section-clouddispatch-mod').toggle();
+        });
     });
 
   $('#btnCollapse').on("click", function() {
@@ -271,42 +291,7 @@ $(function() {
     $('.comment-section-clouddispatch-ps1').show();
     $('.comment-section-clouddispatch-rca').show();
     $('.comment-section-clouddispatch-mod').show();
-  });
-  $('tr[class^=child-]').hide().children('td');
-});
 
-$('td.td-body-codered')
-  .on("click", function() {
-    $('.comment-section-clouddispatch').show();
-  });
-
-$('td.td-body-ps1')
-  .on("click", function() {
-    $('.comment-section-clouddispatch-ps1').show();
-  });
-
-$('td.td-body-rca')
-  .on("click", function() {
-    $('.comment-section-clouddispatch-rca').show();
-  });
-
-$('td.td-body-mod')
-  .on("click", function() {
-    $('.comment-section-clouddispatch-mod').show();
-  });
-  
-$(document).ready(function() {
-  $('.filterButton').hide();
-  $('.viewButton').hide();
-
-  $('#view').click(function() {
-    $('.viewButton').toggle();
-    $('.filterButton').hide();
-  });
-  /** Filter Icon Navbar Button */
-  $('#filter').click(function() {
-    $('.filterButton').toggle();
-    $('.viewButton').hide();
   });
 });
 /** View Icon Navbar Button */
