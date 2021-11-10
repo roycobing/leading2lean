@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/top-navbar.css">
+  <link rel="stylesheet" href="css/side-navbar.css">
+  <link rel="stylesheet" href="css/setup.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+
+  <!-- Modal -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Font Awesome Icon -->
+  <script src="https://kit.fontawesome.com/de25256445.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <title>leading2lean</title>
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+    <!-- Start of SideNavbar -->
+    <nav id="base-sidebar" class="collapse active">
+      <h1><a href="index.html" class="logo"></a>
+        <div id="base-sidebar-header">
+          <button type="button" id="sidebarCollapse" class="btn sidebarCollapse">
+            <img class="logo-l2l" img src="images/logo_l2l.png" />
+            <a href="#">
+              <div class="fa fa-chevron-right rotate"></div>
+            </a>
+            <span class="sr-only">Toggle Menu</span>
+          </button>
+        </div>
+      </h1>
+      <ul class="list-unstyled components mb-5">
+        <li>
+          <div id="base-sidebar-user">
+            <div class="username-wrap">
+              <div class="username-icon"></div>
+              <div class="username">Sam Carlson</div>
+              <div class="username-email">sam@email.com</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="base-sidebar-launcher">
+            <div class="button dropend">
+              <button type="button" class="newDispatch dropdownt-toggle" data-bs-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <i class="fa fa-plus"></i><span class="new-dispatch">New Dispatch</span>
+              </button>
+              <div class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                <a class="newDispatch-dropright" href="#">
+                  New Dispatch
+                </a>
+                <a class="newDispatch-dropright" href="#">
+                  New Work Order
+                </a>
+                <a class="newDispatch-dropright" href="#">
+                  New Kaizen
+                </a>
+              </div>
+              <button type="button" class="caretDown collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#new_dispatch" aria-expanded="false" aria-controls="new_dispatch"><i class="fas fa-caret-down"></i></button>
+              <div class="new_dispatch collapse" id="new_dispatch" aria-labelledby="headingOne" data-bs-parent="#base-sidebar">
+                <div class="new_dispatch-dropdown">
+                  <a class="new_dispatch-link" href="#">
+                    <i class="fa fa-plus"></i> New Work Order
+                  </a>
+                  <a class="new_dispatch-link" href="#">
+                    <i class="fa fa-plus"></i> New Kaizen
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="sidebar-menu">
+          <a class="home" href="index.html"><i class="fa fa-home" id="side-icon"></i>
+            Home
+          </a>
+        </li>
+        <li class="sidebar-menu-cloud">
+          <a class="nav-link" href="clouddispatch.html">
+            <span class="fas fa-cloud" id="side-icon"></span>
+            <span class="CloudDISPATCH text-truncate">CloudDISPATCH</span>
+          </a>
+          <div id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#base-sidebar">
+            <nav class="sb-sidenav-menu-nested nav">
+              <a class="nav-link" href="#">
+                <i class="fas fa-sticky-note" id="side-icon"></i> Standard Work/Docs
+              </a>
+              <a class="nav-link" href="#">
+                <i class="far fa-calendar" id="side-icon"></i> Scheduler
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fas fa-paste" id="side-icon"></i> Work Orders
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fa fa-wrench" id="side-icon"></i> Spares
+              </a>
+            </nav>
+          </div>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><i class="fas fa-book-open" id="side-icon"></i>
+            Production</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><span class="fas fa-tachometer-alt" id="side-icon"></span> Dashboard</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><i class="fa fa-graduation-cap" id="side-icon"></i>Skills</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><i class="fas fa-chart-bar" id="side-icon"></i>
+            Lean Tools</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><i class="fas fa-chart-line" id="side-icon"></i>
+            Reports</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="#" class="text-truncate"><i class="far fa-question-circle" id="side-icon"></i>
+            Support</a>
+        </li>
+        <li class="sidebar-menu">
+          <a href="setup.html" class="text-truncate"><span class="fas fa-cog" id="side-icon"></span>
+            Setup</a>
+        </li>
+      </ul>
+      <div class="footer">
+        <p>
+          Copyright &copy;<script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </nav>
+    <!-- End of SideNavbar -->
+    <!-- Start of Base Main -->
+    <div id="base-main">
+      <nav id="base-header" class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <div class="navbar-main">
+            <div class="navbar-menu">
+              <span class="logo_l2l"><img class="logo_l2l" img src="images/logo_l2l.png" /></span>
+              <button class="navbar-toggler" id="burger-menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#base-sidebar" aria-controls="base-sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+          </div>
+          <div class="clouddispatch-navbar navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item-clouddispatch">
+                <a class="nav-link-home" aria-current="page" href="index.html"><img class="home-logo" img src="images/icon_setup_on.png" /><span class="home">Dispatch Types</span></a>
+              </li>
+            </ul>
+            <form class="search-box-clouddispatch d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="navbarButton">
+              <button type="button" class="navbarSetup-button" href="#"><img src="images/icon_new.png" /><div class="navbarSetup-text">Add New</div></button>
+            </div>
+            <div class="navbarButton">
+              <button type="button" class="navbarSetup-button" href="#"><img src="images/icon_export.png" /><div class="navbarSetup-text">Export</div></button>
+            </div>
+            <div class="navbarButton">
+              <button type="button" class="navbarSetup-button" href="#"><img src="images/icon_filter.png" /><div class="navbarSetup-text">Filter</div></button>
+            </div>
+            <div class="navbarButton-notification">
+              <button type="button" class="navbarSetup-button" href="#"><img src="images/icon_notifications.png" /></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <form class="search-box-clouddispatch-mobile d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary " id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="viewButton hide">
+        <div class="row">
+          <div class="apply_cancel-button">
+            <button type="button" class="cancel-button">Cancel</button>
+            <button type="button" class="apply-button">Apply</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="fields col-lg-4">
+            <div class="fields-title">
+              <i class="fa fa-question-circle" aria-hidden="true"></i>Fields
+            </div>
+            <div class="fields-dropdown">
+              <select class="fieldSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="text-size">
+              <div class="textsize-title">
+                Text Size
+              </div>
+              <div class="form-check small-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Small
+                </label>
+              </div>
+              <div class="form-check normal-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Normal
+                </label>
+              </div>
+              <div class="form-check large-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="largeName">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Large
+                </label>
+              </div>
+            </div>
+            <div class="area-filter">
+              <div class="areafilter-title">
+                Area Filter
+              </div>
+              <div class="form-check show-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="showArea">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show
+                </label>
+              </div>
+              <div class="form-check hide-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideArea">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Hide
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="refresh col-lg-4">
+            <div class="refresh-title">
+              <i class="fa fa-question-circle" aria-hidden="true"></i>Refresh
+            </div>
+            <div class="refresh-size">
+              <div class="form-check automatic-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="automaticRefresh">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Automatic
+                </label>
+              </div>
+              <div class="form-check disable-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Disable
+                </label>
+              </div>
+            </div>
+            <div class="useravatars-title">
+              User Avatars
+            </div>
+            <div class="useravatars-showDisable">
+              <div class="form-check showAvatar-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="showAvatar">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show
+                </label>
+              </div>
+              <div class="form-check hideAvatar-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideAvatar">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Hide
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="dispatches-per-page col-lg-4">
+            <div class="dispatches-per-page-title">
+              Dispatches Per Page
+            </div>
+            <div class="dispatches-per-page-numbers">
+              <div class="form-check automatic-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="automaticRefresh">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  25
+                </label>
+              </div>
+              <div class="form-check disable-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  50
+                </label>
+              </div>
+              <div class="form-check disable-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  75
+                </label>
+              </div>
+              <div class="form-check disable-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  100
+                </label>
+              </div>
+            </div>
+            <div class="resource-username-title">
+              Resource Username
+            </div>
+            <div class="resource-username-showDisable">
+              <div class="form-check showResource-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="showResourceUsername">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Show
+                </label>
+              </div>
+              <div class="form-check hideResource-title">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideResourceUsername">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Hide
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start of Filter Button -->
+      <div class="filterButton hide">
+        <div class="row">
+          <div class="apply_cancel-button">
+            <button type="button" class="cancel-button">Cancel</button>
+            <button type="button" class="apply-button">Apply</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="filter-variable col-lg-4">
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="refresh col-lg-4">
+            <div class="filter-variable-title">
+              Saved Filters
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>My Saved Filters</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="dispatches-per-page col-lg-4">
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="filter-variable-title">
+              Filter Variable
+            </div>
+            <div class="filtervariable-dropdown">
+              <select class="filtervariableSelect form-select form-select-sm">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="save-filter-body">
+              <div class="myDispatches form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  My Dispatches
+                </label>
+              </div>
+              <button type="button" class="savefilter-button">Save Filter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Filter Button -->
+    </div> <!-- End of Base Main -->
+  </div> <!-- End of wrapper -->
+
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

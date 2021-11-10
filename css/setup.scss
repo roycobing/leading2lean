@@ -1,0 +1,31 @@
+$navbarText: #7C879B;
+$navbarBorder: 0;
+$navbarMargin: 0 10px 0 10px;
+$navbarPadding: 0 10px 0 10px;
+$navbarButton: transparent;
+
+.navbarSetup-text{
+    color: $navbarText;
+}
+
+.navbarButton{
+    padding: $navbarPadding;
+    margin: $navbarMargin;
+
+    .navbarSetup-button{    
+        border: $navbarBorder;
+        background-color: $navbarButton;
+    }
+}
+
+.navbarButton-notification{
+    padding: $navbarPadding;
+    margin: $navbarMargin;
+    border-left: #7C879B 1px solid;
+    height: 35px;
+
+    .navbarSetup-button{    
+        border: $navbarBorder;
+        background-color: $navbarButton;
+    }
+}
