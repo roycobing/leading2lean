@@ -23,4 +23,55 @@
   border: 0;
   background-color: transparent;
 }
+
+.filterButton-setup {
+  padding: 20px 0 20px 0;
+  background-color: #d8d4dc;
+}
+
+.apply-button-setup {
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #0C93BC;
+  margin-left: 20px;
+  height: 40px;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.form-check.activity-title {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+}
+
+.filter-setup-title {
+  margin: 0 15px 0 15px;
+  text-transform: uppercase;
+}
+
+.mainbody-table {
+  background-color: #F5F5F5;
+  padding: 15px;
+}
+
+.header-table {
+  padding: 15px 15px 0 15px;
+}
+
+td.code {
+  width: 239px;
+}
+
+td.description {
+  width: 440px;
+}
+
+td.priority {
+  width: 310px;
+}
+
+td.impact {
+  width: 295px;
+}
 /*# sourceMappingURL=setup.css.map */

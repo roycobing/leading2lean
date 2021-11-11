@@ -317,3 +317,12 @@ $(document).ready(function() {
     $('.viewButton').hide();
   });
 });
+
+/** Filter Icon Navbar Button - Setup*/
+$(document).ready(function() {
+  $('.filterButton-setup').hide();
+
+  $('#filterSetup').click(function() {
+    $('.filterButton-setup').toggle();
+  });
+});
