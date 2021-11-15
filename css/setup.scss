@@ -4,7 +4,7 @@ $mainButton: transparent;
 $mainButtonRadius: 3px;
 $navbarMargin: 0 10px 0 10px;
 $navbarPadding: 0 10px 0 10px;
-
+$primaryColor1: #44B4CD;
 .navbarSetup-text{
     color: $mainText;
 }
@@ -62,20 +62,78 @@ $filtertextTitle: uppercase;
 .mainbody-table{
     background-color: #F5F5F5;
     padding: 15px;
+    overflow-x: auto;
 }
 .header-table{
     padding: 15px 15px 0 15px;
 }
+td{
+    cursor: pointer;
+}
+th.code, td.status1{
+    width: 280px;
+}
+th.description, td.description{
+    width: 500px;
+}
+th.priority, td.priority{
+    width: 340px;
+}
+th.impact , td.impact{
+    width: 345px;
+}
+table.dispatchtypes{
+    border-collapse: separate !important;
+    border-spacing: 0 5px;
+}
 
-td.code{
-    width: 239px;
+// Impact Status
+$stat1: #C4CBCA;
+$stat2: #A40F4C;
+$stat3: #F2D600;
+$stat4: #3F4CE0DE;
+$stat5: #78B142;
+$stat6: #EA6C00;
+$stat7: #F03F3F;
+$stat8: #44B4CD;
+.status1{
+    border-left: 8px solid $stat1;
 }
-td.description{
-    width: 440px;
+.status2{
+    border-left: 8px solid $stat2;
 }
-td.priority{
-    width: 310px;
+.status3{
+    border-left: 8px solid $stat3;
 }
-td.impact{
-    width: 295px;
+.status4{
+    border-left: 8px solid $stat4;
+}
+.status5{
+    border-left: 8px solid $stat5;
+}
+.status6{
+    border-left: 8px solid $stat6;
+}
+.fa-check-circle{
+    color: $primaryColor1;
+}
+.fa-circle.down{
+    color: $stat7;
+    margin: 0 5px 2px 0;
+    height: 10px;
+}
+.fa-circle.noimpact{
+    color: $stat1;
+    margin: 0 5px 2px 0;
+    height: 10px;
+}
+.fa-circle.impacting{
+    color: $stat3;
+    margin: 0 5px 2px 0;
+    height: 10px;
+}
+.fa-circle.plannedwork{
+    color: $stat8;
+    margin: 0 5px 2px 0;
+    height: 10px;
 }

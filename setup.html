@@ -160,7 +160,10 @@
           <div class="clouddispatch-navbar navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item-clouddispatch">
-                <a class="nav-link-home" aria-current="page" href="index.html"><img class="home-logo" img src="images/icon_setup_on.png" /><span class="home">Dispatch Types</span></a>
+                <a class="nav-link-home" aria-current="page" href="setup.html">
+                  <img class="home-logo" img src="images/icon_setup_on.png" />
+                  <span class="home">Dispatch Types</span>
+                </a>
               </li>
             </ul>
             <form class="search-box-clouddispatch d-flex">
@@ -273,53 +276,67 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Code</th>
-              <th scope="col">Description</th>
-              <th scope="col">Priority</th>
-              <th scope="col">Impact</th>
-              <th scope="col">Active</th>
+              <th class="code">Code</th>
+              <th class="description">Description</th>
+              <th class="priority">Priority</th>
+              <th class="impact">Impact</th>
+              <th>Active</th>
             </tr>
           </thead>      
       </table>
       </div>     
       
       <div class="mainbody-table">
-        <table class="table">         
+        <table class="table dispatchtypes">         
           <tbody>
             <tr>
-              <td class="code">ABN</td>
-              <td class="description">Mark</td>
+              <td class="status1">ABN</td>
+              <td class="description">Abnormality</td>
               <td class="priority">1</td>
-              <td class="impact">mco</td>
-              <td>mdo</td>
+              <td class="impact"><i class="fas fa-circle down"></i>Down</td>
+              <td><i class="far fa-check-circle"></i></td>
             </tr>
             <tr>
+              <td class="status2">Audit</td>
               <td>Audit</td>
-              <td>Jacob</td>
               <td>1</td>
-              <td>fat</td>
-              <td>mdo</td>
+              <td><i class="fas fa-circle noimpact"></i>No Impact</td>
+              <td><i class="far fa-check-circle"></i></td>
             </tr>
             <tr>
-              <td>Code Red</td>
-              <td>Larry the Bird</td>
+              <td class="status3">Code Red</td>
+              <td>Repair - Down</td>
               <td>1</td>
-              <td>twitter</td>
-              <td>mdo</td>
+              <td><i class="fas fa-circle down"></i>Down</td>
+              <td><i class="far fa-check-circle"></i></td>
             </tr>
             <tr>
-              <td>Code Red</td>
-              <td>Larry the Bird</td>
+              <td class="status4">Code Yellow</td>
+              <td>Impacting Performance</td>
               <td>1</td>
-              <td>twitter</td>
-              <td>mdo</td>
+              <td><i class="fas fa-circle impacting"></i>Impacting</td>
+              <td></td>
             </tr>
             <tr>
-              <td>Code Red</td>
-              <td>Larry the Bird</td>
+              <td class="status5">ECN</td>
+              <td>Eng. Change Notification</td>
               <td>1</td>
-              <td>twitter</td>
-              <td>mdo</td>
+              <td><i class="fas fa-circle plannedwork"></i>Planned Work</td>
+              <td><i class="far fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td class="status6">Kaizen</td>
+              <td>Improvement suggestion</td>
+              <td>1</td>
+              <td><i class="fas fa-circle noimpact"></i>No Impact</td>
+              <td><i class="far fa-check-circle"></i></td>
+            </tr>
+            <tr>
+              <td class="status6">ABN</td>
+              <td class="description">Abnormality</td>
+              <td class="priority">1</td>
+              <td class="impact"><i class="fas fa-circle down"></i>Down</td>
+              <td><i class="far fa-check-circle"></i></td>
             </tr>
           </tbody>
         </table>

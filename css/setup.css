@@ -53,25 +53,87 @@
 .mainbody-table {
   background-color: #F5F5F5;
   padding: 15px;
+  overflow-x: auto;
 }
 
 .header-table {
   padding: 15px 15px 0 15px;
 }
 
-td.code {
-  width: 239px;
+td {
+  cursor: pointer;
 }
 
-td.description {
-  width: 440px;
+th.code, td.status1 {
+  width: 280px;
 }
 
-td.priority {
-  width: 310px;
+th.description, td.description {
+  width: 500px;
 }
 
-td.impact {
-  width: 295px;
+th.priority, td.priority {
+  width: 340px;
+}
+
+th.impact, td.impact {
+  width: 345px;
+}
+
+table.dispatchtypes {
+  border-collapse: separate !important;
+  border-spacing: 0 5px;
+}
+
+.status1 {
+  border-left: 8px solid #C4CBCA;
+}
+
+.status2 {
+  border-left: 8px solid #A40F4C;
+}
+
+.status3 {
+  border-left: 8px solid #F2D600;
+}
+
+.status4 {
+  border-left: 8px solid #3F4CE0DE;
+}
+
+.status5 {
+  border-left: 8px solid #78B142;
+}
+
+.status6 {
+  border-left: 8px solid #EA6C00;
+}
+
+.fa-check-circle {
+  color: #44B4CD;
+}
+
+.fa-circle.down {
+  color: #F03F3F;
+  margin: 0 5px 2px 0;
+  height: 10px;
+}
+
+.fa-circle.noimpact {
+  color: #C4CBCA;
+  margin: 0 5px 2px 0;
+  height: 10px;
+}
+
+.fa-circle.impacting {
+  color: #F2D600;
+  margin: 0 5px 2px 0;
+  height: 10px;
+}
+
+.fa-circle.plannedwork {
+  color: #44B4CD;
+  margin: 0 5px 2px 0;
+  height: 10px;
 }
 /*# sourceMappingURL=setup.css.map */

@@ -75,22 +75,6 @@ $("#burger-menu-button").on("click", function() {
   $(".rotate").toggleClass('right');
 });
 
-/** Sidebar Active Menu **/
-$(document).ready(function() {
-  $(document).on('click', '.sidebar-menu', function() {
-    $('.sidebar-menu').removeClass("active");
-    $('.nav-link').removeClass("active");
-    $(this).addClass("active");
-  });
-});
-
-$(document).ready(function() {
-  $(document).on('click', '.nav-link', function() {
-    $('.nav-link').removeClass("active");
-    $('.sidebar-menu').removeClass("active");
-    $(this).addClass("active");
-  });
-});
 /** Modal **/
 $(function() {
   $("#sortable").sortable({
