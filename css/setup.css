@@ -1,5 +1,5 @@
 .navbarSetup-text {
-  color: #7C879B;
+  color: #7c879b;
 }
 
 .navbarButton {
@@ -15,7 +15,7 @@
 .navbarButton-notification {
   padding: 0 10px 0 10px;
   margin: 0 10px 0 10px;
-  border-left: #7C879B 1px solid;
+  border-left: #7c879b 1px solid;
   height: 35px;
 }
 
@@ -33,7 +33,7 @@
   border: 0;
   border-radius: 3px;
   color: #fff;
-  background-color: #0C93BC;
+  background-color: #0c93bc;
   margin-left: 20px;
   height: 40px;
   width: 100px;
@@ -51,7 +51,7 @@
 }
 
 .mainbody-table {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 15px;
   overflow-x: auto;
 }
@@ -64,19 +64,23 @@ td {
   cursor: pointer;
 }
 
-th.code, td.status1 {
+th.code,
+td.status1 {
   width: 280px;
 }
 
-th.description, td.description {
+th.description,
+td.description {
   width: 500px;
 }
 
-th.priority, td.priority {
+th.priority,
+td.priority {
   width: 340px;
 }
 
-th.impact, td.impact {
+th.impact,
+td.impact {
   width: 345px;
 }
 
@@ -86,54 +90,141 @@ table.dispatchtypes {
 }
 
 .status1 {
-  border-left: 8px solid #C4CBCA;
+  border-left: 8px solid #c4cbca;
 }
 
 .status2 {
-  border-left: 8px solid #A40F4C;
+  border-left: 8px solid #a40f4c;
 }
 
 .status3 {
-  border-left: 8px solid #F2D600;
+  border-left: 8px solid #f2d600;
 }
 
 .status4 {
-  border-left: 8px solid #3F4CE0DE;
+  border-left: 8px solid #3f4ce0de;
 }
 
 .status5 {
-  border-left: 8px solid #78B142;
+  border-left: 8px solid #78b142;
 }
 
 .status6 {
-  border-left: 8px solid #EA6C00;
+  border-left: 8px solid #ea6c00;
 }
 
 .fa-check-circle {
-  color: #44B4CD;
+  color: #44b4cd;
 }
 
 .fa-circle.down {
-  color: #F03F3F;
+  color: #f03f3f;
   margin: 0 5px 2px 0;
   height: 10px;
 }
 
 .fa-circle.noimpact {
-  color: #C4CBCA;
+  color: #c4cbca;
   margin: 0 5px 2px 0;
   height: 10px;
 }
 
 .fa-circle.impacting {
-  color: #F2D600;
+  color: #f2d600;
   margin: 0 5px 2px 0;
   height: 10px;
 }
 
 .fa-circle.plannedwork {
-  color: #44B4CD;
+  color: #44b4cd;
   margin: 0 5px 2px 0;
   height: 10px;
+}
+
+.status-body {
+  padding: 0 20px 0 20px;
+}
+
+.table-status-body {
+  border-left: 5px solid #ea6c00;
+  margin-bottom: 10px;
+}
+
+.table-status {
+  margin-left: 5px;
+}
+
+.abrv-status {
+  text-transform: uppercase;
+}
+
+.root-cause-metrics {
+  background-color: #0d324d;
+  color: #fff;
+  padding: 0 10px 0 10px;
+  text-align: center;
+}
+
+.result {
+  background-color: #44b4cd;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  width: auto;
+}
+
+.root-cause-metrics-body {
+  background-color: #d3d5d9;
+  padding: 0 10px 0 10px;
+}
+
+.recent-hours,
+.recent-days {
+  font-size: 0.9rem;
+}
+
+.percent-status {
+  color: #0d324d;
+  font-weight: bold;
+}
+
+.tab-content-header {
+  width: 100%;
+}
+
+.nav-tabs {
+  padding-bottom: 5px;
+  border-bottom: 0 !important;
+}
+
+.nav-tabs .nav-link {
+  color: #44b4cd;
+  background-color: #ebebeb !important;
+  margin-right: 5px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff !important;
+  padding: 8px 15px 8px 15px !important;
+  background-color: #44b4cd !important;
+  border-bottom: 5px solid #a40f4c !important;
+  border-radius: 3px;
+}
+
+.tab-content-header {
+  border-bottom: 2px solid #44b4cd;
+}
+
+.savebutton-body {
+  float: right;
+}
+
+.save-button {
+  border: 0;
+  background-color: #c4cbca;
+  color: #fff;
+  height: 32px;
+  width: 88px;
 }
 /*# sourceMappingURL=setup.css.map */

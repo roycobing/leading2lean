@@ -1,31 +1,42 @@
-$mainText: #7C879B;
+$mainText: #7c879b;
 $mainBorder: 0;
 $mainButton: transparent;
-$mainButtonRadius: 3px;
+$mainRadius: 3px;
+
 $navbarMargin: 0 10px 0 10px;
 $navbarPadding: 0 10px 0 10px;
-$primaryColor1: #44B4CD;
-.navbarSetup-text{
+
+$primaryColor1: #44b4cd;
+$primaryColor2: #0d324d;
+
+$gray1: #f5f5f5;
+$gray2: #ebebeb;
+$gray3: #d5d5d5;
+$gray4: #d3d5d9;
+$gray5: #c4cbca;
+$gray6: #8a919d;
+
+.navbarSetup-text {
     color: $mainText;
 }
 
-.navbarButton{
+.navbarButton {
     padding: $navbarPadding;
     margin: $navbarMargin;
 
-    .navbarSetup-button{    
+    .navbarSetup-button {
         border: $mainBorder;
         background-color: $mainButton;
     }
 }
 
-.navbarButton-notification{
+.navbarButton-notification {
     padding: $navbarPadding;
     margin: $navbarMargin;
-    border-left: #7C879B 1px solid;
+    border-left: #7c879b 1px solid;
     height: 35px;
 
-    .navbarSetup-button{    
+    .navbarSetup-button {
         border: $mainBorder;
         background-color: $mainButton;
     }
@@ -33,107 +44,185 @@ $primaryColor1: #44B4CD;
 
 // filter navbar section
 $filterform: 0 15px 0 15px;
-$filtertextTitle: uppercase; 
+$filtertextTitle: uppercase;
 
-.filterButton-setup{
-    padding: 20px 0 20px 0;;
+.filterButton-setup {
+    padding: 20px 0 20px 0;
     background-color: #d8d4dc;
 }
-.apply-button-setup{
-    border: $mainBorder;    
-    border-radius: $mainButtonRadius;
+.apply-button-setup {
+    border: $mainBorder;
+    border-radius: $mainRadius;
     color: #fff;
-    background-color: #0C93BC;
+    background-color: #0c93bc;
     margin-left: 20px;
     height: 40px;
     width: 100px;
     text-transform: $filtertextTitle;
 }
-.form-check.activity-title{
+.form-check.activity-title {
     display: inline-block;
     margin: $filterform;
 }
-.filter-setup-title{
+.filter-setup-title {
     margin: $filterform;
     text-transform: $filtertextTitle;
 }
 
 // table section
-.mainbody-table{
-    background-color: #F5F5F5;
+.mainbody-table {
+    background-color: #f5f5f5;
     padding: 15px;
     overflow-x: auto;
 }
-.header-table{
+.header-table {
     padding: 15px 15px 0 15px;
 }
-td{
+td {
     cursor: pointer;
 }
-th.code, td.status1{
+th.code,
+td.status1 {
     width: 280px;
 }
-th.description, td.description{
+th.description,
+td.description {
     width: 500px;
 }
-th.priority, td.priority{
+th.priority,
+td.priority {
     width: 340px;
 }
-th.impact , td.impact{
+th.impact,
+td.impact {
     width: 345px;
 }
-table.dispatchtypes{
+table.dispatchtypes {
     border-collapse: separate !important;
     border-spacing: 0 5px;
 }
 
 // Impact Status
-$stat1: #C4CBCA;
-$stat2: #A40F4C;
-$stat3: #F2D600;
-$stat4: #3F4CE0DE;
-$stat5: #78B142;
-$stat6: #EA6C00;
-$stat7: #F03F3F;
-$stat8: #44B4CD;
-.status1{
+$stat1: #c4cbca;
+$stat2: #a40f4c;
+$stat3: #f2d600;
+$stat4: #3f4ce0de;
+$stat5: #78b142;
+$stat6: #ea6c00;
+$stat7: #f03f3f;
+$stat8: #44b4cd;
+.status1 {
     border-left: 8px solid $stat1;
 }
-.status2{
+.status2 {
     border-left: 8px solid $stat2;
 }
-.status3{
+.status3 {
     border-left: 8px solid $stat3;
 }
-.status4{
+.status4 {
     border-left: 8px solid $stat4;
 }
-.status5{
+.status5 {
     border-left: 8px solid $stat5;
 }
-.status6{
+.status6 {
     border-left: 8px solid $stat6;
 }
-.fa-check-circle{
+.fa-check-circle {
     color: $primaryColor1;
 }
-.fa-circle.down{
+.fa-circle.down {
     color: $stat7;
     margin: 0 5px 2px 0;
     height: 10px;
 }
-.fa-circle.noimpact{
+.fa-circle.noimpact {
     color: $stat1;
     margin: 0 5px 2px 0;
     height: 10px;
 }
-.fa-circle.impacting{
+.fa-circle.impacting {
     color: $stat3;
     margin: 0 5px 2px 0;
     height: 10px;
 }
-.fa-circle.plannedwork{
+.fa-circle.plannedwork {
     color: $stat8;
     margin: 0 5px 2px 0;
     height: 10px;
+}
+// Table Status
+.status-body {
+    padding: 0 20px 0 20px;
+}
+
+.table-status-body{
+    border-left: 5px solid $stat6;
+    margin-bottom: 10px;
+}
+.table-status{
+    margin-left: 5px;
+}
+.abrv-status{
+    text-transform: uppercase;
+}
+.root-cause-metrics {
+    background-color: $primaryColor2;
+    color: #fff;
+    padding: 0 10px 0 10px;
+    text-align: center;
+}
+.result {
+    background-color: $stat8;
+    border-radius: $mainRadius;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    width: auto;
+}
+.root-cause-metrics-body {
+    background-color: $gray4;
+    padding: 0 10px 0 10px;
+}
+.recent-hours,
+.recent-days {
+    font-size: 0.9rem;
+}
+.percent-status {
+    color: $primaryColor2;
+    font-weight: bold;
+}
+
+.tab-content-header{
+    width: 100%;
+}
+.nav-tabs {
+    padding-bottom: 5px;
+    border-bottom: 0 !important;
+    .nav-link {
+        color: $primaryColor1;
+        background-color: $gray2 !important;
+        margin-right: 5px;
+    }
+    .nav-link.active {
+        color: #fff !important;
+        padding: 8px 15px 8px 15px !important;
+        background-color: $primaryColor1 !important;
+        border-bottom: 5px solid $stat2 !important;
+        border-radius: $mainRadius;
+    }
+}
+.tab-content-header{
+    border-bottom: 2px solid $primaryColor1;
+}
+.savebutton-body{
+    float: right;
+}
+.save-button{
+    border: 0;
+    background-color: $gray5; 
+    color: #fff;
+    height: 32px;
+    width: 88px;
 }

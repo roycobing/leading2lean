@@ -310,3 +310,18 @@ $(document).ready(function() {
     $('.filterButton-setup').toggle();
   });
 });
+
+$(document).ready(function() {
+  $('.status-body').hide();
+
+  $('#sample').click(function() {
+    $('.status-body').toggle();
+    $('.mainbody-table').hide(); 
+    $('.header-table').hide();   
+  });
+  $('#save').click(function() {
+    $('.mainbody-table').show();
+    $('.header-table').show();
+    $('.status-body').hide();
+  });
+});
