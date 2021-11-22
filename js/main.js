@@ -314,7 +314,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('.status-body').hide();
 
-  $('#sample').click(function() {
+  $('#statusTable').click(function() {
     $('.status-body').toggle();
     $('.mainbody-table').hide(); 
     $('.header-table').hide();   
