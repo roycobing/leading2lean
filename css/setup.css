@@ -197,6 +197,11 @@ td {
   font-size: 0.9rem;
 }
 
+.recentDispatch-header {
+  color: #0d324d;
+  font-weight: bold;
+}
+
 .percent-status {
   color: #0d324d;
   font-weight: bold;
