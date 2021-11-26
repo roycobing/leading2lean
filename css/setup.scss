@@ -152,7 +152,10 @@ $stat8: #44b4cd;
     margin: 0 5px 2px 0;
     height: 10px;
 }
-// Table Status
+// Start of Table Status
+td{
+    border-bottom-width: 0 !important;
+ }
 .status-body {
     padding: 0 20px 0 20px;
 }
@@ -169,8 +172,9 @@ $stat8: #44b4cd;
 }
 .root-cause-metrics {
     background-color: $primaryColor2;
+    height: 47px;
     color: #fff;
-    padding: 0 10px 0 10px;
+    padding: 10px;
     text-align: center;
 }
 .result {
@@ -183,7 +187,14 @@ $stat8: #44b4cd;
 }
 .root-cause-metrics-body {
     background-color: $gray4;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 0 10px 0 10px;
+}
+.top-lines{
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
 }
 .recent-hours,
 .recent-days {
@@ -213,6 +224,7 @@ $stat8: #44b4cd;
         border-radius: $mainRadius;
     }
 }
+
 .tab-content-header{
     border-bottom: 2px solid $primaryColor1;
 }
@@ -226,3 +238,30 @@ $stat8: #44b4cd;
     height: 32px;
     width: 88px;
 }
+.active-form{
+    padding-top: 28px;
+}
+.form-check-input:checked {
+    background-color: $primaryColor1 !important;
+    border-color: $primaryColor1 !important;
+}
+
+.createdupdated-body.row{
+    background-color: #E8E9EB;
+    padding: 10px;
+    margin: 0 1px 0 1px;
+}
+.fa-circle.down {
+    color: $stat7;
+    margin: 0 5px 2px 0;
+    height: 10px;
+}
+.progress.charvel{
+    background-color: transparent;
+    height: 10px;
+    margin-top: 10px;    
+}
+.progress-bar.charvel{
+    background-color: $primaryColor1;        
+}
+// End of Table Status

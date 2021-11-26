@@ -141,6 +141,10 @@ table.dispatchtypes {
   height: 10px;
 }
 
+td {
+  border-bottom-width: 0 !important;
+}
+
 .status-body {
   padding: 0 20px 0 20px;
 }
@@ -160,8 +164,9 @@ table.dispatchtypes {
 
 .root-cause-metrics {
   background-color: #0d324d;
+  height: 47px;
   color: #fff;
-  padding: 0 10px 0 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -176,7 +181,15 @@ table.dispatchtypes {
 
 .root-cause-metrics-body {
   background-color: #d3d5d9;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 10px 0 10px;
+}
+
+.top-lines {
+  padding: 10px;
+  background-color: #fff;
+  margin: 10px;
 }
 
 .recent-hours,
@@ -226,5 +239,36 @@ table.dispatchtypes {
   color: #fff;
   height: 32px;
   width: 88px;
+}
+
+.active-form {
+  padding-top: 28px;
+}
+
+.form-check-input:checked {
+  background-color: #44b4cd !important;
+  border-color: #44b4cd !important;
+}
+
+.createdupdated-body.row {
+  background-color: #E8E9EB;
+  padding: 10px;
+  margin: 0 1px 0 1px;
+}
+
+.fa-circle.down {
+  color: #f03f3f;
+  margin: 0 5px 2px 0;
+  height: 10px;
+}
+
+.progress.charvel {
+  background-color: transparent;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.progress-bar.charvel {
+  background-color: #44b4cd;
 }
 /*# sourceMappingURL=setup.css.map */
