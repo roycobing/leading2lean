@@ -276,4 +276,17 @@ td {
 .progress-bar.charvel {
   background-color: #44b4cd;
 }
+
+.form-text.info {
+  text-transform: uppercase;
+}
+
+.dispatch-settings-header {
+  margin-top: 40px;
+  letter-spacing: 0.53px;
+  color: #44b4cd;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #44b4cd;
+}
 /*# sourceMappingURL=setup.css.map */

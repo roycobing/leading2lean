@@ -268,4 +268,16 @@ td{
 .progress-bar.charvel{
     background-color: $primaryColor1;        
 }
+
+.form-text.info{
+    text-transform: uppercase;
+}
+.dispatch-settings-header{
+    margin-top: 40px;
+    letter-spacing: 0.53px;
+    color: $primaryColor1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid $primaryColor1;
+}
 // End of Table Status

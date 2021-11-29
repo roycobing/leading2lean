@@ -376,8 +376,8 @@
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                       type="button" role="tab" aria-controls="nav-home" aria-selected="true">General</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                      type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Process</button>
+                    <button class="nav-link" id="nav-process-tab" data-bs-toggle="tab" data-bs-target="#nav-process"
+                      type="button" role="tab" aria-controls="nav-process" aria-selected="false">Process</button>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                       type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Production</button>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
@@ -390,6 +390,7 @@
                   </div>
                 </div>
               </div>
+              <!--General Tab-->
               <div class="general-tab-content">
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active col-sm-12" id="nav-home" role="tabpanel"
@@ -458,7 +459,138 @@
                       </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Sample2
+                  <!--Process Tab-->
+                  <div class="tab-pane fade" id="nav-process" role="tabpanel" aria-labelledby="nav-process-tab">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="dispatch-settings-header">
+                          Create Dispatch Settings
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Start down time when Resource is dispatched</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Only one Dispatch per Machine at one time</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Available for selection in New Dispatch screen</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="dispatch-settings-header">
+                          View Dispatch Settings
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Flag dispatcher until Dispatched</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Highlight critical Machine</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Display Line Down Time cost on Dispatch screen</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="dispatch-settings-header">
+                          Edit Dispatch Settings
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Users cannot add or remove documents from Dispatches</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Enable Spares</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">enable Attached Tooling</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Enable Action and Component Codes</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Enable Why Codes</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-check form-switch">
+                            <label for="" class="form-label">Enable External Codes</label>
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="dispatch-settings-header">
+                          Complete Dispatch Settings
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-text info">Automatically launch followup dispatches on completion.</div>
+                          <div>
+                            <select class="filtervariableSelect form-select form-select-sm">
+                              <option selected>Select Followup Dispatches</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="dispatch-settings-header">
+                            Close Dispatch Settings
+                          </div> 
+                          <div>
+                            <div class="form-check form-switch">
+                              <label for="" class="form-label">Resource must be dispatched to close a Dispatch</label>
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="form-check form-switch">
+                              <label for="" class="form-label">Reason Code must be selected to close a Dispatch</label>
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="form-check form-switch">
+                              <label for="" class="form-label">Action and Component codes must be selected to close a Dispatch</label>
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                            <div class="form-check form-switch">
+                              <label for="" class="form-label">Reason Code must be selected when an Action and a Component are supplied to close a Dispatch</label>
+                              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Sample3
                   </div>
@@ -491,9 +623,9 @@
                   </div>
                   <div class="row">
                     <div class="top-lines col-sm-12">
-                      <table class="table sample">
+                      <table class="table">
                         <tbody>
-                          <tr  class="top-lines">
+                          <tr class="top-lines">
                             <td>Top Lines</td>
                             <td>Last 30 Days</td>
                           </tr>
@@ -501,7 +633,8 @@
                             <td>Charvel</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 25%"
+                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -509,7 +642,8 @@
                             <td>Drum line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 50%"
+                                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -517,7 +651,45 @@
                             <td>Fender line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 75%"
+                                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="top-lines col-sm-12">
+                      <table class="table">
+                        <tbody>
+                          <tr class="top-lines">
+                            <td>Top Lines</td>
+                            <td>Last 30 Days</td>
+                          </tr>
+                          <tr>
+                            <td>Charvel</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 25%"
+                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Drum line 1</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 50%"
+                                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Fender line 1</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 75%"
+                                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -527,7 +699,7 @@
                     <div class="top-lines col-sm-12">
                       <table class="table sample">
                         <tbody>
-                          <tr  class="top-lines">
+                          <tr class="top-lines">
                             <td>Top Lines</td>
                             <td>Last 30 Days</td>
                           </tr>
@@ -535,7 +707,8 @@
                             <td>Charvel</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 25%"
+                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -543,7 +716,8 @@
                             <td>Drum line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 50%"
+                                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -551,7 +725,45 @@
                             <td>Fender line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 75%"
+                                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="top-lines col-sm-12">
+                      <table class="table">
+                        <tbody>
+                          <tr class="top-lines">
+                            <td>Top Lines</td>
+                            <td>Last 30 Days</td>
+                          </tr>
+                          <tr>
+                            <td>Charvel</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 25%"
+                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Drum line 1</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 50%"
+                                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Fender line 1</td>
+                            <td>
+                              <div class="progress charvel">
+                                <div class="progress-bar charvel" role="progressbar" style="width: 75%"
+                                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -561,7 +773,7 @@
                     <div class="top-lines col-sm-12">
                       <table class="table sample">
                         <tbody>
-                          <tr  class="top-lines">
+                          <tr class="top-lines">
                             <td>Top Lines</td>
                             <td>Last 30 Days</td>
                           </tr>
@@ -569,7 +781,8 @@
                             <td>Charvel</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 25%"
+                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -577,7 +790,8 @@
                             <td>Drum line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 50%"
+                                  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
@@ -585,75 +799,8 @@
                             <td>Fender line 1</td>
                             <td>
                               <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="top-lines col-sm-12">
-                      <table class="table sample">
-                        <tbody>
-                          <tr  class="top-lines">
-                            <td>Top Lines</td>
-                            <td>Last 30 Days</td>
-                          </tr>
-                          <tr>
-                            <td>Charvel</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Drum line 1</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Fender line 1</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="top-lines col-sm-12">
-                      <table class="table sample">
-                        <tbody>
-                          <tr  class="top-lines">
-                            <td>Top Lines</td>
-                            <td>Last 30 Days</td>
-                          </tr>
-                          <tr>
-                            <td>Charvel</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Drum line 1</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Fender line 1</td>
-                            <td>
-                              <div class="progress charvel">
-                                <div class="progress-bar charvel" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar charvel" role="progressbar" style="width: 75%"
+                                  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                               </div>
                             </td>
                           </tr>
