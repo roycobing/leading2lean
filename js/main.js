@@ -312,16 +312,16 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.status-body').hide();
+  $('.status-body2').hide();
 
   $('#statusTable').click(function() {
-    $('.status-body').toggle();
+    $('.status-body2').toggle();
     $('.mainbody-table').hide(); 
     $('.header-table').hide();   
   });
-  $('#save').click(function() {
+  $('#save , #close').click(function() {
     $('.mainbody-table').show();
     $('.header-table').show();
-    $('.status-body').hide();
+    $('.status-body2').hide();
   });
 });

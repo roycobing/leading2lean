@@ -307,49 +307,49 @@
       <div class="mainbody-table">
         <table class="table dispatchtypes">
           <tbody>
-            <tr id="statusTable">
+            <tr class="status-body" id="statusTable">
               <td class="status1">ABN</td>
               <td class="description">Abnormality</td>
               <td class="priority">1</td>
               <td class="impact"><i class="fas fa-circle down"></i>Down</td>
               <td><i class="far fa-check-circle"></i></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status2">Audit</td>
               <td>Audit</td>
               <td>1</td>
               <td><i class="fas fa-circle noimpact"></i>No Impact</td>
               <td><i class="far fa-check-circle"></i></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status3">Code Red</td>
               <td>Repair - Down</td>
               <td>1</td>
               <td><i class="fas fa-circle down"></i>Down</td>
               <td><i class="far fa-check-circle"></i></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status4">Code Yellow</td>
               <td>Impacting Performance</td>
               <td>1</td>
               <td><i class="fas fa-circle impacting"></i>Impacting</td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status5">ECN</td>
               <td>Eng. Change Notification</td>
               <td>1</td>
               <td><i class="fas fa-circle plannedwork"></i>Planned Work</td>
               <td><i class="far fa-check-circle"></i></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status6">Kaizen</td>
               <td>Improvement suggestion</td>
               <td>1</td>
               <td><i class="fas fa-circle noimpact"></i>No Impact</td>
               <td><i class="far fa-check-circle"></i></td>
             </tr>
-            <tr>
+            <tr class="status-body">
               <td class="status6">ABN</td>
               <td class="description">Abnormality</td>
               <td class="priority">1</td>
@@ -361,7 +361,7 @@
       </div>
       <!--End of Table Data-->
       <!-- Start of Table Status-->
-      <div class="status-body">
+      <div class="status-body2">
         <div class="status_main1">
           <div class="row">
             <div class="col-sm-9">
@@ -380,13 +380,14 @@
                       type="button" role="tab" aria-controls="nav-process" aria-selected="false">Process</button>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                       type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Production</button>
-                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-related"
                       type="button" role="tab" aria-controls="nav-related" aria-selected="false">Related</button>
                   </div>
                 </div>
                 <div class="tab-content-header col-8 col-sm-6">
                   <div class="savebutton-body">
                     <button class="save-button" id="save">Save</button>
+                    <button class="close-button" id="close">Close</button>
                   </div>
                 </div>
               </div>
@@ -594,7 +595,138 @@
                   </div>
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Sample3
                   </div>
-                  <div class="tab-pane fade" id="nav-related" role="tabpanel" aria-labelledby="nav-contact-tab">Sample4
+                  <!--Related Tab-->
+                  <div class="tab-pane fade" id="nav-related" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <!--Related Documents-->
+                    <div class="related-documents-body">
+                      <div class="related-documents-header">
+                        Related Documents
+                      </div>
+                      <button class="angleDown"><i class="fas fa-angle-down"></i></button>
+                      <div>                        
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="relateddocument-tableheader">Number</th>
+                              <th class="relateddocument-tableheader">Ext. ID</th>
+                              <th class="relateddocument-tableheader">Name</th>
+                              <th class="relateddocument-tableheader">Category</th>
+                              <th class="relateddocument-tableheader">Created</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Document # Link</td>
+                              <td>########</td>
+                              <td>Lorem ipsum dolor</td>
+                              <td>Lorem ipsum dolor</td>
+                              <td>Sept. 27,2019 - 15:43</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--Related Questions-->
+                    <div class="related-documents-body">
+                      <div class="related-documents-header">
+                        Related Questions
+                      </div>
+                      <button class="angleDown"><i class="fas fa-angle-down"></i></button>
+                      <div>                        
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th class="relateddocument-tableheader">Questions</th>
+                              <th class="relateddocument-tableheader">Ask When</th>
+                              <th class="relateddocument-tableheader">Priority</th>
+                              <th class="relateddocument-tableheader">Created</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><a class="question" href="">Did we satisfy your need?</a></td>
+                              <td>Ask on Complete</td>
+                              <td>1</td>
+                              <td>March 7,2019 - 9:43</td>
+                            </tr>
+                            <tr>
+                              <td><a class="question" href="">No, really, did we?</a></td>
+                              <td>Ask on Complete</td>
+                              <td>1</td>
+                              <td>March 7,2019 - 9:43</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--Related Notification-->
+                      <div class="related-notification">
+                        Related Notification
+                      </div>
+                      <!--Related Areas-->
+                    <div class="related-documents-body">
+                      <div class="related-documents-header">
+                        Related Areas
+                      </div>
+                      <button class="angleDown"><i class="fas fa-angle-down"></i><span class="item">15 items</span></button>
+                      <div class="related-areas-body">                        
+                        <table class="table">
+                            <thead class="tableheader">
+                              <tr>
+                                <th class="relateddocument-tableheader">Code</th>
+                                <th class="relateddocument-tableheader">Ext. ID</th>
+                                <th class="relateddocument-tableheader">Description</th>
+                                <th class="relateddocument-tableheader">Default Dispatch Type</th>
+                                <th class="relateddocument-tableheader">Created</th>
+                              </tr>
+                            </thead>
+                            <tbody class="related-areas-tablebody">
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">BDA</a></td>
+                                <td>-</td>
+                                <td>Area 02</td>
+                                <td>ABN</td>
+                                <td>Sept. 27,2019 - 15:43</td>
+                              </tr>
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">assembla</a></td>
+                                <td>-</td>
+                                <td>Area 10</td>
+                                <td>ABN</td>
+                                <td>March 7,2019 - 15:43</td>
+                              </tr>
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">assembla</a></td>
+                                <td>-</td>
+                                <td>Area 10</td>
+                                <td>ABN</td>
+                                <td>March 7,2019 - 15:43</td>
+                              </tr>
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">assembla</a></td>
+                                <td>-</td>
+                                <td>Area 10</td>
+                                <td>ABN</td>
+                                <td>March 7,2019 - 15:43</td>
+                              </tr>
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">assembla</a></td>
+                                <td>-</td>
+                                <td>Area 10</td>
+                                <td>ABN</td>
+                                <td>March 7,2019 - 15:43</td>
+                              </tr>
+                              <tr class="relatedareas-tr">
+                                <td><a class="question" href="">assembla</a></td>
+                                <td>-</td>
+                                <td>Area 10</td>
+                                <td>ABN</td>
+                                <td>March 7,2019 - 15:43</td>
+                              </tr>
+                            </tbody>                     
+                        </table>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
