@@ -160,7 +160,7 @@ td {
     box-shadow: 0px 3px 8px #00000029;
     padding: 0 20px 0 20px;
 }
-.status-body2{
+.status-body2 {
     margin: 5px;
     padding: 10px;
 }
@@ -224,6 +224,11 @@ td {
         background-color: $gray2 !important;
         margin-right: 5px;
     }
+    @media only screen and (max-width: 993.5px) {
+        .nav-link {
+            margin-right: 4px;
+        }
+    }
     .nav-link.active {
         color: #fff !important;
         padding: 8px 15px 8px 15px !important;
@@ -232,20 +237,46 @@ td {
         border-radius: $mainRadius;
     }
 }
-
-.tab-content-header {
+@media only screen and (max-width: 993.5px) {
+    nav.nav-tabs {
+        float: right;
+    }
+}
+.tab-content-header , .tab-content-header2 {
     border-bottom: 2px solid $primaryColor1;
 }
 .savebutton-body {
-    float: right;
-}
-.save-button,
-.close-button {
     border: 0;
     background-color: $gray5;
     color: #fff;
     height: 32px;
     width: 88px;
+    margin-top: 10px;
+}
+
+.save-button {
+    border: 0;
+    background-color: $gray5;
+    color: #fff;
+    height: 32px;
+    width: 88px;
+    margin-top: 10px;
+    float: right;
+}
+@media only screen and (min-width: 993.5px) {
+    .savebutton-body-mobile {
+        display: none;
+    }
+}
+@media only screen and (max-width: 993.5px) {
+    .savebutton-body-desktop , .tab-content-header2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 993.5px) {
+    .savebutton-body-mobile {
+        float: right;
+    }
 }
 .active-form {
     padding-top: 28px;
@@ -317,6 +348,17 @@ button.angleDown {
     padding: 10px;
     margin-top: 20px;
     color: $primaryColor1;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.related-action {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 3px 8px #00000029;
+    color: $primaryColor1;
+    border: 1px solid $primaryColor1;
+    border-radius: 2px;
+    opacity: 1;
     text-decoration: underline;
     text-transform: uppercase;
 }

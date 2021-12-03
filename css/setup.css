@@ -229,6 +229,12 @@ td {
   margin-right: 5px;
 }
 
+@media only screen and (max-width: 993.5px) {
+  .nav-tabs .nav-link {
+    margin-right: 4px;
+  }
+}
+
 .nav-tabs .nav-link.active {
   color: #fff !important;
   padding: 8px 15px 8px 15px !important;
@@ -237,21 +243,51 @@ td {
   border-radius: 3px;
 }
 
-.tab-content-header {
+@media only screen and (max-width: 993.5px) {
+  nav.nav-tabs {
+    float: right;
+  }
+}
+
+.tab-content-header, .tab-content-header2 {
   border-bottom: 2px solid #44b4cd;
 }
 
 .savebutton-body {
-  float: right;
-}
-
-.save-button,
-.close-button {
   border: 0;
   background-color: #c4cbca;
   color: #fff;
   height: 32px;
   width: 88px;
+  margin-top: 10px;
+}
+
+.save-button {
+  border: 0;
+  background-color: #c4cbca;
+  color: #fff;
+  height: 32px;
+  width: 88px;
+  margin-top: 10px;
+  float: right;
+}
+
+@media only screen and (min-width: 993.5px) {
+  .savebutton-body-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+  .savebutton-body-desktop, .tab-content-header2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+  .savebutton-body-mobile {
+    float: right;
+  }
 }
 
 .active-form {
@@ -336,6 +372,19 @@ button.angleDown {
   padding: 10px;
   margin-top: 20px;
   color: #44b4cd;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.related-action {
+  padding: 10px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 3px 8px #00000029;
+          box-shadow: 0px 3px 8px #00000029;
+  color: #44b4cd;
+  border: 1px solid #44b4cd;
+  border-radius: 2px;
+  opacity: 1;
   text-decoration: underline;
   text-transform: uppercase;
 }
