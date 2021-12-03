@@ -319,7 +319,7 @@ $(document).ready(function() {
     $('.mainbody-table').hide(); 
     $('.header-table').hide();   
   });
-  $('#save').click(function() {
+  $('#save, #save2').click(function() {
     $('.mainbody-table').show();
     $('.header-table').show();
     $('.status-body2').hide();
