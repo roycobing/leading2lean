@@ -317,11 +317,13 @@ $(document).ready(function() {
   $('#statusTable').click(function() {
     $('.status-body2').toggle();
     $('.mainbody-table').hide(); 
-    $('.header-table').hide();   
+    $('.header-table').hide(); 
+    $('.clouddispatch-navbar').hide();   
   });
   $('#save, #save2').click(function() {
     $('.mainbody-table').show();
     $('.header-table').show();
     $('.status-body2').hide();
+    $('.clouddispatch-navbar').show();
   });
 });

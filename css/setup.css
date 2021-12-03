@@ -1,5 +1,6 @@
 .navbarSetup-text {
   color: #7c879b;
+  font-size: 0.9rem;
 }
 
 .navbarButton {
@@ -161,6 +162,13 @@ td {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 993.5px) {
+  .impactproduction-title {
+    font-size: .73rem;
+    text-align: center;
+  }
+}
+
 .table-status {
   margin-left: 5px;
 }
@@ -175,6 +183,32 @@ td {
   color: #fff;
   padding: 10px;
   text-align: center;
+}
+
+@media only screen and (min-width: 993.5px) {
+  button.rootcause-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+  button.rootcause-button {
+    color: #44b4cd;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    border: 0;
+    height: 45px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 993.5px) {
+  .rootcause-main.collapse:not(.show) {
+    display: block !important;
+  }
 }
 
 .result {
@@ -249,7 +283,8 @@ td {
   }
 }
 
-.tab-content-header, .tab-content-header2 {
+.tab-content-header,
+.tab-content-header2 {
   border-bottom: 2px solid #44b4cd;
 }
 
@@ -279,7 +314,8 @@ td {
 }
 
 @media only screen and (max-width: 993.5px) {
-  .savebutton-body-desktop, .tab-content-header2 {
+  .savebutton-body-desktop,
+  .tab-content-header2 {
     display: none;
   }
 }
@@ -302,7 +338,7 @@ td {
 .createdupdated-body.row {
   background-color: #e8e9eb;
   padding: 10px;
-  margin: 0 1px 0 1px;
+  margin: 0 1px 37px 1px;
 }
 
 .fa-circle.down {
