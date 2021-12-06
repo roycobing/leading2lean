@@ -311,6 +311,7 @@ $(document).ready(function() {
   });
 });
 
+/** Table Data */
 $(document).ready(function() {
   $('.status-body2').hide();
 
@@ -327,3 +328,16 @@ $(document).ready(function() {
     $('.clouddispatch-navbar').show();
   });
 });
+
+$( '#rootCause' ).click(function() {
+  $( '.mainBody-status').hide();
+  $('.rootcause-button').hide();
+});
+
+
+$('#rootcause-down').click(function() {
+  $( '.mainBody-status').show();
+  $('.rootcause-button').show();
+});
+
+
