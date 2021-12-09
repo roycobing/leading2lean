@@ -182,14 +182,14 @@ td {
 .abrv-status {
     text-transform: uppercase;
 }
-.root-cause-metrics {    
+.root-cause-metrics {
     height: 47px;
     color: #fff;
     padding: 10px;
     text-align: center;
     background-color: $primaryColor2;
 }
-.rootcauseDown{
+.rootcauseDown {
     border: 0;
     background-color: transparent;
     color: #fff;
@@ -200,8 +200,11 @@ td {
     }
 }
 @media only screen and (max-width: 993.5px) {
-    .rootcause-button {    
-        background-color: #fff;    
+    .rootcause-button {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background-color: #fff;
         box-shadow: 0px 3px 800px #00000029;
         border: 1px solid $primaryColor1;
         width: 100%;
@@ -219,7 +222,19 @@ td {
     }
 }
 @media only screen and (min-width: 993.5px) {
-    .rootcause-down , .rootcause-button {
+    .rootcause-down,
+    .rootcause-button {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .rootcause-main {
+        display: block !important;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .rootcause-button , .rootcauseDown {
         display: none;
     }
 }
@@ -228,9 +243,9 @@ td {
     padding-top: 8px;
     font-weight: bold;
 }
-.rootcause.fa-angle-down{
-    color: #fff;    
-    padding-top: 10px;   
+.rootcause.fa-angle-down {
+    color: #fff;
+    padding-top: 10px;
     font-size: 25px;
 }
 .result {
@@ -279,6 +294,7 @@ td {
     @media only screen and (max-width: 993.5px) {
         .nav-link {
             margin-right: 4px;
+            font-size: 13px;
         }
     }
     .nav-link.active {

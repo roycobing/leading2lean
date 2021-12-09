@@ -199,6 +199,9 @@ td {
 
 @media only screen and (max-width: 993.5px) {
   .rootcause-button {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
     background-color: #fff;
     -webkit-box-shadow: 0px 3px 800px #00000029;
             box-shadow: 0px 3px 800px #00000029;
@@ -220,7 +223,21 @@ td {
 }
 
 @media only screen and (min-width: 993.5px) {
-  .rootcause-down, .rootcause-button {
+  .rootcause-down,
+  .rootcause-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rootcause-main {
+    display: block !important;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rootcause-button, .rootcauseDown {
     display: none;
   }
 }
@@ -292,6 +309,7 @@ td {
 @media only screen and (max-width: 993.5px) {
   .nav-tabs .nav-link {
     margin-right: 4px;
+    font-size: 13px;
   }
 }
 
