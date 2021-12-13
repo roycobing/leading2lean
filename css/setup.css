@@ -255,12 +255,12 @@ td {
 }
 
 .result {
-  background-color: #44b4cd;
-  border-radius: 3px;
   text-align: center;
   color: #fff;
   font-size: 40px;
-  width: auto;
+  width: 100%;
+  background-color: #44b4cd;
+  border-radius: 3px;
 }
 
 .root-cause-metrics-body {

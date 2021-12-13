@@ -248,13 +248,13 @@ td {
     padding-top: 10px;
     font-size: 25px;
 }
-.result {
-    background-color: $stat8;
-    border-radius: $mainRadius;
+.result {    
     text-align: center;
     color: #fff;
     font-size: 40px;
-    width: auto;
+    width: 100%;
+    background-color: $stat8;
+    border-radius: $mainRadius;
 }
 .root-cause-metrics-body {
     background-color: $gray4;
