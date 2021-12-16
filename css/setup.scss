@@ -176,6 +176,11 @@ td {
     }
 }
 
+@media only screen and (min-width: 993.5px) {
+    .mainBody-status{
+        display: block !important;
+    }
+}
 .table-status {
     margin-left: 5px;
 }
@@ -227,15 +232,21 @@ td {
         display: none;
     }
 }
+@media only screen and (min-width: 993.5px) {
+    .noShow .rootcause-button {
+        display: none;
+    }
+}
 @media only screen and (min-width: 768px) {
     .rootcause-main {
-        display: block !important;
+        display: block;
         font-size: 14px;
     }
 }
 @media only screen and (min-width: 768px) {
-    .rootcause-button , .rootcauseDown {
-        display: none;
+    .rootcause-button,
+    .rootcauseDown {
+        display: none !important;
     }
 }
 .rootcause.fa-angle-up {
@@ -248,7 +259,7 @@ td {
     padding-top: 10px;
     font-size: 25px;
 }
-.result {    
+.result {
     text-align: center;
     color: #fff;
     font-size: 40px;

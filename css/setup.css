@@ -169,6 +169,12 @@ td {
   }
 }
 
+@media only screen and (min-width: 993.5px) {
+  .mainBody-status {
+    display: block !important;
+  }
+}
+
 .table-status {
   margin-left: 5px;
 }
@@ -229,16 +235,23 @@ td {
   }
 }
 
+@media only screen and (min-width: 993.5px) {
+  .noShow .rootcause-button {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .rootcause-main {
-    display: block !important;
+    display: block;
     font-size: 14px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .rootcause-button, .rootcauseDown {
-    display: none;
+  .rootcause-button,
+  .rootcauseDown {
+    display: none !important;
   }
 }
 

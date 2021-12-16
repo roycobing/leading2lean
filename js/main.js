@@ -336,8 +336,9 @@ $( '#rootCause' ).click(function() {
 
 
 $('#rootcause-down').click(function() {
-  $( '.mainBody-status').show();
+  $('.mainBody-status').show();
   $('.rootcause-button').show();
+  $('.rootcause-button').addClass('noShow');  
 });
 
 
