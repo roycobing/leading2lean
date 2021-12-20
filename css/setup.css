@@ -452,8 +452,33 @@ button.angleDown {
   color: #44b4cd;
 }
 
-.relateddocument-tableheader {
+.relateddocument-tableheader,
+.relateddocument-tableheader-number,
+.relateddocument-tableheader-ext,
+.relateddocument-tableheader-name,
+.relateddocument-tableheader-category,
+.relateddocument-tableheader-created,
+.relateddocument-category-mobile,
+.relateddocument-created-mobile {
   border-bottom: 0;
+}
+
+@media only screen and (max-width: 993.5px) {
+  .relateddocument-tableheader-category,
+  .relateddocument-tableheader-created,
+  .relateddocument-category,
+  .relateddocument-created {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993.5px) {
+  .relateddocument-category-mobile,
+  .relateddocument-created-mobile,
+  .relateddocument-category-data,
+  .relateddocument-created-data {
+    display: none;
+  }
 }
 
 .question {

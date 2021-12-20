@@ -177,7 +177,7 @@ td {
 }
 
 @media only screen and (min-width: 993.5px) {
-    .mainBody-status{
+    .mainBody-status {
         display: block !important;
     }
 }
@@ -418,8 +418,31 @@ button.angleDown {
     font-size: 16px;
     color: $primaryColor1;
 }
-.relateddocument-tableheader {
+.relateddocument-tableheader,
+.relateddocument-tableheader-number,
+.relateddocument-tableheader-ext,
+.relateddocument-tableheader-name,
+.relateddocument-tableheader-category,
+.relateddocument-tableheader-created,
+.relateddocument-category-mobile,
+.relateddocument-created-mobile {
     border-bottom: 0;
+}
+@media only screen and (max-width: 993.5px) {
+    .relateddocument-tableheader-category,
+    .relateddocument-tableheader-created,
+    .relateddocument-category,
+    .relateddocument-created {
+        display: none;
+    }
+}
+@media only screen and (min-width: 993.5px) {
+    .relateddocument-category-mobile,
+    .relateddocument-created-mobile,
+    .relateddocument-category-data,
+    .relateddocument-created-data {
+        display: none;
+    }
 }
 .question {
     color: $primaryColor1;
