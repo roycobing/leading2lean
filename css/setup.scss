@@ -431,9 +431,17 @@ button.angleDown {
 .relatedquestion-tableheader-priority,
 .relatedquestion-tableheader-created,
 .relatedquestion-category-mobile,
-.relatedquestion-created-mobile {
+.relatedquestion-created-mobile,
+.relatedareas-category-mobile,
+.relatedareas-created-mobile {
     border-bottom: 0;
 }
+@media only screen and (max-width: 993.5px) {
+    .relatedareas-category-mobile {
+        font-size: 14.5px;
+    }
+}
+
 @media only screen and (max-width: 993.5px) {
     .relateddocument-tableheader-category,
     .relateddocument-tableheader-created,
@@ -442,7 +450,8 @@ button.angleDown {
     .relateddocument-tableheader-priority,
     .relateddocument-created-data,
     .relateddocument-priority-data,
-    .relatedquestion-body {
+    .relatedquestion-body,
+    .related-areas-body {
         display: none;
     }
 }
@@ -455,7 +464,8 @@ button.angleDown {
     .relatedquestion-created-mobile,
     .relatedquestion-category-data-mobile,
     .relatedquestion-created-data-mobile,
-    .relatedquestion-body-mobile {
+    .relatedquestion-body-mobile,
+    .related-areas-body-mobile {
         display: none;
     }
 }
