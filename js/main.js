@@ -1,82 +1,82 @@
-(function($) {
+(function ($) {
 
   "use strict";
 
-  var fullHeight = function() {
+  var fullHeight = function () {
 
     $('.js-fullheight').css('height', $(window).height());
-    $(window).resize(function() {
+    $(window).resize(function () {
       $('.js-fullheight').css('height', $(window).height());
     });
 
   };
   fullHeight();
 
-  $('#sidebarCollapse').on('click', function() {
+  $('#sidebarCollapse').on('click', function () {
     $('#base-sidebar').toggleClass('active');
   });
 
 })(jQuery);
 /** SideNavbar Arrow **/
-$(document).ready(function() {
-  $(".sidebarCollapse").click(function() {
+$(document).ready(function () {
+  $(".sidebarCollapse").click(function () {
     $(".rotate").toggleClass('right');
   });
 });
 /** Dispatch Arrow **/
-$(document).ready(function() {
-  $(".dispatchscreens_title").click(function() {
+$(document).ready(function () {
+  $(".dispatchscreens_title").click(function () {
     $(".dispatch-rotate").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
-  $(".dispatches_title").click(function() {
+$(document).ready(function () {
+  $(".dispatches_title").click(function () {
     $(".dispatch-rotate-dispatches").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
-  $(".skill_title").click(function() {
+$(document).ready(function () {
+  $(".skill_title").click(function () {
     $(".dispatch-rotate-skills").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
-  $(".currentlyopendispatches_title").click(function() {
+$(document).ready(function () {
+  $(".currentlyopendispatches_title").click(function () {
     $(".dispatch-rotate-currentlyopendispatches").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
-  $(".dispatchesreported_title").click(function() {
+$(document).ready(function () {
+  $(".dispatchesreported_title").click(function () {
     $(".dispatch-rotate-dispatchesreported").toggleClass('down');
   });
 });
 
 /** Dispatch / Performance Mobile View Toggle **/
-$(document).ready(function() {
+$(document).ready(function () {
   $(".mobile-screen").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 
-$("#sidebarCollapse").on("click", function() {
+$("#sidebarCollapse").on("click", function () {
   if ($("#base-sidebar").hasClass("active")) {
     return $("#base-sidebar").toggleClass("show");
   }
 });
 
-$("#burger-menu-button").on("click", function() {
+$("#burger-menu-button").on("click", function () {
   $('#base-sidebar').removeClass('active');
   $(".rotate").toggleClass('right');
 });
 
 /** Modal **/
-$(function() {
+$(function () {
   $("#sortable").sortable({
     revert: true
   });
@@ -88,7 +88,7 @@ $(function() {
   $("ul, li").disableSelection();
 });
 
-$(function() {
+$(function () {
   $("#sortable2").sortable({
     revert: true
   });
@@ -100,7 +100,7 @@ $(function() {
   $("ul, li").disableSelection();
 });
 
-$(function() {
+$(function () {
   $("#sortable3").sortable({
     revert: true
   });
@@ -115,91 +115,91 @@ $(function() {
 
 // end of Modal
 /** Dispatches Screens - Favorite Icon **/
-$(document).ready(function() {
-  $(document).on('click', '.fa-star', function() {
+$(document).ready(function () {
+  $(document).on('click', '.fa-star', function () {
     $(this).toggleClass("favorite-icon");
   });
 });
 
 /** Performance Arrow **/
-$(document).ready(function() {
-  $(".linesrunning_title").click(function() {
+$(document).ready(function () {
+  $(".linesrunning_title").click(function () {
     $(".linesrunning-rotate").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".lines-running-header").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".on-time-pm-completion-header").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 
-$(document).ready(function() {
-  $(".ontime_title").click(function() {
+$(document).ready(function () {
+  $(".ontime_title").click(function () {
     $(".ontime-rotate").toggleClass('down');
   });
 });
 
 /** Oee */
-$(document).ready(function() {
-  $(".oee_title").click(function() {
+$(document).ready(function () {
+  $(".oee_title").click(function () {
     $(".oee-rotate").toggleClass('down');
   });
 });
-$(document).ready(function() {
+$(document).ready(function () {
   $(".oee-header").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 /** Top Spares */
-$(document).ready(function() {
-  $(".topspares_title").click(function() {
+$(document).ready(function () {
+  $(".topspares_title").click(function () {
     $(".topspares-rotate").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".topspares-header").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 
 /** Downtime */
-$(document).ready(function() {
-  $(".downtime_title").click(function() {
+$(document).ready(function () {
+  $(".downtime_title").click(function () {
     $(".downtime-rotate").toggleClass('down');
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".topspares-header").on({
 
-    click: function() {
+    click: function () {
       $(this).toggleClass("selected-nav");
     }
   });
 });
 
-$(function() {
-  $("#expand").on("click", function() {
+$(function () {
+  $("#expand").on("click", function () {
     $("#dispatch-expand").toggleClass("newClass");
     $('.skills-column').toggleClass("hide");
     $(".weekly-codered").toggleClass("hide");
@@ -216,22 +216,22 @@ $(function() {
 });
 
 /** downoccurence */
-$(document).ready(function() {
-  $(".downoccurence_title").click(function() {
+$(document).ready(function () {
+  $(".downoccurence_title").click(function () {
     $(".downoccurence-rotate").toggleClass('down');
   });
 });
 
 /** Production Machine Downtime */
-$(document).ready(function() {
-  $(".production-machine_title").click(function() {
+$(document).ready(function () {
+  $(".production-machine_title").click(function () {
     $(".production-machine-rotate").toggleClass('down');
   });
 });
 /** Table Data */
-$(function() {
+$(function () {
   $('td.td-body-codered , td.td-body-ps1 , td.td-body-rca , td.td-body-mod')
-    .on("click", function() {
+    .on("click", function () {
       var idOfParent = $(this).parents('tr').attr('id');
       $('tr.child-' + idOfParent).toggle('fast');
       $(this).toggleClass("expanded");
@@ -239,9 +239,9 @@ $(function() {
   $('tr[class^=child-]').hide().children('td');
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('#btnExpand')
-    .on("click", function() {
+    .on("click", function () {
       $('#btnCollapse').attr("disabled", false);
       $('#btnCollapse').val('Click');
       $('tr').show();
@@ -251,24 +251,24 @@ $(document).ready(function() {
       $('.comment-section-clouddispatch-mod').hide();
 
       $('td.td-body-codered')
-        .on("click", function() {
+        .on("click", function () {
           $('.comment-section-clouddispatch').show();
         });
       $('td.td-body-ps1')
-        .on("click", function() {
+        .on("click", function () {
           $('.comment-section-clouddispatch-ps1').show();
         });
       $('td.td-body-rca')
-        .on("click", function() {
+        .on("click", function () {
           $('.comment-section-clouddispatch-rca').show();
         });
       $('td.td-body-mod')
-        .on("click", function() {
+        .on("click", function () {
           $('.comment-section-clouddispatch-mod').show();
         });
 
       $('#btnCollapse')
-        .on("click", function() {
+        .on("click", function () {
           $('.comment-section-clouddispatch').show();
           $('.comment-section-clouddispatch-ps1').show();
           $('.comment-section-clouddispatch-rca').show();
@@ -276,7 +276,7 @@ $(document).ready(function() {
         });
     });
 
-  $('#btnCollapse').on("click", function() {
+  $('#btnCollapse').on("click", function () {
     $(this).attr("disabled", false);
     $('tr[class^=child-]').hide().children('td');
     $('.comment-section-clouddispatch').show();
@@ -287,41 +287,41 @@ $(document).ready(function() {
   });
 });
 /** View Icon Navbar Button */
-$(document).ready(function() {
+$(document).ready(function () {
   $('.filterButton').hide();
   $('.viewButton').hide();
 
-  $('#view').click(function() {
+  $('#view').click(function () {
     $('.viewButton').toggle();
     $('.filterButton').hide();
   });
   /** Filter Icon Navbar Button */
-  $('#filter').click(function() {
+  $('#filter').click(function () {
     $('.filterButton').toggle();
     $('.viewButton').hide();
   });
 });
 
 /** Filter Icon Navbar Button - Setup*/
-$(document).ready(function() {
+$(document).ready(function () {
   $('.filterButton-setup').hide();
 
-  $('#filterSetup').click(function() {
+  $('#filterSetup').click(function () {
     $('.filterButton-setup').toggle();
   });
 });
 
 /** Table Data */
-$(document).ready(function() {
+$(document).ready(function () {
   $('.status-body2').hide();
 
-  $('#statusTable').click(function() {
+  $('#statusTable').click(function () {
     $('.status-body2').toggle();
-    $('.mainbody-table').hide(); 
-    $('.header-table').hide(); 
-    $('.clouddispatch-navbar').hide();   
+    $('.mainbody-table').hide();
+    $('.header-table').hide();
+    $('.clouddispatch-navbar').hide();
   });
-  $('#save, #save2').click(function() {
+  $('#save, #save2').click(function () {
     $('.mainbody-table').show();
     $('.header-table').show();
     $('.status-body2').hide();
@@ -329,16 +329,16 @@ $(document).ready(function() {
   });
 });
 
-$( '#rootCause' ).click(function() {
-  $( '.mainBody-status').hide();
+$('#rootCause').click(function () {
+  $('.mainBody-status').hide();
   $('.rootcause-button').hide();
 });
 
 
-$('#rootcause-down').click(function() {
+$('#rootcause-down').click(function () {
   $('.mainBody-status').show();
   $('.rootcause-button').show();
-  $('.rootcause-button').addClass('noShow');  
+  $('.rootcause-button').addClass('noShow');
 });
 
 
