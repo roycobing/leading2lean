@@ -163,6 +163,13 @@ td {
 }
 
 @media only screen and (max-width: 993.5px) {
+  table.relatedAreas {
+    border-collapse: collapse !important;
+    border-bottom: #ebebeb 1px solid;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
   .impactproduction-title {
     font-size: 0.73rem;
     text-align: center;
