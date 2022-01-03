@@ -286,6 +286,16 @@ $(document).ready(function () {
 
   });
 });
+
+$(document).ready(function () {
+  $('.fender-3030-status').hide();
+
+  $('.fender-3030').click(function () {
+    $('.clouddispatch-table').hide();
+    $('.collapse-all , .expand-all').hide();
+    $('.fender-3030-status').toggle();
+  });
+});
 /** View Icon Navbar Button */
 $(document).ready(function () {
   $('.filterButton').hide();

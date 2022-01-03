@@ -2484,6 +2484,39 @@ button.savefilter-button {
   text-transform: uppercase;
 }
 /** End of CloudDISPATCH **/
+
+/** CloudDispatch Number View **/
+.followup-save-exit{
+  display: inline-block;
+  float: right;
+}
+
+.followUp{
+  border: 0;
+  border-radius: 3px;
+  width: 93px;
+  height: 32px;
+  background-color: #8A919D;
+  color: #fff;
+}
+.printButton {
+  border: 0;
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  background-color: #8A919D;
+  color: #fff;
+}
+.saveExit{
+  border: 0;
+  border-radius: 3px;
+  width: 93px;
+  height: 32px;
+  background-color: #0c93bc;
+  color: #fff;
+}
+/** End of CloudDispatch Number View **/
+
 ::-webkit-scrollbar {
   width: 4px;
 }
