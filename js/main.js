@@ -293,6 +293,7 @@ $(document).ready(function () {
   $('.fender-3030').click(function () {
     $('.clouddispatch-table').hide();
     $('.collapse-all , .expand-all').hide();
+    $('.pagination-clouddispatch').hide();
     $('.fender-3030-status').toggle();
   });
 });
