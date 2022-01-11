@@ -2758,14 +2758,18 @@ button.savefilter-button {
 .formControl {
   width: 212px;
 }
+.right-side-column-body{
+  height: 240px;
+}
 .right-side-column {
   color: #fff;
+  overflow: auto;
 }
 .submittedBy {
   padding: 20px;
   background-color: #0d324d;
 }
-.dispatch-resources {
+.dispatch-resources { 
   color: #0D324D;
   padding: 20px;
   background-color: #d3d5d9;
