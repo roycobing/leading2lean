@@ -2677,6 +2677,27 @@ button.savefilter-button {
   background-color: #0c93bc;
   color: #fff;
 }
+.dispatchedMe {
+  width: 110px;
+  height: 32px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #0c93bc;
+  color: #fff;
+}
+.requestSpares {
+  float: right;
+  border: 0;
+  width: 138px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #8a919d;
+  color: #fff;
+}
+.spares {
+  font-size: 16px;
+  font-weight: normal;
+}
 .dispatch-tabs {
   padding-left: 0 !important;
   width: 100%;
@@ -2684,8 +2705,9 @@ button.savefilter-button {
 .dispatch-tabs .dispatch-menu a {
   color: #000;
   padding: 15px;
+  position: sticky;
 }
-.dispatchinfo-body{  
+.dispatchinfo-body {
   padding-left: 10px;
   border-left: 6px #f03f3f solid;
 }
@@ -2695,6 +2717,33 @@ button.savefilter-button {
   font-weight: 900;
   color: #0c93bc;
   background-color: #f5f5f5;
+}
+.spares-information {
+  padding: 20px 20px 0px 20px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0c93bc;
+  background-color: #f5f5f5;
+}
+.spares-th {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0;
+}
+.addRemove {
+  font-weight: normal;
+  font-size: 16px;
+}
+.documentLookup {
+  float: right;
+  border: 0;
+  width: 166px;
+  height: 32px;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #8a919d;
+  color: #fff;
 }
 .dispatchinformation-image {
   text-align: center;
@@ -2706,8 +2755,20 @@ button.savefilter-button {
   border-radius: 4px;
   opacity: 1;
 }
-.formControl{
+.formControl {
   width: 212px;
+}
+.right-side-column {
+  color: #fff;
+}
+.submittedBy {
+  padding: 20px;
+  background-color: #0d324d;
+}
+.dispatch-resources {
+  color: #0D324D;
+  padding: 20px;
+  background-color: #d3d5d9;
 }
 /** End of CloudDispatch Number View **/
 
