@@ -2758,21 +2758,23 @@ button.savefilter-button {
 .formControl {
   width: 212px;
 }
-.right-side-column-body{
-  height: 240px;
-}
 .right-side-column {
   color: #fff;
-  overflow: auto;
 }
 .submittedBy {
   padding: 20px;
   background-color: #0d324d;
 }
-.dispatch-resources { 
-  color: #0D324D;
+.dispatch-resources {
+  color: #0d324d;
   padding: 20px;
   background-color: #d3d5d9;
+}
+.fender-3030-menu {
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  padding: 10px;
 }
 /** End of CloudDispatch Number View **/
 

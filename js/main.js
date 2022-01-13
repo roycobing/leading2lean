@@ -291,9 +291,9 @@ $(document).ready(function () {
   $('.fender-3030-status').hide();
 
   $('.fender-3030').click(function () {
-    $('.clouddispatch-table').hide();
     $('.collapse-all , .expand-all').hide();
     $('.pagination-clouddispatch').hide();
+    $('.clouddispatch-table').hide();
     $('.fender-3030-status').toggle();
   });
 });
@@ -352,4 +352,19 @@ $('#rootcause-down').click(function () {
   $('.rootcause-button').addClass('noShow');
 });
 
+
+$(function () {
+  var stickyHeaderTop = $('#stickytypeheader').offset().top;
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > stickyHeaderTop) {
+      $('#stickytypeheader').css({
+        position: 'fixed', top: '0px',
+        width: '1372px'
+      });
+    } else {
+      $('#stickytypeheader').css({ position: 'static', top: '0px' });
+    }
+  });
+});
 
