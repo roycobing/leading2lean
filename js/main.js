@@ -349,10 +349,9 @@ $('#rootCause').click(function () {
 $('#rootcause-down').click(function () {
   $('.mainBody-status').show();
   $('.rootcause-button').show();
-  $('.rootcause-button').addClass('noShow');
 });
 
-
+// CloudDispatch 3030
 $(function () {
   var stickyHeaderTop = $('#stickytypeheader').offset().top;
 
@@ -368,3 +367,12 @@ $(function () {
   });
 });
 
+$('#rootResources').click(function () {
+  $('.fender-3030-body').hide();
+  $('.rootresource-button').hide();
+});
+
+$('#rootresource-down').click(function () {
+  $('.fender-3030-body').show();
+  $('.rootresource-button').show();
+});
