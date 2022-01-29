@@ -2028,7 +2028,7 @@ button.collapse-all {
 }
 
 @media only screen and (max-width: 993.5px) {
-  .pagination-clouddispatch::-webkit-scrollbar {
+  .pagination-clouddispatch::-webkit-scrollbar ,.fender-3030-menu::-webkit-scrollbar {
     display: none;
   }
 }
@@ -2707,6 +2707,14 @@ button.savefilter-button {
   padding: 15px;
   position: sticky;
 }
+@media only screen and (max-width: 993.5px) {
+  .dispatch-tabs {
+    display: flex;
+    flex-direction: row;
+    width: 1000px; 
+     
+  }
+}
 .dispatchinfo-body {
   padding-left: 10px;
   border-left: 6px #f03f3f solid;
@@ -2821,6 +2829,12 @@ button.savefilter-button {
   .fender-3030-body {
     margin-bottom: 150px;
     --bs-gutter-x: 0px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .fender-3030-menu {
+    height: 120px;
+    overflow-y: auto;    
   }
 }
 
