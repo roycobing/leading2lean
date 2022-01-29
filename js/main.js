@@ -288,12 +288,13 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.fender-3030-status').hide();
+  $('.fender-3030-status').show();
+  $('.collapse-all , .expand-all').hide();
+  $('.pagination-clouddispatch').hide();
+  $('.clouddispatch-table').hide();
 
   $('.fender-3030').click(function () {
-    $('.collapse-all , .expand-all').hide();
-    $('.pagination-clouddispatch').hide();
-    $('.clouddispatch-table').hide();
+
     $('.fender-3030-status').toggle();
   });
 });
@@ -376,3 +377,37 @@ $('#rootresource-down').click(function () {
   $('.fender-3030-body').show();
   $('.rootresource-button').show();
 });
+
+$('nav a').on('click', function () {
+
+  var scrollAnchor = $(this).attr('data-scroll'),
+    scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
+
+  $('body,html').animate({
+    scrollTop: scrollPoint
+  }, 500);
+
+  return false;
+
+})
+
+
+/** $(window).scroll(function () {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+    $('nav').addClass('fixed');
+    $('.wrapper section').each(function (i) {
+      if ($(this).position().top <= windscroll - 20) {
+        $('nav a.active').removeClass('active');
+        $('nav a').eq(i).addClass('active');
+      }
+    });
+
+  } else {
+
+    $('nav').removeClass('fixed');
+    $('nav a.active').removeClass('active');
+    $('nav a:first').addClass('active');
+  }
+
+}).scroll(); */

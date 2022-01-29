@@ -2788,7 +2788,7 @@ button.savefilter-button {
 }
 
 @media only screen and (min-width: 993.5px) {
-  .rootcauseDown {
+  .rootcauseDown ,.resourcesDown {
     display: none;
   }
 }
@@ -2796,24 +2796,56 @@ button.savefilter-button {
   .rootresource-button {
     position: fixed;
     bottom: 0;
+    margin-bottom: 70px;
     z-index: 1;
     background-color: #fff;
     box-shadow: 0px 3px 800px #00000029;
-    border: 1px solid #44b4cd;
-    width: 344px;
+    width: 100%;
     border: 0;
     height: 60px;
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: #44b4cd;
+    align-items: center;
+    margin-left: -13px;
   }
 }
 @media only screen and (min-width: 993.5px) {
   .fender-3030-body {
     display: block !important;
+    margin-bottom: 10px;
   }
 }
+@media only screen and (max-width: 993.5px) {
+  .fender-3030-body {
+    margin-bottom: 150px;
+    --bs-gutter-x: 0px;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+  .resourcesDown {
+    width: 100%;
+    height: 44px;
+    font-size: 18px;
+    margin-right: 3px;
+    border: 0;
+    font-weight: bold;
+    background-color: #fff;
+    color: #0C93BC;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .resources-down {
+    font-size: 20px;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+
 /** End of CloudDispatch Number View **/
 
 ::-webkit-scrollbar {
