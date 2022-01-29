@@ -2712,7 +2712,8 @@ button.savefilter-button {
   .dispatch-tabs {
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    min-width: 1000px;
+    max-width: 1000px;
     overflow-y: auto;
   }
 }
@@ -2836,6 +2837,8 @@ button.savefilter-button {
 @media only screen and (max-width: 993.5px) {
   .fender-3030-menu {
     height: 100px;
+    min-width: auto;
+    max-width: auto;
     overflow-y: auto;
   }
 }
