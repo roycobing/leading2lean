@@ -2028,7 +2028,8 @@ button.collapse-all {
 }
 
 @media only screen and (max-width: 993.5px) {
-  .pagination-clouddispatch::-webkit-scrollbar ,.fender-3030-menu::-webkit-scrollbar {
+  .pagination-clouddispatch::-webkit-scrollbar,
+  .fender-3030-menu::-webkit-scrollbar {
     display: none;
   }
 }
@@ -2711,8 +2712,8 @@ button.savefilter-button {
   .dispatch-tabs {
     display: flex;
     flex-direction: row;
-    width: 1000px; 
-     
+    width: 1000px;
+    overflow-y: auto;
   }
 }
 .dispatchinfo-body {
@@ -2796,7 +2797,8 @@ button.savefilter-button {
 }
 
 @media only screen and (min-width: 993.5px) {
-  .rootcauseDown ,.resourcesDown {
+  .rootcauseDown,
+  .resourcesDown {
     display: none;
   }
 }
@@ -2833,8 +2835,8 @@ button.savefilter-button {
 }
 @media only screen and (max-width: 993.5px) {
   .fender-3030-menu {
-    height: 120px;
-    overflow-y: auto;    
+    height: 100px;
+    overflow-y: auto;
   }
 }
 
@@ -2847,7 +2849,7 @@ button.savefilter-button {
     border: 0;
     font-weight: bold;
     background-color: #fff;
-    color: #0C93BC;
+    color: #0c93bc;
     text-align: center;
   }
 }
@@ -2858,7 +2860,18 @@ button.savefilter-button {
     margin-top: 4px;
   }
 }
-
+@media only screen and (max-width: 993.5px) {
+  .followup-save-exit{
+    text-align: center;
+    float: none;
+    margin-left: 85px;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .fender-formcheck .complete, .fender-formcheck .close{
+    display: none;
+  }
+}
 
 /** End of CloudDispatch Number View **/
 
