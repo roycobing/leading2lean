@@ -2865,13 +2865,12 @@ button.savefilter-button {
 }
 @media only screen and (max-width: 993.5px) {
   .followup-save-exit{
-    text-align: center;
     float: none;
-    margin-left: 85px;
+    padding-left: 85px;
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .fender-formcheck .complete, .fender-formcheck .close{
+  .complete-close-form{
     display: none;
   }
 }
