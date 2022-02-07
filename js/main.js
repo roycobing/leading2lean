@@ -288,10 +288,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.fender-3030-status').show();
-  $('.collapse-all , .expand-all').hide();
-  $('.pagination-clouddispatch').hide();
-  $('.clouddispatch-table').hide();
+  $('.fender-3030-status').hide();
+
 
   $('.fender-3030').click(function () {
     $('.collapse-all , .expand-all').hide();

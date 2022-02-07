@@ -2028,13 +2028,6 @@ button.collapse-all {
 }
 
 @media only screen and (max-width: 993.5px) {
-  .pagination-clouddispatch::-webkit-scrollbar,
-  .fender-3030-menu::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 993.5px) {
   .clouddispatch-navbar {
     background-color: #0d324d;
     position: fixed;
@@ -2709,12 +2702,22 @@ button.savefilter-button {
 }
 @media only screen and (max-width: 993.5px) {
   .dispatch-tabs {
-    display: flex;
-    flex-direction: row;
-    min-width: 1000px;
-    max-width: 1000px;
+    min-width: 420px;
+    max-width: 420px;
     overflow-y: auto;
+    background: #ffffff;
+    opacity: 1;
+    padding: 10px;
   }
+}
+@media only screen and (max-width: 993.5px) {
+  .dispatch-tabs .dispatch-menu {
+    min-width: 960px;
+    max-width: 960px;
+  }
+}
+.fender-3030-menu-body{
+  background-color: #fff;
 }
 .dispatchinfo-body {
   padding-left: 10px;
@@ -2754,6 +2757,31 @@ button.savefilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+.actionComponents {
+  float: right;
+  border: 0;
+  width: 166px;
+  height: 32px;
+  font-weight: normal;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #8a919d;
+  color: #fff;
+}
+@media only screen and (max-width: 993.5px) {
+  .actionComponents {
+    float: none;
+    border: 0;
+    width: 166px;
+    height: 32px;
+    font-weight: normal;
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: #8a919d;
+    color: #fff;
+  }
+}
+
 .dispatchinformation-image {
   text-align: center;
 }
@@ -2780,10 +2808,8 @@ button.savefilter-button {
   background-color: #d3d5d9;
 }
 .fender-3030-menu {
-  background: #ffffff;
-  box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
 @media only screen and (min-width: 993.5px) {
   .right-side-column-body.collapse:not(.show) {
@@ -2834,14 +2860,11 @@ button.savefilter-button {
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .fender-3030-menu {
-    overflow-y: auto;
-  }
-}
-@media only screen and (max-width: 993.5px) {
-  .fixed{
+  .fixed {
     position: fixed;
     top: 0;
+    min-width: 420px;
+    max-width: 420px;
     overflow-y: auto;
   }
 }
@@ -2893,4 +2916,11 @@ button.savefilter-button {
 ::-webkit-scrollbar-thumb {
   background: #c4cbca;
   border-radius: 10px;
+}
+@media only screen and (max-width: 993.5px) {
+  .pagination-clouddispatch::-webkit-scrollbar,
+  .fender-3030-menu::-webkit-scrollbar,
+  .dispatch-tabs::-webkit-scrollbar {
+    display: none;
+  }
 }
