@@ -2706,7 +2706,6 @@ button.savefilter-button {
 .dispatch-tabs .dispatch-menu a {
   color: #000;
   padding: 15px;
-  position: sticky;
 }
 @media only screen and (max-width: 993.5px) {
   .dispatch-tabs {
@@ -2836,11 +2835,21 @@ button.savefilter-button {
 }
 @media only screen and (max-width: 993.5px) {
   .fender-3030-menu {
-    height: 100px;
-    min-width: auto;
-    max-width: auto;
     overflow-y: auto;
   }
+}
+@media only screen and (max-width: 993.5px) {
+  .fixed{
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 1372px;
+  overflow-y: auto;
 }
 
 @media only screen and (max-width: 993.5px) {
@@ -2864,13 +2873,13 @@ button.savefilter-button {
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .followup-save-exit{
+  .followup-save-exit {
     float: none;
     padding-left: 85px;
   }
 }
 @media only screen and (max-width: 993.5px) {
-  .complete-close-form{
+  .complete-close-form {
     display: none;
   }
 }

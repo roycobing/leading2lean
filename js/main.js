@@ -288,8 +288,10 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $('.fender-3030-status').hide();
-
+  $('.fender-3030-status').show();
+  $('.collapse-all , .expand-all').hide();
+  $('.pagination-clouddispatch').hide();
+  $('.clouddispatch-table').hide();
 
   $('.fender-3030').click(function () {
     $('.collapse-all , .expand-all').hide();
@@ -358,12 +360,9 @@ $(function () {
 
   $(window).scroll(function () {
     if ($(window).scrollTop() > stickyHeaderTop) {
-      $('#stickytypeheader').css({
-        position: 'fixed', top: '0px',
-        width: '1372px'
-      });
+      $('#stickytypeheader').addClass('fixed');
     } else {
-      $('#stickytypeheader').css({ position: 'static', top: '0px' });
+      $('#stickytypeheader').removeClass('fixed');
     }
   });
 });
@@ -378,7 +377,7 @@ $('#rootresource-down').click(function () {
   $('.rootresource-button').show();
 });
 
-$('nav a').on('click', function () {
+/** $('nav a').on('click', function () {
 
   var scrollAnchor = $(this).attr('data-scroll'),
     scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
@@ -392,7 +391,7 @@ $('nav a').on('click', function () {
 })
 
 
-/** $(window).scroll(function () {
+$(window).scroll(function () {
   var windscroll = $(window).scrollTop();
   if (windscroll >= 100) {
     $('nav').addClass('fixed');
