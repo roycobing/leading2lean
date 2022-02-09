@@ -2696,10 +2696,6 @@ button.savefilter-button {
   padding-left: 0 !important;
   width: 100%;
 }
-.dispatch-tabs .dispatch-menu a {
-  color: #000;
-  padding: 15px;
-}
 @media only screen and (max-width: 993.5px) {
   .dispatch-tabs {
     min-width: 420px;
@@ -2873,6 +2869,34 @@ button.savefilter-button {
   top: 0;
   width: 1372px;
   overflow-y: auto;
+}
+.info {
+  background: #fff;
+  width: 100%;
+  height: 40px;
+}
+.info a {
+  color: #0D324D;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+.info a:after {
+  background: #0C93BC;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  height: 5px;
+  transition: transform 0.35s;
+  transform: scale(0);
+}
+
+.info a.selected:after {
+  transform: scale(1);
 }
 
 @media only screen and (max-width: 993.5px) {

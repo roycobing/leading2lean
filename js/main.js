@@ -290,7 +290,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.fender-3030-status').hide();
 
-
   $('.fender-3030').click(function () {
     $('.collapse-all , .expand-all').hide();
     $('.pagination-clouddispatch').hide();
@@ -365,6 +364,42 @@ $(function () {
   });
 });
 
+$(function highlightOnScrollElements() {
+  var sections = $(".section");
+  if (!sections.length) {
+    return;
+  }
+  const topGap = Math.max(
+    sections[0].getBoundingClientRect().top,
+    $(sections[0]).offset().top,
+    0
+  );
+
+  $(window)
+    .on("scroll", function (e) {
+      var el = sections.filter(function (i, el) {
+        return (
+          el.getBoundingClientRect().bottom - topGap >=
+          parseInt($(el).css("height"))
+        );
+      });
+
+      var sectionId = el.prev().is(sections)
+        ? $(el).prev(".section").attr("id")
+        : sections.eq(-1).attr("id");
+
+      $(".scrollHighlight").each(function (_, el) {
+        const href = $(el).attr("href");
+        if (href.includes(sectionId)) {
+          $(el).addClass("selected");
+        } else {
+          $(el).removeClass("selected");
+        }
+      });
+    })
+    .scroll();
+});
+
 $('#rootResources').click(function () {
   $('.fender-3030-body').hide();
   $('.rootresource-button').hide();
@@ -374,37 +409,3 @@ $('#rootresource-down').click(function () {
   $('.fender-3030-body').show();
   $('.rootresource-button').show();
 });
-
-/** $('nav a').on('click', function () {
-
-  var scrollAnchor = $(this).attr('data-scroll'),
-    scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 28;
-
-  $('body,html').animate({
-    scrollTop: scrollPoint
-  }, 500);
-
-  return false;
-
-})
-
-
-$(window).scroll(function () {
-  var windscroll = $(window).scrollTop();
-  if (windscroll >= 100) {
-    $('nav').addClass('fixed');
-    $('.wrapper section').each(function (i) {
-      if ($(this).position().top <= windscroll - 20) {
-        $('nav a.active').removeClass('active');
-        $('nav a').eq(i).addClass('active');
-      }
-    });
-
-  } else {
-
-    $('nav').removeClass('fixed');
-    $('nav a.active').removeClass('active');
-    $('nav a:first').addClass('active');
-  }
-
-}).scroll(); */
