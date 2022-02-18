@@ -582,4 +582,8 @@ thead.tableheader {
   table-layout: fixed;
   /* even columns width , fix width of table too*/
 }
+
+.sss {
+  padding: 20px;
+}
 /*# sourceMappingURL=setup.css.map */
