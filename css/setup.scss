@@ -8,6 +8,7 @@ $navbarPadding: 0 10px 0 10px;
 
 $primaryColor1: #44b4cd;
 $primaryColor2: #0d324d;
+$primaryColor3: #0c93bc;
 
 $gray1: #f5f5f5;
 $gray2: #ebebeb;
@@ -55,7 +56,7 @@ $filtertextTitle: uppercase;
     border: $mainBorder;
     border-radius: $mainRadius;
     color: #fff;
-    background-color: #0c93bc;
+    background-color: $primaryColor3;
     margin-left: 20px;
     height: 40px;
     width: 100px;
@@ -534,7 +535,48 @@ thead.tableheader {
 }
 // End of Table Status
 // Start Breadcrumb
-
-.sss{
+$breadcrumb-divider: quote("/");
+.breadcrumb-item{
+    width: auto;
+}
+.report-top {
     padding: 20px;
+}
+.breadcrumb-top{
+    display: inline-block;
+}
+.report-save {
+    display: inline-block;
+    float: right;
+}
+.reportbutton-save{
+    border: 0;
+    border-radius: 3px;
+    background-color: $primaryColor3;
+    color: #fff;
+    width: 93px;
+    height: 32px;
+}
+$press-status1: #7f2f9e;
+$press-status2: #7f7e80;
+.press-status{
+    display: inline-block;
+    text-align: center;
+    background-color: $press-status1;
+    color: #fff;
+    width: 50px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.press-status2{
+    display: inline-block;
+    text-align: center;
+    background-color: $press-status2;
+    color: #fff;
+    width: 50px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.press-name{
+    margin-left: 15px;
 }
