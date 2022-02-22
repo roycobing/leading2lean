@@ -632,4 +632,35 @@ thead.tableheader {
 .press-name {
   margin-left: 15px;
 }
+
+.report-tab-body {
+  width: 100%;
+  padding: 20px;
+}
+
+.report-content-header {
+  border-bottom: 2px solid #44b4cd;
+}
+
+.nav-tabs {
+  padding-bottom: 5px;
+  border-bottom: 0 !important;
+}
+
+.nav-tabs .nav-link-report {
+  color: #44b4cd;
+  background-color: #ebebeb !important;
+  margin-right: 5px;
+  border: 0;
+  width: 150px;
+  padding: 8px 15px 8px 15px !important;
+}
+
+.nav-tabs .nav-link-report.active {
+  color: #fff !important;
+  padding: 8px 15px 8px 15px !important;
+  background-color: #44b4cd !important;
+  border-bottom: 5px solid #a40f4c !important;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=setup.css.map */

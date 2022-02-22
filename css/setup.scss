@@ -536,20 +536,20 @@ thead.tableheader {
 // End of Table Status
 // Start Breadcrumb
 $breadcrumb-divider: quote("/");
-.breadcrumb-item{
+.breadcrumb-item {
     width: auto;
 }
 .report-top {
     padding: 20px;
 }
-.breadcrumb-top{
+.breadcrumb-top {
     display: inline-block;
 }
 .report-save {
     display: inline-block;
     float: right;
 }
-.reportbutton-save{
+.reportbutton-save {
     border: 0;
     border-radius: 3px;
     background-color: $primaryColor3;
@@ -559,7 +559,7 @@ $breadcrumb-divider: quote("/");
 }
 $press-status1: #7f2f9e;
 $press-status2: #7f7e80;
-.press-status{
+.press-status {
     display: inline-block;
     text-align: center;
     background-color: $press-status1;
@@ -568,7 +568,7 @@ $press-status2: #7f7e80;
     border-radius: 3px;
     font-size: 12px;
 }
-.press-status2{
+.press-status2 {
     display: inline-block;
     text-align: center;
     background-color: $press-status2;
@@ -577,6 +577,32 @@ $press-status2: #7f7e80;
     border-radius: 3px;
     font-size: 12px;
 }
-.press-name{
+.press-name {
     margin-left: 15px;
+}
+.report-tab-body {
+    width: 100%;
+    padding: 20px;
+}
+.report-content-header{
+    border-bottom: 2px solid $primaryColor1;
+}
+.nav-tabs {
+    padding-bottom: 5px;
+    border-bottom: 0 !important;
+    .nav-link-report {
+        color: $primaryColor1;
+        background-color: $gray2 !important;
+        margin-right: 5px;
+        border: 0;
+        width: 150px;
+        padding: 8px 15px 8px 15px !important;
+    }
+    .nav-link-report.active {
+        color: #fff !important;
+        padding: 8px 15px 8px 15px !important;
+        background-color: $primaryColor1 !important;
+        border-bottom: 5px solid $stat2 !important;
+        border-radius: $mainRadius;
+    }
 }
