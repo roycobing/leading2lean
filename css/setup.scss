@@ -606,3 +606,22 @@ $press-status2: #7f7e80;
         border-radius: $mainRadius;
     }
 }
+.code-label{
+    display: flex;
+}
+.sas.form-control{
+    width: 300px;
+}
+.change{
+    border: 0;
+    border-radius: 3px;
+    margin-left: 10px;
+    background-color: $gray5;
+}
+.report-form-check{
+    padding: 25px;
+}
+
+.filtervariableSelect , .report-date-control.form-control{
+    font-style: italic;
+}

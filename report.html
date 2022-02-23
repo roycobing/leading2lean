@@ -323,51 +323,128 @@
             <div class="report-tab-body">
                 <div class="report-content-header col-12 col-md-12 col-lg-12">
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link-report" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                        <button class="nav-link-report " id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
                             aria-selected="true">Dashboard</button>
                         <button class="nav-link-report active" id="nav-process-tab" data-bs-toggle="tab"
-                            data-bs-target="#details" type="button" role="tab" aria-controls="nav-details"
+                            data-bs-target="#details" type="button" role="tab" aria-controls="details"
                             aria-selected="false">Details</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Attachments</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-related" type="button" role="tab" aria-controls="nav-related"
-                            aria-selected="false">Tooling</button>
-                        <button class="nav-link-report" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="false">Documents</button>
-                        <button class="nav-link-report" id="nav-process-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-process" type="button" role="tab" aria-controls="nav-process"
-                            aria-selected="false">Dispatch History</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Spares History</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-related" type="button" role="tab" aria-controls="nav-related"
-                            aria-selected="false">Bill of Materials</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                            aria-selected="false">Kaizen</button>
-                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-related" type="button" role="tab" aria-controls="nav-related"
-                            aria-selected="false">Notes</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Attachments</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Tooling</button>
+                        <button class="nav-link-report" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Documents</button>
+                        <button class="nav-link-report" id="nav-process-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Dispatch
+                            History</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Spares
+                            History</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Bill of
+                            Materials</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Kaizen</button>
+                        <button class="nav-link-report" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#"
+                            type="button" role="tab" aria-controls="" aria-selected="false">Notes</button>
                     </div>
                 </div>
                 <div class="tab-body-report">
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-panel fade show active col-sm-12" id="details" role="tabpanel"
-                            aria-labelledby="nav-details">
+                        <!--Dashboard Tab-->
+                        <div class="tab-pane fade show  col-sm-12" id="dashboard" role="tabpanel"
+                            aria-labelledby="dashboard">
                             <div class="row">
-                                <div class="col-sm-4">
-                                    col-1
+                                <div class="col-lg-4">
+                                    col-12
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-lg-4">
                                     col-2
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col-lg-4">
                                     col-3
+                                </div>
+                            </div>
+                        </div>
+                        <!--Details Tab-->
+                        <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    col-1
+                                </div>
+                                <div class="col-lg-4">
+                                    <label for="" class="form-label">Description</label>
+                                    <input type="text" class="form-control" id="description"
+                                        aria-describedby="description">
+
+                                    <label for="" class="code form-label">Line</label>
+                                    <div class="line-dropdown">
+                                        <select class="filtervariableSelect form-select form-select-sm">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">Press 1</option>
+                                            <option value="2">Press 2</option>
+                                            <option value="3">Press 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="" class="code form-label">Code</label>
+                                    <div class="code-label">
+                                        <input type="text" class="form-control" id="description"
+                                            aria-describedby="description">
+                                        <button class="change">Change</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="report-form-check form-switch">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label"
+                                                    for="flexSwitchCheckDefault">Active</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="report-form-check form-switch">
+                                                <input class="form-check-input" type="checkbox"
+                                                    id="flexSwitchCheckDefault">
+                                                <label class="form-check-label"
+                                                    for="flexSwitchCheckDefault">Critical</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="report-form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Non-Production
+                                            Machine</label>
+                                    </div>
+                                    <div class="report-form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Exclude from
+                                            Schedule Machine Report</label>
+                                    </div>
+                                    <label for="" class="form-label">Machine Group</label>
+                                    <div class="line-dropdown">
+                                        <select class="filtervariableSelect form-select form-select-sm">
+                                            <option selected>Select Machine Group</option>
+                                            <option value="1">Press 1</option>
+                                            <option value="2">Press 2</option>
+                                            <option value="3">Press 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="" class="form-label">Deployment Date</label>
+                                    <input type="date" class="report-date-control form-control" id="description"
+                                        aria-describedby="description">
+
+                                    <label for="" class="form-label">Cost Center</label>
+                                    <div class="line-dropdown">
+                                        <select class="filtervariableSelect form-select form-select-sm">
+                                            <option selected>Select Cost Center</option>
+                                            <option value="1">Press 1</option>
+                                            <option value="2">Press 2</option>
+                                            <option value="3">Press 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>

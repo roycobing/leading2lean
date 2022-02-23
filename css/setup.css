@@ -663,4 +663,29 @@ thead.tableheader {
   border-bottom: 5px solid #a40f4c !important;
   border-radius: 3px;
 }
+
+.code-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sas.form-control {
+  width: 300px;
+}
+
+.change {
+  border: 0;
+  border-radius: 3px;
+  margin-left: 10px;
+  background-color: #c4cbca;
+}
+
+.report-form-check {
+  padding: 25px;
+}
+
+.filtervariableSelect, .report-date-control.form-control {
+  font-style: italic;
+}
 /*# sourceMappingURL=setup.css.map */
