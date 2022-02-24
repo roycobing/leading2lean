@@ -688,4 +688,10 @@ thead.tableheader {
 .filtervariableSelect, .report-date-control.form-control {
   font-style: italic;
 }
+
+.report-created {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #ebebeb;
+}
 /*# sourceMappingURL=setup.css.map */
