@@ -670,10 +670,6 @@ thead.tableheader {
   display: flex;
 }
 
-.sas.form-control {
-  width: 300px;
-}
-
 .change {
   border: 0;
   border-radius: 3px;
@@ -693,5 +689,13 @@ thead.tableheader {
   margin-top: 10px;
   padding: 20px;
   background-color: #ebebeb;
+}
+
+.detail-body {
+  margin-top: 20px !important;
+}
+
+.details-image {
+  width: 100%;
 }
 /*# sourceMappingURL=setup.css.map */

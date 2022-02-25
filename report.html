@@ -370,13 +370,31 @@
                         <!--Details Tab-->
                         <div class="tab-pane fade show active" id="details" role="tabpanel" aria-labelledby="details">
                             <div class="row">
-                                <div class="col-lg-4">
-                                    <form id="form1" runat="server">
-                                        <input type='file' id="imgInp" />
-                                        <img id="blah" src="#" alt="your image" />
-                                    </form>
+                                <div class="detail-body col-lg-4">
+                                    <div class="details-image">
+                                        <img src="images/image@2x.png" class="img-fluid" alt="...">
+                                    </div>
+                                    <label for="" class="form-label">Value Stream</label>
+                                    <div class="valuestream-dropdown">
+                                        <select class="form-select form-select-sm">
+                                            <option selected>Press Lines</option>
+                                            <option value="1">Press 1</option>
+                                            <option value="2">Press 2</option>
+                                            <option value="3">Press 3</option>
+                                        </select>
+                                    </div>
+                                    <label for="" class="code form-label">Model Name</label>
+                                    <div class="code-label">
+                                        <input type="text" class="form-control" id="description"
+                                            aria-describedby="description">
+                                    </div>
+                                    <label for="" class="code form-label">Cycle Count</label>
+                                    <div class="code-label">
+                                        <input type="text" class="form-control" id="description"
+                                            aria-describedby="description">
+                                    </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="detail-body col-lg-4">
                                     <label for="" class="form-label">Description</label>
                                     <input type="text" class="form-control" id="description"
                                         aria-describedby="description">
@@ -397,7 +415,7 @@
                                         <button class="change">Change</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="detail-body col-lg-4">
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="report-form-check form-switch">
@@ -458,7 +476,7 @@
                                                     Berry1
                                                 </div>
                                                 <div>
-                                                    2021-01 
+                                                    2021-01
                                                     23:49
                                                 </div>
                                             </div>
@@ -470,7 +488,7 @@
                                                     Berry1
                                                 </div>
                                                 <div>
-                                                    2021-01 
+                                                    2021-01
                                                     23:49
                                                 </div>
                                             </div>

@@ -609,9 +609,6 @@ $press-status2: #7f7e80;
 .code-label{
     display: flex;
 }
-.sas.form-control{
-    width: 300px;
-}
 .change{
     border: 0;
     border-radius: 3px;
@@ -629,4 +626,10 @@ $press-status2: #7f7e80;
     margin-top: 10px;
     padding: 20px;
     background-color: $gray2;
+}
+.detail-body{
+    margin-top: 20px !important;
+}
+.details-image{
+    width: 100%;
 }

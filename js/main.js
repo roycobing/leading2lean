@@ -362,7 +362,7 @@ $('#rootresource-down').click(function () {
   $('.fender-3030-body').show();
   $('.rootresource-button').show();
 });
-
+/**
 function readURL() {
 	//	rehide the image and remove its current "src",
 	//	this way if the new image doesn't load,
@@ -394,4 +394,5 @@ $('#blah')
 	//	with the load event set, we now hide the image as it has nothing in it to start with
 	.hide();	//	done
 
-$("#imgInp").change(readURL);
+$("#imgInp").change(readURL); 
+*/
