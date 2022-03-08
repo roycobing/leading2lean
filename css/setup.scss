@@ -1,10 +1,10 @@
 $theme-colors: (
-  "primary-button": #44b4cd,
-  "primary-text": #fff,
-  "gray1": #8a919d
+    "primary-button-color": #44b4cd,
+    "primary-text": #fff,
+    "gray1": #8a919d,
 );
-@import "../node_modules/bootstrap/scss/bootstrap";
 
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 $mainText: #7c879b;
 $mainBorder: 0;
@@ -63,8 +63,6 @@ $filtertextTitle: uppercase;
 .apply-button-setup {
     border: $mainBorder;
     border-radius: $mainRadius;
-    color: #fff;
-    background-color: $primaryColor3;
     margin-left: 20px;
     height: 40px;
     width: 100px;
@@ -592,7 +590,7 @@ $press-status2: #7f7e80;
     width: 100%;
     padding: 20px;
 }
-.report-content-header{
+.report-content-header {
     border-bottom: 2px solid $primaryColor1;
 }
 .nav-tabs {
@@ -614,29 +612,30 @@ $press-status2: #7f7e80;
         border-radius: $mainRadius;
     }
 }
-.code-label{
+.code-label {
     display: flex;
 }
-.change{
+.change {
     border: 0;
     border-radius: 3px;
     margin-left: 10px;
 }
-.report-form-check{
+.report-form-check {
     padding: 25px;
 }
 
-.filtervariableSelect , .report-date-control.form-control{
+.filtervariableSelect,
+.report-date-control.form-control {
     font-style: italic;
 }
-.report-created{
+.report-created {
     margin-top: 10px;
     padding: 20px;
     background-color: $gray2;
 }
-.detail-body{
+.detail-body {
     margin-top: 20px !important;
 }
-.details-image{
+.details-image {
     width: 100%;
 }
