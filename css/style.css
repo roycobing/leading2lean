@@ -2955,7 +2955,8 @@ button.savefilter-button {
 @media only screen and (max-width: 993.5px) {
   .pagination-clouddispatch::-webkit-scrollbar,
   .fender-3030-menu::-webkit-scrollbar,
-  .dispatch-tabs::-webkit-scrollbar {
+  .dispatch-tabs::-webkit-scrollbar,
+  .report-content-header::-webkit-scrollbar {
     display: none;
   }
 }

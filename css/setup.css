@@ -11973,6 +11973,18 @@ thead.tableheader {
   border-bottom: 2px solid #44b4cd;
 }
 
+@media only screen and (max-width: 993.5px) {
+  .report-content-header {
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+  .nav-tabs-report {
+    width: 1562px;
+  }
+}
+
 .nav-tabs {
   padding-bottom: 5px;
   border-bottom: 0 !important;
@@ -12011,8 +12023,7 @@ thead.tableheader {
   padding: 25px;
 }
 
-.filtervariableSelect,
-.report-date-control.form-control {
+.filtervariableSelect, .report-date-control.form-control {
   font-style: italic;
 }
 
