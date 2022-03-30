@@ -228,75 +228,7 @@ $(document).ready(function () {
     $(".production-machine-rotate").toggleClass('down');
   });
 });
-/** Table Data */
-$(function () {
-  $('td.td-body-codered , td.td-body-ps1 , td.td-body-rca , td.td-body-mod')
-    .on("click", function () {
-      var idOfParent = $(this).parents('tr').attr('id');
-      $('tr.child-' + idOfParent).toggle('fast');
-      $(this).toggleClass("expanded");
-    });
-  $('tr[class^=child-]').hide().children('td');
-});
 
-$(document).ready(function () {
-  $('#btnExpand')
-    .on("click", function () {
-      $('#btnCollapse').attr("disabled", false);
-      $('#btnCollapse').val('Click');
-      $('tr').show();
-      $('.comment-section-clouddispatch').hide();
-      $('.comment-section-clouddispatch-ps1').hide();
-      $('.comment-section-clouddispatch-rca').hide();
-      $('.comment-section-clouddispatch-mod').hide();
-
-      $('td.td-body-codered')
-        .on("click", function () {
-          $('.comment-section-clouddispatch').show();
-        });
-      $('td.td-body-ps1')
-        .on("click", function () {
-          $('.comment-section-clouddispatch-ps1').show();
-        });
-      $('td.td-body-rca')
-        .on("click", function () {
-          $('.comment-section-clouddispatch-rca').show();
-        });
-      $('td.td-body-mod')
-        .on("click", function () {
-          $('.comment-section-clouddispatch-mod').show();
-        });
-
-      $('#btnCollapse')
-        .on("click", function () {
-          $('.comment-section-clouddispatch').show();
-          $('.comment-section-clouddispatch-ps1').show();
-          $('.comment-section-clouddispatch-rca').show();
-          $('.comment-section-clouddispatch-mod').show();
-        });
-    });
-
-  $('#btnCollapse').on("click", function () {
-    $(this).attr("disabled", false);
-    $('tr[class^=child-]').hide().children('td');
-    $('.comment-section-clouddispatch').show();
-    $('.comment-section-clouddispatch-ps1').show();
-    $('.comment-section-clouddispatch-rca').show();
-    $('.comment-section-clouddispatch-mod').show();
-
-  });
-});
-
-$(document).ready(function () {
-  $('.fender-3030-status').hide();
-
-  $('.fender-3030').click(function () {
-    $('.collapse-all , .expand-all').hide();
-    $('.pagination-clouddispatch').hide();
-    $('.clouddispatch-table').hide();
-    $('.fender-3030-status').toggle();
-  });
-});
 /** View Icon Navbar Button */
 $(document).ready(function () {
   $('.filterButton').hide();
@@ -322,7 +254,7 @@ $(document).ready(function () {
   });
 });
 
-/** Table Data */
+/** Setup.html Table Data */
 $(document).ready(function () {
   $('.status-body2').hide();
 
