@@ -31,10 +31,12 @@
   --bs-primary2-button-color: #DBEFF5;
   --bs-primary-text: #fff;
   --bs-gray1: #8a919d;
+  --bs-cancel-button: #ebebeb;
   --bs-primary-button-color-rgb: 68, 180, 205;
   --bs-primary2-button-color-rgb: 219, 239, 245;
   --bs-primary-text-rgb: 255, 255, 255;
   --bs-gray1-rgb: 138, 145, 157;
+  --bs-cancel-button-rgb: 235, 235, 235;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3365,6 +3367,47 @@ fieldset:disabled .btn {
   border-color: #8a919d;
 }
 
+.btn-cancel-button {
+  color: #000;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn-cancel-button:hover {
+  color: #000;
+  background-color: #eeeeee;
+  border-color: #ededed;
+}
+
+.btn-check:focus + .btn-cancel-button, .btn-cancel-button:focus {
+  color: #000;
+  background-color: #eeeeee;
+  border-color: #ededed;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, 0.5);
+}
+
+.btn-check:checked + .btn-cancel-button,
+.btn-check:active + .btn-cancel-button, .btn-cancel-button:active, .btn-cancel-button.active,
+.show > .btn-cancel-button.dropdown-toggle {
+  color: #000;
+  background-color: #efefef;
+  border-color: #ededed;
+}
+
+.btn-check:checked + .btn-cancel-button:focus,
+.btn-check:active + .btn-cancel-button:focus, .btn-cancel-button:active:focus, .btn-cancel-button.active:focus,
+.show > .btn-cancel-button.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, 0.5);
+}
+
+.btn-cancel-button:disabled, .btn-cancel-button.disabled {
+  color: #000;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
 .btn-outline-primary-button-color {
   color: #44b4cd;
   border-color: #44b4cd;
@@ -3498,6 +3541,40 @@ fieldset:disabled .btn {
 
 .btn-outline-gray1:disabled, .btn-outline-gray1.disabled {
   color: #8a919d;
+  background-color: transparent;
+}
+
+.btn-outline-cancel-button {
+  color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn-outline-cancel-button:hover {
+  color: #000;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn-check:focus + .btn-outline-cancel-button, .btn-outline-cancel-button:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(235, 235, 235, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(235, 235, 235, 0.5);
+}
+
+.btn-check:checked + .btn-outline-cancel-button,
+.btn-check:active + .btn-outline-cancel-button, .btn-outline-cancel-button:active, .btn-outline-cancel-button.active, .btn-outline-cancel-button.dropdown-toggle.show {
+  color: #000;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn-check:checked + .btn-outline-cancel-button:focus,
+.btn-check:active + .btn-outline-cancel-button:focus, .btn-outline-cancel-button:active:focus, .btn-outline-cancel-button.active:focus, .btn-outline-cancel-button.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(235, 235, 235, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(235, 235, 235, 0.5);
+}
+
+.btn-outline-cancel-button:disabled, .btn-outline-cancel-button.disabled {
+  color: #ebebeb;
   background-color: transparent;
 }
 
@@ -5337,6 +5414,16 @@ fieldset:disabled .btn {
   color: #42464b;
 }
 
+.alert-cancel-button {
+  color: #5e5e5e;
+  background-color: #fbfbfb;
+  border-color: #f9f9f9;
+}
+
+.alert-cancel-button .alert-link {
+  color: #4b4b4b;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5732,6 +5819,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #53575e;
   border-color: #53575e;
+}
+
+.list-group-item-cancel-button {
+  color: #5e5e5e;
+  background-color: #fbfbfb;
+}
+
+.list-group-item-cancel-button.list-group-item-action:hover, .list-group-item-cancel-button.list-group-item-action:focus {
+  color: #5e5e5e;
+  background-color: #e2e2e2;
+}
+
+.list-group-item-cancel-button.list-group-item-action.active {
+  color: #fff;
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
 }
 
 .btn-close {
@@ -6977,6 +7080,14 @@ fieldset:disabled .btn {
   color: #a1a7b1;
 }
 
+.link-cancel-button {
+  color: #ebebeb;
+}
+
+.link-cancel-button:hover, .link-cancel-button:focus {
+  color: #efefef;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -7425,6 +7536,10 @@ fieldset:disabled .btn {
 
 .border-gray1 {
   border-color: #8a919d !important;
+}
+
+.border-cancel-button {
+  border-color: #ebebeb !important;
 }
 
 .border-white {
@@ -8319,6 +8434,11 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-gray1-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-cancel-button {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-cancel-button-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -8388,6 +8508,11 @@ fieldset:disabled .btn {
 .bg-gray1 {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-gray1-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-cancel-button {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-cancel-button-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

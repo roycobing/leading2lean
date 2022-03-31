@@ -1967,27 +1967,15 @@ table.table.productmachine-table {
 
 /** End of Performance/Stats Column **/
 /** Start of CloudDISPATCH **/
-
-
 .apply_cancel-button {
-  text-align: center;
+  text-align: right;
 }
 button.cancel-button {
-  border: 0;
-  border-radius: 3px;
-  height: 40px;
-  width: 100px;
   text-transform: uppercase;
 }
 
 button.apply-button {
-  margin-left: 20px;
-  border: 0;
-  border-radius: 3px;
-  background-color: #a40d4d;
-  color: #fff;
-  height: 40px;
-  width: 100px;
+  margin-left: 5px;
   text-transform: uppercase;
 }
 .viewButton,
@@ -2029,16 +2017,26 @@ button.savefilter-button {
   margin-left: 20px;
   border: 0;
   border-radius: 3px;
-  background-color: #44b4cd;
-  color: #fff;
-  height: 40px;
+  color: #000;
   width: 100px;
   text-transform: uppercase;
+}
+button.newfilter-button {
+  margin-left: 20px;
+  margin-right: 15px;
+  color: #fff;
+  width: 150px;
+  text-transform: uppercase;
+  float: right;
 }
 .save-filter-body {
   width: 100%;
   margin-top: 15px;
   margin-left: 15px;
+  display: inline-block;
+}
+.new-filter{
+  float: right;
 }
 .myDispatches.form-check {
   width: auto;
@@ -2062,13 +2060,12 @@ button.savefilter-button {
     display: none !important;
   }
 }
-.clouddispatch-notif{
+.clouddispatch-notif {
   display: inline-block;
   padding: 0 0 0 10px;
   margin-top: 10px;
-  
 }
-.filter-notif{
+.filter-notif {
   background-color: #a40f4c;
   font-size: 14px;
   border-radius: 12px;
@@ -2076,16 +2073,16 @@ button.savefilter-button {
   margin-left: 5px;
   color: #fff;
 }
-.btn.all-notif{
+.btn.all-notif {
   color: #fff;
 }
-.btn.dispatch-notif{
+.btn.dispatch-notif {
   color: #44b4cd;
   border: #44b4cd 1px solid;
   margin-left: 5px;
 }
 /** Code Red Row **/
-.codeRed-main{
+.codeRed-main {
   margin: 10px;
   border: red 2px solid;
 }
