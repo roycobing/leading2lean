@@ -2035,7 +2035,7 @@ button.newfilter-button {
   margin-left: 15px;
   display: inline-block;
 }
-.new-filter{
+.new-filter {
   float: right;
 }
 .myDispatches.form-check {
@@ -2089,14 +2089,14 @@ button.newfilter-button {
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
-.number-id{
+.number-id {
   display: inline-block;
   margin-left: 10px;
 }
-.status-breadcrumb.breadcrumb{
+.status-breadcrumb.breadcrumb {
   margin-bottom: 0;
 }
-.codered{
+.codered {
   display: inline-block;
   background-color: #dc3545;
   border-radius: 50px;
@@ -2107,28 +2107,39 @@ button.newfilter-button {
   padding: 2px;
   color: #fff;
 }
-.new{
+.new {
   display: inline-block;
   background-color: #419650;
   border-radius: 50px;
   font-size: 14px;
   text-align: center;
-  width: 70px;
+  width: 40px;
   margin: 5px;
   padding: 2px;
 }
-.btn.dispatchme{
+.btn.dispatchme {
   color: #419650;
 }
-.fa-user-plus{
+.dispatchme{
+  text-align: center;
+}
+.fa-user-plus {
   color: #419650;
 }
-.description-main{
+
+.description-body-codered {
   display: inline-flex;
 }
-.description-codered{
-  width: 835px;
+.description-codered {
+  width: 1140px;
 }
+@media only screen and (max-width: 993.5px) {
+  .btn.view-plus,
+  .description-main {
+    display: none;
+  }
+}
+
 /** End of Code Red Row **/
 
 /** End of CloudDISPATCH **/
