@@ -593,26 +593,26 @@
       </div>
 
       <div class="codeRed-main2">
-        <div>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <div class="codeRed-main2-header">
+          <ul class="nav nav-tabs codeRed-main2-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="tab-title nav-link active" id="details" data-bs-toggle="tab" data-bs-target="#detail"
                 type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-info-circle"></i>
-               <span class="detail-title">Details</span></button>
+                <span class="detail-title">Details</span></button>
             </li>
             <li class="nav-item" role="presentation">
               <button class="tab-title nav-link" id="questions" data-bs-toggle="tab" data-bs-target="#question"
                 type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-question"></i>
-               <span class="question-title">Questions</span></button>
+                <span class="question-title">Questions</span></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="spare" data-bs-toggle="tab" data-bs-target="#spares"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-wrench"></i>
+              <button class="tab-title nav-link" id="spare" data-bs-toggle="tab" data-bs-target="#spares" type="button"
+                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-wrench"></i>
                 <span class="spare-title">Spares</span></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="tool" data-bs-toggle="tab" data-bs-target="#tools"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-tools"></i>
+              <button class="tab-title nav-link" id="tool" data-bs-toggle="tab" data-bs-target="#tools" type="button"
+                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-tools"></i>
                 <span class="tooling-title">Tooling</span></button>
             </li>
             <li class="nav-item" role="presentation">
@@ -621,8 +621,9 @@
                 <span class="document-title">Documents</span></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="actioncomponent" data-bs-toggle="tab" data-bs-target="#actioncomponents"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-dot-circle"></i>
+              <button class="tab-title nav-link" id="actioncomponent" data-bs-toggle="tab"
+                data-bs-target="#actioncomponents" type="button" role="tab" aria-controls="contact"
+                aria-selected="false"><i class="fas fa-dot-circle"></i>
                 <span class="actioncomponent-title">Actions, components</span></button>
             </li>
             <li class="nav-item" role="presentation">
@@ -631,14 +632,13 @@
                 <span class="resource-title">Resources</span></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="cost" data-bs-toggle="tab" data-bs-target="#costs"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i
-                  class="fas fa-dollar-sign"></i>
+              <button class="tab-title nav-link" id="cost" data-bs-toggle="tab" data-bs-target="#costs" type="button"
+                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-dollar-sign"></i>
                 <span class="cost-title">Costs</span></button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="note" data-bs-toggle="tab" data-bs-target="#notes"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-comment"></i>
+              <button class="tab-title nav-link" id="note" data-bs-toggle="tab" data-bs-target="#notes" type="button"
+                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-comment"></i>
                 <span class="note-title">Notes</span></button>
             </li>
             <li class="nav-item" role="presentation">
@@ -652,35 +652,37 @@
                 <span class="relate-title">Related</span></button>
             </li>
           </ul>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div>Area</div>
-                  <div class="filtervariable-dropdown">
-                    <select class="filtervariableSelect form-select form-select-sm">
-                      <option selected>Open this select menu</option>
-                      <option value="1">Pressing</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">All</option>
-                    </select>
-                  </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col-lg-4">
+                <div>Area</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Pressing</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="profile-tab">Question</div>
-            <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">Spares</div>
-            <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">Tools</div>
-            <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">Documents</div>
-            <div class="tab-pane fade" id="actioncomponents" role="tabpanel" aria-labelledby="contact-tab">Action Components</div>
-            <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="contact-tab">Resources</div>
-            <div class="tab-pane fade" id="costs" role="tabpanel" aria-labelledby="contact-tab">Costs</div>
-            <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
-            <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments</div>
-            <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
           </div>
+          <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="profile-tab">Question</div>
+          <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">Spares</div>
+          <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">Tools</div>
+          <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">Documents</div>
+          <div class="tab-pane fade" id="actioncomponents" role="tabpanel" aria-labelledby="contact-tab">Action
+            Components</div>
+          <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="contact-tab">Resources</div>
+          <div class="tab-pane fade" id="costs" role="tabpanel" aria-labelledby="contact-tab">Costs</div>
+          <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
+          <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments</div>
+          <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
         </div>
+
       </div>
       <!--End Code Red-->
       <!-- End of CloudDISPATCH Body -->

@@ -2089,7 +2089,16 @@ button.newfilter-button {
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
-
+@media only screen and (max-width: 993.5px) {
+  .codeRed-main2-header {
+   overflow: auto;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .codeRed-main2-tabs {
+    width: 680px;
+  }
+}
 .number-id {
   display: inline-block;
   margin-left: 10px;
@@ -2464,7 +2473,8 @@ button.newfilter-button {
   .pagination-clouddispatch::-webkit-scrollbar,
   .fender-3030-menu::-webkit-scrollbar,
   .dispatch-tabs::-webkit-scrollbar,
-  .report-content-header::-webkit-scrollbar {
+  .report-content-header::-webkit-scrollbar,
+  .codeRed-main2-header::-webkit-scrollbar {
     display: none;
   }
 }
