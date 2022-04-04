@@ -144,7 +144,7 @@ a.setButton-clouddispatch:hover{
   padding-left: 15px;
 }
 span.editIcon{
-  color: #fff;
+  color: #193c56;
   float: right;
 }
 ul.sortItem , ul.moreItem{
@@ -163,11 +163,20 @@ ul.sortItem , ul.moreItem{
 @media only screen and (min-width: 993.5px) {
   ul.sortItem.dropdown-menu.show {
     margin-top: 15px;
-    background-color: #44B4CD;
+    background-color: #d8d4dc;
   }
 }
+@media only screen and (min-width: 993.5px) {
+  ul.viewButton.dropdown-menu.show {
+    margin: 5px 0 0 5px;
+    background-color: #d8d4dc;
+    width: 1825px;
+    padding: 15px;
+  }
+}
+
 ul.sortItem.dropdown-menu.show a.dropdown-item , ul.moreItem.dropdown-menu.show a.dropdown-item {
-  color: #fff;
+  color: #193c56;
 }
 @media only screen and (max-width: 993.5px) {
   ul.sortItem.dropdown-menu.show , ul.moreItem.dropdown-menu.show {
@@ -182,13 +191,13 @@ ul.sortItem.dropdown-menu.show a.dropdown-item , ul.moreItem.dropdown-menu.show 
 }
 ul.sortItem.dropdown-menu.show a.dropdown-item:hover ,
 ul.moreItem.dropdown-menu.show a.dropdown-item:hover{
-  background-color: #69c3d7;
+  background-color: #dddee0;
 }
 
 @media only screen and (min-width: 993.5px) {
   ul.moreItem.dropdown-menu.show {
     margin: 15px auto;
-    background-color: #44B4CD;
+    background-color: #d8d4dc;
   }
 }
 /** End of CloudDISPATCH **/

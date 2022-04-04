@@ -197,7 +197,7 @@ $(document).ready(function () {
     }
   });
 });
-
+/** Dispatches - Expand Button */
 $(function () {
   $("#expand").on("click", function () {
     $("#dispatch-expand").toggleClass("newClass");
@@ -214,6 +214,56 @@ $(function () {
 
   });
 });
+/** CloudDispatch.html */
+$(document).ready(function () {
+  $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+
+  $('#details').click(function () {
+    $('.detail-title').show();
+    $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+
+  $('#questions').click(function () {
+    $('.question-title').show();
+    $('.detail-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#spare').click(function () {
+    $('.spare-title').show();
+    $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#tool').click(function () {
+    $('.tooling-title').show();
+    $('.detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#document').click(function () {
+    $('.document-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#actioncomponent').click(function () {
+    $('.actioncomponent-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#resource').click(function () {
+    $('.resource-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#cost').click(function () {
+    $('.cost-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .note-title, .attachment-title, .relate-title').hide();
+  });
+  $('#note').click(function () {
+    $('.note-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .attachment-title, .relate-title').hide();
+  });
+  $('#attachment').click(function () {
+    $('.attachment-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .relate-title').hide();
+  });
+  $('#relate').click(function () {
+    $('.relate-title').show();
+    $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title').hide();
+  });
+});
 
 /** downoccurence */
 $(document).ready(function () {
@@ -226,22 +276,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".production-machine_title").click(function () {
     $(".production-machine-rotate").toggleClass('down');
-  });
-});
-
-/** View Icon Navbar Button */
-$(document).ready(function () {
-  $('.filterButton').hide();
-  $('.viewButton').hide();
-
-  $('#view').click(function () {
-    $('.viewButton').toggle();
-    $('.filterButton').hide();
-  });
-  /** Filter Icon Navbar Button */
-  $('#filter').click(function () {
-    $('.filterButton').toggle();
-    $('.viewButton').hide();
   });
 });
 
@@ -284,7 +318,6 @@ $('#rootcause-down').click(function () {
 });
 
 
-
 $('#rootResources').click(function () {
   $('.fender-3030-body').hide();
   $('.rootresource-button').hide();
@@ -294,37 +327,3 @@ $('#rootresource-down').click(function () {
   $('.fender-3030-body').show();
   $('.rootresource-button').show();
 });
-/**
-function readURL() {
-	//	rehide the image and remove its current "src",
-	//	this way if the new image doesn't load,
-	//	then the image element is "gone" for now
-	$('#blah').attr('src', '').hide();
-	if (this.files && this.files[0]) {
-		var reader = new FileReader();
-		$(reader).load(function(e) {
-			$('#blah')
-				//	first we set the attribute of "src" thus changing the image link
-				.attr('src', e.target.result)	//	this will now call the load event on the image
-		});
-		reader.readAsDataURL(this.files[0]);
-	}
-}
-
-//	below makes use of jQuery chaining. This means the same element is returned after each method, so we don't need to call it again
-$('#blah')
-	//	here we first set a "load" event for the image that will cause it change it's height to a set variable
-	//		and make it "show" when finished loading
-	.load(function(e) {
-		//	$(this) is the jQuery OBJECT of this which is the element we've called on this load method
-		$(this)
-			//	note how easy adding css is, just create an object of the css you want to change or a key/value pair of STRINGS
-			.css('height', '20px')	//	or .css({ height: '200px' })
-			//	now for the next "method" in the chain, we show the image when loaded
-			.show();	//	just that simple
-	})
-	//	with the load event set, we now hide the image as it has nothing in it to start with
-	.hide();	//	done
-
-$("#imgInp").change(readURL); 
-*/

@@ -1978,12 +1978,6 @@ button.apply-button {
   margin-left: 5px;
   text-transform: uppercase;
 }
-.viewButton,
-.filterButton {
-  background-color: #d8d4dc;
-  padding: 20px 10px 20px 10px;
-}
-
 .hide {
   display: none;
 }
@@ -2032,7 +2026,6 @@ button.newfilter-button {
 .save-filter-body {
   width: 100%;
   margin-top: 15px;
-  margin-left: 15px;
   display: inline-block;
 }
 .new-filter {
@@ -2084,11 +2077,19 @@ button.newfilter-button {
 
 /** Code Red Row **/
 .codeRed-main {
-  margin: 10px;
+  margin: 10px 10px 0 10px;
   border: #dc3545 2px solid;
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
+.codeRed-main2 {
+  margin: 0 10px 0 10px;
+  border-bottom: #dc3545 2px solid;
+  border-right: #dc3545 2px solid;
+  border-left: #dc3545 10px solid;
+  padding: 5px;
+}
+
 .number-id {
   display: inline-block;
   margin-left: 10px;
@@ -2126,12 +2127,12 @@ button.newfilter-button {
 .fa-user-plus {
   color: #419650;
 }
-
 .description-body-codered {
-  display: inline-flex;
+  display: inline-block;
+  padding-right: 20px;
 }
 .description-codered {
-  width: 1140px;
+  max-width: 1090px;
 }
 @media only screen and (max-width: 993.5px) {
   .btn.view-plus,
@@ -2139,7 +2140,12 @@ button.newfilter-button {
     display: none;
   }
 }
-
+.codeRed-body{
+  display: inline-block;
+}
+.dispatchme{
+  float: right;
+}
 /** End of Code Red Row **/
 
 /** End of CloudDISPATCH **/

@@ -326,22 +326,37 @@ td {
 .nav-tabs {
     padding-bottom: 5px;
     border-bottom: 0 !important;
-    .nav-link {
+    .setup-tabtitle.nav-link {
         color: $primaryColor1;
         background-color: $gray2 !important;
         margin-right: 5px;
     }
+    // Code Red
+    .tab-title.nav-link {
+        color: $primaryColor3;
+        background-color: #f2f2f2 !important;
+        margin-right: 5px;
+    }
     @media only screen and (max-width: 993.5px) {
-        .nav-link {
+        .setup-tabtitle.nav-link {
             margin-right: 4px;
             font-size: 13px;
         }
     }
-    .nav-link.active {
+    .setup-tabtitle.nav-link.active {
         color: #fff !important;
         padding: 8px 15px 8px 15px !important;
         background-color: $primaryColor1 !important;
         border-bottom: 5px solid $stat2 !important;
+        border-radius: $mainRadius;
+    }
+    // Code Red
+    .tab-title.nav-link.active {
+        color: $primaryColor3;
+        background-color: #f2f2f2 !important;
+        margin-right: 5px;
+        padding: 8px 15px 8px 15px !important;
+        background-color: #dbeff5 !important;
         border-radius: $mainRadius;
     }
 }
