@@ -555,7 +555,7 @@
       </div>
       <!--Code Red-->
       <div class="codeRed-main">
-        <div class="sas row">
+        <div class="row">
           <div class="codeRed-body col-sm-2 col-lg-4">
             <div class="codeRed-col">
               <div class="number-id">#3015</div>
@@ -594,74 +594,154 @@
 
       <div class="codeRed-main2">
         <div class="codeRed-main2-header">
-          <ul class="nav nav-tabs codeRed-main2-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link active" id="details" data-bs-toggle="tab" data-bs-target="#detail"
-                type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-info-circle"></i>
-                <span class="detail-title">Details</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="questions" data-bs-toggle="tab" data-bs-target="#question"
-                type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-question"></i>
-                <span class="question-title">Questions</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="spare" data-bs-toggle="tab" data-bs-target="#spares" type="button"
-                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-wrench"></i>
-                <span class="spare-title">Spares</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="tool" data-bs-toggle="tab" data-bs-target="#tools" type="button"
-                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-tools"></i>
-                <span class="tooling-title">Tooling</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="document" data-bs-toggle="tab" data-bs-target="#documents"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-file"></i>
-                <span class="document-title">Documents</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="actioncomponent" data-bs-toggle="tab"
-                data-bs-target="#actioncomponents" type="button" role="tab" aria-controls="contact"
-                aria-selected="false"><i class="fas fa-dot-circle"></i>
-                <span class="actioncomponent-title">Actions, components</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="resource" data-bs-toggle="tab" data-bs-target="#resources"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-user"></i>
-                <span class="resource-title">Resources</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="cost" data-bs-toggle="tab" data-bs-target="#costs" type="button"
-                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-dollar-sign"></i>
-                <span class="cost-title">Costs</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="note" data-bs-toggle="tab" data-bs-target="#notes" type="button"
-                role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-comment"></i>
-                <span class="note-title">Notes</span></button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="attachment" data-bs-toggle="tab" data-bs-target="#attachments"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-paperclip"></i>
-                <span class="attachment-title">Attachments</span> </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="tab-title nav-link" id="relate" data-bs-toggle="tab" data-bs-target="#relates"
-                type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-link"></i>
-                <span class="relate-title">Related</span></button>
-            </li>
-          </ul>
+          <div class="header-maintabs">
+            <ul class="nav nav-tabs codeRed-main2-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link active" id="details" data-bs-toggle="tab" data-bs-target="#detail"
+                  type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-info-circle"></i>
+                  <span class="detail-title">Details</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="questions" data-bs-toggle="tab" data-bs-target="#question"
+                  type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-question"></i>
+                  <span class="question-title">Questions</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="spare" data-bs-toggle="tab" data-bs-target="#spares"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-wrench"></i>
+                  <span class="spare-title">Spares</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="tool" data-bs-toggle="tab" data-bs-target="#tools" type="button"
+                  role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-tools"></i>
+                  <span class="tooling-title">Tooling</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="document" data-bs-toggle="tab" data-bs-target="#documents"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-file"></i>
+                  <span class="document-title">Documents</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="actioncomponent" data-bs-toggle="tab"
+                  data-bs-target="#actioncomponents" type="button" role="tab" aria-controls="contact"
+                  aria-selected="false"><i class="fas fa-dot-circle"></i>
+                  <span class="actioncomponent-title">Actions, components</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="resource" data-bs-toggle="tab" data-bs-target="#resources"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-user"></i>
+                  <span class="resource-title">Resources</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="cost" data-bs-toggle="tab" data-bs-target="#costs" type="button"
+                  role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-dollar-sign"></i>
+                  <span class="cost-title">Costs</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="note" data-bs-toggle="tab" data-bs-target="#notes" type="button"
+                  role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-comment"></i>
+                  <span class="note-title">Notes</span></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="attachment" data-bs-toggle="tab" data-bs-target="#attachments"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false"><i
+                    class="fas fa-paperclip"></i>
+                  <span class="attachment-title">Attachments</span> </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="tab-title nav-link" id="relate" data-bs-toggle="tab" data-bs-target="#relates"
+                  type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-link"></i>
+                  <span class="relate-title">Related</span></button>
+              </li>
+            </ul>
+          </div>
+          <div class="dispatchhistory"><a href="#">Dispatch History</a></div>
         </div>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-3">
                 <div>Area</div>
                 <div class="filtervariable-dropdown">
                   <select class="filtervariableSelect form-select form-select-sm">
                     <option selected>Open this select menu</option>
                     <option value="1">Pressing</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div>Dispatch Type</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Code Red</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div>Line</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">AL 3</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div>Status</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Code Red</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div>Machine</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">A1001</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div>Trade</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Mechanic</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div>Tooling</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div>Reason</div>
+                <div class="filtervariable-dropdown">
+                  <select class="filtervariableSelect form-select form-select-sm">
+                    <option selected>Select Reason</option>
+                    <option value="1">Mechanic</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                     <option value="4">All</option>

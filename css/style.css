@@ -2164,7 +2164,14 @@ button.newfilter-button {
   float: right;
 }
 /** End of Code Red Row **/
-
+.header-maintabs{
+  display: inline-block;
+}
+.dispatchhistory{
+  padding-right: 10px;
+  display: inline-block;
+  float: right;
+}
 /** End of CloudDISPATCH **/
 /** CloudDispatch Number View **/
 .followup-save-exit {
