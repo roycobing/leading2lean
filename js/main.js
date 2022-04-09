@@ -216,6 +216,21 @@ $(function () {
 });
 /** CloudDispatch.html */
 $(document).ready(function () {
+  $('.codeRed-main2').hide();
+
+  $('.codeRed-col').click(function () {
+    $('.codeRed-main2').show();
+    $('.codeRed-main').addClass('noborder-bottom');
+  });
+  $('.dispatchme').click(function () {
+    $('.codeRed-main2').show();
+    $('.codeRed-main').addClass('noborder-bottom');
+  });
+  
+});
+
+
+$(document).ready(function () {
   $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
 
   $('#details').click(function () {

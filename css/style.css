@@ -1967,6 +1967,9 @@ table.table.productmachine-table {
 
 /** End of Performance/Stats Column **/
 /** Start of CloudDISPATCH **/
+.codeRed-body{
+  cursor: pointer;
+}
 .apply_cancel-button {
   text-align: right;
 }
@@ -2089,6 +2092,9 @@ button.newfilter-button {
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
+.codeRed-main.noborder-bottom{
+  border-bottom: none;
+}
 @media only screen and (max-width: 993.5px) {
   .codeRed-main2-header {
    overflow: auto;
@@ -2149,8 +2155,10 @@ button.newfilter-button {
     display: none;
   }
 }
-.codeRed-body{
+.codeRed-col{
   display: inline-block;
+  width: 450px;
+  cursor: pointer;
 }
 .dispatchme{
   float: right;
