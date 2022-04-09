@@ -2163,7 +2163,6 @@ button.newfilter-button {
 .dispatchme{
   float: right;
 }
-/** End of Code Red Row **/
 .header-maintabs{
   display: inline-block;
 }
@@ -2172,6 +2171,11 @@ button.newfilter-button {
   display: inline-block;
   float: right;
 }
+.description-content , .tab-content{
+  padding: 0 15px 0 15px;
+}
+/** End of Code Red Row **/
+
 /** End of CloudDISPATCH **/
 /** CloudDispatch Number View **/
 .followup-save-exit {
