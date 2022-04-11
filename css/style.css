@@ -2,13 +2,19 @@ body {
   font-family: "Source Sans Pro", sans-serif !important;
   width: 100%;
 }
-
+a.mainlink{
+  color: #44b4cd;
+}
 #base-main {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
 }
-
+@media only screen and (max-width: 993.5px) {
+  #base-main {
+    padding-bottom: 80px;
+  }
+}
 .container-fluid {
   width: 100%;
   background: #ebebeb 0% 0% no-repeat padding-box;
@@ -2168,11 +2174,54 @@ button.newfilter-button {
 }
 .dispatchhistory{
   padding-right: 10px;
-  display: inline-block;
   float: right;
+  text-decoration: underline;
 }
-.description-content , .tab-content{
+.editdispatch{
+  margin-top: 0.5rem;
+  text-decoration: underline;  
+}
+@media only screen and (max-width: 993.5px) {
+  .editdispatch{
+    font-size: 15px;
+    margin-top: 0.5rem;
+    padding-bottom: 20px;
+    text-decoration: underline;  
+  }
+}
+@media only screen and (max-width: 993.5px) {
+  .completeclose-main{
+    font-size: 15px;
+    padding-bottom: 12px;
+    text-decoration: underline;  
+  }
+}
+.tab-content{
   padding: 0 15px 0 15px;
+}
+.duedate-main{
+  display: inline-block;  
+}
+.date.form-control{
+  width: 280px;
+}
+.notif-main{
+  margin-left: 5px;
+  display: inline-block; 
+}
+@media only screen and (max-width: 993.5px) {
+  .notif-main{margin-top: 10px;
+  }
+}
+
+.completeclose-body{
+  display: inline-block;
+  color: #fff;
+  width: 125px;
+  height: 40px;
+  padding: 8px 8px 8px 15px;
+  border-radius: 3px;
+  background-color: #44b4cd;
 }
 /** End of Code Red Row **/
 

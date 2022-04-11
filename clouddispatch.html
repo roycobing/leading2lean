@@ -562,8 +562,8 @@
               <div class="number-id">
                 <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                   <ol class="status-breadcrumb breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">AL 3</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><a href="#">A1001</a></li>
+                    <li class="breadcrumb-item"><a class="mainlink" href="#">AL 3</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a class="mainlink" href="#">A1001</a></li>
                   </ol>
                 </nav>
               </div>
@@ -654,7 +654,7 @@
               </li>
             </ul>
           </div>
-          <div class="dispatchhistory"><a href="#">Dispatch History</a></div>
+          <div class="dispatchhistory"><a class="mainlink" href="#">Dispatch History</a></div>
         </div>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
@@ -748,8 +748,89 @@
                 </div>
               </div>
             </div>
+            <div class="description-content row">
+              <div class="col-lg-12">
+                <label for="description" class="form-label">Description</label>
+                <input type="text" id="inputPassword5" class="form-control" aria-describedby="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="duedate-main">
+                  <label for="duedate" class="form-label">Due Date</label>
+                  <input type="date" id="inputPassword5" class="date form-control" aria-describedby="">
+                </div>
+                <div class="notif-main"><i class="fas fa-envelope"></i> <span>5</span> Notification Sent</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-sm-12 col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                </div>
+              </div>
+              <div class="completeclose-main col-sm-12 col-lg-2">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="profile-tab">Question</div>
+          <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="profile-tab">
+            <div>
+              <label for="duedate" class="form-label">Is a follow-up repair required?</label>
+            </div>            
+            <div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="completeclose-main">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">Spares</div>
           <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">Tools</div>
           <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">Documents</div>
@@ -760,12 +841,6 @@
           <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
           <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments</div>
           <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
-        </div>
-        <div class="description-content row">
-          <div class="col-lg-12">
-            <label for="description" class="form-label">Description</label>
-            <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-          </div>
         </div>
       </div>
       <!--End Code Red-->
