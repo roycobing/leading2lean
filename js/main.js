@@ -216,7 +216,7 @@ $(function () {
 });
 /** CloudDispatch.html */
 $(document).ready(function () {
-  $('.codeRed-main2').hide();
+  $('.codeRed-main2').show();
 
   $('.codeRed-col , .dispatchme , .description-body-codered').click(function () {
     $('.codeRed-main2').show();
@@ -228,22 +228,35 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+  $('#sparehistory').hide();
+  $('#toolinghistory').hide();
 
   $('#details').click(function () {
     $('.detail-title').show();
     $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
+    $('#sparehistory').hide();
+    $('#toolinghistory').hide();    
+    $('#dispatchhistory').show();
   });
 
   $('#questions').click(function () {
     $('.question-title').show();
+    $('#sparehistory').hide();
+    $('#dispatchhistory').hide();
     $('.detail-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#spare').click(function () {
     $('.spare-title').show();
+    $('#sparehistory').show();
+    $('#toolinghistory').hide();
+    $('#dispatchhistory').hide();
     $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#tool').click(function () {
     $('.tooling-title').show();
+    $('#toolinghistory').show();    
+    $('#sparehistory').hide();
+    $('#dispatchhistory').hide();
     $('.detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#document').click(function () {
