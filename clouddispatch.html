@@ -657,6 +657,7 @@
           <div class="dispatchhistory"><a class="mainlink" href="#">Dispatch History</a></div>
         </div>
         <div class="tab-content" id="myTabContent">
+          <!--Details-->
           <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
             <div class="row">
               <div class="col-lg-3">
@@ -770,36 +771,39 @@
                 </div>
               </div>
               <div class="completeclose-main col-sm-12 col-lg-2">
-                  <div class="completeclose-body">
-                    <div class="form-check">
-                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Complete
-                      </label>
-                    </div>
+                <div class="completeclose-body">
+                  <div class="form-check">
+                    <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Complete
+                    </label>
                   </div>
-                  <div class="completeclose-body">
-                    <div class="form-check">
-                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Close
-                      </label>
-                    </div>
+                </div>
+                <div class="completeclose-body">
+                  <div class="form-check">
+                    <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Close
+                    </label>
                   </div>
+                </div>
               </div>
             </div>
           </div>
+          <!--Questions-->
           <div class="tab-pane fade" id="question" role="tabpanel" aria-labelledby="profile-tab">
             <div>
               <label for="duedate" class="form-label">Is a follow-up repair required?</label>
-            </div>            
+            </div>
             <div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
                 <label class="form-check-label" for="inlineRadio1">Yes</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
                 <label class="form-check-label" for="inlineRadio2">No</label>
               </div>
             </div>
@@ -831,15 +835,159 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">Spares</div>
-          <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">Tools</div>
+          <!--Spares-->
+          <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Status</th>
+                    <th class="th-header" scope="col">Kit</th>
+                    <th class="th-header" scope="col">Date</th>
+                    <th class="th-header" scope="col">Part Number</th>
+                    <th class="th-header" scope="col">Description</th>
+                    <th class="th-header" scope="col">Requested by</th>
+                    <th class="th-header" scope="col">Quantity</th>
+                    <th class="th-header" scope="col">UOM</th>
+                    <th class="th-header" scope="col">Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Issue Requested</td>
+                    <td>-</td>
+                    <td>2022-03-01</td>
+                    <td>F391183A</td>
+                    <td>Roller Bearing</td>
+                    <td>johnn.lund</td>
+                    <td>1</td>
+                    <td>Each</td>
+                    <td>$36.01</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="completeclose-main">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Tools-->
+          <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Code</th>
+                    <th class="th-header" scope="col">Description</th>
+                    <th class="th-header" scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>T14332</td>
+                    <td>Carbide Drill Bit</td>
+                    <td class="tdtools-status">
+                      <div class="status-dropdown">
+                        <select class="status form-select form-select-sm">
+                          <option selected>Open this select menu</option>
+                          <option value="1">In use</option>
+                          <option value="2">Idle</option>
+                          <option value="3">Three</option>
+                          <option value="4">All</option>
+                        </select>
+                      </div>
+                      <div class="status-cancelbtn">
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>T18223</td>
+                    <td>Harmonic Distributer</td>
+                    <td class="tdtools-status">
+                      <div class="status-dropdown">
+                        <select class="status form-select form-select-sm">
+                          <option selected>Open this select menu</option>
+                          <option value="1">In use</option>
+                          <option value="2">Idle</option>
+                          <option value="3">Three</option>
+                          <option value="4">All</option>
+                        </select>
+                      </div>
+                      <div class="status-cancelbtn">
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="completeclose-main">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Documents-->
           <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">Documents</div>
+          <!--Action Components-->
           <div class="tab-pane fade" id="actioncomponents" role="tabpanel" aria-labelledby="contact-tab">Action
             Components</div>
+          <!--Resources-->
           <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="contact-tab">Resources</div>
+          <!--Costs-->
           <div class="tab-pane fade" id="costs" role="tabpanel" aria-labelledby="contact-tab">Costs</div>
+          <!--Notes-->
           <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
+          <!--Attachments-->
           <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments</div>
+          <!--Related-->
           <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
         </div>
       </div>

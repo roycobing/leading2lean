@@ -218,11 +218,7 @@ $(function () {
 $(document).ready(function () {
   $('.codeRed-main2').hide();
 
-  $('.codeRed-col').click(function () {
-    $('.codeRed-main2').show();
-    $('.codeRed-main').addClass('noborder-bottom');
-  });
-  $('.dispatchme').click(function () {
+  $('.codeRed-col , .dispatchme , .description-body-codered').click(function () {
     $('.codeRed-main2').show();
     $('.codeRed-main').addClass('noborder-bottom');
   });
