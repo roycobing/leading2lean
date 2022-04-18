@@ -268,6 +268,7 @@ $(document).ready(function () {
     $('#documenthistory').show();
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
+    $('.savetime, .editdispatch-main , .completeclose-main').show();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#actioncomponent').click(function () {
