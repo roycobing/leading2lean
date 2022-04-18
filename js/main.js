@@ -218,9 +218,9 @@ $(function () {
 $(document).ready(function () {
   $('.codeRed-main2').hide();
 
-  $('.codeRed-col , .dispatchme , .description-body-codered').click(function () {
-    $('.codeRed-main2').show();
-    $('.codeRed-main').addClass('noborder-bottom');
+  $('.codeRed-col , .dispatchme , .description-main').click(function () {
+    $('.codeRed-main2').toggle();
+    $('.codeRed-main').toggleClass('noborder-bottom');
   });
   
 });
@@ -230,12 +230,13 @@ $(document).ready(function () {
   $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   $('#sparehistory').hide();
   $('#toolinghistory').hide();
+  $('#documenthistory').hide();
 
   $('#details').click(function () {
     $('.detail-title').show();
     $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
     $('#sparehistory').hide();
-    $('#toolinghistory').hide();    
+    $('#toolinghistory').hide();
     $('#dispatchhistory').show();
   });
 
@@ -250,17 +251,23 @@ $(document).ready(function () {
     $('#sparehistory').show();
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
+    $('#documenthistory').hide();
+    $('.savetime, .editdispatch-main , .completeclose-main').hide();
     $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#tool').click(function () {
     $('.tooling-title').show();
-    $('#toolinghistory').show();    
+    $('#toolinghistory').show();
     $('#sparehistory').hide();
     $('#dispatchhistory').hide();
+    $('#documenthistory').hide();
     $('.detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#document').click(function () {
     $('.document-title').show();
+    $('#documenthistory').show();
+    $('#toolinghistory').hide();
+    $('#dispatchhistory').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#actioncomponent').click(function () {
@@ -287,6 +294,17 @@ $(document).ready(function () {
     $('.relate-title').show();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title').hide();
   });
+});
+
+$(document).ready(function () {
+  $('.sparetable-body').hide();
+
+  $('#btn-requestspare').click(function () {
+    $('.sparetable-body').show();
+    $('#btn-requestspare , #nosparesyet').hide();
+    $('.savetime, .editdispatch-main , .completeclose-main ').show();
+  });
+
 });
 
 /** downoccurence */

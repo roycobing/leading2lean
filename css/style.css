@@ -2151,6 +2151,8 @@ button.newfilter-button {
 .description-body-codered {
   display: inline-block;
   padding-right: 20px;
+}
+.description-main {
   cursor: pointer;
 }
 .description-codered {
@@ -2194,7 +2196,6 @@ button.newfilter-button {
   .completeclose-main{
     font-size: 15px;
     padding-bottom: 12px;
-    text-decoration: underline;  
   }
 }
 .tab-content{
@@ -2251,8 +2252,35 @@ button.newfilter-button {
 }
 .close.btn{
   border-radius: 20px;
-  height: 32px;
-  padding: 0 13px 2px 13px;
+  height: 29px;
+  padding: 0 17px 12px 10px;
+  width: 12px;
+}
+.requestspare-body{
+  text-align: center;  
+}
+.no-spare.form-text{  
+  font-size: 20px;
+}
+.btn.requestspare{
+  color: #6c757d;
+}
+.mainlink-documenthistory{
+  color: #575c63;
+}
+.mainlink-documenthistory:hover{
+  color: #000;
+}
+.linkdocument-header{
+  color: #0c93bc;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 5px solid #0c93bc;
+  margin-bottom: 20px;
+}
+.savetime{
+  float: right;
+  color: #6c757d
 }
 /** End of Code Red Row **/
 

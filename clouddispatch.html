@@ -657,6 +657,10 @@
           <div class="dispatchhistory" id="dispatchhistory"><a class="mainlink" href="#">Dispatch History</a></div>
           <div class="dispatchhistory" id="sparehistory"><a class="mainlink" href="#">Spares History</a></div>
           <div class="dispatchhistory" id="toolinghistory"><a class="mainlink" href="#">Tooling History</a></div>
+          <div class="dispatchhistory" id="documenthistory">
+            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-documenthistory" href="#"><i
+                  class="fas fa-plus"></i>Document</a></button>
+          </div>
         </div>
         <div class="tab-content" id="myTabContent">
           <!--Details-->
@@ -770,6 +774,7 @@
               <div class="editdispatch-main col-sm-12 col-lg-10">
                 <div class="editdispatch">
                   <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
                 </div>
               </div>
               <div class="completeclose-main col-sm-12 col-lg-2">
@@ -813,6 +818,7 @@
               <div class="editdispatch-main col-lg-10">
                 <div class="editdispatch">
                   <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
                 </div>
               </div>
               <div class="col-lg-2">
@@ -839,7 +845,7 @@
           </div>
           <!--Spares-->
           <div class="tab-pane fade" id="spares" role="tabpanel" aria-labelledby="contact-tab">
-            <div class="table-responsive">
+            <div class="sparetable-body table-responsive">
               <table class="table">
                 <thead>
                   <tr>
@@ -873,6 +879,7 @@
               <div class="editdispatch-main col-lg-10">
                 <div class="editdispatch">
                   <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
                 </div>
               </div>
               <div class="col-lg-2">
@@ -895,6 +902,10 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="requestspare-body">
+              <div id="nosparesyet" class="no-spare form-text">No Spares Yet</div>
+              <button class="btn requestspare bg-cancel-button" id="btn-requestspare">Request Spares</button>
             </div>
           </div>
           <!--Tools-->
@@ -952,6 +963,7 @@
               <div class="editdispatch-main col-lg-10">
                 <div class="editdispatch">
                   <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
                 </div>
               </div>
               <div class="col-lg-2">
@@ -977,7 +989,88 @@
             </div>
           </div>
           <!--Documents-->
-          <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">Documents</div>
+          <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Name</th>
+                    <th class="th-header" scope="col">Status</th>
+                    <th class="th-header" scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Code Red RCA</td>
+                    <td>Complete <span><i class="fa fa-check" aria-hidden="true"></i></span></td>
+                    <td>RCA Required for all Code Reds
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Work Order Process</td>
+                    <td>--</td>
+                    <td class="tdtools-status">
+                      Process for All Work Orders
+                      <div class="status-cancelbtn">
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="linkdocument-header">
+              Link Documents
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Name</th>
+                    <th class="th-header" scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span><i class="fas fa-link"></i> Work Order BOM</td>
+                    <td>Bill of Materials for the Work Order</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i> Work Order Process</td>
+                    <td class="tdtools-status">Process for All Work Orders</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="completeclose-main">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!--Action Components-->
           <div class="tab-pane fade" id="actioncomponents" role="tabpanel" aria-labelledby="contact-tab">Action
             Components</div>
