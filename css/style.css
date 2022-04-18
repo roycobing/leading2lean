@@ -2,19 +2,23 @@ body {
   font-family: "Source Sans Pro", sans-serif !important;
   width: 100%;
 }
-a.mainlink{
+
+a.mainlink {
   color: #44b4cd;
 }
+
 #base-main {
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
 }
+
 @media only screen and (max-width: 993.5px) {
   #base-main {
     padding-bottom: 80px;
   }
 }
+
 .container-fluid {
   width: 100%;
   background: #ebebeb 0% 0% no-repeat padding-box;
@@ -188,6 +192,7 @@ td.td-dispatchme {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**Sidebar **/
   #dispatches_main,
   #performance_main {
@@ -205,6 +210,7 @@ h2.performance-head {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   h2.dispatches-head,
   h2.performance-head {
     padding-left: 15px !important;
@@ -221,6 +227,7 @@ h2.performance-head {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .dispatches-header,
   .performance-header {
     padding: 0 !important;
@@ -237,6 +244,7 @@ span.performance-date {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   span.dispatches-date,
   span.performance-date {
     font-size: 0.75rem;
@@ -250,6 +258,7 @@ span.performance-date {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .dispatch-column,
   .skills-column {
     font-size: 0.75rem;
@@ -271,6 +280,7 @@ span.performance-date {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   .area-list.collapse:not(.show),
   .dispatches-list.collapse:not(.show),
   .weeklyprocess-list.collapse:not(.show),
@@ -289,6 +299,7 @@ span.performance-date {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   button.dispatch-toggler,
   button.dispatch-toggler-dispatches,
   button.dispatch-toggler-skills,
@@ -299,6 +310,7 @@ span.performance-date {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   button.dispatch-toggler,
   button.dispatch-toggler-dispatches,
   button.dispatch-toggler-skills,
@@ -400,6 +412,7 @@ img.image-dispatch {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**Sidebar **/
   img.image-dispatch {
     display: none !important;
@@ -419,6 +432,7 @@ img.image-dispatch {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .dispatches_title_header,
   .lines-running-header,
   .on-time-pm-completion-header,
@@ -467,6 +481,7 @@ img.image-dispatch {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .btn-previous,
   .btn-current,
   .btn-assigned {
@@ -518,6 +533,7 @@ button.expand {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .btn-previous,
   .btn-current,
   .btn-assigned {
@@ -539,9 +555,11 @@ img.due-icon {
     padding: 0 12px;
   }
 }
+
 .weeklyprocess {
   width: 100%;
 }
+
 .weeklyprocess-list {
   margin-top: 20px;
   min-height: 420px;
@@ -727,6 +745,7 @@ a.text-decoration-underline2 {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   a.pressline,
   a.conveyor {
     text-decoration: underline !important;
@@ -915,6 +934,7 @@ button.dispatch-me2 {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   .skills-list {
     font-size: 0.75rem !important;
@@ -963,6 +983,7 @@ span.retrain {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   .skills-problemsolving {
     padding: 10px;
@@ -987,6 +1008,7 @@ span.retrain {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   .skills-name {
     padding: 10px;
@@ -1006,6 +1028,7 @@ span.action-needed {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   span.action-needed {
     font-size: 0.75rem !important;
@@ -1019,6 +1042,7 @@ a.acknowledge {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   a.acknowledge {
     text-decoration: underline !important;
@@ -1041,6 +1065,7 @@ span.trainer {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   /**skills-list **/
   .currently-open-dispatches {
     display: block !important;
@@ -1053,6 +1078,7 @@ span.trainer {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   .progress {
     margin-left: 15px;
@@ -1176,6 +1202,7 @@ span.trainer {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   /**skills-list **/
   .dispatch-rotate,
   .dispatch-rotate-dispatches,
@@ -1194,6 +1221,7 @@ span.trainer {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   /**skills-list **/
   .dispatchscreens_title,
   .dispatches_title,
@@ -1209,14 +1237,17 @@ span.trainer {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   /**skills-list **/
   #progress-list .progress.collapse:not(.show) {
     display: flex !important;
   }
 }
+
 /** End of Skills Column **/
 
 @media only screen and (max-width: 993.5px) {
+
   /**container-fluid **/
   .container-fluid {
     width: 100%;
@@ -1440,6 +1471,7 @@ span.trainer {
 }
 
 @media only screen and (max-width: 993.5px) {
+
   .oee-bar.progress,
   .oee-bar-currentshifts.progress {
     margin: 0;
@@ -1792,9 +1824,11 @@ table.dispatches {
     padding: 0 !important;
   }
 }
+
 .downoccurence-status-list {
   text-align: center;
 }
+
 .downoccurence-status-listname {
   width: 68px;
   display: inline-block;
@@ -1973,12 +2007,21 @@ table.table.productmachine-table {
 
 /** End of Performance/Stats Column **/
 /** Start of CloudDISPATCH **/
-.codeRed-body{
+.codeRed-body {
   cursor: pointer;
 }
+
+@media only screen and (max-width: 993.5px) {
+
+  .codeRed-body {
+    display: inline-flex;
+  }
+}
+
 .apply_cancel-button {
   text-align: right;
 }
+
 button.cancel-button {
   text-transform: uppercase;
 }
@@ -1987,6 +2030,7 @@ button.apply-button {
   margin-left: 5px;
   text-transform: uppercase;
 }
+
 .hide {
   display: none;
 }
@@ -2008,14 +2052,17 @@ button.apply-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 .fa-question-circle {
   margin-right: 5px;
 }
+
 @media only screen and (max-width: 993.5px) {
   li.breadcrumb-item.tooling {
     display: none;
   }
 }
+
 button.savefilter-button {
   margin-left: 20px;
   border: 0;
@@ -2024,6 +2071,7 @@ button.savefilter-button {
   width: 100px;
   text-transform: uppercase;
 }
+
 button.newfilter-button {
   margin-left: 20px;
   margin-right: 15px;
@@ -2032,18 +2080,22 @@ button.newfilter-button {
   text-transform: uppercase;
   float: right;
 }
+
 .save-filter-body {
   width: 100%;
   margin-top: 15px;
   display: inline-block;
 }
+
 .new-filter {
   float: right;
 }
+
 .myDispatches.form-check {
   width: auto;
   display: inline-block !important;
 }
+
 @media only screen and (max-width: 993.5px) {
   .clouddispatch-navbar {
     background-color: #0d324d;
@@ -2055,18 +2107,22 @@ button.newfilter-button {
     z-index: 1;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
+
   li.nav-item-clouddispatch,
   form.search-box-clouddispatch,
   .setButton-clouddispatch_bell {
     display: none !important;
   }
 }
+
 .clouddispatch-notif {
   display: inline-block;
   padding: 0 0 0 10px;
   margin-top: 10px;
 }
+
 .filter-notif {
   background-color: #a40f4c;
   font-size: 14px;
@@ -2075,9 +2131,11 @@ button.newfilter-button {
   margin-left: 5px;
   color: #fff;
 }
+
 .btn.all-notif {
   color: #fff;
 }
+
 .btn.dispatch-notif {
   color: #44b4cd;
   border: #44b4cd 1px solid;
@@ -2091,6 +2149,7 @@ button.newfilter-button {
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
+
 .codeRed-main2 {
   margin: 0 10px 0 10px;
   border-bottom: #dc3545 2px solid;
@@ -2098,26 +2157,42 @@ button.newfilter-button {
   border-left: #dc3545 10px solid;
   padding: 5px;
 }
-.codeRed-main.noborder-bottom{
+
+.codeRed-main.noborder-bottom {
   border-bottom: none;
 }
+
+.codeRed-main2-header,
+.history-header {
+  display: inline-block;
+}
+
+.history-header {
+  float: right;
+}
+
 @media only screen and (max-width: 993.5px) {
   .codeRed-main2-header {
-   overflow: auto;
+    overflow: auto;
+    width: 363px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .codeRed-main2-tabs {
     width: 680px;
   }
 }
+
 .number-id {
   display: inline-block;
   margin-left: 10px;
 }
+
 .status-breadcrumb.breadcrumb {
   margin-bottom: 0;
 }
+
 .codered {
   display: inline-block;
   background-color: #dc3545;
@@ -2129,6 +2204,7 @@ button.newfilter-button {
   padding: 2px;
   color: #fff;
 }
+
 .new {
   display: inline-block;
   background-color: #419650;
@@ -2139,84 +2215,123 @@ button.newfilter-button {
   margin: 5px;
   padding: 2px;
 }
+
 .btn.dispatchme {
   color: #419650;
 }
-.dispatchme{
-  text-align: center;
+
+.dispatchme {
+  float: right;
+  display: inline-flex;
 }
+
+@media only screen and (max-width: 993.5px) {
+
+  .dispatchme {
+    float: right;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (max-width: 993.5px) {
+
+  .dispatchme-title {
+    display: none;
+  }
+}
+
 .fa-user-plus {
   color: #419650;
 }
+
 .description-body-codered {
   display: inline-block;
   padding-right: 20px;
 }
+
 .description-main {
   cursor: pointer;
 }
+
 .description-codered {
   max-width: 1090px;
 }
+
 @media only screen and (max-width: 993.5px) {
+
   .btn.view-plus,
   .description-main {
     display: none;
   }
 }
-.codeRed-col{
+
+.codeRed-col {
   display: inline-block;
   width: 450px;
   cursor: pointer;
 }
-.dispatchme{
-  float: right;
-}
-.header-maintabs{
+
+.header-maintabs {
   display: inline-block;
 }
-.dispatchhistory{
+
+.dispatchhistory {
   padding-right: 10px;
   float: right;
   text-decoration: underline;
 }
-.editdispatch{
+
+.editdispatch {
   margin-top: 0.5rem;
-  text-decoration: underline;  
+  text-decoration: underline;
 }
+
 @media only screen and (max-width: 993.5px) {
-  .editdispatch{
+  .editdispatch {
     font-size: 15px;
     margin-top: 0.5rem;
     padding-bottom: 20px;
-    text-decoration: underline;  
+    text-decoration: underline;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
-  .completeclose-main{
+  .completeclose-main {
     font-size: 15px;
     padding-bottom: 12px;
   }
 }
-.tab-content{
+
+.tab-content {
   padding: 0 15px 0 15px;
 }
-.duedate-main{
-  display: inline-block;  
-}
-.date.form-control{
-  width: 280px;
-}
-.notif-main{
-  margin-left: 5px;
-  display: inline-block; 
-}
+
 @media only screen and (max-width: 993.5px) {
-  .notif-main{margin-top: 10px;
+  .tab-content {
+    margin-top: 38px;
   }
 }
 
-.completeclose-body{
+.duedate-main {
+  display: inline-block;
+}
+
+.date.form-control {
+  width: 280px;
+}
+
+.notif-main {
+  margin-left: 5px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 993.5px) {
+  .notif-main {
+    margin-top: 10px;
+  }
+}
+
+.completeclose-body {
   display: inline-block;
   color: #fff;
   width: 125px;
@@ -2225,63 +2340,80 @@ button.newfilter-button {
   border-radius: 3px;
   background-color: #44b4cd;
 }
+
 @media only screen and (max-width: 993.5px) {
-  th.th-header , td{
+
+  th.th-header,
+  td {
     font-size: 12px;
   }
 }
-.status.form-select{
+
+.status.form-select {
   width: 400px;
 }
+
 @media only screen and (max-width: 993.5px) {
-  .status.form-select{
+  .status.form-select {
     width: 130px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
-  .tdtools-status{
+  .tdtools-status {
     width: 195px;
   }
 }
-.status-dropdown , .status-cancelbtn{
+
+.status-dropdown,
+.status-cancelbtn {
   display: inline-block;
 }
-.status-cancelbtn
-{
+
+.status-cancelbtn {
   margin-left: 7px;
 }
-.close.btn{
+
+.close.btn {
   border-radius: 20px;
   height: 29px;
   padding: 0 17px 12px 10px;
   width: 12px;
 }
-.requestspare-body{
-  text-align: center;  
+
+.requestspare-body {
+  text-align: center;
 }
-.no-spare.form-text{  
+
+.no-spare.form-text {
   font-size: 20px;
 }
-.btn.requestspare{
+
+.btn.requestspare {
   color: #6c757d;
 }
-.mainlink-documenthistory{
+
+.mainlink-documenthistory {
   color: #575c63;
 }
-.mainlink-documenthistory:hover{
+
+.mainlink-documenthistory:hover {
   color: #000;
 }
-.linkdocument-header{
+
+.linkdocument-header {
   color: #0c93bc;
   font-size: 18px;
   font-weight: bold;
   border-bottom: 5px solid #0c93bc;
   margin-bottom: 20px;
 }
-.savetime{
+
+.savetime {
   float: right;
   color: #6c757d
 }
+
 /** End of Code Red Row **/
 
 /** End of CloudDISPATCH **/
@@ -2299,6 +2431,7 @@ button.newfilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 .printButton {
   border: 0;
   border-radius: 3px;
@@ -2307,6 +2440,7 @@ button.newfilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 .saveExit {
   border: 0;
   border-radius: 3px;
@@ -2315,6 +2449,7 @@ button.newfilter-button {
   background-color: #0c93bc;
   color: #fff;
 }
+
 .dispatchedMe {
   width: 110px;
   height: 32px;
@@ -2323,6 +2458,7 @@ button.newfilter-button {
   background-color: #0c93bc;
   color: #fff;
 }
+
 .requestSpares {
   float: right;
   border: 0;
@@ -2332,14 +2468,17 @@ button.newfilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 .spares {
   font-size: 16px;
   font-weight: normal;
 }
+
 .dispatch-tabs {
   padding-left: 0 !important;
   width: 100%;
 }
+
 @media only screen and (max-width: 993.5px) {
   .dispatch-tabs {
     min-width: 420px;
@@ -2350,19 +2489,23 @@ button.newfilter-button {
     padding: 10px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .dispatch-tabs .dispatch-menu {
     min-width: 960px;
     max-width: 960px;
   }
 }
+
 .fender-3030-menu-body {
   background-color: #fff;
 }
+
 .dispatchinfo-body {
   padding-left: 10px;
   border-left: 6px #f03f3f solid;
 }
+
 .dispatch-information-header {
   padding: 20px;
   font-size: 24px;
@@ -2370,6 +2513,7 @@ button.newfilter-button {
   color: #0c93bc;
   background-color: #f5f5f5;
 }
+
 .spares-information {
   padding: 20px 20px 0px 20px;
   font-size: 24px;
@@ -2377,15 +2521,18 @@ button.newfilter-button {
   color: #0c93bc;
   background-color: #f5f5f5;
 }
+
 .spares-th {
   font-weight: normal;
   font-size: 14px;
   padding: 0;
 }
+
 .addRemove {
   font-weight: normal;
   font-size: 16px;
 }
+
 .documentLookup {
   float: right;
   border: 0;
@@ -2397,6 +2544,7 @@ button.newfilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 .actionComponents {
   float: right;
   border: 0;
@@ -2408,6 +2556,7 @@ button.newfilter-button {
   background-color: #8a919d;
   color: #fff;
 }
+
 @media only screen and (max-width: 993.5px) {
   .actionComponents {
     float: none;
@@ -2425,6 +2574,7 @@ button.newfilter-button {
 .dispatchinformation-image {
   text-align: center;
 }
+
 .description-body {
   margin: 10px 0 10px 0;
   padding: 10px;
@@ -2432,30 +2582,37 @@ button.newfilter-button {
   border-radius: 4px;
   opacity: 1;
 }
+
 .formControl {
   width: 212px;
 }
+
 .right-side-column {
   color: #fff;
 }
+
 .submittedBy {
   padding: 20px;
   background-color: #0d324d;
 }
+
 .dispatch-resources {
   color: #0d324d;
   padding: 20px;
   background-color: #d3d5d9;
 }
+
 .fender-3030-menu {
   opacity: 1;
   padding: 20px 10px 10px 10px;
 }
+
 @media only screen and (min-width: 993.5px) {
   .right-side-column-body.collapse:not(.show) {
     display: block !important;
   }
 }
+
 @media only screen and (min-width: 993.5px) {
   .rootresource-button {
     display: none !important;
@@ -2463,11 +2620,13 @@ button.newfilter-button {
 }
 
 @media only screen and (min-width: 993.5px) {
+
   .rootcauseDown,
   .resourcesDown {
     display: none;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .rootresource-button {
     position: fixed;
@@ -2487,18 +2646,21 @@ button.newfilter-button {
     margin-left: -13px;
   }
 }
+
 @media only screen and (min-width: 993.5px) {
   .fender-3030-body {
     display: block !important;
     margin-bottom: 10px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .fender-3030-body {
     margin-bottom: 150px;
     --bs-gutter-x: 0px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .fixed {
     position: fixed;
@@ -2508,17 +2670,20 @@ button.newfilter-button {
     overflow-y: auto;
   }
 }
+
 .fixed {
   position: fixed;
   top: 0;
   width: 1372px;
   overflow-y: auto;
 }
+
 .info {
   background: #fff;
   width: 100%;
   height: 40px;
 }
+
 @media only screen and (max-width: 993.5px) {
   .info {
     background: #fff;
@@ -2527,6 +2692,7 @@ button.newfilter-button {
     overflow-y: auto;
   }
 }
+
 .info a {
   color: #0d324d;
   padding: 10px;
@@ -2554,6 +2720,7 @@ button.newfilter-button {
 .section {
   padding: 20px 0 20px 0;
 }
+
 @media only screen and (max-width: 993.5px) {
   .resourcesDown {
     width: 100%;
@@ -2567,6 +2734,7 @@ button.newfilter-button {
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .resources-down {
     font-size: 20px;
@@ -2574,12 +2742,14 @@ button.newfilter-button {
     margin-top: 4px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .followup-save-exit {
     float: none;
     padding-left: 85px;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   .complete-close-form {
     display: none;
@@ -2596,7 +2766,9 @@ button.newfilter-button {
   background: #c4cbca;
   border-radius: 10px;
 }
+
 @media only screen and (max-width: 993.5px) {
+
   .pagination-clouddispatch::-webkit-scrollbar,
   .fender-3030-menu::-webkit-scrollbar,
   .dispatch-tabs::-webkit-scrollbar,
@@ -2606,4 +2778,3 @@ button.newfilter-button {
     display: none;
   }
 }
-

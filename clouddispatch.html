@@ -573,7 +573,7 @@
               </div>
             </div>
             <div class="dispatchme">
-              <button class="btn dispatchme"><i class="fas fa-user-plus fa-lg"></i><br>Dispatch Me</button>
+              <button class="btn dispatchme"><i class="fas fa-user-plus fa-lg"></i><div class="dispatchme-title">Dispatch Me</div></button>
             </div>
           </div>
 
@@ -624,7 +624,7 @@
                 <button class="tab-title nav-link" id="actioncomponent" data-bs-toggle="tab"
                   data-bs-target="#actioncomponents" type="button" role="tab" aria-controls="contact"
                   aria-selected="false"><i class="fas fa-dot-circle"></i>
-                  <span class="actioncomponent-title">Actions, components</span></button>
+                  <span class="actioncomponent-title">Components</span></button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="tab-title nav-link" id="resource" data-bs-toggle="tab" data-bs-target="#resources"
@@ -654,6 +654,8 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="history-header">
           <div class="dispatchhistory" id="dispatchhistory"><a class="mainlink" href="#">Dispatch History</a></div>
           <div class="dispatchhistory" id="sparehistory"><a class="mainlink" href="#">Spares History</a></div>
           <div class="dispatchhistory" id="toolinghistory"><a class="mainlink" href="#">Tooling History</a></div>
@@ -662,6 +664,7 @@
                   class="fas fa-plus"></i>Document</a></button>
           </div>
         </div>
+
         <div class="tab-content" id="myTabContent">
           <!--Details-->
           <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="home-tab">
