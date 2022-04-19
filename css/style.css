@@ -2122,12 +2122,14 @@ button.newfilter-button {
   padding: 0 0 0 10px;
   margin-top: 10px;
 }
+
 @media only screen and (max-width: 390px) {
   .clouddispatch-notif {
     width: 400px;
     padding: 5px;
   }
 }
+
 .filter-notif {
   background-color: #a40f4c;
   font-size: 14px;
@@ -2182,6 +2184,7 @@ button.newfilter-button {
     width: 360px;
   }
 }
+
 @media only screen and (max-width: 390px) {
   .codeRed-main2-header {
     overflow: auto;
@@ -2370,8 +2373,16 @@ button.newfilter-button {
   }
 }
 
+.tdtooling-status {
+  width: 225px;
+}
+
+.tddocuments-status {
+  width: 225px;
+}
+
 @media only screen and (max-width: 993.5px) {
-  .tdtools-status {
+  .tddocuments-status {
     width: 195px;
   }
 }
@@ -2381,7 +2392,7 @@ button.newfilter-button {
   display: inline-block;
 }
 
-.status-cancelbtn {
+td.status-cancelbtn {
   margin-left: 7px;
 }
 
@@ -2404,11 +2415,11 @@ button.newfilter-button {
   color: #6c757d;
 }
 
-.mainlink-documenthistory {
+.mainlink-history {
   color: #575c63;
 }
 
-.mainlink-documenthistory:hover {
+.mainlink-history:hover {
   color: #000;
 }
 
@@ -2423,6 +2434,14 @@ button.newfilter-button {
 .savetime {
   float: right;
   color: #6c757d
+}
+
+td.totalcost-category {
+  width: 150px;
+}
+
+.total-data {
+  border-top: #000 1px solid;
 }
 
 /** End of Code Red Row **/

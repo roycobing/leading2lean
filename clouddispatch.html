@@ -573,7 +573,9 @@
               </div>
             </div>
             <div class="dispatchme">
-              <button class="btn dispatchme"><i class="fas fa-user-plus fa-lg"></i><div class="dispatchme-title">Dispatch Me</div></button>
+              <button class="btn dispatchme"><i class="fas fa-user-plus fa-lg"></i>
+                <div class="dispatchme-title">Dispatch Me</div>
+              </button>
             </div>
           </div>
 
@@ -660,8 +662,12 @@
           <div class="dispatchhistory" id="sparehistory"><a class="mainlink" href="#">Spares History</a></div>
           <div class="dispatchhistory" id="toolinghistory"><a class="mainlink" href="#">Tooling History</a></div>
           <div class="dispatchhistory" id="documenthistory">
-            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-documenthistory" href="#"><i
+            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
                   class="fas fa-plus"></i>Document</a></button>
+          </div>
+          <div class="dispatchhistory" id="externalcost">
+            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
+                  class="fas fa-plus"></i>External Cost</a></button>
           </div>
         </div>
 
@@ -924,9 +930,9 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>T14332</td>
-                    <td>Carbide Drill Bit</td>
-                    <td class="tdtools-status">
+                    <td class="tdtooling-status">T14332</td>
+                    <td class="tdtooling-status">Carbide Drill Bit</td>
+                    <td class="tdtooling-status">
                       <div class="status-dropdown">
                         <select class="status form-select form-select-sm">
                           <option selected>Open this select menu</option>
@@ -936,6 +942,8 @@
                           <option value="4">All</option>
                         </select>
                       </div>
+                    </td>
+                    <td>
                       <div class="status-cancelbtn">
                         <button type="button" class="close btn bg-cancel-button"> x </button>
                       </div>
@@ -944,7 +952,7 @@
                   <tr>
                     <td>T18223</td>
                     <td>Harmonic Distributer</td>
-                    <td class="tdtools-status">
+                    <td class="tdtooling-status">
                       <div class="status-dropdown">
                         <select class="status form-select form-select-sm">
                           <option selected>Open this select menu</option>
@@ -954,6 +962,8 @@
                           <option value="4">All</option>
                         </select>
                       </div>
+                    </td>
+                    <td>
                       <div class="status-cancelbtn">
                         <button type="button" class="close btn bg-cancel-button"> x </button>
                       </div>
@@ -1004,17 +1014,25 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Code Red RCA</td>
-                    <td>Complete <span><i class="fa fa-check" aria-hidden="true"></i></span></td>
-                    <td>RCA Required for all Code Reds
+                    <td class="tddocuments-status">Code Red RCA</td>
+                    <td class="tddocuments-status">Complete <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                    </td>
+                    <td class="tddocuments-status">RCA Required for all Code Reds
+                    </td>
+                    <td class="status-cancelbtn">
+                      <div>
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
                     </td>
                   </tr>
                   <tr>
                     <td>Work Order Process</td>
                     <td>--</td>
-                    <td class="tdtools-status">
+                    <td>
                       Process for All Work Orders
-                      <div class="status-cancelbtn">
+                    </td>
+                    <td class="status-cancelbtn">
+                      <div>
                         <button type="button" class="close btn bg-cancel-button"> x </button>
                       </div>
                     </td>
@@ -1040,7 +1058,7 @@
                   </tr>
                   <tr>
                     <td><i class="fas fa-file-pdf"></i> Work Order Process</td>
-                    <td class="tdtools-status">Process for All Work Orders</td>
+                    <td class="tddocuments-status">Process for All Work Orders</td>
                   </tr>
                 </tbody>
               </table>
@@ -1080,7 +1098,103 @@
           <!--Resources-->
           <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="contact-tab">Resources</div>
           <!--Costs-->
-          <div class="tab-pane fade" id="costs" role="tabpanel" aria-labelledby="contact-tab">Costs</div>
+          <div class="tab-pane fade" id="costs" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="linkdocument-header">
+              External Costs
+            </div>
+            <div class="cost-body table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Date</th>
+                    <th class="th-header" scope="col">Vendor</th>
+                    <th class="th-header" scope="col">Category</th>
+                    <th class="th-header" scope="col">Item/Part</th>
+                    <th class="th-header" scope="col">Description</th>
+                    <th class="th-header" scope="col">Added by</th>
+                    <th class="th-header" scope="col">Updated By</th>
+                    <th class="th-header" scope="col">Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022-03-14</td>
+                    <td>General Electric</td>
+                    <td>Expenses</td>
+                    <td>140014</td>
+                    <td>Forever Bulb</td>
+                    <td>Jason Berry</td>
+                    <td>Jason Berry</td>
+                    <td>$14.00</td>
+                    <td>
+                      <div class="status-cancelbtn">
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="linkdocument-header">
+              Total Costs
+            </div>
+            <div class="cost-body table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Category</th>
+                    <th class="th-header" scope="col">Total Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="totalcost-category"><i class="fas fa-wrench"></i> Spares</td>
+                    <td>$286.00</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-home"></i> External</td>
+                    <td>$14.00</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-user"></i> Labor</td>
+                    <td>$198.00</td>
+                  </tr>
+                  <tr class="total-data">
+                    <td> Total</td>
+                    <td>$498.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="editdispatch-main col-lg-10">
+                <div class="editdispatch">
+                  <a class="mainlink" href="#">Edit Dispatch <i class="fas fa-edit"></i></a>
+                  <span class="savetime">Saved 1 minute ago</span>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="completeclose-main">
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Complete
+                      </label>
+                    </div>
+                  </div>
+                  <div class="completeclose-body">
+                    <div class="form-check">
+                      <input class="sss form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Close
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!--Notes-->
           <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
           <!--Attachments-->

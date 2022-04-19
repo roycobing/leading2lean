@@ -222,7 +222,7 @@ $(document).ready(function () {
     $('.codeRed-main2').toggle();
     $('.codeRed-main').toggleClass('noborder-bottom');
   });
-  
+
 });
 
 
@@ -231,6 +231,8 @@ $(document).ready(function () {
   $('#sparehistory').hide();
   $('#toolinghistory').hide();
   $('#documenthistory').hide();
+  $('#externalcost').hide();
+
 
   $('#details').click(function () {
     $('.detail-title').show();
@@ -281,6 +283,11 @@ $(document).ready(function () {
   });
   $('#cost').click(function () {
     $('.cost-title').show();
+    $('#externalcost').show();
+    $('#dispatchhistory').hide();
+    $('#sparehistory').hide();
+    $('#toolinghistory').hide();
+    $('#documenthistory').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#note').click(function () {
