@@ -246,6 +246,7 @@ $(document).ready(function () {
     $('.question-title').show();
     $('#sparehistory').hide();
     $('#dispatchhistory').hide();
+    $('.savetime, .editdispatch-main , .completeclose-main').show();
     $('.detail-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#spare').click(function () {
