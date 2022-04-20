@@ -2091,11 +2091,6 @@ button.newfilter-button {
   float: right;
 }
 
-.myDispatches.form-check {
-  width: auto;
-  display: inline-block !important;
-}
-
 @media only screen and (max-width: 993.5px) {
   .clouddispatch-navbar {
     background-color: #0d324d;
@@ -2346,7 +2341,7 @@ button.newfilter-button {
 }
 
 .completeclose-body {
-  display: inline-block;
+  display: inline-flex;
   color: #fff;
   width: 125px;
   height: 40px;
@@ -2444,8 +2439,17 @@ td.totalcost-category {
   border-top: #000 1px solid;
 }
 
+.completeclose.btn {
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+.edit.btn{
+  height: 1.5rem;
+  padding: 2px 12px 25px 12px;
+}
 /** End of Code Red Row **/
-
 
 /** End of CloudDISPATCH **/
 
