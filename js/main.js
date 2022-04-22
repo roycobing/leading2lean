@@ -218,7 +218,7 @@ $(function () {
 $(document).ready(function () {
   $('.codeRed-main2').hide();
 
-  $('.codeRed-col , .dispatchme , .description-main').click(function () {
+  $('.codeRed-col , .dispatchme , .description-body-codered , .btn.view-plus ').click(function () {
     $('.codeRed-main2').toggle();
     $('.codeRed-main').toggleClass('noborder-bottom');
   });
