@@ -2254,7 +2254,6 @@ button.newfilter-button {
 }
 
 .description-body-codered {
-  display: inline-block;
   padding-right: 20px;
 }
 
@@ -2263,7 +2262,12 @@ button.newfilter-button {
 }
 
 .description-codered {
-  max-width: 1090px;
+  width: 100%;
+}
+
+.btn.view-plus {
+  float: right;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width: 993.5px) {
@@ -2392,10 +2396,12 @@ td.status-cancelbtn {
 }
 
 .close.btn {
+  color: #fff;
   border-radius: 20px;
   height: 29px;
   padding: 0 17px 12px 10px;
   width: 12px;
+  font-weight: bold;
 }
 
 .requestspare-body {
@@ -2426,6 +2432,14 @@ td.status-cancelbtn {
   margin-bottom: 20px;
 }
 
+.bill-of-materials-header {
+  color: #0c93bc;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 5px solid #0c93bc;
+  margin-top: 10px;
+}
+
 .savetime {
   float: right;
   color: #6c757d
@@ -2445,10 +2459,116 @@ td.totalcost-category {
   font-size: 16px;
   color: #fff;
 }
-.edit.btn{
+
+.edit.btn {
   height: 1.5rem;
   padding: 2px 12px 25px 12px;
 }
+
+.edit-spare-btn {
+  border: 0;
+  background-color: transparent;
+  color: #d5d5d5;
+}
+
+.request-spare-body {
+  margin: 0 20px 0 20px;
+  background-color: #f5f5f5;
+  width: 370px;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  height: fit-content;
+}
+
+@media only screen and (max-width: 993.5px) {
+  .request-spare-body {
+    margin: 0 20px 0 -14px;
+  }
+}
+
+.request-spare-header {
+  margin-top: 10px;
+  border-bottom: 2px solid #647a8c;
+  padding: 6px;
+}
+
+.request-spare-title,
+.spare-cancelbtn {
+  display: inline-flex;
+}
+
+.request-spare-title {
+  color: #0d324d;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.spare-cancelbtn {
+  padding: 2px;
+  float: right;
+}
+
+.close-spare-btn {
+  border: 0;
+  background-color: transparent;
+  color: #9197a3;
+}
+
+.search-spare {
+  padding: 20px 0 20px 0;
+}
+
+.search-spare-btn {
+  text-align: center;
+}
+
+.btn.search-btn {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.billmaterials-col {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.14);
+}
+
+.requestspare-paginations {
+  padding: 10px 0 5px 0;
+}
+
+.requestspare-formcheck {
+  padding: 0 13px 0 13px;
+}
+
+.btn.add-btn {
+  margin-top: 25px;
+  color: #fff;
+  width: 75px;
+}
+
+@media only screen and (max-width: 993.5px) {
+  .btn.add-btn {
+    margin-top: .50rem;
+  }
+}
+
+.requestspare-error-body {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.requestspare-error {
+  font-size: .9rem;
+  background-color: #a40f4c;
+  color: #fff;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+}
+
 /** End of Code Red Row **/
 
 /** End of CloudDISPATCH **/
@@ -2460,6 +2580,12 @@ td.totalcost-category {
 ::-webkit-scrollbar-thumb {
   background: #c4cbca;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 993.5px) {
+  .table-responsive::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 993.5px) {

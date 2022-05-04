@@ -255,7 +255,6 @@ $(document).ready(function () {
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
     $('#documenthistory').hide();
-    $('.savetime, .editdispatch-main , .completeclose-main').hide();
     $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#tool').click(function () {
@@ -307,15 +306,33 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.sparetable-body').hide();
+  $('.request-spare-body').hide();
 
   $('#btn-requestspare').click(function () {
+    $('.request-spare-body').show();
+    $('#btn-requestspare , #nosparesyet').hide();
+  });
+
+  $('#requestspare-search').click(function () {
     $('.sparetable-body').show();
     $('#btn-requestspare , #nosparesyet').hide();
-    $('.savetime, .editdispatch-main , .completeclose-main ').show();
+    $('.request-spare-body').hide();
   });
 
 });
+/** Bill of Materials */
+$(function () {
+  $('tr.parent td')
+    .on("click", function () {
+      var idOfParent = $(this).parents('tr').attr('id');
+      $('tr.child-' + idOfParent).toggle();
+    });
+  $('tr[class^=child-]').hide().children('td');
+});
 
+/** Modal Message */
+
+/** End of CloudDispatch.html */
 /** downoccurence */
 $(document).ready(function () {
   $(".downoccurence_title").click(function () {

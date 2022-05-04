@@ -1,16 +1,18 @@
-
 .navbar-collapse {
   box-shadow: 0px 3px 8px #00000029;
   width: 100% !important;
 }
+
 .nav-link-home {
   display: block;
   color: #0D324D;
   padding: .5rem 1rem;
 }
+
 .nav-link-home:hover {
   color: inherit;
 }
+
 @media only screen and (max-width: 993.5px) {
 
   .navbar-nav .nav-link {
@@ -100,6 +102,7 @@
     padding-top: 15px;
   }
 }
+
 /** Start of CloudDISPATCH **/
 @media only screen and (min-width: 993.5px) {
   .settingButton-clouddispatch {
@@ -123,7 +126,9 @@
   padding: 0 10px 0 10px;
   margin: 0 10px 0 10px;
 }
-.setButton-clouddispatch-sort , .setButton-clouddispatch-more{
+
+.setButton-clouddispatch-sort,
+.setButton-clouddispatch-more {
   display: block;
   background-color: transparent !important;
   border: 0;
@@ -132,9 +137,10 @@
   margin: 0 10px 0 10px;
 }
 
-a.setButton-clouddispatch:hover{
+a.setButton-clouddispatch:hover {
   color: #CFD0D2;
 }
+
 .setButton-clouddispatch_bell {
   display: block;
   background-color: transparent !important;
@@ -143,21 +149,60 @@ a.setButton-clouddispatch:hover{
   padding-right: 15px;
   padding-left: 15px;
 }
-span.editIcon{
+
+span.editIcon {
   color: #193c56;
   float: right;
 }
-ul.sortItem , ul.moreItem{
+
+ul.sortItem,
+ul.moreItem {
   font-size: .94rem;
 }
+
 @media only screen and (max-width: 993.5px) {
-  .sort.dropdown , .more.dropdown {
+
+  .view-body-btn ,
+  .filter-body-btn {
     display: none !important;
   }
 }
-@media only screen and (min-width: 993.5px) {
-  .sort.dropup , .more.dropup {
+
+@media only screen and (max-width: 993.5px) {
+
+  .sort.dropdown,
+  .more.dropdown{
     display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993.5px) {
+
+  .sort.dropup,
+  .more.dropup,
+  .view.dropup,
+  .filter.dropup {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+
+  ul.viewButton.dropdown-menu.show {
+    width: 390px;
+    margin-left: -172px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d8d4dc;
+  }
+}
+@media only screen and (max-width: 993.5px) {
+
+  ul.filterButton.dropdown-menu.show {
+    width: 390px;
+    margin-left: -246px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #d8d4dc;
   }
 }
 @media only screen and (min-width: 993.5px) {
@@ -166,8 +211,10 @@ ul.sortItem , ul.moreItem{
     background-color: #d8d4dc;
   }
 }
+
 @media only screen and (min-width: 993.5px) {
-  ul.viewButton.dropdown-menu.show {
+  ul.viewButton.dropdown-menu.show,
+  ul.filterButton.dropdown-menu.show {
     margin: 5px 0 0 5px;
     background-color: #d8d4dc;
     width: 1825px;
@@ -175,22 +222,28 @@ ul.sortItem , ul.moreItem{
   }
 }
 
-ul.sortItem.dropdown-menu.show a.dropdown-item , ul.moreItem.dropdown-menu.show a.dropdown-item {
+ul.sortItem.dropdown-menu.show a.dropdown-item,
+ul.moreItem.dropdown-menu.show a.dropdown-item {
   color: #193c56;
 }
+
 @media only screen and (max-width: 993.5px) {
-  ul.sortItem.dropdown-menu.show , ul.moreItem.dropdown-menu.show {
+
+  ul.sortItem.dropdown-menu.show,
+  ul.moreItem.dropdown-menu.show {
     margin-bottom: 20px;
-    background-color: #44B4CD;
+    background-color: #d8d4dc;
   }
 }
+
 @media only screen and (max-width: 993.5px) {
   ul.moreItem.dropdown-menu.show {
     margin-left: -100px;
   }
 }
-ul.sortItem.dropdown-menu.show a.dropdown-item:hover ,
-ul.moreItem.dropdown-menu.show a.dropdown-item:hover{
+
+ul.sortItem.dropdown-menu.show a.dropdown-item:hover,
+ul.moreItem.dropdown-menu.show a.dropdown-item:hover {
   background-color: #dddee0;
 }
 
@@ -200,4 +253,5 @@ ul.moreItem.dropdown-menu.show a.dropdown-item:hover{
     background-color: #d8d4dc;
   }
 }
+
 /** End of CloudDISPATCH **/

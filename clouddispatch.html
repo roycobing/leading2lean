@@ -215,298 +215,600 @@
             </div>
             <!-- Start of View Button -->
             <div class="settingButton-clouddispatch">
-              <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-eye fa-2x"></span></button>
-              <ul class="viewButton dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="row">
-                  <div class="fields col-lg-4">
-                    <div class="fields-title">
-                      <i class="fa fa-question-circle" aria-hidden="true"></i>Fields
-                    </div>
-                    <div class="fields-dropdown">
-                      <select class="filtervariableSelect form-select form-select-sm">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                    <div class="text-size">
-                      <div class="textsize-title">
-                        Filter Bar
+              <div class="view-body-btn">
+                <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-eye fa-2x"></span></button>
+                <ul class="viewButton dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="row">
+                    <div class="fields col-lg-4">
+                      <div class="fields-title">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>Fields
                       </div>
-                      <div class="filterbar-option">
+                      <div class="fields-dropdown">
+                        <select class="filtervariableSelect form-select form-select-sm">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="text-size">
+                        <div class="textsize-title">
+                          Filter Bar
+                        </div>
+                        <div class="filterbar-option">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Show
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Hide
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="refresh col-lg-4">
+                      <div class="refresh-title">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>Refresh
+                      </div>
+                      <div class="refresh-size">
+                        <div class="form-check form-check-inline automatic-title">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="automaticRefresh">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Automatic
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline disable-title">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Disable
+                          </label>
+                        </div>
+                      </div>
+                      <div class="useravatars-title">
+                        Labels
+                      </div>
+                      <div class="useravatars-showDisable">
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="showAvatar">
                           <label class="form-check-label" for="flexRadioDefault1">
                             Show
                           </label>
                         </div>
                         <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideAvatar">
                           <label class="form-check-label" for="flexRadioDefault2">
                             Hide
                           </label>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="refresh col-lg-4">
-                    <div class="refresh-title">
-                      <i class="fa fa-question-circle" aria-hidden="true"></i>Refresh
-                    </div>
-                    <div class="refresh-size">
-                      <div class="form-check form-check-inline automatic-title">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="automaticRefresh">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Automatic
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline disable-title">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Disable
-                        </label>
-                      </div>
-                    </div>
-                    <div class="useravatars-title">
-                      Labels
-                    </div>
-                    <div class="useravatars-showDisable">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="showAvatar">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Show
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideAvatar">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Hide
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dispatches-per-page col-lg-4">
-                    <div class="dispatches-per-page-title">
-                      Dispatches Per Page
-                    </div>
-                    <div class="fields-dropdown">
-                      <select class="filtervariableSelect form-select form-select-sm">
-                        <option selected>Open this select menu</option>
-                        <option value="1">25</option>
-                        <option value="2">50</option>
-                        <option value="3">75</option>
-                        <option value="4">100</option>
-                      </select>
-                    </div>
-                    <div class="resource-username-title">
-                      Dispatch View
-                    </div>
-                    <div class="resource-username-showDisable">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="showResourceUsername">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          Modern
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideResourceUsername">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          Classic
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="apply_cancel-button">
-                    <button type="button" class="btn bg-cancel-button cancel-button">Cancel</button>
-                    <button type="button" class="btn bg-primary-button-color text-primary-text apply-button"><i
-                        class="fa fa-check" aria-hidden="true"></i> Apply</button>
-                  </div>
-                </div>
-              </ul>
-            </div>
-            <!-- End of View Button -->
-            <!-- Start of Filter Button -->
-            <div class="settingButton-clouddispatch" id="filter">
-              <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-filter fa-2x"></span></button>
-              <ul class="viewButton dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <div class="filterButton">
-                  <div class="row">
-                    <div class="filter-variable-title">
-                      Saved Filters
-                    </div>
-                    <div class="save-filter-body">
-                      <div class="filtervariable-dropdown form-check-inline">
-                        <select class="filtervariableSelect form-select">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fas fa-save"></i>
-                        Update</button>
-                      <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fa fa-times"
-                          aria-hidden="true"></i> Delete</button>
-                      <button type="button" class="btn bg-primary-button-color newfilter-button"><i
-                          class="fas fa-save"></i> New
-                        Filter</button>
-                    </div>
-
-                  </div>
-                  <div class="row">
-                    <div class="filter-variable col-lg-4">
-                      <div class="filter-variable-title">
-                        Area
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Trade
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Dispatch Type
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Open, Completed, Closed
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">Open</option>
-                          <option value="2">Completed</option>
-                          <option value="3">Closed</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="refresh col-lg-4">
-                      <div class="filter-variable-title">
-                        Line Category
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>My Saved Filters</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Value Stream
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Status
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        My Dispatches
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">Assigned</option>
-                          <option value="2">Dispatched</option>
-                          <option value="3">Submitted</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                    </div>
                     <div class="dispatches-per-page col-lg-4">
-                      <div class="filter-variable-title">
-                        Line
+                      <div class="dispatches-per-page-title">
+                        Dispatches Per Page
                       </div>
-                      <div class="filtervariable-dropdown">
+                      <div class="fields-dropdown">
                         <select class="filtervariableSelect form-select form-select-sm">
                           <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
+                          <option value="1">25</option>
+                          <option value="2">50</option>
+                          <option value="3">75</option>
+                          <option value="4">100</option>
                         </select>
                       </div>
-                      <div class="filter-variable-title">
-                        Technology
+                      <div class="resource-username-title">
+                        Dispatch View
                       </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
-                      </div>
-                      <div class="filter-variable-title">
-                        Reported
-                      </div>
-                      <div class="filtervariable-dropdown">
-                        <select class="filtervariableSelect form-select form-select-sm">
-                          <option selected>Open this select menu</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                          <option value="4">All</option>
-                        </select>
+                      <div class="resource-username-showDisable">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                            id="showResourceUsername">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Modern
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                            id="hideResourceUsername">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Classic
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="apply_cancel-button">
-                      <button type="button" class="btn bg-cancel-button cancel-button">Reset</button>
-                      <button type="button"
-                        class="btn bg-primary-button-color text-primary-text apply-button">Apply</button>
+                      <button type="button" class="btn bg-cancel-button cancel-button">Cancel</button>
+                      <button type="button" class="btn bg-primary-button-color text-primary-text apply-button"><i
+                          class="fa fa-check" aria-hidden="true"></i> Apply</button>
                     </div>
                   </div>
-                </div>
-              </ul>
+                </ul>
+              </div>
+              <!--Mobile View-->
+              <div class="view dropup">
+                <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-eye fa-2x"></span></button>
+                <ul class="viewButton dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="row">
+                    <div class="fields col-lg-4">
+                      <div class="fields-title">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>Fields
+                      </div>
+                      <div class="fields-dropdown">
+                        <select class="filtervariableSelect form-select form-select-sm">
+                          <option selected>Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="text-size">
+                        <div class="textsize-title">
+                          Filter Bar
+                        </div>
+                        <div class="filterbar-option">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="smallName">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Show
+                            </label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="normalName">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Hide
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="refresh col-lg-4">
+                      <div class="refresh-title">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>Refresh
+                      </div>
+                      <div class="refresh-size">
+                        <div class="form-check form-check-inline automatic-title">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="automaticRefresh">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Automatic
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline disable-title">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="disableRefresh">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Disable
+                          </label>
+                        </div>
+                      </div>
+                      <div class="useravatars-title">
+                        Labels
+                      </div>
+                      <div class="useravatars-showDisable">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="showAvatar">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Show
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="hideAvatar">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Hide
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dispatches-per-page col-lg-4">
+                      <div class="dispatches-per-page-title">
+                        Dispatches Per Page
+                      </div>
+                      <div class="fields-dropdown">
+                        <select class="filtervariableSelect form-select form-select-sm">
+                          <option selected>Open this select menu</option>
+                          <option value="1">25</option>
+                          <option value="2">50</option>
+                          <option value="3">75</option>
+                          <option value="4">100</option>
+                        </select>
+                      </div>
+                      <div class="resource-username-title">
+                        Dispatch View
+                      </div>
+                      <div class="resource-username-showDisable">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                            id="showResourceUsername">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Modern
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault"
+                            id="hideResourceUsername">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Classic
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="apply_cancel-button">
+                      <button type="button" class="btn bg-cancel-button cancel-button">Cancel</button>
+                      <button type="button" class="btn bg-primary-button-color text-primary-text apply-button"><i
+                          class="fa fa-check" aria-hidden="true"></i> Apply</button>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <!-- End of View Button -->
+            <!-- Start of Filter Button -->
+            <div class="settingButton-clouddispatch" id="filter">
+              <div class="filter-body-btn">
+                <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-filter fa-2x"></span></button>
+                <ul class="filterButton dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="filterButton">
+                    <div class="row">
+                      <div class="filter-variable-title">
+                        Saved Filters
+                      </div>
+                      <div class="save-filter-body">
+                        <div class="filtervariable-dropdown form-check-inline">
+                          <select class="filtervariableSelect form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fas fa-save"></i>
+                          Update</button>
+                        <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fa fa-times"
+                            aria-hidden="true"></i> Delete</button>
+                        <button type="button" class="btn bg-primary-button-color newfilter-button"><i
+                            class="fas fa-save"></i> New
+                          Filter</button>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="filter-variable col-lg-4">
+                        <div class="filter-variable-title">
+                          Area
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Trade
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Dispatch Type
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Open, Completed, Closed
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Open</option>
+                            <option value="2">Completed</option>
+                            <option value="3">Closed</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="refresh col-lg-4">
+                        <div class="filter-variable-title">
+                          Line Category
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>My Saved Filters</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Value Stream
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Status
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          My Dispatches
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Assigned</option>
+                            <option value="2">Dispatched</option>
+                            <option value="3">Submitted</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="dispatches-per-page col-lg-4">
+                        <div class="filter-variable-title">
+                          Line
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Technology
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Reported
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="apply_cancel-button">
+                        <button type="button" class="btn bg-cancel-button cancel-button">Reset</button>
+                        <button type="button"
+                          class="btn bg-primary-button-color text-primary-text apply-button">Apply</button>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <!--Mobile View-->
+              <div class="filter dropup">
+                <button type="button" class="setButton-clouddispatch" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false"><span class="fas fa-filter fa-2x"></span></button>
+                <ul class="filterButton dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="filterButton">
+                    <div class="row">
+                      <div class="filter-variable-title">
+                        Saved Filters
+                      </div>
+                      <div class="save-filter-body">
+                        <div class="filtervariable-dropdown form-check-inline">
+                          <select class="filtervariableSelect form-select">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fas fa-save"></i>
+                          Update</button>
+                        <button type="button" class="btn bg-cancel-button savefilter-button"><i class="fa fa-times"
+                            aria-hidden="true"></i> Delete</button>
+                        <button type="button" class="btn bg-primary-button-color newfilter-button"><i
+                            class="fas fa-save"></i> New
+                          Filter</button>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="filter-variable col-lg-4">
+                        <div class="filter-variable-title">
+                          Area
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Trade
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Dispatch Type
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Open, Completed, Closed
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Open</option>
+                            <option value="2">Completed</option>
+                            <option value="3">Closed</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="refresh col-lg-4">
+                        <div class="filter-variable-title">
+                          Line Category
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>My Saved Filters</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Value Stream
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Status
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          My Dispatches
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">Assigned</option>
+                            <option value="2">Dispatched</option>
+                            <option value="3">Submitted</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="dispatches-per-page col-lg-4">
+                        <div class="filter-variable-title">
+                          Line
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Technology
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                        <div class="filter-variable-title">
+                          Reported
+                        </div>
+                        <div class="filtervariable-dropdown">
+                          <select class="filtervariableSelect form-select form-select-sm">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">All</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="apply_cancel-button">
+                        <button type="button" class="btn bg-cancel-button cancel-button">Reset</button>
+                        <button type="button"
+                          class="btn bg-primary-button-color text-primary-text apply-button">Apply</button>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
             </div>
             <!-- End of Filter Button -->
             <!-- Start of More Button -->
@@ -579,7 +881,7 @@
             </div>
           </div>
 
-          <div class="description-main col-lg-8">
+          <div class="description-main col-lg-6">
             <div class="description-body-codered">
               <div class="description-codered text-truncate">
                 Praeterea iter est quasdam res quas ex communi
@@ -589,6 +891,8 @@
                 Praeterea iter est quasdam res quas ex communi
               </div>
             </div>
+          </div>
+          <div class="col-lg-2">
             <button class="btn view-plus bg-gray3">+</button>
           </div>
         </div>
@@ -875,6 +1179,186 @@
                 </tbody>
               </table>
             </div>
+            <div class="sparetable-body table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="th-header" scope="col">Action</th>
+                    <th class="th-header" scope="col">Component</th>
+                    <th class="th-header" scope="col">Why</th>
+                    <th class="th-header" scope="col">Comments</th>
+                    <th class="th-header" scope="col">Added By</th>
+                    <th class="th-header" scope="col">Updated by</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>6. Cleaned</td>
+                    <td>13. Rollers</td>
+                    <td>4. Dirty</td>
+                    <td>Dust dropping from Machine A</td>
+                    <td>James Taylor</td>
+                    <td>Richard Rollins</td>
+                    <td>
+                      <button type="button" class="edit-spare-btn"><i class="fa-solid fa-pen"></i>
+                      </button>
+                      <div class="status-cancelbtn">
+                        <button type="button" class="close btn bg-cancel-button"> x </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="requestspare-body">
+              <div id="nosparesyet" class="no-spare form-text">No Spares Yet</div>
+              <button class="btn requestspare bg-cancel-button" id="btn-requestspare">Request Spares</button>
+            </div>
+            <!--Request Spare Part-->
+            <div class="request-spare-body col-sm-12 col-lg-6">
+              <div class="request-spare-header">
+                <div class="request-spare-title">Request Spare Part</div>
+                <div class="spare-cancelbtn">
+                  <button type="button" class="close-spare-btn"><i class="fa-solid fa-x"></i></button>
+                </div>
+              </div>
+              <div>
+                <div class="search-spare">
+                  <input class="form-control" type="text" placeholder="Scan or Type" aria-label="default input example">
+                </div>
+                <div class="search-spare-btn">
+                  <button type="button" class="btn bg-cancel-button">Clear</button>
+                  <button type="button " class="search-btn btn bg-primary-button-color"
+                    id="requestspare-search">Search</button>
+                </div>
+                <div class="requestspare-error-body">
+                  <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> No Parts Found</span>
+                </div>
+              </div>
+              <div class="bill-of-materials-header">
+                Bill of Materials
+              </div>
+              <div class="requestspare-body-table table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Part Number</th>
+                      <th scope="col">Part Description</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">On Hand</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="parent" id="2479">
+                      <td>F391183A</td>
+                      <td>Roller Bearing</td>
+                      <td>
+                        <div>West Warehouse</div>
+                      </td>
+                      <td>
+                        <div>2</div>
+                      </td>
+                    </tr>
+                    <tr class="child-2479 ">
+                      <td>(Insert Image Here)</td>
+                      <td>
+                        <div>Vendor Part #</div>
+                        <div>FT90118</div>
+                        <div><button class="btn bg-gray3"><i class="fa-solid fa-magnifying-glass"></i> Associated
+                            Parts</button></div>
+                      </td>
+                      <td>
+                        <div>Manufacturer</div>
+                        <div>Industrial Supply</div>
+                      </td>
+                      <td>
+                        <div>Cost</div>
+                        <div>$36.01</div>
+                      </td>
+                    </tr>
+                    <tr class="child-2479">
+                      <td colspan="4">
+                        <div class="mt-2">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div>Location</div>
+                              <div class="requestspare-location-table-dropdown">
+                                <select class="form-select form-select-sm">
+                                  <option selected>Choose Location</option>
+                                  <option value="1">North Warehouse</option>
+                                  <option value="2">South Warehouse</option>
+                                  <option value="3">East Warehouse</option>
+                                  <option value="4">West Warehouse</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div>Category</div>
+                              <div class="requestspare-category-table-dropdown">
+                                <select class="form-select form-select-sm">
+                                  <option selected>Choose Category</option>
+                                  <option value="1">North Warehouse</option>
+                                  <option value="2">South Warehouse</option>
+                                  <option value="3">East Warehouse</option>
+                                  <option value="4">West Warehouse</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-1">
+                          <div class="row">
+                            <div class="col-lg-6">
+                              <div>Quantity</div>
+                              <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Enter quantity">
+                            </div>
+                            <div class="col-lg-6">
+                              <button class="add-btn btn bg-primary-button-color">Add</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="requestspare-formcheck mt-2">
+                          <div class="row">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Add to Machine Bill Of Materials
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label" for="flexCheckDefault">
+                                Add to Technology Bill Of Materials
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="requestspare-paginations">
+                <nav class="requestspare-pagination" aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
             <div class="row">
               <div class="editdispatch-main col-sm-12 col-lg-10">
                 <div class="editdispatch">
@@ -896,10 +1380,6 @@
                   <button class="completeclose btn">Close</button>
                 </div>
               </div>
-            </div>
-            <div class="requestspare-body">
-              <div id="nosparesyet" class="no-spare form-text">No Spares Yet</div>
-              <button class="btn requestspare bg-cancel-button" id="btn-requestspare">Request Spares</button>
             </div>
           </div>
           <!--Tools-->
@@ -1195,7 +1675,8 @@
           <!--Notes-->
           <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="contact-tab">Notes</div>
           <!--Attachments-->
-          <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments</div>
+          <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments
+          </div>
           <!--Related-->
           <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
         </div>
