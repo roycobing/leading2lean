@@ -964,7 +964,9 @@
         </div>
         <div class="history-header">
           <div class="dispatchhistory" id="dispatchhistory"><a class="mainlink" href="#">Dispatch History</a></div>
-          <div class="dispatchhistory" id="sparehistory"><a class="mainlink" href="#">Spares History</a></div>
+          <div class="dispatchhistory" id="sparehistory"><a class="mainlink" href="#">Spares History</a>
+            <button class="btn btn-requestsparepart bg-gray3" id="request-sparehistory"><a class="mainlink-history" href="#"><i
+              class="fas fa-plus"></i>Request Spare Part</a></button></div>
           <div class="dispatchhistory" id="toolinghistory"><a class="mainlink" href="#">Tooling History</a></div>
           <div class="dispatchhistory" id="documenthistory">
             <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
@@ -1224,7 +1226,7 @@
               </div>
               <div>
                 <div class="search-spare">
-                  <input class="form-control" type="text" placeholder="Scan or Type" aria-label="default input example">
+                  <input class="request-search form-control" type="text" placeholder="Scan or Type" aria-label="default input example">                  
                 </div>
                 <div class="search-spare-btn">
                   <button type="button" class="btn bg-cancel-button">Clear</button>
@@ -1233,6 +1235,7 @@
                 </div>
                 <div class="requestspare-error-body">
                   <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> No Parts Found</span>
+                  <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> Parts not on Machine Bill of Materials</span>
                 </div>
               </div>
               <div class="bill-of-materials-header">

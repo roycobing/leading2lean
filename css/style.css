@@ -13,6 +13,9 @@ a.mainlink {
   overflow-x: hidden;
 }
 
+tbody{
+  cursor: pointer;
+}
 @media only screen and (max-width: 993.5px) {
   #base-main {
     padding-bottom: 80px;
@@ -2415,7 +2418,9 @@ td.status-cancelbtn {
 .btn.requestspare {
   color: #6c757d;
 }
-
+.btn.btn-requestsparepart {
+  margin-left: 15px;
+}
 .mainlink-history {
   color: #575c63;
 }
@@ -2515,7 +2520,8 @@ td.totalcost-category {
 }
 
 .search-spare {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 225px;
+  text-align: center;
 }
 
 .search-spare-btn {
@@ -2567,6 +2573,10 @@ td.totalcost-category {
   color: #fff;
   padding: 5px 10px 5px 10px;
   border-radius: 20px;
+}
+
+.request-search.form-control {
+  width: 65%;
 }
 
 /** End of Code Red Row **/

@@ -255,6 +255,7 @@ $(document).ready(function () {
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
     $('#documenthistory').hide();
+    $('#request-sparehistory').hide();    
     $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#tool').click(function () {
@@ -307,6 +308,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.sparetable-body').hide();
   $('.request-spare-body').hide();
+  $('#request-sparehistory').hide();
 
   $('#btn-requestspare').click(function () {
     $('.request-spare-body').show();
@@ -317,6 +319,7 @@ $(document).ready(function () {
     $('.sparetable-body').show();
     $('#btn-requestspare , #nosparesyet').hide();
     $('.request-spare-body').hide();
+    $('#request-sparehistory').show();
   });
 
 });
