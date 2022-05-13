@@ -972,9 +972,17 @@
             <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
                   class="fas fa-plus"></i>Document</a></button>
           </div>
+          <div class="dispatchhistory" id="action-btn">
+            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
+                  class="fas fa-plus"></i>Action</a></button>
+          </div>
           <div class="dispatchhistory" id="externalcost">
             <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
                   class="fas fa-plus"></i>External Cost</a></button>
+          </div>
+          <div class="dispatchhistory" id="related-followup">
+            <button class="btn btn-documenthistory bg-gray3"><a class="mainlink-history" href="#"><i
+                  class="fas fa-plus"></i>Follow-up</a></button>
           </div>
         </div>
 
@@ -1217,149 +1225,151 @@
               <button class="btn requestspare bg-cancel-button" id="btn-requestspare">Request Spares</button>
             </div>
             <!--Request Spare Part-->
-            <div class="request-spare-body col-sm-12 col-lg-6">
-              <div class="request-spare-header">
-                <div class="request-spare-title">Request Spare Part</div>
-                <div class="spare-cancelbtn">
-                  <button type="button" class="close-spare-btn"><i class="fa-solid fa-x"></i></button>
+            <div class="request-spare-main col-sm-12 col-lg-6">
+              <div class="request-spare-body">
+                <div class="request-spare-header">
+                  <div class="request-spare-title">Request Spare Part</div>
+                  <div class="spare-cancelbtn">
+                    <button type="button" class="close-spare-btn"><i class="fa-solid fa-x"></i></button>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <div class="search-spare">
-                  <input class="request-search form-control" type="text" placeholder="Scan or Type" aria-label="default input example">                  
+                <div>
+                  <div class="search-spare">
+                    <input class="request-search form-control" type="text" placeholder="Scan or Type" aria-label="default input example">                  
+                  </div>
+                  <div class="search-spare-btn">
+                    <button type="button" class="btn bg-cancel-button">Clear</button>
+                    <button type="button " class="search-btn btn bg-primary-button-color"
+                      id="requestspare-search">Search</button>
+                  </div>
+                  <div class="requestspare-error-body">
+                    <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> No Parts Found</span>
+                    <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> Parts not on Machine Bill of Materials</span>
+                  </div>
                 </div>
-                <div class="search-spare-btn">
-                  <button type="button" class="btn bg-cancel-button">Clear</button>
-                  <button type="button " class="search-btn btn bg-primary-button-color"
-                    id="requestspare-search">Search</button>
+                <div class="bill-of-materials-header">
+                  Bill of Materials
                 </div>
-                <div class="requestspare-error-body">
-                  <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> No Parts Found</span>
-                  <span class="requestspare-error"><i class="fa-solid fa-circle-xmark"></i> Parts not on Machine Bill of Materials</span>
-                </div>
-              </div>
-              <div class="bill-of-materials-header">
-                Bill of Materials
-              </div>
-              <div class="requestspare-body-table table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">Part Number</th>
-                      <th scope="col">Part Description</th>
-                      <th scope="col">Location</th>
-                      <th scope="col">On Hand</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="parent" id="2479">
-                      <td>F391183A</td>
-                      <td>Roller Bearing</td>
-                      <td>
-                        <div>West Warehouse</div>
-                      </td>
-                      <td>
-                        <div>2</div>
-                      </td>
-                    </tr>
-                    <tr class="child-2479 ">
-                      <td>(Insert Image Here)</td>
-                      <td>
-                        <div>Vendor Part #</div>
-                        <div>FT90118</div>
-                        <div><button class="btn bg-gray3"><i class="fa-solid fa-magnifying-glass"></i> Associated
-                            Parts</button></div>
-                      </td>
-                      <td>
-                        <div>Manufacturer</div>
-                        <div>Industrial Supply</div>
-                      </td>
-                      <td>
-                        <div>Cost</div>
-                        <div>$36.01</div>
-                      </td>
-                    </tr>
-                    <tr class="child-2479">
-                      <td colspan="4">
-                        <div class="mt-2">
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div>Location</div>
-                              <div class="requestspare-location-table-dropdown">
-                                <select class="form-select form-select-sm">
-                                  <option selected>Choose Location</option>
-                                  <option value="1">North Warehouse</option>
-                                  <option value="2">South Warehouse</option>
-                                  <option value="3">East Warehouse</option>
-                                  <option value="4">West Warehouse</option>
-                                </select>
+                <div class="requestspare-body-table table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Part Number</th>
+                        <th scope="col">Part Description</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">On Hand</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="parent" id="2479">
+                        <td>F391183A</td>
+                        <td>Roller Bearing</td>
+                        <td>
+                          <div>West Warehouse</div>
+                        </td>
+                        <td>
+                          <div>2</div>
+                        </td>
+                      </tr>
+                      <tr class="child-2479 ">
+                        <td>(Insert Image Here)</td>
+                        <td>
+                          <div>Vendor Part #</div>
+                          <div>FT90118</div>
+                          <div><button class="btn bg-gray3"><i class="fa-solid fa-magnifying-glass"></i> Associated
+                              Parts</button></div>
+                        </td>
+                        <td>
+                          <div>Manufacturer</div>
+                          <div>Industrial Supply</div>
+                        </td>
+                        <td>
+                          <div>Cost</div>
+                          <div>$36.01</div>
+                        </td>
+                      </tr>
+                      <tr class="child-2479">
+                        <td colspan="4">
+                          <div class="mt-2">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div>Location</div>
+                                <div class="requestspare-location-table-dropdown">
+                                  <select class="form-select form-select-sm">
+                                    <option selected>Choose Location</option>
+                                    <option value="1">North Warehouse</option>
+                                    <option value="2">South Warehouse</option>
+                                    <option value="3">East Warehouse</option>
+                                    <option value="4">West Warehouse</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-lg-6">
+                                <div>Category</div>
+                                <div class="requestspare-category-table-dropdown">
+                                  <select class="form-select form-select-sm">
+                                    <option selected>Choose Category</option>
+                                    <option value="1">North Warehouse</option>
+                                    <option value="2">South Warehouse</option>
+                                    <option value="3">East Warehouse</option>
+                                    <option value="4">West Warehouse</option>
+                                  </select>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-lg-6">
-                              <div>Category</div>
-                              <div class="requestspare-category-table-dropdown">
-                                <select class="form-select form-select-sm">
-                                  <option selected>Choose Category</option>
-                                  <option value="1">North Warehouse</option>
-                                  <option value="2">South Warehouse</option>
-                                  <option value="3">East Warehouse</option>
-                                  <option value="4">West Warehouse</option>
-                                </select>
+                          </div>
+                          <div class="mt-1">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div>Quantity</div>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                  placeholder="Enter quantity">
+                              </div>
+                              <div class="col-lg-6">
+                                <button class="add-btn btn bg-primary-button-color">Add</button>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="mt-1">
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div>Quantity</div>
-                              <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Enter quantity">
-                            </div>
-                            <div class="col-lg-6">
-                              <button class="add-btn btn bg-primary-button-color">Add</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="requestspare-formcheck mt-2">
-                          <div class="row">
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                Add to Machine Bill Of Materials
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                              <label class="form-check-label" for="flexCheckDefault">
-                                Add to Technology Bill Of Materials
-                              </label>
+                          <div class="requestspare-formcheck mt-2">
+                            <div class="row">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Add to Machine Bill Of Materials
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Add to Technology Bill Of Materials
+                                </label>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="requestspare-paginations">
-                <nav class="requestspare-pagination" aria-label="Page navigation example">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="requestspare-paginations">
+                  <nav class="requestspare-pagination" aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -1385,7 +1395,7 @@
               </div>
             </div>
           </div>
-          <!--Tools-->
+          <!--Tooling-->
           <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="contact-tab">
             <div class="table-responsive">
               <table class="table">
@@ -1413,6 +1423,8 @@
                     </td>
                     <td>
                       <div class="status-cancelbtn">
+                        <button type="button" class="edit-spare-btn"><i class="fa-solid fa-pen"></i>
+                        </button>
                         <button type="button" class="close btn bg-cancel-button"> x </button>
                       </div>
                     </td>
@@ -1433,12 +1445,84 @@
                     </td>
                     <td>
                       <div class="status-cancelbtn">
+                        <button type="button" class="edit-spare-btn"><i class="fa-solid fa-pen"></i>
+                        </button>
                         <button type="button" class="close btn bg-cancel-button"> x </button>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <!--Remove Tooling-->
+            <div class="edit-removetooling-main col-sm-12 col-lg-4">
+              <div class="edit-removetooling-body">
+                <div>Are you sure you want to <span style="font-weight: bold;">Remove</span> this <span style="font-weight: bold;">Tooling</span> from this <span style="font-weight: bold;">Dispatch</span>?</div>
+                <div><button class="btn"><i class="fa-solid close-removetooling fa-circle-xmark"></i></button> T14332 - Carbide Drill Bit</div>
+                <div>New Status:</div>
+                <div class="edittooling-dropdown">
+                  <select class="status form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">In use</option>
+                    <option value="2">Idle</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div>New Location:</div>
+                <div class="edittooling-dropdown">
+                  <select class="status form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">1</option>
+                    <option value="2">12</option>
+                    <option value="3">123</option>
+                    <option value="4">1234</option>
+                  </select>
+                </div>
+                <div>New Machine:</div>
+                <div class="edittooling-dropdown">
+                  <select class="status form-select form-select-sm">
+                    <option selected>Select Machine</option>
+                    <option value="1">In use</option>
+                    <option value="2">Idle</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div class="yesno-tooling-btn">
+                  <button type="button" class="btn bg-cancel-button"><i class="fa-solid fa-xmark"></i> No</button>
+                  <button type="button " class="yes-btn btn bg-primary-button-color"><i class="fa-solid fa-check"></i> Yes</button>
+                </div>
+              </div>
+            </div>
+            <!--Edit Tooling-->
+            <div class="edit-removetooling-main col-sm-12 col-lg-4">
+              <div class="edit-removetooling-body">
+                <div class="edit-tooling-header">
+                  <div class="edit-tooling-title">Edit Tooling</div>
+                  <div class="edit-tooling-cancelbtn">
+                    <button type="button" class="close-spare-btn"><i class="fa-solid fa-x"></i></button>
+                  </div>
+                </div>
+                <div class="mt-3">Code:</div>
+                <div style="margin-left: 10px;">T18223</div>
+                <div class="mt-3">Description:</div>
+                <div style="margin-left: 10px;">Harmonic Distributer</div>
+                <div class="mt-3">Status:</div>
+                <div class="edittooling-dropdown">
+                  <select class="status form-select form-select-sm">
+                    <option selected>Open this select menu</option>
+                    <option value="1">In use</option>
+                    <option value="2">Idle</option>
+                    <option value="3">Three</option>
+                    <option value="4">All</option>
+                  </select>
+                </div>
+                <div class="yesno-tooling-btn">
+                  <button type="button" class="btn bg-cancel-button"><i class="fa-solid fa-xmark"></i> Cancel</button>
+                  <button type="button " class="yes-btn btn bg-primary-button-color"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="editdispatch-main col-sm-12 col-lg-10">
@@ -1681,7 +1765,16 @@
           <div class="tab-pane fade" id="attachments" role="tabpanel" aria-labelledby="contact-tab">Attachments
           </div>
           <!--Related-->
-          <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">Related</div>
+          <div class="tab-pane fade" id="relates" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="related-main">
+              <div class="related-body">
+                <div class="row"> 
+                  <div class="col-sm-12 col-lg-6">Origin</div>
+                  <div class="col-sm-12 col-lg-6">Follow-up</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!--End Code Red-->

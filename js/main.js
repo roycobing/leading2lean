@@ -232,6 +232,8 @@ $(document).ready(function () {
   $('#toolinghistory').hide();
   $('#documenthistory').hide();
   $('#externalcost').hide();
+  $('#action-btn').hide();
+  $('#related-followup').hide();  
 
 
   $('#details').click(function () {
@@ -239,6 +241,8 @@ $(document).ready(function () {
     $('.question-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
     $('#sparehistory').hide();
     $('#toolinghistory').hide();
+    $('#related-followup').hide();
+    $('#action-btn').hide();
     $('#dispatchhistory').show();
   });
 
@@ -246,6 +250,8 @@ $(document).ready(function () {
     $('.question-title').show();
     $('#sparehistory').hide();
     $('#dispatchhistory').hide();
+    $('#related-followup').hide();
+    $('#action-btn').hide();
     $('.savetime, .editdispatch-main , .completeclose-main').show();
     $('.detail-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
@@ -255,7 +261,9 @@ $(document).ready(function () {
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
     $('#documenthistory').hide();
-    $('#request-sparehistory').hide();    
+    $('#request-sparehistory').hide();  
+    $('#related-followup').hide();  
+    $('#action-btn').hide();
     $('.detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#tool').click(function () {
@@ -264,6 +272,8 @@ $(document).ready(function () {
     $('#sparehistory').hide();
     $('#dispatchhistory').hide();
     $('#documenthistory').hide();
+    $('#related-followup').hide();
+    $('#action-btn').hide();
     $('.detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#document').click(function () {
@@ -271,15 +281,21 @@ $(document).ready(function () {
     $('#documenthistory').show();
     $('#toolinghistory').hide();
     $('#dispatchhistory').hide();
+    $('#related-followup').hide();
+    $('#action-btn').hide();
     $('.savetime, .editdispatch-main , .completeclose-main').show();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#actioncomponent').click(function () {
     $('.actioncomponent-title').show();
+    $('#related-followup').hide();
+    $('#action-btn').show();
+    $('#documenthistory').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#resource').click(function () {
     $('.resource-title').show();
+    $('#related-followup').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .cost-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#cost').click(function () {
@@ -289,18 +305,25 @@ $(document).ready(function () {
     $('#sparehistory').hide();
     $('#toolinghistory').hide();
     $('#documenthistory').hide();
+    $('#related-followup').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .note-title, .attachment-title, .relate-title').hide();
   });
   $('#note').click(function () {
     $('.note-title').show();
+    $('#related-followup').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .attachment-title, .relate-title').hide();
   });
   $('#attachment').click(function () {
     $('.attachment-title').show();
+    $('#related-followup').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .relate-title').hide();
   });
   $('#relate').click(function () {
     $('.relate-title').show();
+    $('#related-followup').show();
+    $('#dispatchhistory').hide();
+    $('#action-btn').hide();
+    $('#externalcost').hide();
     $('.detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title').hide();
   });
 });

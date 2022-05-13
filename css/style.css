@@ -13,9 +13,10 @@ a.mainlink {
   overflow-x: hidden;
 }
 
-tbody{
+tbody {
   cursor: pointer;
 }
+
 @media only screen and (max-width: 993.5px) {
   #base-main {
     padding-bottom: 80px;
@@ -2418,9 +2419,11 @@ td.status-cancelbtn {
 .btn.requestspare {
   color: #6c757d;
 }
+
 .btn.btn-requestsparepart {
   margin-left: 15px;
 }
+
 .mainlink-history {
   color: #575c63;
 }
@@ -2476,13 +2479,15 @@ td.totalcost-category {
   color: #d5d5d5;
 }
 
-.request-spare-body {
+.request-spare-main {
   margin: 0 20px 0 20px;
   background-color: #f5f5f5;
-  width: 370px;
   border-radius: 5px;
-  padding: 0 20px 0 20px;
   height: fit-content;
+}
+
+.request-spare-body {
+  padding: 20px;
 }
 
 @media only screen and (max-width: 993.5px) {
@@ -2577,6 +2582,54 @@ td.totalcost-category {
 
 .request-search.form-control {
   width: 65%;
+}
+
+/** Tooling **/
+.edit-removetooling-main {
+  margin: 10px 20px 0 20px;
+  background-color: #f5f5f5;
+  width: 370px;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.edit-removetooling-body {
+  padding: 20px;
+}
+
+.yesno-tooling-btn {
+  margin-top: 10px;
+}
+
+.edit-tooling-header {
+  margin-top: 10px;
+  border-bottom: 2px solid #647a8c;
+  padding: 6px;
+}
+
+.edit-tooling-title {
+  color: #0d324d;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.edit-tooling-title,
+.edit-tooling-cancelbtn {
+  display: inline-flex;
+}
+
+.edit-tooling-cancelbtn {
+  padding: 2px;
+  float: right;
+}
+
+.btn.yes-btn {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.close-removetooling.fa-circle-xmark {
+  color: #a40f4c;
 }
 
 /** End of Code Red Row **/
