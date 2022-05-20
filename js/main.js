@@ -203,7 +203,7 @@ $(function () {
 });
 /** CloudDispatch.html */
 $(document).ready(function () {
-  $(".codeRed-main2").show();
+  $(".codeRed-main2").hide();
 
   $(
     ".codeRed-col , .dispatchme , .description-body-codered , .btn.view-plus "
