@@ -1,9 +1,8 @@
 $theme-colors: (
-    "primary-button-color": #44b4cd,
     "primary2-button-color": #dbeff5,
     "primary-text": #fff,
     "gray3": #d5d5d5,
-    "cancel-button": #ebebeb,
+    "cancel-button": #ebebeb
 );
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -30,7 +29,6 @@ $gray6: #8a919d;
     color: $mainText;
     font-size: 0.9rem;
 }
-
 .navbarButton {
     padding: $navbarPadding;
     margin: $navbarMargin;
@@ -660,4 +658,14 @@ $press-status2: #7f7e80;
 }
 .details-image {
     width: 100%;
+}
+
+@mixin l2l-primary {
+    color: #fff !important;
+    background-color: $primaryColor1 !important;
+    border-color: $primaryColor1 !important;
+}
+
+.btn-l2lprimary{
+    @include l2l-primary;
 }
