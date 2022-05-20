@@ -203,7 +203,7 @@ $(function () {
 });
 /** CloudDispatch.html */
 $(document).ready(function () {
-  $(".codeRed-main2").hide();
+  $(".codeRed-main2").show();
 
   $(
     ".codeRed-col , .dispatchme , .description-body-codered , .btn.view-plus "
@@ -237,7 +237,7 @@ $(document).ready(function () {
     $("#dispatchhistory").show();
     $("#documenthistory").hide;
     $("#externalcost").hide();
-    $("#attachment").hide();
+    $("#attachment-btn").hide();
   });
 
   $("#questions").click(function () {
@@ -272,6 +272,8 @@ $(document).ready(function () {
     $("#documenthistory").hide();
     $("#related-followup").hide();
     $("#action-btn").hide();
+    $("#attachment-btn").hide();
+    $("#externalcost").hide();
     $(
       ".detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
@@ -283,6 +285,7 @@ $(document).ready(function () {
     $("#dispatchhistory").hide();
     $("#related-followup").hide();
     $("#action-btn").hide();
+    $("#attachment-btn").hide();
     $(".savetime, .editdispatch-main , .completeclose-main").show();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
@@ -315,6 +318,7 @@ $(document).ready(function () {
     $("#documenthistory").hide();
     $("#related-followup").hide();
     $("#action-btn").hide();
+    $("#attachment-btn").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .note-title, .attachment-title, .relate-title"
     ).hide();
@@ -329,8 +333,11 @@ $(document).ready(function () {
   $("#attachment").click(function () {
     $(".attachment-title").show();
     $("#attachment").show();
-    $("#related-followup").hide();
-    $("#dispatchhistory").hide();
+    $("#attachment-btn").show();
+    $("#dispatchhistory").hide();  
+    $("#related-followup").hide();  
+    $("#documenthistory").hide();
+    $("#externalcost").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .relate-title"
     ).hide();
@@ -341,6 +348,7 @@ $(document).ready(function () {
     $("#dispatchhistory").hide();
     $("#action-btn").hide();
     $("#externalcost").hide();
+    $("#attachment-btn").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title"
     ).hide();
