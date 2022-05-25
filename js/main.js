@@ -219,11 +219,13 @@ $(document).ready(function () {
   ).hide();
   $("#sparehistory").hide();
   $("#toolinghistory").hide();
+  $("#add-tooling").hide();
   $("#documenthistory").hide();
   $("#externalcost").hide();
   $("#action-btn").hide();
   $("#related-followup").hide();
-  $("#attachment-btn").hide();  
+  $("#attachment-btn").hide();
+  $("#addnotes").hide();
 
   $("#details").click(function () {
     $(".detail-title").show();
@@ -232,12 +234,14 @@ $(document).ready(function () {
     ).hide();
     $("#sparehistory").hide();
     $("#toolinghistory").hide();
+    $("#add-tooling").hide();
     $("#related-followup").hide();
     $("#action-btn").hide();
     $("#dispatchhistory").show();
     $("#documenthistory").hide;
     $("#externalcost").hide();
     $("#attachment-btn").hide();
+    $("#addnotes").hide();
   });
 
   $("#questions").click(function () {
@@ -250,6 +254,8 @@ $(document).ready(function () {
     $(
       ".detail-title, .spare-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#add-tooling").hide();
+    $("#addnotes").hide();
   });
   $("#spare").click(function () {
     $(".spare-title").show();
@@ -260,13 +266,16 @@ $(document).ready(function () {
     $("#request-sparehistory").hide();
     $("#related-followup").hide();
     $("#action-btn").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .tooling-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#tool").click(function () {
     $(".tooling-title").show();
     $("#toolinghistory").show();
+    $("#add-tooling").show();
     $("#sparehistory").hide();
     $("#dispatchhistory").hide();
     $("#documenthistory").hide();
@@ -277,6 +286,7 @@ $(document).ready(function () {
     $(
       ".detail-title, .question-title, .spare-title, .document-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#document").click(function () {
     $(".document-title").show();
@@ -286,10 +296,13 @@ $(document).ready(function () {
     $("#related-followup").hide();
     $("#action-btn").hide();
     $("#attachment-btn").hide();
+    $("#add-tooling").hide();
+    $("#sparehistory").hide();
     $(".savetime, .editdispatch-main , .completeclose-main").show();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#actioncomponent").click(function () {
     $(".actioncomponent-title").show();
@@ -298,16 +311,20 @@ $(document).ready(function () {
     $("#documenthistory").hide();
     $("#externalcost").hide();
     $("#dispatchhistory").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .resource-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#resource").click(function () {
     $(".resource-title").show();
     $("#related-followup").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .cost-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#cost").click(function () {
     $(".cost-title").show();
@@ -319,13 +336,19 @@ $(document).ready(function () {
     $("#related-followup").hide();
     $("#action-btn").hide();
     $("#attachment-btn").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .note-title, .attachment-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#note").click(function () {
     $(".note-title").show();
     $("#related-followup").hide();
+    $("#add-tooling").hide();
+    $("#dispatchhistory").hide();
+    $("#addnotes").show();
+    $("#externalcost").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .attachment-title, .relate-title"
     ).hide();
@@ -334,13 +357,16 @@ $(document).ready(function () {
     $(".attachment-title").show();
     $("#attachment").show();
     $("#attachment-btn").show();
-    $("#dispatchhistory").hide();  
-    $("#related-followup").hide();  
+    $("#dispatchhistory").hide();
+    $("#related-followup").hide();
     $("#documenthistory").hide();
     $("#externalcost").hide();
+    $("#action-btn").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .relate-title"
     ).hide();
+    $("#addnotes").hide();
   });
   $("#relate").click(function () {
     $(".relate-title").show();
@@ -349,9 +375,12 @@ $(document).ready(function () {
     $("#action-btn").hide();
     $("#externalcost").hide();
     $("#attachment-btn").hide();
+    $("#toolinghistory").hide();
+    $("#add-tooling").hide();
     $(
       ".detail-title, .question-title, .spare-title, .tooling-title,.document-title, .actioncomponent-title, .resource-title, .cost-title, .note-title, .attachment-title"
     ).hide();
+    $("#addnotes").hide();
   });
 });
 
@@ -393,6 +422,9 @@ $(document).ready(function () {
   $(".edit-tooling").click(function () {
     $("#edittooling").toggle();
   });
+  $("#add-tooling").click(function () {
+    $("#addtooling").toggle();
+  });
 });
 /** Documents - Remove */
 $(document).ready(function () {
@@ -402,7 +434,29 @@ $(document).ready(function () {
     $("#remove-documents").toggle();
   });
 });
+/**Costs */
+$(document).ready(function () {
+  $("#addextermal-cost").hide();
+  $("#removeexternal-cost").hide();
 
+  $("#remove-costs").click(function () {
+    $("#removeexternal-cost").toggle();
+  });
+  $("#externalcost").click(function () {
+    $("#addextermal-cost").toggle();
+  });
+});
+
+/**Attachment */
+
+/**Note */
+$(document).ready(function () {
+  $("#addnotes-body").hide();
+
+  $("#addnotes").click(function () {
+    $("#addnotes-body").toggle();
+  });
+});
 /** End of CloudDispatch.html */
 /** downoccurence */
 $(document).ready(function () {
