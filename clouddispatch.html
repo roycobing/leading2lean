@@ -848,7 +848,7 @@
       </nav>
       <!--Start of CloudDISPATCH Body -->
       <div class="clouddispatch-notif">
-        <button type="button" class="btn all-notif bg-l2lprimary">All<span
+        <button type="button" class="btn all-notif btn-primary">All<span
             class="filter-notif">399</span></button>
         <button type="button" class="btn dispatch-notif bg-primary2-button-color">My Dispatches<span
             class="filter-notif">13</span></button>
@@ -899,8 +899,13 @@
       </div>
       <div class="codeRed-main2">
         <div class="codeRed-main2-header">
-          <div class="header-maintabs">
-            <ul class="nav nav-tabs codeRed-main2-tabs" id="myTab" role="tablist">
+          <div class="header-maintabs-mobile">
+            <a class="btn btn-primary dropdown-toggle" data-bs-toggle="collapse" href="#myTab" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fas fa-info-circle"></i> Details
+            </a>
+          </div>            
+          <div class="header-maintabs collapse" id="myTab">
+            <ul class="nav nav-tabs codeRed-main2-tabs"  role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="tab-title nav-link active" id="details" data-bs-toggle="tab" data-bs-target="#detail"
                   type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-info-circle"></i>

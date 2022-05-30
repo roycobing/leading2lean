@@ -2184,7 +2184,19 @@ button.newfilter-button {
 
 @media only screen and (max-width: 993.5px) {
   .codeRed-main2-tabs {
-    width: 735px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 993.5px) {
+  .header-maintabs-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993.5px) {
+  .header-maintabs.collapse:not(.show) {
+    display: block;
   }
 }
 
@@ -2277,10 +2289,6 @@ button.newfilter-button {
   display: inline-block;
   width: 450px;
   cursor: pointer;
-}
-
-.header-maintabs {
-  display: inline-block;
 }
 
 .dispatchhistory {
@@ -2703,6 +2711,7 @@ td.totalcost-category {
 .dropzone-wrapper.dragover {
   background: #ecf0f5;
 }
+
 /** Costs **/
 .cost-remove-body {
   background-color: #f5f5f5;
@@ -2712,6 +2721,7 @@ td.totalcost-category {
   height: fit-content;
   padding: 20px;
 }
+
 .cost-removeexternal {
   margin: 10px 20px 0 20px;
   background-color: #f5f5f5;
@@ -2719,14 +2729,17 @@ td.totalcost-category {
   border-radius: 5px;
   height: fit-content;
 }
+
 /** Notes **/
 .notes-body {
   background-color: #f8f8f8;
   padding: 10px;
 }
+
 .add-notes-main {
   padding: 20px;
 }
+
 .add-notes-body {
   margin: 10px 20px 0 20px;
   background-color: #f5f5f5;
@@ -2734,6 +2747,7 @@ td.totalcost-category {
   border-radius: 5px;
   height: fit-content;
 }
+
 .notes-date {
   color: #cccccc;
 }

@@ -401,6 +401,7 @@ $(document).ready(function () {
     $("#request-sparehistory").show();
   });
 });
+
 /** Bill of Materials */
 $(function () {
   $("tr.parent td").on("click", function () {
